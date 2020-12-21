@@ -1,6 +1,6 @@
-import ApparuleImg from "../../icons/home/apparule.svg";
-import CuepriseImg from "../../icons/home/cueprise.svg";
-import CuepayImg from "../../icons/home/cuepay.svg";
+import ApparuleImg from "../../assets/icons/apparule.svg";
+import CuepriseImg from "../../assets/icons/cueprise.svg";
+import CuepayImg from "../../assets/icons/cuepay.svg";
 
 const products = {
     data: [

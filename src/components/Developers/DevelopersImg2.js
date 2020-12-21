@@ -1,9 +1,9 @@
 import React from "react";
 import { Image } from "semantic-ui-react";
-// import Pattern from "../../icons/home/pattern.svg";
-// import TopImg2 from "../../icons/home/top-img-2.svg";
-// import MiddleImg2 from "../../icons/home/middle-img-2.svg";
-import developers1 from '../../icons/home/developers1.svg'
+// import Pattern from "../../assets/icons/pattern.svg";
+// import TopImg2 from "../../assets/icons/top-img-2.svg";
+// import MiddleImg2 from "../../assets/icons/middle-img-2.svg";
+import developers1 from '../../assets/icons/developers1.svg'
 
 function DevelopersImg2() {
   return (
