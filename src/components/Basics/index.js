@@ -1,4 +1,4 @@
 import CustomHeader from "./CustomHeader";
-import CustomFooter from './Footer/CustomFooter'
+import CustomFooter from "./Footer/CustomFooter";
 
-export { CustomHeader, CustomFooter }
+export { CustomHeader, CustomFooter };

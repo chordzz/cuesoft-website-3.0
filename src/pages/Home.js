@@ -18,7 +18,7 @@ import {
   EnterpriseSegment,
 } from "../components/Services";
 // import { Apparule, Cueprise, Cuepay } from "../components/Products";
-import { products, ProductSegment } from '../components/Products'
+import { products, ProductSegment } from "../components/Products";
 import { Client, clients } from "../components/Clients";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -29,7 +29,6 @@ import AngleUp from "../assets/icons/angle-up.svg";
 import AngleDown from "../assets/icons/angle-down.svg";
 // import developers from '../assets/icons/developers.svg'
 // import developers1 from '../assets/icons/developers1.svg'
-
 
 const Home = ({ darkMode, approach }) => {
   return (
@@ -102,7 +101,7 @@ const Home = ({ darkMode, approach }) => {
               marginBottom: "32px",
             }}
           >
-            <h2 style={{ color: darkMode ? "#F4B400" : null}}>
+            <h2 style={{ color: darkMode ? "#F4B400" : null }}>
               Analyze. Design. Build. Evolve
             </h2>
           </Header>
@@ -297,7 +296,12 @@ const Home = ({ darkMode, approach }) => {
             <Grid>
               <Grid.Row>
                 <Grid.Column mobile={8} computer={4}>
-                  <h2 style={{ color: darkMode ? "#F4B400" : null, textAlign: 'center' }}>
+                  <h2
+                    style={{
+                      color: darkMode ? "#F4B400" : null,
+                      textAlign: "center",
+                    }}
+                  >
                     Here are some of our amazing products
                   </h2>
                 </Grid.Column>
@@ -306,13 +310,19 @@ const Home = ({ darkMode, approach }) => {
           </Header>
           <Grid centered>
             <Grid.Row>
-             {products.data && products.data.length && products.data.map((product, i) => {
-               return (
-                 <Grid.Column mobile={16} computer={5}>
-                   <ProductSegment key={i} product={product} darkMode={darkMode} />
-                 </Grid.Column>
-               )
-             })}
+              {products.data &&
+                products.data.length &&
+                products.data.map((product, i) => {
+                  return (
+                    <Grid.Column mobile={16} computer={5}>
+                      <ProductSegment
+                        key={i}
+                        product={product}
+                        darkMode={darkMode}
+                      />
+                    </Grid.Column>
+                  );
+                })}
             </Grid.Row>
           </Grid>
         </Container>

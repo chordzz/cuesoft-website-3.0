@@ -3,11 +3,11 @@ import { Image } from "semantic-ui-react";
 // import Pattern from "../../assets/icons/pattern.svg";
 // import TopImg from "../../assets/icons/top-img.svg";
 // import MiddleImg from "../../assets/icons/middle-img.svg";
-import developers from '../../assets/icons/developers.svg'
+import developers from "../../assets/icons/developers.svg";
 
 function DevelopersImg() {
   return (
-    <div style={{ alignItems: 'center'}}>
+    <div style={{ alignItems: "center" }}>
       <Image src={developers} />
     </div>
     // <div style={{ margin: "60px 0 0 120px" }}>

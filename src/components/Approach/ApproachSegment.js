@@ -13,7 +13,7 @@ const ApproachSegment = ({ darkMode, single }) => {
       </Header>
       <p
         style={{
-          color: darkMode ? "#ffffff" : '#000000',
+          color: darkMode ? "#ffffff" : "#000000",
           marginBottom: "32px",
         }}
       >

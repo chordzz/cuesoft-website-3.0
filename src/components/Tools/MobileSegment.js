@@ -9,11 +9,11 @@ import Android2 from "../../assets/icons/android2.svg";
 
 function MobileSegment({ darkMode }) {
   return (
-    <div style={{textAlign: 'center'}}>
+    <div style={{ textAlign: "center" }}>
       <h4>Mobile Development </h4>
       <List>
         <List.Item style={{ paddingTop: "30px" }}>
-          <Image src={ darkMode ? Android2 : Android1 } size='mini' />
+          <Image src={darkMode ? Android2 : Android1} size="mini" />
           <List.Content style={{ paddingTop: "10px" }}>Android</List.Content>
         </List.Item>
         <List.Item style={{ paddingTop: "30px" }}>

@@ -9,15 +9,15 @@ import Php2 from "../../assets/icons/php2.svg";
 
 function BackendSegment({ darkMode }) {
   return (
-    <div style={{textAlign: 'center'}}>
+    <div style={{ textAlign: "center" }}>
       <h4>Backend Development </h4>
       <List>
         <List.Item style={{ paddingTop: "30px" }}>
-        <Image src={ darkMode ? Node2 : Node1 } size='mini' />
+          <Image src={darkMode ? Node2 : Node1} size="mini" />
           <List.Content style={{ paddingTop: "10px" }}>Node.js</List.Content>
         </List.Item>
         <List.Item style={{ paddingTop: "30px" }}>
-        <Image src={ darkMode ? Php2 : Php1 } size='mini' />
+          <Image src={darkMode ? Php2 : Php1} size="mini" />
           <List.Content style={{ paddingTop: "10px" }}>PHP</List.Content>
         </List.Item>
         <List.Item style={{ paddingTop: "30px" }}>
