@@ -1,8 +1,8 @@
-import React from 'react';
-import { Image } from 'semantic-ui-react';
+import React from "react";
+import { Image } from "semantic-ui-react";
 
-function ProductSegment({product, darkMode}){
-    return (
+function ProductSegment({ product, darkMode }) {
+  return (
     <div style={{ marginBottom: "30px" }}>
       <Image src={product.img} />
       <h4
@@ -16,7 +16,7 @@ function ProductSegment({product, darkMode}){
         {product.desc}
       </p>
     </div>
-    )
+  );
 }
 
 export default ProductSegment;

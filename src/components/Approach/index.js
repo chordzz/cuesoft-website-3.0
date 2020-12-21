@@ -1,3 +1,3 @@
-import ApproachSegment from './ApproachSegment';
+import ApproachSegment from "./ApproachSegment";
 
 export { ApproachSegment };

@@ -23,7 +23,7 @@ const CustomHeader = ({ darkMode }) => {
         <Link to="/">
           <Image
             className="brand"
-            src={ darkMode ? Logo2 : Logo }
+            src={darkMode ? Logo2 : Logo}
             alt="logo"
             size="small"
             inline
@@ -33,7 +33,7 @@ const CustomHeader = ({ darkMode }) => {
           <Menu.Item
             name="about"
             as={Link}
-            to='/about'
+            to="/about"
             // active={activeItem === "about"}
             // onClick={() => navigateTo("about")}
             size="small"
@@ -41,7 +41,7 @@ const CustomHeader = ({ darkMode }) => {
           <Menu.Item
             name="services"
             as={Link}
-            to='/services'
+            to="/services"
             // active={activeItem === "services"}
             // onClick={() => navigateTo("services")}
             size="small"
@@ -49,7 +49,7 @@ const CustomHeader = ({ darkMode }) => {
           <Menu.Item
             name="products"
             as={Link}
-            to='/products'
+            to="/products"
             // active={activeItem === "products"}
             // onClick={() => navigateTo("products")}
             size="small"
@@ -57,7 +57,7 @@ const CustomHeader = ({ darkMode }) => {
           <Menu.Item
             name="contact"
             as={Link}
-            to='/contact'
+            to="/contact"
             // active={activeItem === "contact"}
             // onClick={() => navigateTo("contact")}
             size="small"
@@ -66,7 +66,7 @@ const CustomHeader = ({ darkMode }) => {
             <Button
               size="tiny"
               as={Link}
-              to='/project'
+              to="/project"
               color={darkMode ? "yellow" : "red"}
               style={{ borderRadius: "30px" }}
             >

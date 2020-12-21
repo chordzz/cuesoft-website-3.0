@@ -1,4 +1,4 @@
-import clients from './clientsData';
-import Client from './Client'
+import clients from "./clientsData";
+import Client from "./Client";
 
-export { clients, Client }
+export { clients, Client };
