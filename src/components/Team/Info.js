@@ -2,7 +2,9 @@ import React from "react";
 
 function Info({ darkMode }) {
   return (
-    <div style={{ color: darkMode ? "#ffffff" : "#474646", marginBottom: '20px'}}>
+    <div
+      style={{ color: darkMode ? "#ffffff" : "#474646", marginBottom: "20px" }}
+    >
       <p>
         We build effective, scalable development teams fitting your project's
         needs. Our experienced developers are ready to join your project. We

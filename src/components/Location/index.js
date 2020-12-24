@@ -1,3 +1,3 @@
-import LocationSegment from './LocationSegment';
+import LocationSegment from "./LocationSegment";
 
 export { LocationSegment };

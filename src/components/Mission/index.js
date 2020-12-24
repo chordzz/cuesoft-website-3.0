@@ -1,4 +1,4 @@
-import Mission from './Mission'
-import Technical from './Technical'
+import Mission from "./Mission";
+import Technical from "./Technical";
 
-export { Mission, Technical }
+export { Mission, Technical };
