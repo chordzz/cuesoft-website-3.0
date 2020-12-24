@@ -1,3 +1,3 @@
-import ProductSegment from './ProductSegment';
+import ProductSegment from "./ProductSegment";
 
-export { ProductSegment }
+export { ProductSegment };

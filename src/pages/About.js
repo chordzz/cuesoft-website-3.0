@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
 import { Mission, Technical } from "../components/Mission";
-import Slider from "../icons/home/mission.svg";
+import Slider from "../assets/icons/mission.svg";
 import { ApproachTwo } from "../components/Approach";
 import { Info, Members } from "../components/Team";
-import Smiley from "../icons/home/smiley.svg";
-import Smiley2 from "../icons/home/smiley2.svg";
+import Smiley from "../assets/icons/smiley.svg";
+import Smiley2 from "../assets/icons/smiley2.svg";
 import { Client } from "../components/Clients";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
@@ -190,7 +190,11 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                     We've worked with lovely clients and all we did was put a
                     smile on their face
                   </h2>
-                  <Image src={ darkMode ? Smiley2 : Smiley} size="mini" centered />
+                  <Image
+                    src={darkMode ? Smiley2 : Smiley}
+                    size="mini"
+                    centered
+                  />
                 </Grid.Column>
               </Grid.Row>
             </Grid>

@@ -1,9 +1,9 @@
-import React from 'react';
-import { Image } from 'semantic-ui-react';
-import PropTypes from 'prop-types'
+import React from "react";
+import { Image } from "semantic-ui-react";
+import PropTypes from "prop-types";
 
-function ProductSegment({product, darkMode}){
-    return (
+function ProductSegment({ product, darkMode }) {
+  return (
     <div style={{ marginBottom: "30px" }}>
       <Image src={product.img} />
       <h4
@@ -17,11 +17,11 @@ function ProductSegment({product, darkMode}){
         {product.desc}
       </p>
     </div>
-    )
+  );
 }
 
 ProductSegment.prototypes = {
   darkMode: PropTypes.bool,
   productsData: PropTypes.object.isRequired,
-}
+};
 export default ProductSegment;

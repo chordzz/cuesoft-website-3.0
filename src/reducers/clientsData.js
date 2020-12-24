@@ -1,9 +1,9 @@
-import UnileverImg from "../icons/home/unilever.svg";
-import UnileverImg2 from "../icons/home/unilever2.svg";
-import FerrariImg from "../icons/home/ferrari.svg";
-import FerrariImg2 from "../icons/home/ferrari2.svg";
-import ClarksImg from "../icons/home/clarks.svg";
-import ClarksImg2 from "../icons/home/clarks2.svg";
+import UnileverImg from "../assets/icons/unilever.svg";
+import UnileverImg2 from "../assets/icons/unilever2.svg";
+import FerrariImg from "../assets/icons/ferrari.svg";
+import FerrariImg2 from "../assets/icons/ferrari2.svg";
+import ClarksImg from "../assets/icons/clarks.svg";
+import ClarksImg2 from "../assets/icons/clarks2.svg";
 const initialState = {
   data: [
     {

@@ -1,10 +1,10 @@
 import React from "react";
 import { Image } from "semantic-ui-react";
-import developers1 from '../../icons/home/developers1.svg'
+import developers1 from "../../assets/icons/developers1.svg";
 
 function DevelopersImg2() {
   return (
-    <div style={{alignItems: 'center'}}>
+    <div style={{ alignItems: "center" }}>
       <Image src={developers1} />
     </div>
   );

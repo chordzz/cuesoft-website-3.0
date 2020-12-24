@@ -2,9 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Segment, Container, Image, Menu, Button } from "semantic-ui-react";
-import Logo from "../../icons/home/logo1.svg";
-import Logo2 from "../../icons/home/logo2.svg";
-
+import Logo from "../../assets/icons/logo1.svg";
+import Logo2 from "../../assets/icons/logo2.svg";
 
 const CustomHeader = ({ darkMode }) => {
   return (
@@ -16,45 +15,35 @@ const CustomHeader = ({ darkMode }) => {
       style={{ backgroundColor: !darkMode && "#ffffff" }}
     >
       <Container>
-      <Link to="/">
+        <Link to="/">
           <Image
             className="brand"
-            src={ darkMode ? Logo2 : Logo }
-            size='small'
+            src={darkMode ? Logo2 : Logo}
+            size="small"
             alt="logo"
             inline
           />
         </Link>
-        <Menu as="nav" text inverted={darkMode} floated='right'  size="large">
+        <Menu as="nav" text inverted={darkMode} floated="right" size="large">
           <Menu.Item
             name="about"
             as={Link}
-            to='/about'
+            to="/about"
             size="small"
           ></Menu.Item>
-          <Menu.Item
-            name="services"
-            as={Link}
-            to='#'
-            size="small"
-          ></Menu.Item>
-          <Menu.Item
-            name="products"
-            as={Link}
-            to='#'
-            size="small"
-          ></Menu.Item>
+          <Menu.Item name="services" as={Link} to="#" size="small"></Menu.Item>
+          <Menu.Item name="products" as={Link} to="#" size="small"></Menu.Item>
           <Menu.Item
             name="contact"
             as={Link}
-            to='/contact'
+            to="/contact"
             size="small"
           ></Menu.Item>
           <Menu.Item>
             <Button
               size="tiny"
               as={Link}
-              to='#'
+              to="#"
               color={darkMode ? "yellow" : "red"}
               style={{ borderRadius: "30px" }}
             >

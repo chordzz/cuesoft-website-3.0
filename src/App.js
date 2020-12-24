@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import { CustomHeader, CustomFooter } from './components/Basics'  ;
-import "semantic-ui-css/semantic.min.css";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 import { BrowserRouter as Router } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 import routes from "./routes";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
+import { CustomHeader, CustomFooter } from "./components/Basics";
 
 function App({ darkMode }) {
   useEffect(() => {

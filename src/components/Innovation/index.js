@@ -1,4 +1,3 @@
-import InnovationSegment from './InnovationSegment';
+import InnovationSegment from "./InnovationSegment";
 
-
-export { InnovationSegment }
+export { InnovationSegment };

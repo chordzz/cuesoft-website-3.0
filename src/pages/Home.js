@@ -17,25 +17,23 @@ import {
   MobileAppSegment,
   EnterpriseSegment,
 } from "../components/Services";
-import { ProductSegment } from '../components/Products'
-import PropTypes from 'prop-types';
+import { ProductSegment } from "../components/Products";
+import PropTypes from "prop-types";
 import { Client } from "../components/Clients";
 import { connect } from "react-redux";
-import Space from "../icons/home/space.svg";
-import Square from "../icons/home/squircle.svg";
-import Square2 from "../icons/home/squircle2.svg";
-import AngleUp from "../icons/home/angle-up.svg";
-import AngleDown from "../icons/home/angle-down.svg";
+import Space from "../assets/icons/space.svg";
+import Square from "../assets/icons/squircle.svg";
+import Square2 from "../assets/icons/squircle2.svg";
+import AngleUp from "../assets/icons/angle-up.svg";
+import AngleDown from "../assets/icons/angle-down.svg";
 
-
-
-const Home = ({ 
-  darkMode, 
-  approachData, 
+const Home = ({
+  darkMode,
+  approachData,
   clientsData,
   innovationData,
-  productsData
- }) => {
+  productsData,
+}) => {
   return (
     <main>
       <Segment as="section" basic vertical inverted={darkMode}>
@@ -43,8 +41,7 @@ const Home = ({
           <Grid>
             <Grid.Row columns={2}>
               <Grid.Column mobile={16} computer={8}>
-                <h1 style={{ paddingTop: "150px" }}
-                >
+                <h1 style={{ paddingTop: "150px" }}>
                   We build{" "}
                   <span
                     style={{
@@ -107,19 +104,25 @@ const Home = ({
               marginBottom: "32px",
             }}
           >
-            <h2 style={{ color: darkMode ? "#F4B400" : null}}>
+            <h2 style={{ color: darkMode ? "#F4B400" : null }}>
               Analyze. Design. Build. Evolve
             </h2>
           </Header>
           <Grid centered>
             <Grid.Row>
-              {approachData && approachData.length && approachData.map((single, i) => {
-                return (
-                  <Grid.Column computer={4} mobile={8}>
-                  <ApproachSegment single={single} key={i} darkMode={darkMode} />
-                  </Grid.Column>
-                )
-              })}
+              {approachData &&
+                approachData.length &&
+                approachData.map((single, i) => {
+                  return (
+                    <Grid.Column computer={4} mobile={8}>
+                      <ApproachSegment
+                        single={single}
+                        key={i}
+                        darkMode={darkMode}
+                      />
+                    </Grid.Column>
+                  );
+                })}
             </Grid.Row>
           </Grid>
         </Container>
@@ -160,7 +163,11 @@ const Home = ({
                 innovationData.map((data, i) => {
                   return (
                     <Grid.Column mobile={16} computer={7}>
-                      <InnovationSegment key={i} data={data} darkMode={darkMode} />
+                      <InnovationSegment
+                        key={i}
+                        data={data}
+                        darkMode={darkMode}
+                      />
                     </Grid.Column>
                   );
                 })}
@@ -300,7 +307,12 @@ const Home = ({
             <Grid>
               <Grid.Row>
                 <Grid.Column mobile={8} computer={4}>
-                  <h2 style={{ color: darkMode ? "#F4B400" : null, textAlign: 'center' }}>
+                  <h2
+                    style={{
+                      color: darkMode ? "#F4B400" : null,
+                      textAlign: "center",
+                    }}
+                  >
                     Here are some of our amazing products
                   </h2>
                 </Grid.Column>
@@ -309,13 +321,19 @@ const Home = ({
           </Header>
           <Grid centered>
             <Grid.Row>
-             {productsData && productsData.length && productsData.map((product, i) => {
-               return (
-                 <Grid.Column mobile={16} computer={5}>
-                   <ProductSegment key={i} product={product} darkMode={darkMode} />
-                 </Grid.Column>
-               )
-             })}
+              {productsData &&
+                productsData.length &&
+                productsData.map((product, i) => {
+                  return (
+                    <Grid.Column mobile={16} computer={5}>
+                      <ProductSegment
+                        key={i}
+                        product={product}
+                        darkMode={darkMode}
+                      />
+                    </Grid.Column>
+                  );
+                })}
             </Grid.Row>
           </Grid>
         </Container>
@@ -379,7 +397,7 @@ const mapStateToProps = (state) => {
     approachData: state.approachData.data,
     innovationData: state.innovationData.data,
     clientsData: state.clientsData.data,
-    productsData: state.productsData.data
+    productsData: state.productsData.data,
   };
 };
 
