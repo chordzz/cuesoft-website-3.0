@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Segment, Container, Image, Menu, Button } from "semantic-ui-react";
 import Logo from "../../icons/home/logo1.svg";
 import Logo2 from "../../icons/home/logo2.svg";
 
-const CustomHeader = ({ darkMode }) => {
-  //  const [activeItem, setActiveItem] = useState("home");
 
-  //  const navigateTo = (page) => {
-  //   setActiveItem(page);
-  // };
+const CustomHeader = ({ darkMode }) => {
   return (
     <Segment
       as="header"
@@ -20,53 +16,45 @@ const CustomHeader = ({ darkMode }) => {
       style={{ backgroundColor: !darkMode && "#ffffff" }}
     >
       <Container>
-        <Link to="/">
+      <Link to="/">
           <Image
             className="brand"
             src={ darkMode ? Logo2 : Logo }
+            size='small'
             alt="logo"
-            size="small"
             inline
           />
         </Link>
-        <Menu as="nav" text inverted={darkMode} floated="right" size="large">
+        <Menu as="nav" text inverted={darkMode} floated='right'  size="large">
           <Menu.Item
             name="about"
             as={Link}
             to='/about'
-            // active={activeItem === "about"}
-            // onClick={() => navigateTo("about")}
             size="small"
           ></Menu.Item>
           <Menu.Item
             name="services"
             as={Link}
-            to='/services'
-            // active={activeItem === "services"}
-            // onClick={() => navigateTo("services")}
+            to='#'
             size="small"
           ></Menu.Item>
           <Menu.Item
             name="products"
             as={Link}
-            to='/products'
-            // active={activeItem === "products"}
-            // onClick={() => navigateTo("products")}
+            to='#'
             size="small"
           ></Menu.Item>
           <Menu.Item
             name="contact"
             as={Link}
             to='/contact'
-            // active={activeItem === "contact"}
-            // onClick={() => navigateTo("contact")}
             size="small"
           ></Menu.Item>
           <Menu.Item>
             <Button
               size="tiny"
               as={Link}
-              to='/project'
+              to='#'
               color={darkMode ? "yellow" : "red"}
               style={{ borderRadius: "30px" }}
             >

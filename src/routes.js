@@ -1,4 +1,4 @@
-import { Home, About } from "./pages";
+import { Home, About, Contact, NotFound } from "./pages";
 
 const routes = [
   {
@@ -8,9 +8,16 @@ const routes = [
   },
   {
     path: "/about",
-    exact: true,
     component: About
-  }
+  },
+  {
+    path: "/contact",
+    component: Contact
+  },
+  {
+    path: '*',
+    component: NotFound
+  },
 ];
 
 export default routes;
