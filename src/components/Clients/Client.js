@@ -21,6 +21,7 @@ function Client({ client, darkMode }) {
 
 Client.propTypes = {
   darkMode: PropTypes.bool,
+  clientsData: PropTypes.object.isRequired,
 };
 
 export default Client;

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const InnovationSegment = ({ data, darkMode }) => {
   return (
@@ -7,15 +8,16 @@ const InnovationSegment = ({ data, darkMode }) => {
       <span style={{ color: darkMode ? "#ffffff" : null }}>{data.body}</span>
       <br />
       <br />
-      <span style={{ color: darkMode ? "#F4B400" : "#db4437" }}>
+      <Link to="#" style={{ color: darkMode ? "#F4B400" : "#db4437" }}>
         {data.info}
-      </span>
+      </Link>
     </div>
   );
 };
 
 InnovationSegment.propTypes = {
   innovationData: PropTypes.object.isRequired,
+  darkMode: PropTypes.bool,
 };
 
 export default InnovationSegment;

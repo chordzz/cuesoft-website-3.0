@@ -12,7 +12,7 @@ function App({ darkMode }) {
   }, [darkMode]);
 
   return (
-    <div class="app">
+    <div>
       <Router>
         <CustomHeader darkMode={darkMode} />
         {renderRoutes(routes)}

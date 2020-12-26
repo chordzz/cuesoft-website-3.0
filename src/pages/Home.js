@@ -1,7 +1,7 @@
 import React from "react";
 import { Segment, Container, Grid, Image, Header } from "semantic-ui-react";
 import { ApproachSegment } from "../components/Approach";
-import { InnovationSegment, innovationData } from "../components/Innovation";
+import { InnovationSegment } from "../components/Innovation";
 import {
   Developers,
   DevelopersImg,
@@ -17,20 +17,23 @@ import {
   MobileAppSegment,
   EnterpriseSegment,
 } from "../components/Services";
-// import { Apparule, Cueprise, Cuepay } from "../components/Products";
-import { products, ProductSegment } from "../components/Products";
-import { Client, clients } from "../components/Clients";
+import { ProductSegment } from "../components/Products";
 import PropTypes from "prop-types";
+import { Client } from "../components/Clients";
 import { connect } from "react-redux";
 import Space from "../assets/icons/space.svg";
 import Square from "../assets/icons/squircle.svg";
 import Square2 from "../assets/icons/squircle2.svg";
 import AngleUp from "../assets/icons/angle-up.svg";
 import AngleDown from "../assets/icons/angle-down.svg";
-// import developers from '../assets/icons/developers.svg'
-// import developers1 from '../assets/icons/developers1.svg'
 
-const Home = ({ darkMode, approach }) => {
+const Home = ({
+  darkMode,
+  approachData,
+  clientsData,
+  innovationData,
+  productsData,
+}) => {
   return (
     <main>
       <Segment as="section" basic vertical inverted={darkMode}>
@@ -107,12 +110,16 @@ const Home = ({ darkMode, approach }) => {
           </Header>
           <Grid centered>
             <Grid.Row>
-              {approach &&
-                approach.length &&
-                approach.map((single, i) => {
+              {approachData &&
+                approachData.length &&
+                approachData.map((single, i) => {
                   return (
-                    <Grid.Column key={i} mobile={8} computer={4}>
-                      <ApproachSegment single={single} darkMode={darkMode} />
+                    <Grid.Column computer={4} mobile={8}>
+                      <ApproachSegment
+                        single={single}
+                        key={i}
+                        darkMode={darkMode}
+                      />
                     </Grid.Column>
                   );
                 })}
@@ -151,12 +158,16 @@ const Home = ({ darkMode, approach }) => {
           </Header>
           <Grid centered>
             <Grid.Row>
-              {innovationData.data &&
-                innovationData.data.length &&
-                innovationData.data.map((data, i) => {
+              {innovationData &&
+                innovationData.length &&
+                innovationData.map((data, i) => {
                   return (
                     <Grid.Column mobile={16} computer={7}>
-                      <InnovationSegment data={data} darkMode={darkMode} />
+                      <InnovationSegment
+                        key={i}
+                        data={data}
+                        darkMode={darkMode}
+                      />
                     </Grid.Column>
                   );
                 })}
@@ -310,9 +321,9 @@ const Home = ({ darkMode, approach }) => {
           </Header>
           <Grid centered>
             <Grid.Row>
-              {products.data &&
-                products.data.length &&
-                products.data.map((product, i) => {
+              {productsData &&
+                productsData.length &&
+                productsData.map((product, i) => {
                   return (
                     <Grid.Column mobile={16} computer={5}>
                       <ProductSegment
@@ -356,9 +367,9 @@ const Home = ({ darkMode, approach }) => {
           </Header>
           <Grid>
             <Grid.Row>
-              {clients.data &&
-                clients.data.length &&
-                clients.data.map((client, i) => {
+              {clientsData &&
+                clientsData.length &&
+                clientsData.map((client, i) => {
                   return (
                     <Grid.Column mobile={16} computer={5}>
                       <Client key={i} client={client} darkMode={darkMode} />
@@ -372,14 +383,21 @@ const Home = ({ darkMode, approach }) => {
     </main>
   );
 };
+
 Home.propTypes = {
-  approach: PropTypes.array.isRequired,
+  approachData: PropTypes.array.isRequired,
+  clientsData: PropTypes.array.isRequired,
+  innovationData: PropTypes.array.isRequired,
+  productsData: PropTypes.array.isRequired,
 };
 
 const mapStateToProps = (state) => {
   return {
     darkMode: state.darkMode,
-    approach: state.approach.data,
+    approachData: state.approachData.data,
+    innovationData: state.innovationData.data,
+    clientsData: state.clientsData.data,
+    productsData: state.productsData.data,
   };
 };
 
