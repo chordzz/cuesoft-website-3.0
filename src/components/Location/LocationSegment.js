@@ -6,7 +6,7 @@ function LocationSegment({ data, darkMode }) {
   return (
     <main>
       <Image src={darkMode ? data.img2 : data.img1} />
-      <h4 style={{ color: darkMode ? "#F4B400" : "#474646" }}>{data.title}</h4>
+      <h4 style={{ color: darkMode ? "#F4B400" : "#db4437" }}>{data.title}</h4>
       <p
         style={{
           color: darkMode ? "#ffffff" : "#474646",
