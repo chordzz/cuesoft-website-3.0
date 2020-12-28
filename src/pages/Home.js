@@ -41,16 +41,12 @@ const Home = ({
           <Grid>
             <Grid.Row columns={2}>
               <Grid.Column mobile={16} computer={8}>
-<<<<<<< Updated upstream
-                <h1 style={{ paddingTop: "150px" }}>
-=======
                 <h1
                   style={{ paddingTop: "150px" }}
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
                 >
->>>>>>> Stashed changes
                   We build{" "}
                   <span
                     style={{
