@@ -2,7 +2,7 @@ import React from "react";
 
 function Developers({ darkMode }) {
   return (
-    <div>
+    <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">
       <h2 style={{ color: darkMode ? "#F4B400" : "#db4437" }}>
         Developers and teams for your project
       </h2>

@@ -3,7 +3,13 @@ import { Icon } from "semantic-ui-react";
 
 function MobileAppSegment({ darkMode }) {
   return (
-    <div className="mobile-app">
+    <div
+      className="mobile-app"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="1000"
+      data-aos-delay="1000"
+    >
       <h3
         style={{
           textAlign: "center",

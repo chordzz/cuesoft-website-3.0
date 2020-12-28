@@ -1,9 +1,12 @@
 import React from "react";
 
-function NotFound() {
+function NotFound({ location }) {
   return (
-    <div>
-      <h1 style={{ padding: "200px 0" }}>Error</h1>
+    <div style={{ textAlign: "center" }}>
+      <h1 style={{ padding: "200px 0" }}>
+        Error! The page{" "}
+        <span style={{ color: "red" }}>{location.pathname}</span> does not exist
+      </h1>
     </div>
   );
 }

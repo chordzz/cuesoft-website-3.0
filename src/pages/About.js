@@ -32,7 +32,13 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             </Grid.Row>
             <Grid.Row centered>
               <Grid.Column computer={16} mobile={16}>
-                <Image src={Slider} />
+                <Image
+                  src={Slider}
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="1000"
+                  data-aos-easing="ease-in-out"
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -42,7 +48,13 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               paddingTop: "60px",
             }}
           >
-            <h2 style={{ color: darkMode ? "#F4B400" : null }}>
+            <h2
+              style={{ color: darkMode ? "#F4B400" : null }}
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               We are the Kubernetes for technical teams
             </h2>
           </Header>
@@ -64,6 +76,10 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
           backgroundColor: !darkMode && "#ffffff",
           margin: "50px 0",
         }}
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
       >
         <Container>
           <Header
@@ -132,7 +148,13 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               marginBottom: "32px",
             }}
           >
-            <h2 style={{ color: darkMode ? "#F4B400" : null }}>
+            <h2
+              style={{ color: darkMode ? "#F4B400" : null }}
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               Our incredible team
             </h2>
           </Header>
@@ -144,7 +166,13 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             </Grid.Row>
           </Grid>
           <Grid centered>
-            <Grid.Row>
+            <Grid.Row
+              data-aos="flip-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="1000"
+            >
               {teamMembers &&
                 teamMembers.length &&
                 teamMembers.map((member, i) => {
@@ -167,6 +195,9 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
           backgroundColor: !darkMode && "#ffffff",
           margin: "100px 0",
         }}
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="1000"
       >
         <Container>
           <Header

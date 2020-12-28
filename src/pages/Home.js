@@ -41,7 +41,12 @@ const Home = ({
           <Grid>
             <Grid.Row columns={2}>
               <Grid.Column mobile={16} computer={8}>
-                <h1 style={{ paddingTop: "150px" }}>
+                <h1
+                  style={{ paddingTop: "150px" }}
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
                   We build{" "}
                   <span
                     style={{
@@ -61,19 +66,35 @@ const Home = ({
                   alt="square"
                   inline
                   style={{ color: darkMode ? "#F4B400" : null }}
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
                 />
                 <span
                   style={{
                     paddingLeft: "3px",
                     color: darkMode ? "#ffffff" : "#474646",
                   }}
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
                 >
                   We help great companies simplify and grow their businesses by
                   designing and building beautiful products
                 </span>
               </Grid.Column>
               <Grid.Column mobile={16} computer={8}>
-                <Image src={Space} alt="space" inline />
+                <Image
+                  src={Space}
+                  alt="space"
+                  inline
+                  data-aos="fade-left"
+                  data-aos-delay="2000"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -88,6 +109,9 @@ const Home = ({
           backgroundColor: !darkMode && "#ffffff",
           margin: "150px 0",
         }}
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-duration="1000"
       >
         <Container>
           <Header
@@ -136,6 +160,9 @@ const Home = ({
           backgroundColor: !darkMode && "#ffffff",
           margin: "150px 0",
         }}
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="1000"
       >
         <Container>
           <Header>
@@ -296,6 +323,9 @@ const Home = ({
           backgroundColor: !darkMode && "#ffffff",
           margin: "150px 0",
         }}
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-duration="1000"
       >
         <Container>
           <Header
@@ -347,6 +377,9 @@ const Home = ({
           backgroundColor: !darkMode && "#ffffff",
           margin: "150px 0",
         }}
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="1000"
       >
         <Container>
           <Header
