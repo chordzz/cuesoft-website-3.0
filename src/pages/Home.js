@@ -36,7 +36,13 @@ const Home = ({
 }) => {
   return (
     <main>
-      <Segment as="section" basic vertical inverted={darkMode}>
+      <Segment
+        as="section"
+        basic
+        vertical
+        inverted={darkMode}
+        style={{ backgroundColor: darkMode ? "#100403" : null }}
+      >
         <Container>
           <Grid>
             <Grid.Row columns={2}>
@@ -104,16 +110,20 @@ const Home = ({
         as="section"
         basic
         vertical
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "150px 0",
+          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          padding: "150px 0",
         }}
         data-aos="fade-left"
         data-aos-offset="200"
         data-aos-duration="1000"
       >
-        <Container>
+        <Container
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+        >
           <Header
             style={{
               color: !darkMode && "#474646",
@@ -157,14 +167,18 @@ const Home = ({
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "150px 0",
+          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          padding: "150px 0",
         }}
         data-aos="fade-up"
         data-aos-offset="200"
         data-aos-duration="1000"
       >
-        <Container>
+        <Container
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+        >
           <Header>
             <Grid centered>
               <Grid.Row>
@@ -208,8 +222,8 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "150px 0",
+          backgroundColor: darkMode ? "#100403" : "#ffffff",
+          padding: "150px 0",
         }}
       >
         <Container>
@@ -248,8 +262,8 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "150px 0",
+          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          padding: "150px 0",
         }}
       >
         <Container>
@@ -286,8 +300,8 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "150px 0",
+          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          padding: "150px 0",
         }}
       >
         <Container>
@@ -320,14 +334,18 @@ const Home = ({
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "150px 0",
+          backgroundColor: darkMode ? "#100403" : "#ffffff",
+          padding: "150px 0",
         }}
         data-aos="fade-right"
         data-aos-offset="200"
         data-aos-duration="1000"
       >
-        <Container>
+        <Container
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+        >
           <Header
             style={{
               color: !darkMode && "#db4437",
@@ -374,14 +392,18 @@ const Home = ({
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "150px 0",
+          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          padding: "150px 0",
         }}
         data-aos="fade-up"
         data-aos-offset="200"
         data-aos-duration="1000"
       >
-        <Container>
+        <Container
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+        >
           <Header
             style={{
               color: !darkMode && "#db4437",

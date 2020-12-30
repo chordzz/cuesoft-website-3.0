@@ -8,7 +8,7 @@ import { CustomHeader, CustomFooter } from "./components/Basics";
 
 function App({ darkMode }) {
   useEffect(() => {
-    document.body.style.backgroundColor = darkMode && "#1b1c1d";
+    document.body.style.backgroundColor = darkMode && "#100403";
   }, [darkMode]);
 
   return (

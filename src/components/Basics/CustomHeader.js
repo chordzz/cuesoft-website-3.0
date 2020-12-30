@@ -12,7 +12,7 @@ const CustomHeader = ({ darkMode }) => {
       clearing
       vertical
       inverted={darkMode}
-      style={{ backgroundColor: !darkMode && "#ffffff" }}
+      style={{ backgroundColor: darkMode ? "#100403" : "#ffffff" }}
     >
       <Container>
         <Link to="/">
@@ -24,7 +24,14 @@ const CustomHeader = ({ darkMode }) => {
             inline
           />
         </Link>
-        <Menu as="nav" text inverted={darkMode} floated="right" size="large">
+        <Menu
+          as="nav"
+          text
+          inverted={darkMode}
+          floated="right"
+          size="large"
+          stackable
+        >
           <Menu.Item
             name="about"
             as={Link}
