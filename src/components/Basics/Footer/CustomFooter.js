@@ -15,8 +15,8 @@ function CustomFooter({ darkMode }) {
       vertical
       inverted={{ darkMode }}
       style={{
-        backgroundColor: !darkMode && "#ffffff",
-        margin: "150px 0",
+        backgroundColor: darkMode ? "#100403" : "#ffffff",
+        padding: "150px 0 0 0",
       }}
     >
       <Container>

@@ -19,7 +19,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         basic
         inverted={{ darkMode }}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
+          backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "200px 0",
         }}
       >
@@ -73,15 +73,20 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "50px 0",
+          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          padding: "50px 0",
         }}
         data-aos="fade-up"
         data-aos-offset="200"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <Container>
+        <Container
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Header
             style={{
               color: !darkMode && "#474646",
@@ -137,8 +142,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "60px 0",
+          backgroundColor: darkMode ? "#100403" : "#ffffff",
+          padding: "60px 0",
         }}
       >
         <Container>
@@ -167,8 +172,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
           </Grid>
           <Grid centered>
             <Grid.Row
-              data-aos="flip-right"
-              data-aos-offset="200"
+              data-aos="fade-up"
+              data-aos-offset="100"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-delay="1000"
@@ -192,14 +197,18 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: !darkMode && "#ffffff",
-          margin: "100px 0",
+          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          padding: "100px 0",
         }}
         data-aos="fade-up"
         data-aos-offset="200"
         data-aos-duration="1000"
       >
-        <Container>
+        <Container
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+        >
           <Header
             style={{
               color: !darkMode && "#db4437",
