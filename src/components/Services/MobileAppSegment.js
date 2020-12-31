@@ -3,12 +3,13 @@ import { Icon } from "semantic-ui-react";
 
 function MobileAppSegment({ darkMode }) {
   return (
-    <div className="mobile-app"
-    data-aos="fade-up"
-    data-aos-duration="1000"
-    data-aos-offset='200'
-    data-aos-delay='1000'
-    data-aos-easing="ease-in-out"
+    <div
+      className="mobile-app"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-offset="200"
+      data-aos-delay="1000"
+      data-aos-easing="ease-in-out"
     >
       <h3
         style={{

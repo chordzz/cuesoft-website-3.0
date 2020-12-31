@@ -4,10 +4,10 @@ function Technical({ darkMode }) {
   return (
     <div
       style={{ color: darkMode ? "#ffffff" : "#474646", paddingTop: "10px" }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        data-aos-offset='200'
-        data-aos-easing="ease-in-out"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-out"
     >
       <p>
         We are a custom and proprietary software development company that builds

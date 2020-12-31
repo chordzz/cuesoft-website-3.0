@@ -5,9 +5,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 import routes from "./routes";
 import { CustomHeader, CustomFooter } from "./components/Basics";
-import "semantic-ui-css/semantic.min.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function App({ darkMode }) {
   useEffect(() => {
@@ -34,6 +31,5 @@ const mapStateToProps = (state) => {
     darkMode: state.darkMode,
   };
 };
-AOS.init();
 
 export default connect(mapStateToProps)(App);

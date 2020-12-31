@@ -3,12 +3,13 @@ import { Icon } from "semantic-ui-react";
 
 function WebSegment({ darkMode }) {
   return (
-    <div className="web"
+    <div
+      className="web"
       data-aos="fade-up"
       data-aos-duration="1000"
-      data-aos-offset='200'
+      data-aos-offset="200"
       data-aos-easing="ease-in-out"
-      >
+    >
       <h3
         style={{
           textAlign: "center",

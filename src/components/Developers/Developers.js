@@ -4,7 +4,7 @@ function Developers({ darkMode }) {
   return (
     <div
       data-aos="fade-right"
-      data-aos-offset='200'
+      data-aos-offset="200"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
     >
