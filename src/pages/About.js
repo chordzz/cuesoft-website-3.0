@@ -51,8 +51,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             <h2
               style={{ color: darkMode ? "#F4B400" : null }}
               data-aos="fade-right"
-              data-aos-offset="200"
               data-aos-duration="1000"
+              data-aos-offset="200"
               data-aos-easing="ease-in-out"
             >
               We are the Kubernetes for technical teams
@@ -73,7 +73,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
         }}
         data-aos="fade-up"
@@ -197,7 +197,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "100px 0",
         }}
         data-aos="fade-up"

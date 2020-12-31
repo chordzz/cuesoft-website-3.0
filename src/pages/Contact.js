@@ -51,7 +51,7 @@ function Contact({ darkMode, locationData }) {
         basic
         inverted={{ darkMode }}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
         }}
       >

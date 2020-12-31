@@ -6,9 +6,10 @@ function MobileAppSegment({ darkMode }) {
     <div
       className="mobile-app"
       data-aos="fade-up"
-      data-aos-offset="200"
       data-aos-duration="1000"
+      data-aos-offset="200"
       data-aos-delay="1000"
+      data-aos-easing="ease-in-out"
     >
       <h3
         style={{
