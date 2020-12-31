@@ -36,12 +36,8 @@ const Home = ({
 }) => {
   return (
     <main>
-      <Segment
-        as="section"
-        basic
-        vertical
-        inverted={darkMode}
-        style={{ backgroundColor: darkMode ? "#100403" : null }}
+      <Segment as="section" basic vertical inverted={darkMode}
+      style={{backgroundColor: darkMode ? '#100403' : '#ffffff'}}
       >
         <Container>
           <Grid>
@@ -73,8 +69,8 @@ const Home = ({
                   inline
                   style={{ color: darkMode ? "#F4B400" : null }}
                   data-aos="fade-right"
-                  data-aos-delay="1000"
                   data-aos-duration="1000"
+                  data-aos-delay='1000'
                   data-aos-easing="ease-in-out"
                 />
                 <span
@@ -83,8 +79,8 @@ const Home = ({
                     color: darkMode ? "#ffffff" : "#474646",
                   }}
                   data-aos="fade-right"
-                  data-aos-delay="1000"
                   data-aos-duration="1000"
+                  data-aos-delay='1000'
                   data-aos-easing="ease-in-out"
                 >
                   We help great companies simplify and grow their businesses by
@@ -92,14 +88,11 @@ const Home = ({
                 </span>
               </Grid.Column>
               <Grid.Column mobile={16} computer={8}>
-                <Image
-                  src={Space}
-                  alt="space"
-                  inline
-                  data-aos="fade-left"
-                  data-aos-delay="2000"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
+                <Image src={Space} alt="space" inline 
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay='1000'
+                data-aos-easing="ease-in-out"
                 />
               </Grid.Column>
             </Grid.Row>
@@ -112,7 +105,7 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? '#210806' : "#FCFAF6",
           padding: "150px 0",
         }}
         data-aos="fade-left"
@@ -167,7 +160,7 @@ const Home = ({
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? '#210806' : "#FCFAF6",
           padding: "150px 0",
         }}
         data-aos="fade-up"
@@ -262,7 +255,7 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? '#210806' : "#FCFAF6",
           padding: "150px 0",
         }}
       >
@@ -300,7 +293,7 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? '#210806' : "#FCFAF6",
           padding: "150px 0",
         }}
       >
@@ -392,7 +385,7 @@ const Home = ({
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? '#210806' : "#FCFAF6",
           padding: "150px 0",
         }}
         data-aos="fade-up"
@@ -400,9 +393,9 @@ const Home = ({
         data-aos-duration="1000"
       >
         <Container
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="1000"
         >
           <Header
             style={{

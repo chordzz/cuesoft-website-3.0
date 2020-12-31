@@ -32,12 +32,11 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             </Grid.Row>
             <Grid.Row centered>
               <Grid.Column computer={16} mobile={16}>
-                <Image
-                  src={Slider}
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="1000"
-                  data-aos-easing="ease-in-out"
+                <Image src={Slider}
+                 data-aos="fade-up"
+                 data-aos-duration="1000"
+                 data-aos-delay='1000'
+                 data-aos-easing="ease-in-out" 
                 />
               </Grid.Column>
             </Grid.Row>
@@ -48,12 +47,11 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               paddingTop: "60px",
             }}
           >
-            <h2
-              style={{ color: darkMode ? "#F4B400" : null }}
-              data-aos="fade-right"
-              data-aos-offset="200"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+            <h2 style={{ color: darkMode ? "#F4B400" : null }}
+             data-aos="fade-right"
+             data-aos-duration="1000"
+             data-aos-offset='200'
+             data-aos-easing="ease-in-out"
             >
               We are the Kubernetes for technical teams
             </h2>
@@ -73,7 +71,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? '#210806' : "#FCFAF6",
           padding: "50px 0",
         }}
         data-aos="fade-up"
@@ -197,7 +195,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? '#210806' : "#FCFAF6",
           padding: "100px 0",
         }}
         data-aos="fade-up"

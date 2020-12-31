@@ -1,11 +1,10 @@
 import React from "react";
 function Mission({ darkMode }) {
   return (
-    <div
-      style={{ color: darkMode ? "#ffffff" : "#474646" }}
-      data-aos="fade-right"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
+    <div style={{ color: darkMode ? "#ffffff" : "#474646" }}
+    data-aos="fade-right"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
     >
       <h1>
         Our mission is to help enterprises accelerate adoption of new
