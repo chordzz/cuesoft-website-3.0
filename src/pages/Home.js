@@ -41,7 +41,10 @@ const Home = ({
         basic
         vertical
         inverted={darkMode}
-        style={{ backgroundColor: darkMode ? "#100403" : null }}
+        style={{
+          backgroundColor: darkMode ? "#100403" : null,
+          minHeight: "100vh",
+        }}
       >
         <Container>
           <Grid>
@@ -114,10 +117,8 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#ffffff",
           padding: "150px 0",
+          minHeight: "100vh",
         }}
-        data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-duration="1000"
       >
         <Container
           data-aos="fade-left"
@@ -169,10 +170,8 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#ffffff",
           padding: "150px 0",
+          minHeight: "100vh",
         }}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-duration="1000"
       >
         <Container
           data-aos="fade-up"
@@ -224,6 +223,7 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "150px 0",
+          minHeight: "100vh",
         }}
       >
         <Container>
@@ -264,6 +264,7 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#ffffff",
           padding: "150px 0",
+          minHeight: "100vh",
         }}
       >
         <Container>
@@ -302,6 +303,7 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#ffffff",
           padding: "150px 0",
+          minHeight: "100vh",
         }}
       >
         <Container>
@@ -336,10 +338,8 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "150px 0",
+          minHeight: "100vh",
         }}
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-duration="1000"
       >
         <Container
           data-aos="fade-right"
@@ -394,10 +394,8 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#ffffff",
           padding: "150px 0",
+          minHeight: "100vh",
         }}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-duration="1000"
       >
         <Container
           data-aos="fade-up"

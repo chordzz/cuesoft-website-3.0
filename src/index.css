@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,600&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body,
 h1,
 h2,
@@ -52,5 +57,4 @@ main {
   margin: 0 5px;
   border: 0;
   outline: none;
-
 }

@@ -12,7 +12,7 @@ const CustomHeader = ({ darkMode }) => {
       clearing
       vertical
       inverted={darkMode}
-      style={{ backgroundColor: darkMode ? "#100403" : "#ffffff" }}
+      style={{ backgroundColor: darkMode ? "transparent" : "#ffffff" }}
     >
       <Container>
         <Link to="/">
