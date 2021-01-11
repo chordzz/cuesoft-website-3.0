@@ -21,6 +21,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "200px 0",
+          minHeight: "100vh",
         }}
       >
         <Container>
@@ -75,11 +76,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
+          minHeight: "100vh",
         }}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
       >
         <Container
           data-aos="fade-up"
@@ -144,6 +142,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "60px 0",
+          minHeight: "100vh",
         }}
       >
         <Container>
@@ -199,10 +198,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "100px 0",
+          minHeight: "100vh",
         }}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-duration="1000"
       >
         <Container
           data-aos="fade-up"

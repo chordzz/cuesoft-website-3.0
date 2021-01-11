@@ -16,6 +16,7 @@ function Contact({ darkMode, locationData }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
+          minHeight: "100vh",
         }}
       >
         <Container>
@@ -53,6 +54,7 @@ function Contact({ darkMode, locationData }) {
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
+          minHeight: "100vh",
         }}
       >
         <Container>
