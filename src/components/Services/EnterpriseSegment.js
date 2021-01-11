@@ -7,8 +7,9 @@ function EnterpriseSegment({ darkMode }) {
       className="enterprise"
       style={{ backgroundColor: darkMode ? "#F4B400" : null }}
       data-aos="fade-up"
-      data-aos-offset="200"
       data-aos-duration="1000"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-out"
       data-aos-delay="2000"
     >
       <h3

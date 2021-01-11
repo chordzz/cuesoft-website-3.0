@@ -42,7 +42,7 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#100403" : null,
+          backgroundColor: darkMode ? "#100403" : "#ffffff",
           minHeight: "100vh",
         }}
       >
@@ -76,8 +76,8 @@ const Home = ({
                   inline
                   style={{ color: darkMode ? "#F4B400" : null }}
                   data-aos="fade-right"
-                  data-aos-delay="1000"
                   data-aos-duration="1000"
+                  data-aos-delay="1000"
                   data-aos-easing="ease-in-out"
                 />
                 <span
@@ -86,8 +86,8 @@ const Home = ({
                     color: darkMode ? "#ffffff" : "#474646",
                   }}
                   data-aos="fade-right"
-                  data-aos-delay="1000"
                   data-aos-duration="1000"
+                  data-aos-delay="1000"
                   data-aos-easing="ease-in-out"
                 >
                   We help great companies simplify and grow their businesses by
@@ -100,8 +100,8 @@ const Home = ({
                   alt="space"
                   inline
                   data-aos="fade-left"
-                  data-aos-delay="2000"
-                  data-aos-duration="1000"
+                  data-aos-duration="2000"
+                  data-aos-delay="1000"
                   data-aos-easing="ease-in-out"
                 />
               </Grid.Column>
@@ -115,7 +115,7 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "150px 0",
           minHeight: "100vh",
         }}
@@ -168,7 +168,7 @@ const Home = ({
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "150px 0",
           minHeight: "100vh",
         }}
@@ -262,7 +262,7 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "150px 0",
           minHeight: "100vh",
         }}
@@ -301,7 +301,7 @@ const Home = ({
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "150px 0",
           minHeight: "100vh",
         }}
@@ -392,7 +392,7 @@ const Home = ({
         vertical
         inverted={{ darkMode }}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#ffffff",
+          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "150px 0",
           minHeight: "100vh",
         }}
