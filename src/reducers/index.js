@@ -6,13 +6,12 @@ import approachTwo from "./approach2Data";
 import approachData from "./approach";
 import teamMembers from "./teamMembers";
 import locationData from "./locationData";
+import darkmodeReducer from "./darkMode";
+
 import { reducer as formReducer } from "redux-form";
 
 export default combineReducers({
-  darkMode: function () {
-    const hour = new Date().getHours();
-    return hour > 18 || hour < 7 ? true : false;
-  },
+  darkmodeReducer,
   form: formReducer,
   approachData,
   clientsData,

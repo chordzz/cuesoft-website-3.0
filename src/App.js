@@ -8,7 +8,7 @@ import { CustomHeader, CustomFooter } from "./components/Basics";
 
 function App({ darkMode }) {
   useEffect(() => {
-    document.body.style.backgroundColor = darkMode && "#100403";
+    document.body.style.backgroundColor = darkMode ? "#100403" : "#ffffff";
   }, [darkMode]);
 
   return (
@@ -28,7 +28,7 @@ App.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    darkMode: state.darkMode,
+    darkMode: state.darkmodeReducer.darkMode,
   };
 };
 

@@ -266,7 +266,7 @@ About.prototypes = {
 };
 const mapStateToProps = (state) => {
   return {
-    darkMode: state.darkMode,
+    darkMode: state.darkmodeReducer.darkMode,
     approachTwo: state.approachTwo.data,
     teamMembers: state.teamMembers.data,
     clientsData: state.clientsData.data,

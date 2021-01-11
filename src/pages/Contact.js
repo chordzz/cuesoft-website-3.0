@@ -96,7 +96,7 @@ Contact.propType = {
 };
 const mapStateToProps = (state) => {
   return {
-    darkMode: state.darkMode,
+    darkMode: state.darkmodeReducer.darkMode,
     locationData: state.locationData.data,
   };
 };
