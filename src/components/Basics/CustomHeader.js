@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import { Segment, Container, Image, Menu, Button } from "semantic-ui-react";
 import Logo from "../../assets/icons/logo1.svg";
 import Logo2 from "../../assets/icons/logo2.svg";
+import { connect } from "react-redux";
+import { darkMode } from "../../actions";
+import { Checkbox } from "semantic-ui-react";
 
-const CustomHeader = ({ darkMode }) => {
+const CustomHeader = ({ darkMode, backgroundToggle }) => {
   return (
     <Segment
       as="header"
@@ -27,7 +30,7 @@ const CustomHeader = ({ darkMode }) => {
         <Menu
           as="nav"
           text
-          inverted={darkMode}
+          inverted={darkMode ? "#ffffff" : null}
           floated="right"
           size="large"
           stackable
@@ -59,6 +62,9 @@ const CustomHeader = ({ darkMode }) => {
               </span>
             </Button>
           </Menu.Item>
+          <Menu.Item>
+            <Checkbox toggle onClick={backgroundToggle} />
+          </Menu.Item>
         </Menu>
       </Container>
     </Segment>
@@ -69,4 +75,10 @@ CustomHeader.propTypes = {
   darkMode: PropTypes.bool,
 };
 
-export default CustomHeader;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    backgroundToggle: () => dispatch(darkMode()),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(CustomHeader);

@@ -446,7 +446,7 @@ Home.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    darkMode: state.darkMode,
+    darkMode: state.darkmodeReducer.darkMode,
     approachData: state.approachData.data,
     innovationData: state.innovationData.data,
     clientsData: state.clientsData.data,
