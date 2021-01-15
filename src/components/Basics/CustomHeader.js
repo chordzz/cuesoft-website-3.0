@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Segment, Container, Image, Menu, Button } from "semantic-ui-react";
-import Logo from "../../assets/icons/logo1.svg";
+import Logo from "../../assets/icons/LogoWeb.svg";
+// import Logo from "../../assets/icons/logo1.svg";
 import Logo2 from "../../assets/icons/logo2.svg";
 import { connect } from "react-redux";
 import { darkMode } from "../../actions";
@@ -34,12 +35,13 @@ const CustomHeader = ({ darkMode, backgroundToggle }) => {
           floated="right"
           size="large"
           stackable
+          id="menu-style"
         >
           <Menu.Item
             name="about"
             as={Link}
             to="/about"
-            size="small"
+            size="medium"
           ></Menu.Item>
           <Menu.Item name="services" as={Link} to="#" size="small"></Menu.Item>
           <Menu.Item name="products" as={Link} to="#" size="small"></Menu.Item>

@@ -58,3 +58,8 @@ main {
   border: 0;
   outline: none;
 }
+
+#menu-style {
+  padding-top: 25px;
+  margin: 0;
+}
