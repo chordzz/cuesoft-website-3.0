@@ -35,6 +35,7 @@ const CustomHeader = ({ darkMode, backgroundToggle }) => {
           floated="right"
           size="large"
           stackable
+          id="menu-style"
         >
           <Menu.Item
             name="about"
