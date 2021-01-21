@@ -64,7 +64,9 @@ const CustomHeader = ({ darkMode, backgroundToggle }) => {
             </Button>
           </Menu.Item>
           <Menu.Item>
-            <Checkbox toggle onClick={backgroundToggle} />
+            <Icon name="sun" color={darkMode ? "yellow" : null} />
+            <Checkbox toggle onChange={backgroundToggle} checked={darkMode} />
+            <Icon name="moon" style={{ paddingLeft: "5px" }} />
           </Menu.Item>
         </Menu>
       </Container>
