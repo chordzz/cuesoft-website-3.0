@@ -47,7 +47,7 @@ const Home = ({
         }}
       >
         <Container>
-          <Grid>
+          <Grid centered>
             <Grid.Row columns={2}>
               <Grid.Column mobile={16} computer={8}>
                 <h1

@@ -1,7 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { Segment, Container, Image, Menu, Button } from "semantic-ui-react";
+import {
+  Segment,
+  Container,
+  Image,
+  Menu,
+  Button,
+  Icon,
+} from "semantic-ui-react";
 import Logo from "../../assets/icons/logo1.svg";
 import Logo2 from "../../assets/icons/logo2.svg";
 import { connect } from "react-redux";
@@ -63,7 +70,9 @@ const CustomHeader = ({ darkMode, backgroundToggle }) => {
             </Button>
           </Menu.Item>
           <Menu.Item>
-            <Checkbox toggle onClick={backgroundToggle} />
+            <Icon name="sun" color={darkMode ? "yellow" : null} />
+            <Checkbox toggle onChange={backgroundToggle} checked={darkMode} />
+            <Icon name="moon" style={{ paddingLeft: "5px" }} />
           </Menu.Item>
         </Menu>
       </Container>
