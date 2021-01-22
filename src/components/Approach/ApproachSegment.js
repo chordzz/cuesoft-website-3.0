@@ -4,7 +4,7 @@ import { Header } from "semantic-ui-react";
 
 const ApproachSegment = ({ darkMode, single }) => {
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <Header
         as="h4"
         style={{ color: darkMode && "#ffffff", margin: "32px 0" }}
