@@ -63,3 +63,13 @@ main {
   padding-top: 25px;
   margin: 0;
 }
+
+.ui.toggle.checkbox input:focus:checked ~ .box:before,
+.ui.toggle.checkbox input:focus:checked ~ label:before {
+  background-color: #f4b400 !important;
+}
+
+.ui.toggle.checkbox .box:before,
+.ui.toggle.checkbox label:before {
+  background-color: lightgrey !important;
+}
