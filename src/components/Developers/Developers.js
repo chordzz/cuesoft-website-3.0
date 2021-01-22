@@ -7,7 +7,6 @@ function Developers({ darkMode }) {
       data-aos-offset="200"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
-      style={{ textAlign: "center" }}
     >
       <h2 style={{ color: darkMode ? "#F4B400" : "#db4437" }}>
         Developers and teams for your project
