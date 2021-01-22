@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const InnovationSegment = ({ data, darkMode }) => {
   return (
-    <div style={{ color: "#000", padding: "60px 30px", textAlign: "center" }}>
+    <div style={{ color: "#000", padding: "60px 30px" }}>
       <span style={{ color: darkMode ? "#ffffff" : null }}>{data.body}</span>
       <br />
       <br />

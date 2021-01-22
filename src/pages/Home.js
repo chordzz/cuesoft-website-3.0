@@ -51,7 +51,7 @@ const Home = ({
             <Grid.Row columns={2}>
               <Grid.Column mobile={16} computer={8}>
                 <h1
-                  style={{ paddingTop: "150px", textAlign: "center" }}
+                  style={{ paddingTop: "150px" }}
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
@@ -124,7 +124,6 @@ const Home = ({
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-duration="1000"
-          style={{ textAlign: "center" }}
         >
           <Header
             style={{
@@ -312,8 +311,6 @@ const Home = ({
             style={{
               color: !darkMode && "#db4437",
               paddingBottom: "32px",
-              display: "grid",
-              justifyContent: "center",
             }}
           >
             <h2 style={{ color: darkMode ? "#F4B400" : null }}>Our Services</h2>
@@ -356,7 +353,7 @@ const Home = ({
             }}
           >
             <Grid>
-              <Grid.Row style={{ justifyContent: "center" }}>
+              <Grid.Row>
                 <Grid.Column mobile={8} computer={4}>
                   <h2
                     style={{
@@ -412,14 +409,10 @@ const Home = ({
             }}
           >
             <Grid>
-              <Grid.Row style={{ justifyContent: "center" }}>
-                <Grid.Column
-                  mobile={8}
-                  computer={5}
-                  style={{ textAlign: "center" }}
-                >
+              <Grid.Row>
+                <Grid.Column mobile={8} computer={4}>
                   <h2 style={{ color: darkMode ? "#F4B400" : null }}>
-                    Clients We've Worked With
+                    Client We've Worked With
                   </h2>
                 </Grid.Column>
               </Grid.Row>
