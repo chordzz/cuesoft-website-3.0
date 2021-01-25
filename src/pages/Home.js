@@ -1,7 +1,7 @@
 import React from "react";
 import { Segment, Container, Grid, Image, Header } from "semantic-ui-react";
 import { ApproachSegment } from "../components/Approach";
-import { InnovationSegment } from "../components/Innovation";
+import { AboutSegment } from "../components/About";
 import {
   Developers,
   DevelopersImg,
@@ -43,69 +43,74 @@ const Home = ({
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
-          minHeight: "100vh",
+          padding: "50px 0",
+          minHeight: "calc(100vh - 85.38px)",
+          display: "flex",
+          flexFlow: "column wrap",
+          justifyContent: "center",
         }}
       >
         <Container>
-          <Grid centered>
-            <Grid.Row columns={2}>
-              <Grid.Column mobile={16} computer={8}>
-                <h1
-                  style={{ paddingTop: "150px" }}
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                >
-                  We build{" "}
-                  <span
-                    style={{
-                      color: darkMode ? "#F4B400" : "#db4437",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    Websites.{" "}
-                  </span>
-                  <br />
-                  We develop functional processes that improve products and
-                  services
-                </h1>
-                <br />
-                <Image
-                  src={darkMode ? Square2 : Square}
-                  alt="square"
-                  inline
-                  style={{ color: darkMode ? "#F4B400" : null }}
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-delay="1000"
-                  data-aos-easing="ease-in-out"
-                />
+          <Grid columns={2}>
+            <Grid.Column mobile={16} computer={8}>
+              <h1
+                style={{ fontSize: "46px" }}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                We build{" "}
                 <span
                   style={{
-                    paddingLeft: "3px",
-                    color: darkMode ? "#ffffff" : "#474646",
+                    color: darkMode ? "#F4B400" : "#db4437",
+                    textDecoration: "underline",
                   }}
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-delay="1000"
-                  data-aos-easing="ease-in-out"
                 >
-                  We help great companies simplify and grow their businesses by
-                  designing and building beautiful products
+                  Websites.{" "}
                 </span>
-              </Grid.Column>
-              <Grid.Column mobile={16} computer={8}>
-                <Image
-                  src={Space}
-                  alt="space"
-                  inline
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
-                  data-aos-delay="1000"
-                  data-aos-easing="ease-in-out"
-                />
-              </Grid.Column>
-            </Grid.Row>
+                <br />
+                We develop functional processes that improve products and
+                services
+              </h1>
+              <br />
+              <Image
+                src={darkMode ? Square2 : Square}
+                alt="square"
+                inline
+                style={{ color: darkMode ? "#F4B400" : null }}
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+                data-aos-easing="ease-in-out"
+              />
+              <span
+                style={{
+                  paddingLeft: 10,
+                  lineHeight: 1.5,
+                  fontSize: "17px",
+                  color: darkMode ? "#ffffff" : "#474646",
+                }}
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+                data-aos-easing="ease-in-out"
+              >
+                We help great companies simplify and grow their businesses by
+                designing and building beautiful products
+              </span>
+            </Grid.Column>
+            <Grid.Column mobile={16} computer={8}>
+              <Image
+                style={{ marginTop: "-100px" }}
+                src={Space}
+                alt="space"
+                inline
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
+                data-aos-easing="ease-in-out"
+              />
+            </Grid.Column>
           </Grid>
         </Container>
       </Segment>
@@ -116,8 +121,11 @@ const Home = ({
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
-          padding: "150px 0",
-          minHeight: "100vh",
+          padding: "50px 0",
+          minHeight: "calc(100vh - 85.38px)",
+          display: "flex",
+          flexFlow: "column wrap",
+          justifyContent: "center",
         }}
       >
         <Container
@@ -149,7 +157,7 @@ const Home = ({
                 approachData.length &&
                 approachData.map((single, i) => {
                   return (
-                    <Grid.Column computer={4} mobile={8}>
+                    <Grid.Column key={i} computer={4} mobile={8}>
                       <ApproachSegment
                         single={single}
                         key={i}
@@ -166,11 +174,14 @@ const Home = ({
         as="section"
         basic
         vertical
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
-          padding: "150px 0",
-          minHeight: "100vh",
+          padding: "50px 0",
+          minHeight: "calc(100vh - 85.38px)",
+          display: "flex",
+          flexFlow: "column wrap",
+          justifyContent: "center",
         }}
       >
         <Container
@@ -202,12 +213,8 @@ const Home = ({
                 innovationData.length &&
                 innovationData.map((data, i) => {
                   return (
-                    <Grid.Column mobile={16} computer={7}>
-                      <InnovationSegment
-                        key={i}
-                        data={data}
-                        darkMode={darkMode}
-                      />
+                    <Grid.Column key={i} mobile={16} computer={7}>
+                      <AboutSegment data={data} darkMode={darkMode} />
                     </Grid.Column>
                   );
                 })}
@@ -222,8 +229,11 @@ const Home = ({
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
-          padding: "150px 0",
-          minHeight: "100vh",
+          padding: "50px 0 100px 0",
+          minHeight: "calc(100vh - 85.38px)",
+          display: "flex",
+          flexFlow: "column wrap",
+          justifyContent: "center",
         }}
       >
         <Container>
@@ -231,29 +241,26 @@ const Home = ({
             src={AngleUp}
             size="mini"
             floated="right"
-            style={{ margin: "0 0 20px 0" }}
+            style={{ margin: "-70px 0 20px 0" }}
           />
           <Grid>
             <Grid.Row style={{ margin: "60px 0" }}>
-              <Grid.Column mobile={16} computer={7}>
+              <Grid.Column mobile={16} computer={11}>
                 <Developers darkMode={darkMode} />
               </Grid.Column>
-              <Grid.Column computer={4}></Grid.Column>
               <Grid.Column mobile={8} computer={5}>
                 <DevelopersImg />
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Container>
-        <Grid centered>
-          <Grid.Row>
-            <Grid.Column mobile={8} computer={4}>
-              <DevelopersImg2 />
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-        <Container>
-          <Image src={AngleDown} size="mini" floated="left" />
+
+          <Grid centered>
+            <Grid.Row>
+              <Grid.Column mobile={8} computer={5}>
+                <DevelopersImg2 />
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
         </Container>
       </Segment>
       <Segment
@@ -263,11 +270,20 @@ const Home = ({
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
-          padding: "150px 0",
-          minHeight: "100vh",
+          padding: "50px 0",
+          minHeight: "calc(100vh - 85.38px)",
+          display: "flex",
+          flexFlow: "column wrap",
+          justifyContent: "center",
         }}
       >
         <Container>
+          <Image
+            src={AngleDown}
+            style={{ margin: "-200px 0 0 0" }}
+            size="mini"
+            floated="left"
+          />
           <Header
             style={{
               paddingBottom: "32px",
@@ -302,8 +318,11 @@ const Home = ({
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
-          padding: "150px 0",
-          minHeight: "100vh",
+          padding: "50px 0",
+          minHeight: "calc(100vh - 85.38px)",
+          display: "flex",
+          flexFlow: "column wrap",
+          justifyContent: "center",
         }}
       >
         <Container>
@@ -334,11 +353,14 @@ const Home = ({
         as="section"
         basic
         vertical
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
-          padding: "150px 0",
-          minHeight: "100vh",
+          padding: "50px 0",
+          minHeight: "calc(100vh - 85.38px)",
+          display: "flex",
+          flexFlow: "column wrap",
+          justifyContent: "center",
         }}
       >
         <Container
@@ -358,7 +380,6 @@ const Home = ({
                   <h2
                     style={{
                       color: darkMode ? "#F4B400" : null,
-                      textAlign: "center",
                     }}
                   >
                     Here are some of our amazing products
@@ -373,12 +394,8 @@ const Home = ({
                 productsData.length &&
                 productsData.map((product, i) => {
                   return (
-                    <Grid.Column mobile={16} computer={5}>
-                      <ProductSegment
-                        key={i}
-                        product={product}
-                        darkMode={darkMode}
-                      />
+                    <Grid.Column key={i} mobile={16} computer={5}>
+                      <ProductSegment product={product} darkMode={darkMode} />
                     </Grid.Column>
                   );
                 })}
@@ -390,11 +407,14 @@ const Home = ({
         as="section"
         basic
         vertical
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
-          padding: "150px 0",
-          minHeight: "100vh",
+          padding: "50px 0",
+          minHeight: "calc(100vh - 85.38px)",
+          display: "flex",
+          flexFlow: "column wrap",
+          justifyContent: "center",
         }}
       >
         <Container
@@ -424,8 +444,8 @@ const Home = ({
                 clientsData.length &&
                 clientsData.map((client, i) => {
                   return (
-                    <Grid.Column mobile={16} computer={5}>
-                      <Client key={i} client={client} darkMode={darkMode} />
+                    <Grid.Column key={i} mobile={16} computer={5}>
+                      <Client client={client} darkMode={darkMode} />
                     </Grid.Column>
                   );
                 })}
@@ -446,11 +466,11 @@ Home.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    darkMode: state.darkmodeReducer.darkMode,
-    approachData: state.approachData.data,
-    innovationData: state.innovationData.data,
-    clientsData: state.clientsData.data,
-    productsData: state.productsData.data,
+    darkMode: state.mode.darkMode,
+    approachData: state.approach.data,
+    innovationData: state.about.data,
+    clientsData: state.clients.data,
+    productsData: state.products.data,
   };
 };
 

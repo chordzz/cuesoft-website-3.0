@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+// import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import {
   Segment,
@@ -8,21 +9,24 @@ import {
   Menu,
   Button,
   Icon,
+  // Checkbox
 } from "semantic-ui-react";
 import Logo from "../../assets/icons/LogoWeb.svg";
 import Logo2 from "../../assets/icons/LogoWebDark.svg";
-import { connect } from "react-redux";
-import { darkMode } from "../../actions";
-import { Checkbox } from "semantic-ui-react";
+// import { changeMode } from "../../actions";
 
-const CustomHeader = ({ darkMode, backgroundToggle }) => {
+const CustomHeader = ({ darkMode, toggleMode }) => {
   return (
     <Segment
       as="header"
       clearing
       vertical
       inverted={darkMode}
-      style={{ backgroundColor: darkMode ? "transparent" : "#ffffff" }}
+      style={{
+        backgroundColor: darkMode ? "transparent" : "#ffffff",
+        paddingTop: 0,
+        paddingBottom: 0,
+      }}
     >
       <Container>
         <Link to="/">
@@ -37,7 +41,7 @@ const CustomHeader = ({ darkMode, backgroundToggle }) => {
         <Menu
           as="nav"
           text
-          inverted={darkMode ? "#ffffff" : null}
+          inverted={darkMode}
           floated="right"
           size="large"
           stackable
@@ -72,7 +76,7 @@ const CustomHeader = ({ darkMode, backgroundToggle }) => {
           </Menu.Item>
           <Menu.Item>
             <Icon name="sun" color={darkMode ? "yellow" : null} />
-            <Checkbox toggle onChange={backgroundToggle} checked={darkMode} />
+            {/* <Checkbox toggle onChange={toggleMode} checked={darkMode} /> */}
             <Icon name="moon" style={{ paddingLeft: "5px" }} />
           </Menu.Item>
         </Menu>
@@ -85,10 +89,10 @@ CustomHeader.propTypes = {
   darkMode: PropTypes.bool,
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    backgroundToggle: () => dispatch(darkMode()),
-  };
-};
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     toggleMode: () => dispatch(changeMode())
+//   };
+// };
 
-export default connect(null, mapDispatchToProps)(CustomHeader);
+export default CustomHeader;

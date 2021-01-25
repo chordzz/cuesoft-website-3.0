@@ -5,16 +5,16 @@ import PropTypes from "prop-types";
 function ProductSegment({ product, darkMode }) {
   return (
     <div style={{ marginBottom: "30px" }}>
-      <Image src={product.img} />
+      <Image src={product.banner} />
       <h4
         style={{ color: darkMode ? "#ffffff" : "#000000", textAlign: "center" }}
       >
-        {product.brand}
+        {product.name}
       </h4>
       <p
         style={{ color: darkMode ? "#ffffff" : "#000000", textAlign: "center" }}
       >
-        {product.desc}
+        {product.description}
       </p>
     </div>
   );

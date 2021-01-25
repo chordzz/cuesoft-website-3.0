@@ -9,7 +9,7 @@ import Php2 from "../../assets/icons/php2.svg";
 
 function BackendSegment({ darkMode }) {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div>
       <h4>Backend Development </h4>
       <List>
         <List.Item style={{ paddingTop: "30px" }}>

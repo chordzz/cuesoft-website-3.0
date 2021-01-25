@@ -10,49 +10,49 @@ import Face8 from "../assets/icons/face8.svg";
 const initialState = {
   data: [
     {
-      img: Face1,
+      photo: Face1,
       name: "Ibukun Dairo",
       title: "Founder and CEO",
     },
     {
-      img: Face2,
+      photo: Face2,
       name: "Ibukun Dairo",
       title: "Developer",
     },
     {
-      img: Face3,
+      photo: Face3,
       name: "Ibukun Dairo",
       title: "Graphic Designer",
     },
     {
-      img: Face4,
+      photo: Face4,
       name: "Ibukun Dairo",
       title: "Project Manager",
     },
     {
-      img: Face5,
+      photo: Face5,
       name: "Ibukun Dairo",
       title: "Content Writer",
     },
     {
-      img: Face6,
+      photo: Face6,
       name: "Ibukun Dairo",
       title: "UI/UX Designer",
     },
     {
-      img: Face7,
+      photo: Face7,
       name: "Ibukun Dairo",
       title: "Motion Designer",
     },
     {
-      img: Face8,
+      photo: Face8,
       name: "Ibukun Dairo",
       title: "Flutter Developer",
     },
   ],
 };
 
-export default function teamMembers(state = initialState, action) {
+export default function team(state = initialState, action) {
   switch (action.type) {
     default:
       return state;

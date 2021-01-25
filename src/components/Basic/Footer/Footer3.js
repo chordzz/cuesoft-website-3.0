@@ -15,7 +15,7 @@ function Footer3({ darkMode }) {
         Community
       </p>
       <List>
-        <List.Item as={Link}>
+        <List.Item as={Link} to="#">
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
@@ -27,7 +27,7 @@ function Footer3({ darkMode }) {
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link}>
+        <List.Item as={Link} to="#">
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
@@ -39,7 +39,7 @@ function Footer3({ darkMode }) {
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link}>
+        <List.Item as={Link} to="#">
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
@@ -51,7 +51,7 @@ function Footer3({ darkMode }) {
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link}>
+        <List.Item as={Link} to="#">
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",

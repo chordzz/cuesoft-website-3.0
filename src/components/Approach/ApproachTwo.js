@@ -22,7 +22,7 @@ function ApproachTwo({ darkMode, single }) {
 }
 ApproachTwo.propTypes = {
   darkMode: PropTypes.bool,
-  approachTwo: PropTypes.object.isRequired,
+  approachTwo: PropTypes.object,
 };
 
 export default ApproachTwo;

@@ -3,13 +3,16 @@ import React from "react";
 function Developers({ darkMode }) {
   return (
     <div
+      style={{ maxWidth: 500 }}
       data-aos="fade-right"
       data-aos-offset="200"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
     >
       <h2 style={{ color: darkMode ? "#F4B400" : "#db4437" }}>
-        Developers and teams for your project
+        Developers and teams
+        <br />
+        for your project
       </h2>
       <p style={{ color: darkMode ? "white" : null }}>
         We build effective, scalable development teams fitting your project's

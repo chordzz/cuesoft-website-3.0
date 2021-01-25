@@ -27,13 +27,13 @@ header {
 }
 
 main {
-  padding-top: 76.56px;
-  min-height: calc(100vh - 76.56px - 132px);
+  padding-top: 85.38px;
+  min-height: calc(100vh - 85.38px);
 }
 
 .web {
   width: 100%;
-  height: 15rem;
+  min-height: 15rem;
   background-color: #e8e8e8;
   padding: 0 30px;
   margin: 30px 10px;
@@ -41,14 +41,14 @@ main {
 .mobile-app {
   padding: 0 20px;
   width: 100%;
-  height: 15rem;
+  min-height: 15rem;
   margin: 30px 10px;
   background-color: #e8e8e8;
 }
 .enterprise {
   padding: 0 30px;
   width: 100%;
-  height: 15rem;
+  min-height: 15rem;
   margin: 30px 10px;
   background-color: #db4437;
 }

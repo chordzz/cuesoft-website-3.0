@@ -22,8 +22,8 @@ function LocationSegment({ data, darkMode }) {
 }
 
 LocationSegment.propTypes = {
-  locationData: PropTypes.object.isRequired,
-  darkMode: PropTypes.object.isRequired,
+  locationData: PropTypes.object,
+  darkMode: PropTypes.bool,
 };
 
 export default LocationSegment;

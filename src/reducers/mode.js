@@ -1,12 +1,12 @@
-import { DARK_MODE } from "../actions";
+import { CHANGE_MODE } from "../constants";
 
 const initialState = {
   darkMode: false,
 };
 
-const darkmodeReducer = (state = initialState, action) => {
+export default function mode(state = initialState, action) {
   switch (action.type) {
-    case DARK_MODE:
+    case CHANGE_MODE:
       return {
         ...state,
         darkMode: !state.darkMode,
@@ -14,6 +14,4 @@ const darkmodeReducer = (state = initialState, action) => {
     default:
       return state;
   }
-};
-
-export default darkmodeReducer;
+}

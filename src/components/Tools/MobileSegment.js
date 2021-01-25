@@ -9,7 +9,7 @@ import Android2 from "../../assets/icons/android2.svg";
 
 function MobileSegment({ darkMode }) {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div>
       <h4>Mobile Development </h4>
       <List>
         <List.Item style={{ paddingTop: "30px" }}>

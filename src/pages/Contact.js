@@ -12,7 +12,7 @@ function Contact({ darkMode, locationData }) {
         as="section"
         vertical
         basic
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
@@ -50,7 +50,7 @@ function Contact({ darkMode, locationData }) {
         as="section"
         vertical
         basic
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
@@ -74,12 +74,8 @@ function Contact({ darkMode, locationData }) {
                 locationData.length &&
                 locationData.map((data, i) => {
                   return (
-                    <Grid.Column computer={4} mobile={16}>
-                      <LocationSegment
-                        key={i}
-                        data={data}
-                        darkMode={darkMode}
-                      />
+                    <Grid.Column key={i} computer={4} mobile={16}>
+                      <LocationSegment data={data} darkMode={darkMode} />
                     </Grid.Column>
                   );
                 })}
@@ -94,10 +90,11 @@ function Contact({ darkMode, locationData }) {
 Contact.propType = {
   locationData: PropTypes.array.isRequired,
 };
+
 const mapStateToProps = (state) => {
   return {
-    darkMode: state.darkmodeReducer.darkMode,
-    locationData: state.locationData.data,
+    darkMode: state.mode.darkMode,
+    locationData: state.contact.data,
   };
 };
 

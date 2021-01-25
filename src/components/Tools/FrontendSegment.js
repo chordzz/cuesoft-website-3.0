@@ -9,7 +9,7 @@ import Angular2 from "../../assets/icons/angular2.svg";
 
 function FrontendSegment({ darkMode }) {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div>
       <h4>Frontend Development </h4>
       <List>
         <List.Item style={{ paddingTop: "30px" }}>

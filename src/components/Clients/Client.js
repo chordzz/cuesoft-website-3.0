@@ -6,14 +6,14 @@ function Client({ client, darkMode }) {
   return (
     <div>
       <Image
-        src={darkMode ? client.img2 : client.img1}
+        src={darkMode ? client.darkLogo : client.lightLogo}
         alt="logo"
         style={{ height: "50px", width: "50px" }}
       />
       <p
         style={{ color: darkMode ? "#ffffff" : "#474646", paddingTop: "32px" }}
       >
-        {client.info}
+        {client.body}
       </p>
     </div>
   );
@@ -21,7 +21,7 @@ function Client({ client, darkMode }) {
 
 Client.propTypes = {
   darkMode: PropTypes.bool,
-  clientsData: PropTypes.object.isRequired,
+  clientsData: PropTypes.object,
 };
 
 export default Client;

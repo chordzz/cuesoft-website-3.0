@@ -24,7 +24,7 @@ const ApproachSegment = ({ darkMode, single }) => {
 };
 ApproachSegment.propTypes = {
   darkMode: PropTypes.bool,
-  approachData: PropTypes.object.isRequired,
+  approachData: PropTypes.object,
 };
 
 export default ApproachSegment;

@@ -1,23 +1,20 @@
 import { combineReducers } from "redux";
-import clientsData from "./clientsData";
-import innovationData from "./innovationData";
-import productsData from "./productsData";
-import approachTwo from "./approach2Data";
-import approachData from "./approach";
-import teamMembers from "./teamMembers";
-import locationData from "./locationData";
-import darkmodeReducer from "./darkMode";
-
-import { reducer as formReducer } from "redux-form";
+import { reducer as form } from "redux-form";
+import approach from "./approach";
+import about from "./about";
+import team from "./team";
+import products from "./products";
+import clients from "./clients";
+import contact from "./contact";
+import mode from "./mode";
 
 export default combineReducers({
-  darkmodeReducer,
-  form: formReducer,
-  approachData,
-  clientsData,
-  innovationData,
-  productsData,
-  approachTwo,
-  teamMembers,
-  locationData,
+  form,
+  approach,
+  about,
+  team,
+  products,
+  clients,
+  contact,
+  mode,
 });

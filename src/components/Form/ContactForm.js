@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Button } from "semantic-ui-react";
 import PropTypes from "prop-types";
 import { Field, reduxForm } from "redux-form";
-import { RenderField } from "../Basics";
+import { RenderField } from "../Basic";
 
 function ContactForm({ darkMode }) {
   return (

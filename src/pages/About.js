@@ -17,7 +17,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         as="section"
         vertical
         basic
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "200px 0",
@@ -72,7 +72,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         as="section"
         basic
         vertical
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
@@ -121,12 +121,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                 approachTwo.length &&
                 approachTwo.map((single, i) => {
                   return (
-                    <Grid.Column computer={8} mobile={16}>
-                      <ApproachTwo
-                        key={i}
-                        single={single}
-                        darkMode={darkMode}
-                      />
+                    <Grid.Column key={i} computer={8} mobile={16}>
+                      <ApproachTwo single={single} darkMode={darkMode} />
                     </Grid.Column>
                   );
                 })}
@@ -138,7 +134,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         as="section"
         basic
         vertical
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "60px 0",
@@ -181,8 +177,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                 teamMembers.length &&
                 teamMembers.map((member, i) => {
                   return (
-                    <Grid.Column computer={5} mobile={8}>
-                      <Members member={member} key={i} darkMode={darkMode} />
+                    <Grid.Column key={i} computer={5} mobile={8}>
+                      <Members member={member} darkMode={darkMode} />
                     </Grid.Column>
                   );
                 })}
@@ -194,7 +190,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         as="section"
         basic
         vertical
-        inverted={{ darkMode }}
+        inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "100px 0",
@@ -243,11 +239,12 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                 clientsData.map((client, i) => {
                   return (
                     <Grid.Column
+                      key={i}
                       mobile={16}
                       computer={5}
                       style={{ padding: "30px 10px" }}
                     >
-                      <Client key={i} client={client} darkMode={darkMode} />
+                      <Client client={client} darkMode={darkMode} />
                     </Grid.Column>
                   );
                 })}
@@ -266,10 +263,10 @@ About.prototypes = {
 };
 const mapStateToProps = (state) => {
   return {
-    darkMode: state.darkmodeReducer.darkMode,
-    approachTwo: state.approachTwo.data,
-    teamMembers: state.teamMembers.data,
-    clientsData: state.clientsData.data,
+    darkMode: state.mode.darkMode,
+    approachTwo: state.approach.data,
+    teamMembers: state.team.data,
+    clientsData: state.clients.data,
   };
 };
 

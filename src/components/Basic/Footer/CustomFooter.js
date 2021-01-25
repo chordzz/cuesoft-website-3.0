@@ -13,7 +13,7 @@ function CustomFooter({ darkMode }) {
       as="section"
       basic
       vertical
-      inverted={{ darkMode }}
+      inverted={darkMode}
       style={{
         backgroundColor: darkMode ? "#100403" : "#ffffff",
         padding: "150px 0 0 0",

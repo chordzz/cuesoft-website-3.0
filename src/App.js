@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { BrowserRouter as Router } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 import routes from "./routes";
-import { CustomHeader, CustomFooter } from "./components/Basics";
+import { CustomHeader, CustomFooter } from "./components/Basic";
 
 function App({ darkMode }) {
   useEffect(() => {
@@ -28,7 +28,7 @@ App.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    darkMode: state.darkmodeReducer.darkMode,
+    darkMode: state.mode.darkMode,
   };
 };
 

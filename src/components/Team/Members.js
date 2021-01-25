@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function Members({ member, darkMode }) {
   return (
     <div>
-      <Image src={member.img} centered />
+      <Image src={member.photo} centered />
       <h4
         style={{
           color: darkMode ? "#ffffff" : "#474646",
@@ -27,7 +27,7 @@ function Members({ member, darkMode }) {
 }
 
 Members.propTypes = {
-  teamMembers: PropTypes.object.isRequired,
+  teamMembers: PropTypes.object,
   darkMode: PropTypes.bool,
 };
 
