@@ -248,15 +248,11 @@ const Home = ({
               <Grid.Column mobile={16} computer={11}>
                 <Developers darkMode={darkMode} />
               </Grid.Column>
-              <Grid.Column mobile={8} computer={5}>
+              <Grid.Column mobile={6} computer={5}>
                 <DevelopersImg />
               </Grid.Column>
-            </Grid.Row>
-          </Grid>
-
-          <Grid centered>
-            <Grid.Row>
-              <Grid.Column mobile={8} computer={5}>
+              <Grid.Column mobile={1} computer={8}></Grid.Column>
+              <Grid.Column mobile={6} computer={5}>
                 <DevelopersImg2 />
               </Grid.Column>
             </Grid.Row>
@@ -296,7 +292,7 @@ const Home = ({
               technical skills
             </h3>
           </Header>
-          <Grid centered>
+          <Grid>
             <Grid.Row>
               <Grid.Column mobile={16} computer={5}>
                 <FrontendSegment darkMode={darkMode} />
@@ -334,7 +330,7 @@ const Home = ({
           >
             <h2 style={{ color: darkMode ? "#F4B400" : null }}>Our Services</h2>
           </Header>
-          <Grid centered>
+          <Grid>
             <Grid.Row>
               <Grid.Column mobile={16} computer={5}>
                 <WebSegment darkMode={darkMode} />
@@ -388,7 +384,7 @@ const Home = ({
               </Grid.Row>
             </Grid>
           </Header>
-          <Grid centered>
+          <Grid>
             <Grid.Row>
               {productsData &&
                 productsData.length &&

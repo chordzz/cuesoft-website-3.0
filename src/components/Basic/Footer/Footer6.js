@@ -3,7 +3,7 @@ import React from "react";
 function Footer6({ darkMode }) {
   const year = new Date().getFullYear();
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px 0" }}>
       <p style={{ color: darkMode ? "#ffffff" : "#000000" }}>
         &copy; Cuesoft {year}. All rights reserved.
       </p>

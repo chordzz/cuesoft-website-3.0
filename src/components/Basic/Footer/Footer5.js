@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer5({ darkMode }) {
   return (
-    <div style={{ paddingBottom: "30px", textAlign: "center" }}>
+    <div style={{ paddingBottom: "30px" }}>
       <p
         style={{
           color: darkMode ? "#ffffff" : "#000000",

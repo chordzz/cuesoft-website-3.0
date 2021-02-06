@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { connect } from "react-redux";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import {
   Segment,
@@ -9,11 +9,11 @@ import {
   Menu,
   Button,
   Icon,
-  // Checkbox
+  Checkbox,
 } from "semantic-ui-react";
 import Logo from "../../assets/icons/LogoWeb.svg";
 import Logo2 from "../../assets/icons/LogoWebDark.svg";
-// import { changeMode } from "../../actions";
+import { changeMode } from "../../actions";
 
 const CustomHeader = ({ darkMode, toggleMode }) => {
   return (
@@ -53,8 +53,6 @@ const CustomHeader = ({ darkMode, toggleMode }) => {
             to="/about"
             size="medium"
           ></Menu.Item>
-          <Menu.Item name="services" as={Link} to="#" size="small"></Menu.Item>
-          <Menu.Item name="products" as={Link} to="#" size="small"></Menu.Item>
           <Menu.Item
             name="contact"
             as={Link}
@@ -76,7 +74,7 @@ const CustomHeader = ({ darkMode, toggleMode }) => {
           </Menu.Item>
           <Menu.Item>
             <Icon name="sun" color={darkMode ? "yellow" : null} />
-            {/* <Checkbox toggle onChange={toggleMode} checked={darkMode} /> */}
+            <Checkbox toggle onChange={toggleMode} checked={darkMode} />
             <Icon name="moon" style={{ paddingLeft: "5px" }} />
           </Menu.Item>
         </Menu>
@@ -89,10 +87,10 @@ CustomHeader.propTypes = {
   darkMode: PropTypes.bool,
 };
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     toggleMode: () => dispatch(changeMode())
-//   };
-// };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggleMode: () => dispatch(changeMode()),
+  };
+};
 
-export default CustomHeader;
+export default connect(null, mapDispatchToProps)(CustomHeader);
