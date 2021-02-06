@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,600&display=swap"); */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body,
+/* body,
 h1,
 h2,
 h3,
@@ -17,6 +17,26 @@ input,
 textarea,
 button {
   font-family: "Montserrat", sans-serif !important;
+  font-family: 'Archivo', sans-serif;
+} */
+
+body {
+  font-family: "Archivo", sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 24px;
 }
 
 header {
@@ -62,6 +82,11 @@ main {
 #menu-style {
   padding-top: 25px;
   margin: 0;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 18.5px;
+  color: #201f1f;
 }
 
 .ui.toggle.checkbox input:focus:checked ~ .box:before,

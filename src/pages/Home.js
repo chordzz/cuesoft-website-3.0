@@ -137,9 +137,18 @@ const Home = ({
             style={{
               color: !darkMode && "#474646",
               marginBottom: "32px",
+              fontWeight: "600",
             }}
           >
-            <p style={{ color: darkMode ? "#ffffff" : null }}>Our approach</p>
+            <p
+              style={{
+                color: darkMode ? "#ffffff" : null,
+                fontSize: "17px",
+                lineHeight: "24px",
+              }}
+            >
+              Our approach
+            </p>
           </Header>
           <Header
             style={{
@@ -290,10 +299,18 @@ const Home = ({
               textAlign: "center",
             }}
           >
-            <h3 style={{ color: darkMode ? "white" : null }}>
+            <h3
+              style={{
+                color: darkMode ? "white" : null,
+                fontWeight: "normal",
+                fontSize: "32px",
+                lineHeight: "38px",
+                textAlign: "left",
+              }}
+            >
               We make use of awesome technologies to build advanced enterprise
               systems, challenging and innovative produts. We are proud of our
-              technical skills
+              technical skills.
             </h3>
           </Header>
           <Grid centered>
@@ -380,6 +397,8 @@ const Home = ({
                   <h2
                     style={{
                       color: darkMode ? "#F4B400" : null,
+                      width: "430px",
+                      height: "92px",
                     }}
                   >
                     Here are some of our amazing products
@@ -431,8 +450,14 @@ const Home = ({
             <Grid>
               <Grid.Row>
                 <Grid.Column mobile={8} computer={4}>
-                  <h2 style={{ color: darkMode ? "#F4B400" : null }}>
-                    Client We've Worked With
+                  <h2
+                    style={{
+                      color: darkMode ? "#F4B400" : null,
+                      width: "430px",
+                      height: "92px",
+                    }}
+                  >
+                    Clients We've Worked With.
                   </h2>
                 </Grid.Column>
               </Grid.Row>

@@ -11,7 +11,7 @@ function Technical({ darkMode }) {
     >
       <p>
         We are a custom and proprietary software development company that builds
-        innovation and secure digital solutions for companies, enterprises and
+        innovation and secures digital solutions for companies, enterprises and
         startups. Our team of consultants, UX experts and software developers
         converts ideas into reality. Being a leading software development
         company, we understand that every enterprise has a different software
@@ -27,7 +27,7 @@ function Technical({ darkMode }) {
       <p>
         Our drive for exceptional service delivery is built on the belief that
         we are nothing if you are not satisfied with us. Our passion for helping
-        you achieve your goals, no matter what, is what truly differentiate us
+        you achieve your goals, no matter what, is what truly differentiates us
         from our competitors.
       </p>
     </div>
