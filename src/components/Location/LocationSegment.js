@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function LocationSegment({ data, darkMode }) {
   return (
     <main>
-      <Image src={darkMode ? data.img2 : data.img1} />
+      <Image src={darkMode ? data.darkImage : data.lightImg} />
       <h4 style={{ color: darkMode ? "#F4B400" : "#db4437" }}>{data.title}</h4>
       <p
         style={{
@@ -15,6 +15,7 @@ function LocationSegment({ data, darkMode }) {
       >
         {data.body}
       </p>
+      <br />
       <p style={{ color: darkMode ? "#ffffff" : "#474646" }}>{data.body2}</p>
       <p style={{ color: darkMode ? "#ffffff" : "#474646" }}>{data.body3}</p>
     </main>
