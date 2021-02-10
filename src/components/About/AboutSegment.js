@@ -8,7 +8,15 @@ const AboutSegment = ({ data, darkMode }) => {
       <span style={{ color: darkMode ? "#ffffff" : null }}>{data.body}</span>
       <br />
       <br />
-      <Link to="#" style={{ color: darkMode ? "#F4B400" : "#db4437" }}>
+      <Link
+        to="#"
+        style={{
+          color: darkMode ? "#F4B400" : "#db4437",
+          fontWeight: "600",
+          fontSize: "17px",
+          lineHeight: "29px",
+        }}
+      >
         {data.info}
       </Link>
     </div>

@@ -143,11 +143,13 @@ const Home = ({
             <p
               style={{
                 color: darkMode ? "#ffffff" : null,
+                fontFamily: "Archivo",
                 fontSize: "17px",
                 lineHeight: "24px",
+                fontWeight: 600,
               }}
             >
-              Our approach
+              Our Approach
             </p>
           </Header>
           <Header
@@ -313,7 +315,7 @@ const Home = ({
               technical skills.
             </h3>
           </Header>
-          <Grid centered>
+          <Grid>
             <Grid.Row>
               <Grid.Column mobile={16} computer={5}>
                 <FrontendSegment darkMode={darkMode} />
@@ -342,16 +344,20 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="alignLeft">
           <Header
             style={{
               color: !darkMode && "#db4437",
               paddingBottom: "32px",
             }}
           >
-            <h2 style={{ color: darkMode ? "#F4B400" : null }}>Our Services</h2>
+            <h2
+              style={{ color: darkMode ? "#F4B400" : null, marginLeft: "10px" }}
+            >
+              Our Services
+            </h2>
           </Header>
-          <Grid centered>
+          <Grid>
             <Grid.Row>
               <Grid.Column mobile={16} computer={5}>
                 <WebSegment darkMode={darkMode} />
@@ -407,7 +413,7 @@ const Home = ({
               </Grid.Row>
             </Grid>
           </Header>
-          <Grid centered>
+          <Grid>
             <Grid.Row>
               {productsData &&
                 productsData.length &&

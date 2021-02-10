@@ -9,6 +9,7 @@ function WebSegment({ darkMode }) {
       data-aos-duration="1000"
       data-aos-offset="200"
       data-aos-easing="ease-in-out"
+      // style = {{padding:'10px 20px'}}
     >
       <h3
         style={{

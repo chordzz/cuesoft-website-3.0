@@ -10,6 +10,10 @@ import { PersistGate } from "redux-persist/integration/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import "./assets/fonts/aileron/Aileron-Light.otf";
+// import './assets/fonts/aileron/Aileron-Regular.otf';
+// import './assets/fonts/aileron/Aileron-Bold.otf';
+
 AOS.init();
 
 ReactDOM.render(
