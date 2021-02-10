@@ -96,7 +96,7 @@ function ContactForm({ darkMode }) {
         type="submit"
         size="large"
         color={darkMode ? "yellow" : "red"}
-        style={{ borderRadius: "30px", marginRight: "20px" }}
+        style={{ borderRadius: "30px", marginRight: "20px", width: "150px" }}
         floated="right"
       >
         <span style={{ color: darkMode ? "#000000" : "#ffffff" }}>Send</span>

@@ -20,14 +20,14 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
-          padding: "200px 0",
+          padding: "100px 0",
           minHeight: "100vh",
         }}
       >
         <Container>
           <Grid>
             <Grid.Row>
-              <Grid.Column computer={8} mobile={16}>
+              <Grid.Column computer={13} mobile={16}>
                 <Mission darkMode={darkMode} />
               </Grid.Column>
             </Grid.Row>
@@ -95,6 +95,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               style={{
                 color: darkMode ? "#ffffff" : null,
                 textAlign: "center",
+                fontWeight: "600",
               }}
             >
               Our approach
@@ -211,7 +212,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             <Grid>
               <Grid.Row>
                 <Grid.Column
-                  computer={9}
+                  computer={12}
                   mobile={16}
                   style={{
                     display: "flex",
@@ -219,13 +220,18 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                     justifyContent: "space-evenly",
                   }}
                 >
-                  <h2 style={{ color: darkMode ? "#F4B400" : null }}>
+                  <h2
+                    style={{
+                      color: darkMode ? "#F4B400" : null,
+                      marginRight: "30px",
+                    }}
+                  >
                     We've worked with lovely clients and all we did was put a
                     smile on their face
                   </h2>
                   <Image
                     src={darkMode ? Smiley2 : Smiley}
-                    size="mini"
+                    size="small"
                     centered
                   />
                 </Grid.Column>

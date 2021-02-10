@@ -28,8 +28,14 @@ function Contact({ darkMode, locationData }) {
           >
             <Grid>
               <Grid.Row>
-                <Grid.Column computer={7} mobile={16}>
-                  <h1 style={{ color: darkMode ? "#ffffff" : null }}>
+                <Grid.Column computer={12} mobile={16}>
+                  <h1
+                    style={{
+                      color: darkMode ? "#ffffff" : null,
+                      fontWeight: "600",
+                      fontSize: "50px",
+                    }}
+                  >
                     Interested in our services or need advice? Get in touch and
                     we'll be glad to help.
                   </h1>

@@ -12,7 +12,7 @@ function ApproachTwo({ darkMode, single }) {
         style={{
           color: darkMode ? "#ffffff" : "#000000",
           paddingBottom: "30px",
-          paddingRight: "30px",
+          paddingRight: "120px",
         }}
       >
         {single.body}

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function Members({ member, darkMode }) {
   return (
     <div>
-      <Image src={member.photo} centered />
+      <Image src={member.photo} centered style={{ marginTop: "70px" }} />
       <h4
         style={{
           color: darkMode ? "#ffffff" : "#474646",
@@ -18,6 +18,7 @@ function Members({ member, darkMode }) {
         style={{
           color: darkMode ? "#ffffff" : "#474646",
           textAlign: "center",
+          marginBottom: "120px",
         }}
       >
         {member.title}

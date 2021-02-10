@@ -4,8 +4,11 @@ import PropTypes from "prop-types";
 
 function LocationSegment({ data, darkMode }) {
   return (
-    <main>
-      <Image src={darkMode ? data.img2 : data.img1} />
+    <main style={{ paddingTop: "30px", textAlign: "center" }}>
+      <Image
+        src={darkMode ? data.darkImage : data.lightImg}
+        style={{ marginLeft: "90px" }}
+      />
       <h4 style={{ color: darkMode ? "#F4B400" : "#db4437" }}>{data.title}</h4>
       <p
         style={{

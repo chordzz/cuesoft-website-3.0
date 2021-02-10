@@ -7,7 +7,7 @@ function Mission({ darkMode }) {
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
     >
-      <h1>
+      <h1 style={{ fontWeight: "600", fontSize: "50px" }}>
         Our mission is to help enterprises accelerate adoption of new
         technologies, untangle complex issues that always emerge during digital
         evolution, and orchestrate ongoing innovation.
