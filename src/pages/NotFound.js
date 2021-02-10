@@ -10,21 +10,17 @@ function NotFound({ darkMode }) {
       className="err"
       style={{
         backgroundColor: darkMode ? "#210806" : null,
+        padding: "150px 0",
+        textAlign: "center",
+        minHeight: "calc(100vh - 85.38px)",
       }}
     >
-      <Image src={Error404} alt="404 image" centered className="err-img" />
-      <h1
-        style={{
-          fontSize: "15em",
-          fontWeight: "600",
-          color: darkMode ? "#ffffff" : "#000000",
-        }}
-      >
-        404
-      </h1>
+      <Image src={Error404} alt="404 image" centered />
       <h2
         className="err-msg"
-        style={{ color: darkMode ? "#ffffff" : "#000000" }}
+        style={{
+          color: darkMode ? "#ffffff" : "#000000",
+        }}
       >
         Ooops! looks like <br /> you got lost
       </h2>

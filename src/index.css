@@ -80,9 +80,9 @@ main {
 .dev-img {
   position: relative;
   top: 0;
-  margin-left: 30px;
+  right: -3rem;
 }
-.pattern-1 {
+/* .pattern-1 {
   position: absolute;
   top: 30px;
   left: 100px;
@@ -91,19 +91,24 @@ main {
   position: absolute;
   top: -150px;
   left: 50px;
+} */
+.boxes {
+  position: relative;
+  top: 0;
+  right: -3rem;
 }
 .img-1 {
-  position: relative;
-  top: -340px;
+  position: absolute;
+  top: -200px;
   left: -30px;
   height: 150px;
   width: 200px;
 }
 .dev-img-2 {
   position: relative;
-  top: -100px;
+  top: 50px;
 }
-.pattern-2 {
+/* .pattern-2 {
   position: absolute;
   top: 0;
 }
@@ -111,29 +116,202 @@ main {
   position: absolute;
   top: -180px;
   left: -50px;
+} */
+.boxes-2 {
+  position: relative;
 }
 .img-2 {
-  position: relative;
-  top: -370px;
-  left: -120px;
+  position: absolute;
+  top: -200px;
+  left: -70px;
   height: 150px;
   width: 200px;
 }
-.err {
-  padding: 70px 0;
+.navbar {
+  background: transparent;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-img {
+  cursor: pointer;
+  margin-left: 7.7rem;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
   text-align: center;
-  position: relative;
-  min-height: calc(100vh - 85.38px);
+  width: 50vw;
+  justify-content: end;
+  margin-right: 7.7rem;
 }
-.err h1 {
-  position: relative;
+.nav-menu-dark {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 50vw;
+  justify-content: end;
+  margin-right: 7.7rem;
 }
-.err-img {
-  top: 100px;
-  left: 250px;
-  position: absolute;
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 100px;
 }
-.err-msg {
+.nav-link-1 {
+  color: grey;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.nav-link-2 {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.nav-link-1:hover {
+  color: grey;
+}
+.nav-link-2:hover {
+  color: #ffffff;
+}
+.check {
   position: relative;
-  top: -50px;
+  top: 0.3rem;
+}
+.menu-icon-1 {
+  visibility: hidden;
+}
+.menu-icon-2 {
+  visibility: hidden;
+}
+.brand {
+  margin-left: -0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon-1 {
+    visibility: visible;
+    padding-right: 3rem;
+    cursor: pointer;
+  }
+  .menu-icon-2 {
+    visibility: visible;
+    padding-right: 3rem;
+    cursor: pointer;
+    color: #ffffff !important;
+  }
+  .navbar {
+    position: relative;
+  }
+  .brand-img {
+    margin-left: 1rem;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  .nav-menu.active {
+    background: #ffffff;
+    left: 0;
+    width: 100vw;
+    opacity: 1;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  .nav-menu-dark {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  .nav-menu-dark.active {
+    background: #100403;
+    left: 0;
+    width: 100vw;
+    opacity: 1;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  .nav-link-1 {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-btn {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    display: table;
+  }
+  .nav-icon {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    padding: 1rem;
+  }
+  .check {
+    position: absolute;
+    top: 0.3rem;
+  }
+  .nav-link-2 {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+  .dev-img {
+    position: relative;
+    top: 1rem;
+    left: -3rem;
+  }
+  .boxes {
+    position: relative;
+    top: 0;
+  }
+  .img-1 {
+    position: absolute;
+    top: -115px;
+    left: 43px;
+    height: 100px;
+    width: 100px;
+  }
+  .dev-img-2 {
+    position: relative;
+    top: 1rem;
+    right: -5rem;
+  }
+  .boxes-2 {
+    position: relative;
+    top: 0;
+  }
+  .img-2 {
+    position: absolute;
+    top: -115px;
+    left: 1px;
+    height: 100px;
+    width: 100px;
+  }
 }
