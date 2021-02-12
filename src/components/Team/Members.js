@@ -18,7 +18,7 @@ function Members({ member, darkMode }) {
         style={{
           color: darkMode ? "#ffffff" : "#474646",
           textAlign: "center",
-          marginBottom: "120px",
+          marginBottom: "0px",
         }}
       >
         {member.title}

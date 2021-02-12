@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Segment, Container, Header, Grid } from "semantic-ui-react";
@@ -6,6 +6,8 @@ import { ContactForm } from "../components/Form";
 import { LocationSegment } from "../components/Location";
 
 function Contact({ darkMode, locationData }) {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
       <Segment

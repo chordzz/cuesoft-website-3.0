@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
@@ -11,6 +11,12 @@ import Smiley2 from "../assets/icons/smiley2.svg";
 import { Client } from "../components/Clients";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
+  // window.onbeforeunload = function () {
+  //   window.scrollTo(0, 0);
+  // }
+
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
       <Segment
@@ -227,7 +233,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                     }}
                   >
                     We've worked with lovely clients and all we did was put a
-                    smile on their face
+                    smile on their faces.
                   </h2>
                   <Image
                     src={darkMode ? Smiley2 : Smiley}

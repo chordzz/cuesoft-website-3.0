@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Segment, Container, Grid, Image, Header } from "semantic-ui-react";
 import { ApproachSegment } from "../components/Approach";
 import { AboutSegment } from "../components/About";
@@ -34,6 +34,8 @@ const Home = ({
   innovationData,
   productsData,
 }) => {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
       <Segment
