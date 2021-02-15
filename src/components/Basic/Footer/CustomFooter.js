@@ -1,11 +1,14 @@
 import React from "react";
-import { Segment, Container, Grid } from "semantic-ui-react";
+import { Segment, Container, Grid, Image } from "semantic-ui-react";
 import Footer1 from "./Footer1";
 import Footer2 from "./Footer2";
 import Footer3 from "./Footer3";
 import Footer4 from "./Footer4";
 import Footer5 from "./Footer5";
 import Footer6 from "./Footer6";
+import MobileFooter1 from "./MobileFooter1";
+import Logo from "../../../assets/icons/LogoWeb.svg";
+import Logo2 from "../../../assets/icons/LogoWebDark.svg";
 
 function CustomFooter({ darkMode }) {
   return (
@@ -21,27 +24,59 @@ function CustomFooter({ darkMode }) {
     >
       <Container>
         <Grid>
-          <Grid.Row>
-            <Grid.Column mobile={16} computer={4}>
+          <Grid.Row only="computer">
+            <Grid.Column computer={4}>
               <Footer1 darkMode={darkMode} />
             </Grid.Column>
             <Grid.Column computer={2}></Grid.Column>
-            <Grid.Column mobile={4} computer={2}>
+            <Grid.Column computer={2}>
               <Footer2 darkMode={darkMode} />
             </Grid.Column>
-            <Grid.Column mobile={4} computer={2}>
+            <Grid.Column computer={2}>
               <Footer3 darkMode={darkMode} />
             </Grid.Column>
-            <Grid.Column mobile={4} computer={2}>
+            <Grid.Column computer={2}>
               <Footer4 darkMode={darkMode} />
             </Grid.Column>
             <Grid.Column computer={1}></Grid.Column>
-            <Grid.Column mobile={16} computer={3}>
+            <Grid.Column computer={3}>
               <Footer5 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row>
-            <Grid.Column mobile={16} computer={5}>
+          <Grid.Row only="computer">
+            <Grid.Column computer={5}>
+              <Footer6 darkMode={darkMode} />
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row columns="1" only="mobile">
+            <Grid.Column>
+              <MobileFooter1 darkMode={darkMode} />
+            </Grid.Column>
+            <Grid.Column>
+              <Image
+                src={darkMode ? Logo2 : Logo}
+                alt="logo"
+                size="small"
+                inline
+              />
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row columns={3} only="mobile">
+            <Grid.Column>
+              <Footer2 darkMode={darkMode} />
+            </Grid.Column>
+            <Grid.Column>
+              <Footer3 darkMode={darkMode} />
+            </Grid.Column>
+            <Grid.Column>
+              <Footer4 darkMode={darkMode} />
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row only="mobile" columns="1">
+            <Grid.Column>
+              <Footer5 darkMode={darkMode} />
+            </Grid.Column>
+            <Grid.Column>
               <Footer6 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
