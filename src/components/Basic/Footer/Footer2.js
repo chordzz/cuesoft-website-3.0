@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Footer2({ darkMode }) {
   return (
-    <div style={{ paddingBottom: "30px" }}>
+    <div style={{ paddingBottom: "30px" }} on>
       <p
         style={{
           color: darkMode ? "#F4B400" : "#db4437",

@@ -18,6 +18,7 @@ function LocationSegment({ data, darkMode }) {
       >
         {data.body}
       </p>
+      <br />
       <p style={{ color: darkMode ? "#ffffff" : "#474646" }}>{data.body2}</p>
       <p style={{ color: darkMode ? "#ffffff" : "#474646" }}>{data.body3}</p>
     </main>

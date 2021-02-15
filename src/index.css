@@ -70,20 +70,24 @@ main {
   min-height: 15rem;
   background-color: #e8e8e8;
   padding: 0 30px;
-  margin: 30px 10px;
+  margin: 30px 0;
 }
 .mobile-app {
   padding: 0 20px;
   width: 100%;
   min-height: 15rem;
-  margin: 30px 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 5px;
   background-color: #e8e8e8;
 }
 .enterprise {
   padding: 0 30px;
   width: 100%;
   min-height: 15rem;
-  margin: 30px 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
   background-color: #db4437;
 }
 .form {
@@ -111,4 +115,223 @@ main {
 .ui.toggle.checkbox .box:before,
 .ui.toggle.checkbox label:before {
   background-color: lightgrey !important;
+}
+.dev-img {
+  position: relative;
+  top: 0;
+  right: -3rem;
+}
+.boxes {
+  position: relative;
+  top: 0;
+  right: -3rem;
+}
+.img-1 {
+  position: absolute;
+  top: -200px;
+  left: -30px;
+  height: 150px;
+  width: 200px;
+}
+.dev-img-2 {
+  position: relative;
+  top: 50px;
+}
+.boxes-2 {
+  position: relative;
+}
+.img-2 {
+  position: absolute;
+  top: -200px;
+  left: -70px;
+  height: 150px;
+  width: 200px;
+}
+.navbar {
+  background: transparent;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-img {
+  cursor: pointer;
+  margin-left: 7.7rem;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 50vw;
+  justify-content: end;
+  margin-right: 7.7rem;
+}
+.nav-menu-dark {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 50vw;
+  justify-content: end;
+  margin-right: 7.7rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.nav-link-1 {
+  color: grey;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.nav-link-2 {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.nav-link-1:hover {
+  color: grey;
+}
+.nav-link-2:hover {
+  color: #ffffff;
+}
+.check {
+  position: relative;
+  top: 0.3rem;
+}
+.menu-icon-1 {
+  visibility: hidden;
+}
+.menu-icon-2 {
+  visibility: hidden;
+}
+.brand {
+  margin-left: -0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon-1 {
+    visibility: visible;
+    padding-right: 3rem;
+    cursor: pointer;
+  }
+  .menu-icon-2 {
+    visibility: visible;
+    padding-right: 3rem;
+    cursor: pointer;
+    color: #ffffff !important;
+  }
+  .navbar {
+    position: relative;
+  }
+  .brand-img {
+    margin-left: 1rem;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  .nav-menu.active {
+    background: #ffffff;
+    left: 0;
+    width: 100vw;
+    opacity: 1;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  .nav-menu-dark {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  .nav-menu-dark.active {
+    background: #100403;
+    left: 0;
+    width: 100vw;
+    opacity: 1;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  .nav-link-1 {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-btn {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    display: table;
+  }
+  .nav-icon {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    padding: 1rem;
+  }
+  .check {
+    position: absolute;
+    top: 0.3rem;
+  }
+  .nav-link-2 {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+  .dev-img {
+    position: relative;
+    top: 1rem;
+    left: -3rem;
+  }
+  .boxes {
+    position: relative;
+    top: 0;
+  }
+  .img-1 {
+    position: absolute;
+    top: -115px;
+    left: 43px;
+    height: 100px;
+    width: 100px;
+  }
+  .dev-img-2 {
+    position: relative;
+    top: 1rem;
+    right: -5rem;
+  }
+  .boxes-2 {
+    position: relative;
+    top: 0;
+  }
+  .img-2 {
+    position: absolute;
+    top: -115px;
+    left: 1px;
+    height: 100px;
+    width: 100px;
+  }
 }

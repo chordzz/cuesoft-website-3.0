@@ -2,15 +2,15 @@ import React from "react";
 
 function Footer5({ darkMode }) {
   return (
-    <div style={{ paddingBottom: "30px", textAlign: "center" }}>
+    <div style={{ paddingBottom: "30px" }}>
       <p
         style={{
           color: darkMode ? "#ffffff" : "#000000",
           paddingBottom: "10px",
         }}
       >
-        Address: 26A Lewis Street, Asiwaju House, 1st Floor, Lagos Island, Lagos
-        NG.
+        Address: 39 Alfred Rewane Road, 3rd & 7th Floors, Mulliner Towers,
+        Lagos, Nigeria
       </p>
       <p
         style={{

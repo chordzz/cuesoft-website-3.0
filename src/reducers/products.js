@@ -1,6 +1,6 @@
-import Apparule from "../assets/icons/apparule.svg";
-import Cueprise from "../assets/icons/cueprise.svg";
-import Cuepay from "../assets/icons/cuepay.svg";
+import Apparule from "../assets/images/apparule.webp";
+import Cueprise from "../assets/images/cueprise.webp";
+import Cuepay from "../assets/images/cuepay.webp";
 
 const initialState = {
   data: [

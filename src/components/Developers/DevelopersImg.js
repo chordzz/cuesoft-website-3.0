@@ -1,6 +1,8 @@
 import React from "react";
 import { Image } from "semantic-ui-react";
-import developers from "../../assets/icons/developers.svg";
+import Top_img from "../../assets/images/top-img1.png";
+import Top_img_webp from "../../assets/images/top-img1.webp";
+import Trial from "../../assets/icons/trial.svg";
 
 function DevelopersImg() {
   return (
@@ -10,8 +12,14 @@ function DevelopersImg() {
       data-aos-offset="200"
       data-aos-duration="1000"
       data-aos-delay="1000"
+      className="dev-img"
     >
-      <Image src={developers} />
+      <Image src={Trial} alt="trial" className="boxes" />
+      <picture>
+        <source srcSet={Top_img_webp} type="image/webp" />
+        <source srcSet={Top_img} type="image/png" />
+        <Image src={Top_img_webp} alt="top image" className="img-1" />
+      </picture>
     </div>
   );
 }
