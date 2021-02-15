@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Segment, Container, Grid, Image, Header } from "semantic-ui-react";
 import { ApproachSegment } from "../components/Approach";
 import { AboutSegment } from "../components/About";
@@ -34,6 +34,8 @@ const Home = ({
   innovationData,
   productsData,
 }) => {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
       <Segment
@@ -137,9 +139,20 @@ const Home = ({
             style={{
               color: !darkMode && "#474646",
               marginBottom: "32px",
+              fontWeight: "600",
             }}
           >
-            <p style={{ color: darkMode ? "#ffffff" : null }}>Our approach</p>
+            <p
+              style={{
+                color: darkMode ? "#ffffff" : null,
+                fontFamily: "Archivo",
+                fontSize: "17px",
+                lineHeight: "24px",
+                fontWeight: 600,
+              }}
+            >
+              Our Approach
+            </p>
           </Header>
           <Header
             style={{
@@ -286,10 +299,18 @@ const Home = ({
               textAlign: "center",
             }}
           >
-            <h3 style={{ color: darkMode ? "white" : null }}>
+            <h3
+              style={{
+                color: darkMode ? "white" : null,
+                fontWeight: "normal",
+                fontSize: "32px",
+                lineHeight: "38px",
+                textAlign: "left",
+              }}
+            >
               We make use of awesome technologies to build advanced enterprise
               systems, challenging and innovative produts. We are proud of our
-              technical skills
+              technical skills.
             </h3>
           </Header>
           <Grid>
@@ -321,14 +342,18 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="alignLeft">
           <Header
             style={{
               color: !darkMode && "#db4437",
               paddingBottom: "32px",
             }}
           >
-            <h2 style={{ color: darkMode ? "#F4B400" : null }}>Our Services</h2>
+            <h2
+              style={{ color: darkMode ? "#F4B400" : null, marginLeft: "10px" }}
+            >
+              Our Services
+            </h2>
           </Header>
           <Grid>
             <Grid.Row>
@@ -376,6 +401,8 @@ const Home = ({
                   <h2
                     style={{
                       color: darkMode ? "#F4B400" : null,
+                      width: "430px",
+                      height: "92px",
                     }}
                   >
                     Here are some of our amazing products
@@ -427,8 +454,14 @@ const Home = ({
             <Grid>
               <Grid.Row>
                 <Grid.Column mobile={8} computer={4}>
-                  <h2 style={{ color: darkMode ? "#F4B400" : null }}>
-                    Clients We've Worked With
+                  <h2
+                    style={{
+                      color: darkMode ? "#F4B400" : null,
+                      width: "430px",
+                      height: "92px",
+                    }}
+                  >
+                    Clients We've Worked With.
                   </h2>
                 </Grid.Column>
               </Grid.Row>

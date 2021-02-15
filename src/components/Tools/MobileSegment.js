@@ -10,8 +10,10 @@ import Android2 from "../../assets/icons/android2.svg";
 function MobileSegment({ darkMode }) {
   return (
     <div>
-      <h4>Mobile Development </h4>
-      <List>
+      <h4 style={{ fontFamily: "Archivo, sans-serif", fontWeight: "600" }}>
+        Mobile Development{" "}
+      </h4>
+      <List style={{ fontWeight: "600" }}>
         <List.Item style={{ paddingTop: "30px" }}>
           <Image src={darkMode ? Android2 : Android1} size="mini" />
           <List.Content style={{ paddingTop: "10px" }}>Android</List.Content>

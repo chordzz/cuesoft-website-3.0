@@ -9,7 +9,7 @@ function Footer2({ darkMode }) {
         style={{
           color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "30px",
-          fontWeight: "bold",
+          fontWeight: "600",
         }}
       >
         Company

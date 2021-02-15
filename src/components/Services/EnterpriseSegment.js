@@ -5,7 +5,10 @@ function EnterpriseSegment({ darkMode }) {
   return (
     <div
       className="enterprise"
-      style={{ backgroundColor: darkMode ? "#F4B400" : null }}
+      style={{
+        backgroundColor: darkMode ? "#F4B400" : null,
+        padding: "30px 30px",
+      }}
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-offset="200"
@@ -15,14 +18,20 @@ function EnterpriseSegment({ darkMode }) {
       <h3
         style={{
           textAlign: "center",
-          padding: "30px 30px 10px 30px",
+          // padding: "30px 20px 10px 20px",
+          padding: "0",
           color: darkMode ? "#000000" : "#ffffff",
+          margin: "0 0 20px",
         }}
       >
         Enterprise Software Development
       </h3>
       <p
-        style={{ textAlign: "center", color: darkMode ? "#000000" : "#ffffff" }}
+        style={{
+          textAlign: "center",
+          color: darkMode ? "#000000" : "#ffffff",
+          marginBottom: "30px",
+        }}
       >
         Delight your end users with handcrafted easy to use software{" "}
       </p>

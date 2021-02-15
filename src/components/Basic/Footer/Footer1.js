@@ -14,14 +14,19 @@ function Footer1({ darkMode }) {
         inline
       />
       <h2
-        style={{ color: darkMode ? "#ffffff" : "#474646", paddingTop: "5px" }}
+        style={{
+          color: darkMode ? "#ffffff" : "#474646",
+          paddingTop: "5px",
+          width: "308px",
+          height: "48px",
+        }}
       >
         Let's get started
       </h2>
       <p style={{ color: darkMode ? "#ffffff" : "#474646", paddingTop: "5px" }}>
         Let us show you what responsive, reliable and accountable software
         support looks like in today's world, as well as give you a glimpse of
-        future
+        the future
       </p>
       <Button
         size="tiny"
@@ -29,7 +34,14 @@ function Footer1({ darkMode }) {
         color={darkMode ? "yellow" : "red"}
         style={{ borderRadius: "30px" }}
       >
-        <span style={{ color: darkMode ? "#000000" : "#ffffff" }}>
+        <span
+          style={{
+            color: darkMode ? "#000000" : "#ffffff",
+            fontWeight: "600",
+            width: "112px",
+            height: "18px",
+          }}
+        >
           Start a project
         </span>
       </Button>

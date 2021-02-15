@@ -10,8 +10,10 @@ import Php2 from "../../assets/icons/php2.svg";
 function BackendSegment({ darkMode }) {
   return (
     <div>
-      <h4>Backend Development </h4>
-      <List>
+      <h4 style={{ fontFamily: "Archivo, sans-serif", fontWeight: "600" }}>
+        Backend Development{" "}
+      </h4>
+      <List style={{ fontWeight: "600" }}>
         <List.Item style={{ paddingTop: "30px" }}>
           <Image src={darkMode ? Node2 : Node1} size="mini" />
           <List.Content style={{ paddingTop: "10px" }}>Node.js</List.Content>
