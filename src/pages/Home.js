@@ -428,7 +428,7 @@ const Home = ({
               <Grid.Row>
                 <Grid.Column mobile={8} computer={4}>
                   <h2 style={{ color: darkMode ? "#F4B400" : null }}>
-                    Client We've Worked With
+                    Clients We've Worked With
                   </h2>
                 </Grid.Column>
               </Grid.Row>

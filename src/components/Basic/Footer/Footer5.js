@@ -9,8 +9,8 @@ function Footer5({ darkMode }) {
           paddingBottom: "10px",
         }}
       >
-        Address: 26A Lewis Street, Asiwaju House, 1st Floor, Lagos Island, Lagos
-        NG.
+        Address: 39 Alfred Rewane Road, 3rd & 7th Floors, Mulliner Towers,
+        Lagos, Nigeria
       </p>
       <p
         style={{
