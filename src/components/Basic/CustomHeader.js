@@ -55,6 +55,15 @@ const CustomHeader = ({ darkMode, toggleMode }) => {
           </Link>
         </li>
         <li className="nav-item">
+          <Link
+            to="/services"
+            className={darkMode ? "nav-link-2" : "nav-link-1"}
+            onClick={closeMobileMenu}
+          >
+            Services
+          </Link>
+        </li>
+        <li className="nav-item">
           <Button
             size="tiny"
             as={Link}
