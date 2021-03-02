@@ -12,10 +12,6 @@ import Smiley2 from "../assets/icons/smiley2.svg";
 import { Client } from "../components/Clients";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
-  // window.onbeforeunload = function () {
-  //   window.scrollTo(0, 0);
-  // }
-
   useEffect(() => window.scrollTo(0, 0), []);
 
   return (
@@ -267,7 +263,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
   );
 }
 
-About.prototypes = {
+About.propTypes = {
   approachTwo: PropTypes.array.isRequired,
   teamMembers: PropTypes.array.isRequired,
   clientsData: PropTypes.array.isRequired,
