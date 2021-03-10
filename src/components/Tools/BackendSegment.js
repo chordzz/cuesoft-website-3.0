@@ -9,7 +9,7 @@ import Php2 from "../../assets/icons/php2.svg";
 
 function BackendSegment({ darkMode }) {
   return (
-    <div>
+    <div className="backend-tools">
       <h4 style={{ fontFamily: "Archivo, sans-serif", fontWeight: "600" }}>
         Backend Development{" "}
       </h4>

@@ -56,7 +56,7 @@ const Home = ({
           <Grid columns={2}>
             <Grid.Column mobile={16} computer={8}>
               <h1
-                style={{ fontSize: "46px" }}
+                // style={{ fontSize: "46px" }}
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
@@ -103,7 +103,7 @@ const Home = ({
             </Grid.Column>
             <Grid.Column mobile={16} computer={8}>
               <Image
-                style={{ marginTop: "-100px" }}
+                // style={{ marginTop: "-100px" }}
                 src={Space}
                 alt="space"
                 inline
@@ -111,6 +111,7 @@ const Home = ({
                 data-aos-duration="2000"
                 data-aos-delay="1000"
                 data-aos-easing="ease-in-out"
+                id="intro-image"
               />
             </Grid.Column>
           </Grid>
@@ -170,7 +171,7 @@ const Home = ({
                 approachData.length &&
                 approachData.map((single, i) => {
                   return (
-                    <Grid.Column key={i} computer={4} mobile={8}>
+                    <Grid.Column key={i} computer={4} mobile={16}>
                       <ApproachSegment
                         single={single}
                         key={i}
@@ -203,14 +204,15 @@ const Home = ({
           data-aos-duration="1000"
         >
           <Header>
-            <Grid centered>
-              <Grid.Row>
-                <Grid.Column mobile={8} computer={8}>
+            <Grid>
+              <Grid.Row centered>
+                <Grid.Column mobile={16} computer={8}>
                   <h2
                     style={{
-                      textAlign: "center",
+                      // textAlign: "center",
                       color: darkMode ? "#F4B400" : "#db4437",
                     }}
+                    className="what-we-do"
                   >
                     {" "}
                     We build innovative solutions for companies, enterprises and
@@ -255,6 +257,7 @@ const Home = ({
             size="mini"
             floated="right"
             style={{ margin: "-70px 0 20px 0" }}
+            className="angle-up-img"
           />
           <Grid>
             <Grid.Row style={{ margin: "60px 0" }}>
@@ -292,20 +295,17 @@ const Home = ({
             style={{ margin: "-200px 0 0 0" }}
             size="mini"
             floated="left"
+            className="angle-down-img"
           />
           <Header
             style={{
               paddingBottom: "32px",
-              textAlign: "center",
             }}
+            className="technologies"
           >
             <h3
               style={{
                 color: darkMode ? "white" : null,
-                fontWeight: "normal",
-                fontSize: "32px",
-                lineHeight: "38px",
-                textAlign: "left",
               }}
             >
               We make use of awesome technologies to build advanced enterprise
@@ -397,13 +397,12 @@ const Home = ({
           >
             <Grid>
               <Grid.Row>
-                <Grid.Column mobile={8} computer={4}>
+                <Grid.Column mobile={16} computer={8}>
                   <h2
                     style={{
                       color: darkMode ? "#F4B400" : null,
-                      width: "430px",
-                      height: "92px",
                     }}
+                    className="amazing-products"
                   >
                     Here are some of our amazing products
                   </h2>

@@ -9,7 +9,7 @@ import Android2 from "../../assets/icons/android2.svg";
 
 function MobileSegment({ darkMode }) {
   return (
-    <div>
+    <div className="mobile-tools">
       <h4 style={{ fontFamily: "Archivo, sans-serif", fontWeight: "600" }}>
         Mobile Development{" "}
       </h4>

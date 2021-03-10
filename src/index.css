@@ -33,6 +33,7 @@ body {
 h1 {
   font-family: "Archivo", sans-serif;
   font-weight: 500;
+  font-size: 46px;
 }
 
 h2 {
@@ -61,7 +62,7 @@ header {
 }
 
 main {
-  padding-top: 85.38px;
+  /* padding-top: 85.38px; */
   min-height: calc(100vh - 85.38px);
 }
 
@@ -214,7 +215,33 @@ main {
   margin-left: -0.3rem;
 }
 
-@media screen and (max-width: 768px) {
+/* New Section  */
+#intro-image {
+  margin-top: -100px;
+}
+
+.what-we-do {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.technologies {
+  text-align: left;
+}
+
+.technologies h3 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  /* text-align: "left"; */
+}
+
+.amazing-products {
+  width: 430px;
+  height: 92px;
+}
+
+@media screen and (max-width: 375px) {
   .menu-icon-1 {
     visibility: visible;
     padding-right: 3rem;
@@ -231,6 +258,9 @@ main {
   }
   .brand-img {
     margin-left: 1rem;
+  }
+  .brand-img img {
+    font-size: 100px;
   }
   .nav-menu {
     display: flex;
@@ -333,5 +363,62 @@ main {
     left: 1px;
     height: 100px;
     width: 100px;
+  }
+
+  /* New Section  */
+  h1 {
+    font-size: 30px;
+  }
+  #intro-image {
+    margin-top: 0;
+    /* display: block; */
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  .what-we-do {
+    text-align: left;
+    line-height: 1em;
+    margin-left: 20px;
+  }
+  .angle-up-img,
+  .angle-down-img {
+    visibility: hidden;
+  }
+  /* .developers {
+    background: aqua;
+  } */
+
+  .developers h2 {
+    font-size: 22px;
+    margin-top: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+  .dev-img {
+    width: 150%;
+    top: 10px;
+  }
+  .dev-img-2 {
+    width: 150%;
+    right: 10px;
+    left: 10px;
+  }
+
+  .technologies h3 {
+    font-size: 20px;
+    line-height: 1em;
+  }
+
+  .frontend-tools,
+  .backend-tools,
+  .mobile-tools {
+    margin-bottom: 30px;
+  }
+
+  .amazing-products {
+    width: 90%;
+    line-height: 1em;
   }
 }

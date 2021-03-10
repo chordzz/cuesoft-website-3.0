@@ -9,7 +9,7 @@ import Angular2 from "../../assets/icons/angular2.svg";
 
 function FrontendSegment({ darkMode }) {
   return (
-    <div>
+    <div className="frontend-tools">
       <h4 style={{ fontFamily: "Archivo, sans-serif", fontWeight: "600" }}>
         Frontend Development{" "}
       </h4>
