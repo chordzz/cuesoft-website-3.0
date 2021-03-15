@@ -93,10 +93,19 @@ main {
 }
 .form {
   width: 100%;
-  margin: 0 5px;
-  border: 0;
+  margin: 0 5px 20px;
   outline: none;
 }
+
+.button {
+  border-radius: 30px !important;
+  margin-right: 20px;
+  width: 150px;
+}
+
+/* .field {
+  border-bottom: 1px solid black;
+} */
 
 #menu-style {
   padding-top: 25px;
@@ -239,6 +248,46 @@ main {
 .amazing-products {
   width: 430px;
   height: 92px;
+}
+
+/* About US */
+.mission h1 {
+  font-size: 50px;
+}
+
+.approach2-segment p {
+  padding-bottom: 30px;
+  padding-right: 120px;
+}
+
+.worked-with {
+  margin-right: 30px;
+}
+
+/* Contact US */
+.contact-h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+Form {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.location-segment {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.location-segment img {
+  margin-left: 90px;
+}
+
+.location-segment p {
+  padding-right: 20px;
 }
 
 @media screen and (max-width: 375px) {
@@ -420,5 +469,56 @@ main {
   .amazing-products {
     width: 90%;
     line-height: 1em;
+  }
+
+  /* About US */
+
+  /* .aboutPage-missionSection {
+    background: blueviolet;
+    padding: 100px 0;
+    min-height: 100vh;
+  } */
+
+  .mission h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .kubernetes {
+    line-height: 1em;
+  }
+
+  .approach2-segment p {
+    padding-right: 0;
+  }
+
+  .worked-with {
+    line-height: 1em;
+  }
+
+  /* Contact US */
+  .contact-h1 {
+    font-size: 30px;
+  }
+
+  .form {
+    flex-direction: column;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+
+  .location-segment {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0;
+    min-height: 200px;
+  }
+
+  .location-segment img {
+    margin-left: 130px;
+  }
+
+  .location-segment p {
+    padding-right: 20px;
   }
 }

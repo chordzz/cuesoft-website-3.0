@@ -4,15 +4,13 @@ import PropTypes from "prop-types";
 
 function ApproachTwo({ darkMode, single }) {
   return (
-    <div style={{ paddingTop: "30px" }}>
+    <div style={{ paddingTop: "30px" }} className="approach2-segment">
       <Header as="h4" style={{ color: darkMode && "#ffffff" }}>
         {single.title}
       </Header>
       <p
         style={{
           color: darkMode ? "#ffffff" : "#000000",
-          paddingBottom: "30px",
-          paddingRight: "120px",
         }}
       >
         {single.body}
