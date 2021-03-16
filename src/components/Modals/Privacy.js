@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Modal, Button, Checkbox } from "semantic-ui-react";
-import TermsContent from "./TermsContent";
+import PrivacyContent from "./PrivacyContent";
 
-function Terms({ modalActive, closeModal, activateModal, termsData }) {
+function Privacy({ modalActive, closeModal, activateModal, privacyData }) {
   const modal = modalActive ? (
     <Modal
       onClose={closeModal}
@@ -12,14 +12,14 @@ function Terms({ modalActive, closeModal, activateModal, termsData }) {
       open={modalActive}
       size="small"
     >
-      <Modal.Header>Terms and Conditions</Modal.Header>
+      <Modal.Header>Privacy Policy</Modal.Header>
       <Modal.Content scrolling>
-        {termsData &&
-          termsData.length &&
-          termsData.map((term, i) => {
+        {privacyData &&
+          privacyData.length &&
+          privacyData.map((privacy, i) => {
             return (
               <div key={i}>
-                <TermsContent term={term} />
+                <PrivacyContent privacy={privacy} />
               </div>
             );
           })}
@@ -37,12 +37,12 @@ function Terms({ modalActive, closeModal, activateModal, termsData }) {
   return <div>{modal}</div>;
 }
 
-Terms.propTypes = {
-  termsData: PropTypes.array.isRequired,
+Privacy.propTypes = {
+  privacyData: PropTypes.array.isRequired,
 };
 const mapStateToProps = (state) => {
   return {
-    termsData: state.termsData.data,
+    privacyData: state.privacyData.data,
   };
 };
-export default connect(mapStateToProps)(Terms);
+export default connect(mapStateToProps)(Privacy);

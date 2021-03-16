@@ -2,11 +2,21 @@ import React, { useState } from "react";
 import { List } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { Terms } from "../../Modals";
+import { Terms, Privacy } from "../../Modals";
 
-function Footer4({ darkMode, terms }) {
-  const [isOpen, setIsOpen] = useState(false);
+function Footer4({ darkMode }) {
+  const [termsModalActive, setTermsModalActive] = useState(false);
+  const [policyModalActive, setPolicyModalActive] = useState(false);
+  const activateTermsModal = () => {
+    setTermsModalActive(true);
+  };
+  const activatePolicyModal = () => {
+    setPolicyModalActive(true);
+  };
+  const deactivateModal = () => {
+    setTermsModalActive(false);
+    setPolicyModalActive(false);
+  };
   return (
     <div style={{ paddingBottom: "30px" }}>
       <p
@@ -19,10 +29,7 @@ function Footer4({ darkMode, terms }) {
         Resources
       </p>
       <List>
-        <List.Item
-          style={{ cursor: "pointer" }}
-          onClick={() => setIsOpen(true)}
-        >
+        <List.Item as={Link} to="#" onClick={activateTermsModal}>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
@@ -34,7 +41,7 @@ function Footer4({ darkMode, terms }) {
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item as={Link} to="#" onClick={activatePolicyModal}>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
@@ -69,30 +76,24 @@ function Footer4({ darkMode, terms }) {
           </List.Content>
         </List.Item>
       </List>
-      {terms &&
-        terms.length &&
-        terms.map((info, i) => {
-          return (
-            <div key={i}>
-              <Terms
-                info={info}
-                handleOpen={isOpen}
-                handleClose={() => setIsOpen(false)}
-              />
-            </div>
-          );
-        })}
+      <Terms
+        activateModal={activateTermsModal}
+        closeModal={deactivateModal}
+        modalActive={termsModalActive}
+      />
+      <Privacy
+        activateModal={activatePolicyModal}
+        closeModal={deactivateModal}
+        modalActive={policyModalActive}
+      />
     </div>
   );
 }
 
 Footer4.propTypes = {
-  terms: PropTypes.array.isRequired,
+  modalActive: PropTypes.bool.isRequired,
+  closeModal: PropTypes.func.isRequired,
+  activateModal: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state) => {
-  return {
-    terms: state.terms.data,
-  };
-};
-export default connect(mapStateToProps)(Footer4);
+export default Footer4;
