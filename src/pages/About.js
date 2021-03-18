@@ -23,9 +23,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
-          padding: "100px 0",
-          minHeight: "100vh",
         }}
+        className="aboutPage-missionSection"
       >
         <Container>
           <Grid>
@@ -56,6 +55,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               data-aos-duration="1000"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
+              className="kubernetes"
             >
               We are the Kubernetes for technical teams
             </h2>
@@ -224,8 +224,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                   <h2
                     style={{
                       color: darkMode ? "#F4B400" : null,
-                      marginRight: "30px",
                     }}
+                    className="worked-with"
                   >
                     We've worked with lovely clients and all we did was put a
                     smile on their faces.

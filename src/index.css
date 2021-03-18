@@ -33,6 +33,7 @@ body {
 h1 {
   font-family: "Archivo", sans-serif;
   font-weight: 500;
+  font-size: 46px;
 }
 
 h2 {
@@ -61,7 +62,7 @@ header {
 }
 
 main {
-  padding-top: 85.38px;
+  /* padding-top: 85.38px; */
   min-height: calc(100vh - 85.38px);
 }
 
@@ -92,9 +93,14 @@ main {
 }
 .form {
   width: 100%;
-  margin: 0 5px;
-  border: 0;
+  margin: 0 5px 20px;
   outline: none;
+}
+
+.button {
+  border-radius: 30px !important;
+  margin-right: 20px;
+  width: 150px;
 }
 
 #menu-style {
@@ -214,7 +220,74 @@ main {
   margin-left: -0.3rem;
 }
 
-@media screen and (max-width: 768px) {
+/* New Section  */
+#intro-image {
+  margin-top: -100px;
+}
+
+.what-we-do {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.technologies {
+  text-align: left;
+}
+
+.technologies h3 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  /* text-align: "left"; */
+}
+
+.amazing-products {
+  width: 430px;
+  height: 92px;
+}
+
+/* About US */
+.mission h1 {
+  font-size: 50px;
+}
+
+.approach2-segment p {
+  padding-bottom: 30px;
+  padding-right: 120px;
+}
+
+.worked-with {
+  margin-right: 30px;
+}
+
+/* Contact US */
+.contact-h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+Form {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.location-segment {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.location-segment img {
+  margin-left: 90px;
+}
+
+.location-segment p {
+  padding-right: 20px;
+}
+
+/* For Mobile */
+@media screen and (max-width: 375px) {
   .menu-icon-1 {
     visibility: visible;
     padding-right: 3rem;
@@ -231,6 +304,9 @@ main {
   }
   .brand-img {
     margin-left: 1rem;
+  }
+  .brand-img img {
+    font-size: 100px;
   }
   .nav-menu {
     display: flex;
@@ -333,5 +409,103 @@ main {
     left: 1px;
     height: 100px;
     width: 100px;
+  }
+
+  /* New Section  */
+  h1 {
+    font-size: 30px;
+  }
+  #intro-image {
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  .what-we-do {
+    text-align: left;
+    line-height: 1em;
+    margin-left: 20px;
+  }
+  .angle-up-img,
+  .angle-down-img {
+    visibility: hidden;
+  }
+
+  .developers h2 {
+    font-size: 22px;
+    margin-top: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+  .dev-img {
+    width: 150%;
+    top: 10px;
+  }
+  .dev-img-2 {
+    width: 150%;
+    right: 10px;
+    left: 10px;
+  }
+
+  .technologies h3 {
+    font-size: 20px;
+    line-height: 1em;
+  }
+
+  .frontend-tools,
+  .backend-tools,
+  .mobile-tools {
+    margin-bottom: 30px;
+  }
+
+  .amazing-products {
+    width: 90%;
+    line-height: 1em;
+  }
+
+  /* About US */
+
+  .mission h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .kubernetes {
+    line-height: 1em;
+  }
+
+  .approach2-segment p {
+    padding-right: 0;
+  }
+
+  .worked-with {
+    line-height: 1em;
+  }
+
+  /* Contact US */
+  .contact-h1 {
+    font-size: 30px;
+  }
+
+  .form {
+    flex-direction: column;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+
+  .location-segment {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0;
+    min-height: 200px;
+  }
+
+  .location-segment img {
+    margin-left: 130px;
+  }
+
+  .location-segment p {
+    padding-right: 20px;
   }
 }

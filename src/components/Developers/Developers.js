@@ -8,8 +8,9 @@ function Developers({ darkMode }) {
       data-aos-offset="200"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
+      className="developers"
     >
-      <h2 style={{ color: darkMode ? "#F4B400" : "#db4437", fontSize: "40px" }}>
+      <h2 style={{ color: darkMode ? "#F4B400" : "#db4437" }}>
         Developers and teams
         <br />
         for your project

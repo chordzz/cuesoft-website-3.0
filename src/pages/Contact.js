@@ -25,7 +25,7 @@ function Contact({ darkMode, locationData }) {
           <Header
             style={{
               color: !darkMode && "#474646",
-              paddingTop: "60px",
+              // paddingTop: "60px",
             }}
           >
             <Grid>
@@ -34,9 +34,8 @@ function Contact({ darkMode, locationData }) {
                   <h1
                     style={{
                       color: darkMode ? "#ffffff" : null,
-                      fontWeight: "600",
-                      fontSize: "50px",
                     }}
+                    className="contact-h1"
                   >
                     Interested in our services or need advice? Get in touch and
                     we'll be glad to help.
