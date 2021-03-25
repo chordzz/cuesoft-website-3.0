@@ -46,11 +46,11 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
         }}
+        className="mainSegment"
       >
         <Container>
           <Grid columns={2}>
@@ -125,7 +125,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -192,7 +191,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -245,7 +243,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0 100px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -283,7 +280,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -336,7 +332,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -378,7 +373,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -433,7 +427,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",

@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "semantic-ui-css/semantic.min.css";
-import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
@@ -11,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import "./assets/fonts/aileron/Aileron-Light.otf";
+import "./index.css";
 // import './assets/fonts/aileron/Aileron-Regular.otf';
 // import './assets/fonts/aileron/Aileron-Bold.otf';
 
