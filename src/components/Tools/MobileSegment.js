@@ -9,9 +9,11 @@ import Android2 from "../../assets/icons/android2.svg";
 
 function MobileSegment({ darkMode }) {
   return (
-    <div className="mobile-tools">
-      <h4 style={{ fontFamily: "Archivo, sans-serif", fontWeight: "600" }}>
-        Mobile Development{" "}
+    <div className="mobile-tools" style={{ textAlign: "center" }}>
+      <h4
+        style={{ fontFamily: "Source Sans Pro, sans-serif", fontWeight: "600" }}
+      >
+        Mobile development{" "}
       </h4>
       <List style={{ fontWeight: "600" }}>
         <List.Item style={{ paddingTop: "30px" }}>

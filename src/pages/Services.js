@@ -27,7 +27,7 @@ function Services({ darkMode, household }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
+          // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -73,7 +73,7 @@ function Services({ darkMode, household }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
+          // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -109,7 +109,7 @@ function Services({ darkMode, household }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
-          minHeight: "calc(100vh - 85.38px)",
+          // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -145,7 +145,7 @@ function Services({ darkMode, household }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
-          minHeight: "calc(100vh - 85.38px)",
+          // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -182,7 +182,7 @@ function Services({ darkMode, household }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "100vh",
+          // minHeight: "100vh",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -230,7 +230,7 @@ function Services({ darkMode, household }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
-          minHeight: "calc(100vh - 85.38px)",
+          // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",

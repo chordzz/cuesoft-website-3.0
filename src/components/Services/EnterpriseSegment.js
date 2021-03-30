@@ -9,18 +9,18 @@ function EnterpriseSegment({ darkMode }) {
         backgroundColor: darkMode ? "#F4B400" : null,
         padding: "30px 30px",
       }}
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-offset="200"
-      data-aos-easing="ease-in-out"
-      data-aos-delay="2000"
+      // data-aos="fade-up"
+      // data-aos-duration="1000"
+      // data-aos-offset="200"
+      // data-aos-easing="ease-in-out"
+      // data-aos-delay="2000"
     >
       <h3
         style={{
           textAlign: "center",
           // padding: "30px 20px 10px 20px",
           padding: "0",
-          color: darkMode ? "#000000" : "#ffffff",
+          color: darkMode ? "#000000" : null,
           margin: "0 0 20px",
         }}
       >
@@ -29,7 +29,7 @@ function EnterpriseSegment({ darkMode }) {
       <p
         style={{
           textAlign: "center",
-          color: darkMode ? "#000000" : "#ffffff",
+          color: darkMode ? "#000000" : null,
           marginBottom: "30px",
         }}
       >
@@ -41,8 +41,11 @@ function EnterpriseSegment({ darkMode }) {
           float: "right",
           fontSize: "25px",
           cursor: "pointer",
-          color: "white",
+          color: darkMode ? "#F4B400" : "inherit",
+          position: "relative",
+          bottom: "-2rem",
         }}
+        className="enterprise-icon"
       />
     </div>
   );

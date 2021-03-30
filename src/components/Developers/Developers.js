@@ -4,13 +4,13 @@ function Developers({ darkMode }) {
   return (
     <div
       style={{ maxWidth: 500 }}
-      data-aos="fade-right"
-      data-aos-offset="200"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
+      // data-aos="fade-right"
+      // data-aos-offset="200"
+      // data-aos-duration="1000"
+      // data-aos-easing="ease-in-out"
       className="developers"
     >
-      <h2 style={{ color: darkMode ? "#F4B400" : "#db4437" }}>
+      <h2 style={{ color: darkMode ? "#F4B400" : "black" }}>
         Developers and teams
         <br />
         for your project

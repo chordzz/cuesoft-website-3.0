@@ -15,43 +15,49 @@ button {
   font-family: 'Archivo', sans-serif;
 } */
 
+/* @font-face {
+  font-family: "AileronLight";
+  src: local("AileronLight"), url("./assets/fonts/aileron/Aileron-Light.otf");
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-@font-face {
-  font-family: "AileronLight";
-  src: local("AileronLight"), url("./assets/fonts/aileron/Aileron-Light.otf");
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
-  font-family: "AileronLight", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h1 {
-  font-family: "Archivo", sans-serif;
-  font-weight: 500;
-  font-size: 46px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1;
 }
 
 h2 {
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 46px;
+  font-size: 1.6rem;
 }
 h3 {
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1rem;
+  /* color: #db4437; */
 }
 
 h4 {
-  font-family: "Aileron", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Aileron", sans-serif; */
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  /* font-size: 24px;
+  line-height: 29px; */
 }
 
 header {
@@ -89,8 +95,17 @@ header {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 10px;
-  background-color: #db4437;
+  background-color: #e8e8e8;
 }
+
+.enterprise:hover {
+  background-color: #db4437;
+  color: white;
+}
+
+/* .enterprise-icon::before {
+  color: white;
+} */
 .form {
   width: 100%;
   margin: 0 5px 20px;
@@ -106,7 +121,7 @@ header {
 #menu-style {
   padding-top: 25px;
   margin: 0;
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: 17px;
   line-height: 18.5px;
@@ -221,9 +236,10 @@ header {
 }
 
 /* New Section  */
-#intro-image {
+/* #intro-image {
   margin-top: -100px;
-}
+  width: 80%;
+} */
 
 .what-we-do {
   text-align: center;
@@ -236,8 +252,8 @@ header {
 
 .technologies h3 {
   font-weight: normal;
-  font-size: 32px;
-  line-height: 38px;
+  /* font-size: 32px;
+  line-height: 38px; */
   /* text-align: "left"; */
 }
 
@@ -292,7 +308,8 @@ Form {
 
 /* For Mobile */
 
-@media (max-width: 480px) {
+/* New Section  */
+@media screen and (max-width: 480px) {
   /* .segment {
     min-height: auto;
   } */
@@ -420,17 +437,16 @@ Form {
     width: 100px;
   }
 
-  /* New Section  */
-  h1 {
+  /* h1 {
     font-size: 30px;
-  }
+  } */
   #intro-image {
     margin-top: 0;
   }
 
-  h2 {
+  /* h2 {
     font-size: 22px;
-  }
+  } */
   .what-we-do {
     text-align: left;
     line-height: 1em;
@@ -442,7 +458,6 @@ Form {
   }
 
   .developers h2 {
-    font-size: 22px;
     margin-top: 0;
     padding: 0;
     line-height: 1em;
