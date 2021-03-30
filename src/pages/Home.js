@@ -22,8 +22,8 @@ import PropTypes from "prop-types";
 import { Client } from "../components/Clients";
 import { connect } from "react-redux";
 import Space from "../assets/icons/space.svg";
-import Square from "../assets/icons/squircle.svg";
-import Square2 from "../assets/icons/squircle2.svg";
+// import Square from "../assets/icons/squircle.svg";
+// import Square2 from "../assets/icons/squircle2.svg";
 import AngleUp from "../assets/icons/angle-up.svg";
 import AngleDown from "../assets/icons/angle-down.svg";
 
@@ -46,22 +46,31 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
-          display: "flex",
-          flexFlow: "column wrap",
-          justifyContent: "center",
+          // display: "flex",
+          // flexFlow: "column wrap",
+          // justifyContent: "center",
+          // alignContents: "stretch",
         }}
+        className="mainSegment"
       >
         <Container>
-          <Grid columns={2}>
+          <Grid
+            columns={2}
+            style={{
+              display: "flex",
+              flexFlow: "row wrap",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <Grid.Column mobile={16} computer={8}>
               <h1
-                // style={{ fontSize: "46px" }}
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
+              // style={{ fontSize: "46px" }}
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-in-out"
               >
-                We build{" "}
+                {/* We build{" "}
                 <span
                   style={{
                     color: darkMode ? "#F4B400" : "#db4437",
@@ -69,13 +78,13 @@ const Home = ({
                   }}
                 >
                   Websites.{" "}
-                </span>
-                <br />
+                </span> */}
+                {/* <br /> */}
                 We develop functional processes that improve products and
                 services
               </h1>
               <br />
-              <Image
+              {/* <Image
                 src={darkMode ? Square2 : Square}
                 alt="square"
                 inline
@@ -84,18 +93,18 @@ const Home = ({
                 data-aos-duration="1000"
                 data-aos-delay="1000"
                 data-aos-easing="ease-in-out"
-              />
+              /> */}
               <span
                 style={{
-                  paddingLeft: 10,
-                  lineHeight: 1.5,
-                  fontSize: "17px",
+                  // paddingLeft: 10,
+                  lineHeight: 1,
+                  fontSize: "2rem",
                   color: darkMode ? "#ffffff" : "#474646",
                 }}
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-delay="1000"
-                data-aos-easing="ease-in-out"
+                // data-aos="fade-right"
+                // data-aos-duration="1000"
+                // data-aos-delay="1000"
+                // data-aos-easing="ease-in-out"
               >
                 We help great companies simplify and grow their businesses by
                 designing and building beautiful products
@@ -125,34 +134,35 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
         }}
       >
         <Container
-          data-aos="fade-left"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        // data-aos="fade-left"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
         >
           <Header
             style={{
               color: !darkMode && "#474646",
-              marginBottom: "32px",
-              fontWeight: "600",
+              // marginBottom: "32px",
+              // fontWeight: "600",
             }}
           >
             <p
               style={{
                 color: darkMode ? "#ffffff" : null,
-                fontFamily: "Archivo",
-                fontSize: "17px",
-                lineHeight: "24px",
-                fontWeight: 600,
+                // fontFamily: "Archivo",
+                // fontSize: "17px",
+                // lineHeight: "24px",
+                // fontWeight: 600,
+                fontSize: "4.8rem",
+                fontFamily: "Source Sans Pro",
               }}
             >
-              Our Approach
+              Our approach
             </p>
           </Header>
           <Header
@@ -192,16 +202,15 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
         }}
       >
         <Container
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        // data-aos="fade-up"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
         >
           <Header>
             <Grid>
@@ -210,7 +219,7 @@ const Home = ({
                   <h2
                     style={{
                       // textAlign: "center",
-                      color: darkMode ? "#F4B400" : "#db4437",
+                      color: darkMode ? "#F4B400" : "black",
                     }}
                     className="what-we-do"
                   >
@@ -245,7 +254,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0 100px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -283,7 +291,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -306,6 +313,8 @@ const Home = ({
             <h3
               style={{
                 color: darkMode ? "white" : null,
+                fontSize: "1.6rem",
+                fontWeight: "600",
               }}
             >
               We make use of awesome technologies to build advanced enterprise
@@ -314,7 +323,11 @@ const Home = ({
             </h3>
           </Header>
           <Grid>
-            <Grid.Row>
+            <Grid.Row
+              style={{
+                left: "-6.6rem",
+              }}
+            >
               <Grid.Column mobile={16} computer={5}>
                 <FrontendSegment darkMode={darkMode} />
               </Grid.Column>
@@ -336,7 +349,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -350,9 +362,12 @@ const Home = ({
             }}
           >
             <h2
-              style={{ color: darkMode ? "#F4B400" : null, marginLeft: "10px" }}
+              style={{
+                color: darkMode ? "#F4B400" : "black",
+                marginLeft: "10px",
+              }}
             >
-              Our Services
+              Our services
             </h2>
           </Header>
           <Grid>
@@ -378,16 +393,15 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
         }}
       >
         <Container
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        // data-aos="fade-right"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
         >
           <Header
             style={{
@@ -400,7 +414,7 @@ const Home = ({
                 <Grid.Column mobile={16} computer={8}>
                   <h2
                     style={{
-                      color: darkMode ? "#F4B400" : null,
+                      color: darkMode ? "#F4B400" : "black",
                     }}
                     className="amazing-products"
                   >
@@ -433,7 +447,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -455,7 +468,7 @@ const Home = ({
                 <Grid.Column mobile={8} computer={4}>
                   <h2
                     style={{
-                      color: darkMode ? "#F4B400" : null,
+                      color: darkMode ? "#F4B400" : "black",
                       width: "430px",
                       height: "92px",
                     }}

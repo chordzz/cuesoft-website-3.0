@@ -77,7 +77,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "100vh",
+          // minHeight: "100vh",
         }}
       >
         <Container
@@ -140,7 +140,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "60px 0",
-          minHeight: "100vh",
+          // minHeight: "100vh",
         }}
       >
         <Container>
@@ -196,7 +196,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "100px 0",
-          minHeight: "100vh",
+          // minHeight: "100vh",
         }}
       >
         <Container

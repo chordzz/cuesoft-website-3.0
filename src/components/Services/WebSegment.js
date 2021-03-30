@@ -5,10 +5,10 @@ function WebSegment({ darkMode }) {
   return (
     <div
       className="web"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-offset="200"
-      data-aos-easing="ease-in-out"
+      // data-aos="fade-up"
+      // data-aos-duration="1000"
+      // data-aos-offset="200"
+      // data-aos-easing="ease-in-out"
       // style = {{padding:'10px 20px'}}
     >
       <h3
@@ -31,6 +31,8 @@ function WebSegment({ darkMode }) {
           fontSize: "25px",
           cursor: "pointer",
           color: darkMode ? "#F4B400" : "#db4437",
+          position: "relative",
+          bottom: "-1.5rem",
         }}
       />
     </div>

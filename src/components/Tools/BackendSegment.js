@@ -9,9 +9,11 @@ import Php2 from "../../assets/icons/php2.svg";
 
 function BackendSegment({ darkMode }) {
   return (
-    <div className="backend-tools">
-      <h4 style={{ fontFamily: "Archivo, sans-serif", fontWeight: "600" }}>
-        Backend Development{" "}
+    <div className="backend-tools" style={{ textAlign: "center" }}>
+      <h4
+        style={{ fontFamily: "Source Sans Pro, sans-serif", fontWeight: "600" }}
+      >
+        Backend development{" "}
       </h4>
       <List style={{ fontWeight: "600" }}>
         <List.Item style={{ paddingTop: "30px" }}>
