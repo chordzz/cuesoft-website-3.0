@@ -24,7 +24,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
         }}
-        className="aboutPage-missionSection"
+        // className="aboutPage-missionSection"
       >
         <Container>
           <Grid>
@@ -50,11 +50,11 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             }}
           >
             <h2
-              style={{ color: darkMode ? "#F4B400" : null }}
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-out"
+              style={{ color: darkMode ? "#F4B400" : "black" }}
+              // data-aos="fade-right"
+              // data-aos-duration="1000"
+              // data-aos-offset="200"
+              // data-aos-easing="ease-in-out"
               className="kubernetes"
             >
               We are the Kubernetes for technical teams
@@ -81,10 +81,10 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         }}
       >
         <Container
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+        // data-aos="fade-up"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
+        // data-aos-easing="ease-in-out"
         >
           <Header
             style={{
@@ -94,7 +94,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
           >
             <p
               style={{
-                color: darkMode ? "#ffffff" : null,
+                color: darkMode ? "#ffffff" : "black",
                 textAlign: "center",
                 fontWeight: "600",
               }}

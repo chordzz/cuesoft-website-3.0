@@ -7,7 +7,11 @@ const ApproachSegment = ({ darkMode, single }) => {
     <div>
       <Header
         as="h4"
-        style={{ color: darkMode && "#ffffff", margin: "32px 0" }}
+        style={{
+          color: darkMode && "#ffffff",
+          margin: "32px 0",
+          fontSize: "1.6rem",
+        }}
       >
         {single.title}
       </Header>
@@ -15,6 +19,7 @@ const ApproachSegment = ({ darkMode, single }) => {
         style={{
           color: darkMode ? "#ffffff" : "#000000",
           marginBottom: "32px",
+          fontSize: "1.6rem",
         }}
       >
         {single.body}

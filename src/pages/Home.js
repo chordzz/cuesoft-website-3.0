@@ -214,11 +214,11 @@ const Home = ({
         >
           <Header>
             <Grid>
-              <Grid.Row centered>
+              <Grid.Row>
                 <Grid.Column mobile={16} computer={8}>
                   <h2
                     style={{
-                      // textAlign: "center",
+                      textAlign: "left",
                       color: darkMode ? "#F4B400" : "black",
                     }}
                     className="what-we-do"
@@ -231,7 +231,7 @@ const Home = ({
               </Grid.Row>
             </Grid>
           </Header>
-          <Grid centered>
+          <Grid>
             <Grid.Row>
               {innovationData &&
                 innovationData.length &&
@@ -276,9 +276,9 @@ const Home = ({
                 <DevelopersImg />
               </Grid.Column>
               <Grid.Column mobile={1} computer={8}></Grid.Column>
-              <Grid.Column mobile={6} computer={5}>
+              {/* <Grid.Column mobile={6} computer={5}>
                 <DevelopersImg2 />
-              </Grid.Column>
+              </Grid.Column> */}
             </Grid.Row>
           </Grid>
         </Container>
@@ -313,7 +313,7 @@ const Home = ({
             <h3
               style={{
                 color: darkMode ? "white" : null,
-                fontSize: "1.6rem",
+                fontSize: "1.8rem",
                 fontWeight: "600",
               }}
             >
@@ -325,7 +325,7 @@ const Home = ({
           <Grid>
             <Grid.Row
               style={{
-                left: "-6.6rem",
+                left: "-4rem",
               }}
             >
               <Grid.Column mobile={16} computer={5}>
@@ -365,6 +365,7 @@ const Home = ({
               style={{
                 color: darkMode ? "#F4B400" : "black",
                 marginLeft: "10px",
+                fontSize: "2rem",
               }}
             >
               Our services
@@ -453,9 +454,9 @@ const Home = ({
         }}
       >
         <Container
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        // data-aos="fade-up"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
         >
           <Header
             style={{
@@ -466,7 +467,7 @@ const Home = ({
             <Grid>
               <Grid.Row>
                 <Grid.Column mobile={8} computer={4}>
-                  <h2
+                  <h3
                     style={{
                       color: darkMode ? "#F4B400" : "black",
                       width: "430px",
@@ -474,7 +475,7 @@ const Home = ({
                     }}
                   >
                     Clients We've Worked With.
-                  </h2>
+                  </h3>
                 </Grid.Column>
               </Grid.Row>
             </Grid>

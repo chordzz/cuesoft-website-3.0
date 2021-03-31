@@ -18,10 +18,10 @@ function EnterpriseSegment({ darkMode }) {
       <h3
         style={{
           textAlign: "center",
-          // padding: "30px 20px 10px 20px",
+          // padding: "15px 0 10px 0",
           padding: "0",
           color: darkMode ? "#000000" : null,
-          margin: "0 0 20px",
+          margin: "0",
         }}
       >
         Enterprise Software Development
@@ -31,6 +31,7 @@ function EnterpriseSegment({ darkMode }) {
           textAlign: "center",
           color: darkMode ? "#000000" : null,
           marginBottom: "30px",
+          fontSize: "1.3rem",
         }}
       >
         Delight your end users with handcrafted easy to use software{" "}
@@ -43,7 +44,7 @@ function EnterpriseSegment({ darkMode }) {
           cursor: "pointer",
           color: darkMode ? "#F4B400" : "inherit",
           position: "relative",
-          bottom: "-2rem",
+          bottom: "1rem",
         }}
         className="enterprise-icon"
       />
