@@ -8,10 +8,10 @@ function DevelopersImg() {
   return (
     <div
       style={{ alignItems: "center" }}
-      data-aos="fade-left"
-      data-aos-offset="200"
-      data-aos-duration="1000"
-      data-aos-delay="1000"
+      // data-aos="fade-left"
+      // data-aos-offset="200"
+      // data-aos-duration="1000"
+      // data-aos-delay="1000"
       className="dev-img"
     >
       <Image src={Trial} alt="trial" className="boxes" />

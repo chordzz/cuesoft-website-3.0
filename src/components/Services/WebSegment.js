@@ -14,13 +14,21 @@ function WebSegment({ darkMode }) {
       <h3
         style={{
           textAlign: "center",
-          padding: "30px 30px 10px 30px",
+          padding: "15px 30px 10px 0",
           color: darkMode ? "#000000" : null,
+          marginBottom: "0",
+          marginTop: "0",
         }}
       >
         Web Development
       </h3>
-      <p style={{ textAlign: "center", color: darkMode ? "#000000" : null }}>
+      <p
+        style={{
+          textAlign: "center",
+          color: darkMode ? "#000000" : null,
+          fontSize: "1.3rem",
+        }}
+      >
         Arm yourself with a cutting edge website built to fit your needs today
         and to grow along with your organization{" "}
       </p>
@@ -32,7 +40,7 @@ function WebSegment({ darkMode }) {
           cursor: "pointer",
           color: darkMode ? "#F4B400" : "#db4437",
           position: "relative",
-          bottom: "-1.5rem",
+          bottom: "1.5rem",
         }}
       />
     </div>

@@ -31,8 +31,12 @@ button {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
 }
 
+p {
+  font-size: 1.6rem;
+}
 h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
@@ -42,13 +46,13 @@ h1 {
 
 h2 {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  font-size: 1.6rem;
+  font-weight: 700;
+  font-size: 2rem;
 }
 h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.8rem;
   /* color: #db4437; */
 }
 
@@ -56,6 +60,7 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   /* font-family: "Aileron", sans-serif; */
   font-weight: 600;
+  font-size: 1.6rem;
   /* font-size: 24px;
   line-height: 29px; */
 }
@@ -263,9 +268,9 @@ header {
 }
 
 /* About US */
-.mission h1 {
+/* .mission h1 {
   font-size: 50px;
-}
+} */
 
 .approach2-segment p {
   padding-bottom: 30px;
