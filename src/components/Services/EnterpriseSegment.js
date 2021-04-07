@@ -18,7 +18,7 @@ function EnterpriseSegment({ darkMode }) {
       <h5
         style={{
           textAlign: "center",
-          padding: "10px 0 10px 0",
+          padding: "0",
           color: darkMode ? "#000000" : null,
           margin: "0",
         }}
