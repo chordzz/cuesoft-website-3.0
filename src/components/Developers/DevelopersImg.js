@@ -1,8 +1,8 @@
 import React from "react";
 import { Image } from "semantic-ui-react";
-import Top_img from "../../assets/images/top-img1.png";
+// import Top_img from "../../assets/images/top-img1.png";
 import Top_img_webp from "../../assets/images/top-img1.webp";
-import Trial from "../../assets/icons/trial.svg";
+// import Trial from "../../assets/icons/trial.svg";
 
 function DevelopersImg() {
   return (

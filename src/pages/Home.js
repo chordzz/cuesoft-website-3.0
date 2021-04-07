@@ -5,7 +5,7 @@ import { AboutSegment } from "../components/About";
 import {
   Developers,
   DevelopersImg,
-  DevelopersImg2,
+  // DevelopersImg2,
 } from "../components/Developers";
 import {
   FrontendSegment,
