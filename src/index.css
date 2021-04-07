@@ -34,9 +34,13 @@ body {
   font-size: 1.6rem;
 }
 
-p {
+p,
+span,
+.span-a {
   font-size: 1.6rem;
+  /* line-height: 0.5; */
 }
+
 h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
@@ -47,12 +51,13 @@ h1 {
 h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 4.5rem;
+  line-height: 1;
 }
 h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 3.6rem;
   /* color: #db4437; */
 }
 
@@ -60,11 +65,36 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   /* font-family: "Aileron", sans-serif; */
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  /* font-size: 2rem !important; */
   /* font-size: 24px;
   line-height: 29px; */
 }
 
+h5 {
+  font-size: 1.7rem;
+}
+
+.h4-header {
+  font-size: 2.4rem !important;
+}
+
+.segment-p {
+  font-size: 1.2rem;
+}
+
+.span-text {
+  /* background-color: aqua; */
+  font-size: 2rem;
+}
+
+.tools-list {
+  font-size: 1.4rem !important;
+}
+
+.footer-list {
+  font-size: 1.3rem;
+}
 header {
   position: fixed !important;
   z-index: 1000;
@@ -103,7 +133,9 @@ header {
   background-color: #e8e8e8;
 }
 
-.enterprise:hover {
+.enterprise:hover,
+.web:hover,
+.mobile-app:hover {
   background-color: #db4437;
   color: white;
 }
@@ -144,34 +176,40 @@ header {
 }
 .dev-img {
   position: relative;
-  top: 0;
-  right: -3rem;
+  top: 7rem;
+  right: 3rem;
 }
 .boxes {
   position: relative;
   top: 0;
   right: -3rem;
 }
-.img-1 {
+/* .img-1 {
   position: absolute;
   top: -200px;
   left: -30px;
   height: 150px;
   width: 200px;
+} */
+.img-1 {
+  border-radius: 5px;
 }
-.dev-img-2 {
+/* .dev-img-2 {
   position: relative;
-  top: 50px;
-}
+  top: -50px;
+} */
 .boxes-2 {
   position: relative;
 }
-.img-2 {
+/* .img-2 {
   position: absolute;
   top: -200px;
   left: -70px;
   height: 150px;
   width: 200px;
+} */
+.img-2 {
+  border-radius: 5px;
 }
 .navbar {
   background: transparent;
@@ -179,7 +217,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.5rem !important;
 }
+
+.nav-btn span {
+  font-size: 1rem !important;
+}
+
 .brand-img {
   cursor: pointer;
   margin-left: 7.7rem;
@@ -246,10 +290,10 @@ header {
   width: 80%;
 } */
 
-.what-we-do {
+/* .what-we-do {
   text-align: center;
   margin: 0 auto;
-}
+} */
 
 .technologies {
   text-align: left;
@@ -262,10 +306,10 @@ header {
   /* text-align: "left"; */
 }
 
-.amazing-products {
+/* .amazing-products {
   width: 430px;
   height: 92px;
-}
+} */
 
 /* About US */
 /* .mission h1 {
@@ -314,10 +358,14 @@ Form {
 /* For Mobile */
 
 /* New Section  */
-@media screen and (max-width: 480px) {
+@media all and (max-width: 480px) {
   /* .segment {
     min-height: auto;
   } */
+
+  .navbar {
+    background: rgb(47, 94, 47) !important;
+  }
 
   .menu-icon-1 {
     visibility: visible;

@@ -21,6 +21,7 @@ function Footer3({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Blog
           </List.Content>
@@ -33,6 +34,7 @@ function Footer3({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Facebook
           </List.Content>
@@ -45,6 +47,7 @@ function Footer3({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Twitter
           </List.Content>
@@ -57,6 +60,7 @@ function Footer3({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Instagram
           </List.Content>

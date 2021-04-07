@@ -14,10 +14,10 @@ function DevelopersImg() {
       // data-aos-delay="1000"
       className="dev-img"
     >
-      <Image src={Trial} alt="trial" className="boxes" />
+      {/* <Image src={Trial} alt="trial" className="boxes" /> */}
       <picture>
-        <source srcSet={Top_img_webp} type="image/webp" />
-        <source srcSet={Top_img} type="image/png" />
+        {/* <source srcSet={Top_img_webp} type="image/webp" />
+        <source srcSet={Top_img} type="image/png" /> */}
         <Image src={Top_img_webp} alt="top image" className="img-1" />
       </picture>
     </div>

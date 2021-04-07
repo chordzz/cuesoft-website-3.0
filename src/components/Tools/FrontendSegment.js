@@ -9,13 +9,13 @@ import Angular2 from "../../assets/icons/angular2.svg";
 
 function FrontendSegment({ darkMode }) {
   return (
-    <div className="frontend-tools" style={{ textAlign: "center" }}>
+    <div className="frontend-tools" style={{}}>
       <h4
         style={{ fontFamily: "Source Sans Pro, sans-serif", fontWeight: "600" }}
       >
         Frontend development{" "}
       </h4>
-      <List style={{ fontWeight: "600" }}>
+      <List style={{ fontWeight: "600" }} className="tools-list">
         <List.Item style={{ paddingTop: "30px" }}>
           <Image src={darkMode ? React2 : React1} size="mini" />
           <List.Content style={{ paddingTop: "10px" }}>React</List.Content>

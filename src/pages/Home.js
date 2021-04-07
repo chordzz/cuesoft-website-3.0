@@ -98,9 +98,9 @@ const Home = ({
                 style={{
                   // paddingLeft: 10,
                   lineHeight: 1,
-                  fontSize: "2rem",
                   color: darkMode ? "#ffffff" : "#474646",
                 }}
+                className="span-text"
                 // data-aos="fade-right"
                 // data-aos-duration="1000"
                 // data-aos-delay="1000"
@@ -151,19 +151,19 @@ const Home = ({
               // fontWeight: "600",
             }}
           >
-            <p
+            <h2
               style={{
                 color: darkMode ? "#ffffff" : null,
                 // fontFamily: "Archivo",
                 // fontSize: "17px",
                 // lineHeight: "24px",
                 // fontWeight: 600,
-                fontSize: "4.8rem",
+                // fontSize: "4.5rem",
                 fontFamily: "Source Sans Pro",
               }}
             >
               Our approach
-            </p>
+            </h2>
           </Header>
           <Header
             style={{
@@ -171,9 +171,12 @@ const Home = ({
               marginBottom: "32px",
             }}
           >
-            <h2 style={{ color: darkMode ? "#F4B400" : null }}>
+            <span
+              style={{ color: darkMode ? "#F4B400" : null }}
+              className="span-text"
+            >
               Analyze. Design. Build. Evolve
-            </h2>
+            </span>
           </Header>
           <Grid centered>
             <Grid.Row>
@@ -215,7 +218,7 @@ const Home = ({
           <Header>
             <Grid>
               <Grid.Row>
-                <Grid.Column mobile={16} computer={8}>
+                <Grid.Column mobile={10} computer={16}>
                   <h2
                     style={{
                       textAlign: "left",
@@ -299,7 +302,7 @@ const Home = ({
         <Container>
           <Image
             src={AngleDown}
-            style={{ margin: "-200px 0 0 0" }}
+            style={{ margin: "-70px 0 0 0" }}
             size="mini"
             floated="left"
             className="angle-down-img"
@@ -307,13 +310,14 @@ const Home = ({
           <Header
             style={{
               paddingBottom: "32px",
+              paddingTop: "10px",
             }}
             className="technologies"
           >
             <h3
               style={{
                 color: darkMode ? "white" : null,
-                fontSize: "1.8rem",
+                // fontSize: "1.8rem",
                 fontWeight: "600",
               }}
             >
@@ -324,9 +328,9 @@ const Home = ({
           </Header>
           <Grid>
             <Grid.Row
-              style={{
-                left: "-4rem",
-              }}
+            // style={{
+            //   left: "-4rem",
+            // }}
             >
               <Grid.Column mobile={16} computer={5}>
                 <FrontendSegment darkMode={darkMode} />
@@ -364,8 +368,7 @@ const Home = ({
             <h2
               style={{
                 color: darkMode ? "#F4B400" : "black",
-                marginLeft: "10px",
-                fontSize: "2rem",
+                // marginLeft: "10px",
               }}
             >
               Our services

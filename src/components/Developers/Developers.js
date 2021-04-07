@@ -15,7 +15,7 @@ function Developers({ darkMode }) {
         <br />
         for your project
       </h2>
-      <p style={{ color: darkMode ? "white" : null }}>
+      <p style={{ color: darkMode ? "white" : null }} className="span-text">
         We build effective, scalable development teams fitting your project's
         needs. Our experienced developers are ready to join your project. We
         support their growth and keep them motivated so they can take up the
