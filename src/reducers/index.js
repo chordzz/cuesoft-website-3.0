@@ -9,6 +9,7 @@ import contact from "./contact";
 import mode from "./mode";
 import termsData from "./terms";
 import privacyData from "./privacy";
+import household from "./household";
 
 export default combineReducers({
   form,
@@ -21,4 +22,5 @@ export default combineReducers({
   mode,
   termsData,
   privacyData,
+  household,
 });
