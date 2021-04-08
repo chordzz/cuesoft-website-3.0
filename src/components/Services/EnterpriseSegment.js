@@ -15,24 +15,25 @@ function EnterpriseSegment({ darkMode }) {
       // data-aos-easing="ease-in-out"
       // data-aos-delay="2000"
     >
-      <h3
+      <h5
         style={{
           textAlign: "center",
-          // padding: "15px 0 10px 0",
           padding: "0",
           color: darkMode ? "#000000" : null,
           margin: "0",
         }}
       >
         Enterprise Software Development
-      </h3>
+      </h5>
       <p
         style={{
           textAlign: "center",
           color: darkMode ? "#000000" : null,
           marginBottom: "30px",
-          fontSize: "1.3rem",
+          marginTop: "10px",
+          // fontSize: "1.3rem",
         }}
+        className="segment-p"
       >
         Delight your end users with handcrafted easy to use software{" "}
       </p>
@@ -46,7 +47,7 @@ function EnterpriseSegment({ darkMode }) {
           position: "relative",
           bottom: "1rem",
         }}
-        className="enterprise-icon"
+        // className="segment-icon"
       />
     </div>
   );

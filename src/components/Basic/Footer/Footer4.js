@@ -35,6 +35,7 @@ function Footer4({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Terms
           </List.Content>
@@ -47,6 +48,7 @@ function Footer4({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Privacy Policy
           </List.Content>
@@ -59,6 +61,7 @@ function Footer4({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             FAQ
           </List.Content>
@@ -71,6 +74,7 @@ function Footer4({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Partners
           </List.Content>

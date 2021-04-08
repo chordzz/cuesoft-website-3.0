@@ -13,16 +13,16 @@ function Footer1({ darkMode }) {
         size="small"
         inline
       />
-      <h2
+      <h3
         style={{
           color: darkMode ? "#ffffff" : "#474646",
-          paddingTop: "5px",
-          width: "308px",
-          height: "48px",
+          // paddingTop: "5px",
+          // width: "308px",
+          // height: "48px",
         }}
       >
         Let's get started
-      </h2>
+      </h3>
       <p style={{ color: darkMode ? "#ffffff" : "#474646", paddingTop: "5px" }}>
         Let us show you what responsive, reliable and accountable software
         support looks like in today's world, as well as give you a glimpse of
@@ -33,6 +33,7 @@ function Footer1({ darkMode }) {
         as="a"
         color={darkMode ? "yellow" : "red"}
         style={{ borderRadius: "30px" }}
+        className="footer-button"
       >
         <span
           style={{
@@ -40,6 +41,7 @@ function Footer1({ darkMode }) {
             fontWeight: "600",
             width: "112px",
             height: "18px",
+            fontSize: "1.3rem",
           }}
         >
           Start a project

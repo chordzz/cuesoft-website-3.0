@@ -11,7 +11,7 @@ function WebSegment({ darkMode }) {
       // data-aos-easing="ease-in-out"
       // style = {{padding:'10px 20px'}}
     >
-      <h3
+      <h5
         style={{
           textAlign: "center",
           padding: "15px 30px 10px 0",
@@ -21,13 +21,14 @@ function WebSegment({ darkMode }) {
         }}
       >
         Web Development
-      </h3>
+      </h5>
       <p
         style={{
           textAlign: "center",
           color: darkMode ? "#000000" : null,
-          fontSize: "1.3rem",
+          // fontSize: "1.3rem",
         }}
+        className="segment-p"
       >
         Arm yourself with a cutting edge website built to fit your needs today
         and to grow along with your organization{" "}
@@ -38,9 +39,9 @@ function WebSegment({ darkMode }) {
           float: "right",
           fontSize: "25px",
           cursor: "pointer",
-          color: darkMode ? "#F4B400" : "#db4437",
+          color: darkMode ? "#F4B400" : "inherit",
           position: "relative",
-          bottom: "1.5rem",
+          bottom: "0rem",
         }}
       />
     </div>
