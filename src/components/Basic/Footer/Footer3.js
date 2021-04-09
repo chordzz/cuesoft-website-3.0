@@ -15,7 +15,7 @@ function Footer3({ darkMode }) {
         Community
       </p>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
@@ -23,7 +23,7 @@ function Footer3({ darkMode }) {
             }}
             className="footer-list"
           >
-            Blog
+            <a href="https://medium.com/@cuesoft">Blog</a>
           </List.Content>
         </List.Item>
       </List>
@@ -36,7 +36,20 @@ function Footer3({ darkMode }) {
             }}
             className="footer-list"
           >
-            Facebook
+            <a href="https://www.facebook.com/cuesoft">Facebook</a>
+          </List.Content>
+        </List.Item>
+      </List>
+      <List>
+        <List.Item>
+          <List.Content
+            style={{
+              color: darkMode ? "#ffffff" : "#000000",
+              paddingBottom: "10px",
+            }}
+            className="footer-list"
+          >
+            <a href="https://twitter.com/CuesoftCloud">Twitter</a>
           </List.Content>
         </List.Item>
       </List>
@@ -49,12 +62,12 @@ function Footer3({ darkMode }) {
             }}
             className="footer-list"
           >
-            Twitter
+            <a href="https://www.instagram.com/cuesoftcloud/">Instagram </a>
           </List.Content>
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
@@ -62,7 +75,7 @@ function Footer3({ darkMode }) {
             }}
             className="footer-list"
           >
-            Instagram
+            <a href="https://www.linkedin.com/company/cuesoft">LinkedIn</a>
           </List.Content>
         </List.Item>
       </List>

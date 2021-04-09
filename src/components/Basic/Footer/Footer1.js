@@ -1,5 +1,6 @@
 import React from "react";
-import { Image, Button } from "semantic-ui-react";
+// import { Image, Button } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 import Logo from "../../../assets/icons/LogoWeb.svg";
 import Logo2 from "../../../assets/icons/LogoWebDark.svg";
 

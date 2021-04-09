@@ -95,6 +95,11 @@ h5 {
 .footer-list {
   font-size: 1.3rem;
 }
+
+.footer-list a {
+  color: black;
+}
+
 header {
   position: fixed !important;
   z-index: 1000;
