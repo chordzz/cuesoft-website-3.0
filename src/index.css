@@ -44,20 +44,20 @@ span,
 h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  font-size: 4.8rem;
+  font-size: 4.5rem; /* 4.8rem */
   line-height: 1;
 }
 
 h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 4rem; /* 4.5 */
   line-height: 1;
 }
 h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
-  font-size: 3.6rem;
+  font-size: 3.3rem; /* 3.6 */
   /* color: #db4437; */
 }
 
@@ -65,36 +65,43 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   /* font-family: "Aileron", sans-serif; */
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem; /* 2rem */
   /* font-size: 2rem !important; */
   /* font-size: 24px;
   line-height: 29px; */
 }
 
 h5 {
-  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4rem /* 1.7 */;
 }
 
 .h4-header {
-  font-size: 2.4rem !important;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.7rem !important /* 2.4 */;
 }
 
 .segment-p {
-  font-size: 1.2rem;
+  font-size: 1.2rem /*1.5rem*/;
 }
 
 .span-text {
   /* background-color: aqua; */
-  font-size: 2rem;
+  font-size: 1.5rem; /*2rem*/
 }
 
 .tools-list {
-  font-size: 1.4rem !important;
+  font-size: 1.3rem !important;
 }
 
 .footer-list {
   font-size: 1.3rem;
 }
+
+.footer-list a {
+  color: black;
+}
+
 header {
   position: fixed !important;
   z-index: 1000;
@@ -149,6 +156,13 @@ header {
   outline: none;
 }
 
+.ui.form input[type="text"],
+.ui.form input[type="email"] {
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
 .button {
   border-radius: 30px !important;
   margin-right: 20px;
@@ -174,6 +188,22 @@ header {
 .ui.toggle.checkbox label:before {
   background-color: lightgrey !important;
 }
+
+.ui.toggle.checkbox label:before {
+  content: "\1F31B";
+  padding-top: 0.2em;
+  padding-right: 0.2em;
+  text-align: right;
+}
+
+.ui.toggle.checkbox input:checked ~ label:before {
+  content: "\1F31E" !important;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  text-align: left;
+  color: black;
+}
+
 .dev-img {
   position: relative;
   top: 7rem;
@@ -217,11 +247,36 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important /*1.5rem*/;
 }
 
 .nav-btn span {
   font-size: 1rem !important;
+}
+
+a.typeform-share {
+  display: inline-block;
+  text-decoration: none;
+  /* background-color: #db4437 !important; */
+  /* color: white; */
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  /* font-size: 17px;
+  line-height: 42.5px; */
+  text-align: center;
+  margin: 0;
+  height: 42.5px;
+  /* padding: 0px 28px; */
+  padding: 5px 10px;
+  border-radius: 21px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .brand-img {

@@ -45,18 +45,18 @@ const initialState = {
       title: "Creative Writer",
     },
     {
+      photo: Face2,
+      name: "Opeyemi Oluleye",
+      title: "Accountant",
+    },
+    {
       photo: Face8,
       name: "Yusuf Adefolahan",
       title: "Software Engineer",
     },
     {
-      photo: Face2,
-      name: "Mayowa Oluwasina",
-      title: "Fullstack Engineer",
-    },
-    {
       photo: Face4,
-      name: "Michael Chukwude",
+      name: "Opemipo Akintomiwa",
       title: "Backend Engineer",
     },
     {

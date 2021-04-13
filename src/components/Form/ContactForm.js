@@ -14,6 +14,7 @@ function ContactForm({ darkMode }) {
         //   justifyContent: "space-evenly",
         //   marginBottom: "30px",
         // }}
+
         className="contact-form"
       >
         <Field
@@ -23,6 +24,7 @@ function ContactForm({ darkMode }) {
           placeholder="What is your name?"
           name="name"
           required
+          style={{ borderTop: "1px solid transparent" }}
         />
         <Field
           component={RenderField}

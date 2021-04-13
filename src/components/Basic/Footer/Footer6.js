@@ -3,7 +3,7 @@ import React from "react";
 function Footer6({ darkMode }) {
   const year = new Date().getFullYear();
   return (
-    <div style={{ marginBottom: "30px" }}>
+    <div style={{ marginBottom: "20px" }}>
       <p
         style={{ color: darkMode ? "#ffffff" : "#000000", fontSize: "1.2rem" }}
       >

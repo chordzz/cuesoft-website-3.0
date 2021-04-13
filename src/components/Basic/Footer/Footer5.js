@@ -6,24 +6,34 @@ function Footer5({ darkMode }) {
       <p
         style={{
           color: darkMode ? "#ffffff" : "#000000",
-          paddingBottom: "10px",
+          paddingBottom: "5px",
         }}
       >
-        Address: 39 Alfred Rewane Road, 3rd & 7th Floors, Mulliner Towers,
-        Lagos, Nigeria
+        Address: <br />
+        39 Alfred Rewane Road, 3rd & 7th Floors, Mulliner Towers, Lagos, Nigeria
       </p>
       <p
         style={{
           color: darkMode ? "#ffffff" : "#000000",
-          paddingBottom: "10px",
+          paddingBottom: "5px",
         }}
       >
-        Phone: +234 8109103898
+        Phone: <br />
+        +234 8109103898
       </p>
       <p
         style={{
           color: darkMode ? "#ffffff" : "#000000",
-          paddingBottom: "10px",
+          paddingBottom: "5px",
+        }}
+      >
+        Tel: <br />
+        +1 (408) 495-2909
+      </p>
+      <p
+        style={{
+          color: darkMode ? "#ffffff" : "#000000",
+          paddingBottom: "5px",
         }}
       >
         Mail: support@cuesoft.io
