@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Segment, Container, Header, Grid } from "semantic-ui-react";
@@ -6,6 +6,8 @@ import { ContactForm } from "../components/Form";
 import { LocationSegment } from "../components/Location";
 
 function Contact({ darkMode, locationData }) {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
       <Segment
@@ -16,20 +18,25 @@ function Contact({ darkMode, locationData }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "100vh",
+          // minHeight: "100vh",
         }}
       >
         <Container>
           <Header
             style={{
               color: !darkMode && "#474646",
-              paddingTop: "60px",
+              // paddingTop: "60px",
             }}
           >
             <Grid>
               <Grid.Row>
-                <Grid.Column computer={7} mobile={16}>
-                  <h1 style={{ color: darkMode ? "#ffffff" : null }}>
+                <Grid.Column computer={12} mobile={16}>
+                  <h1
+                    style={{
+                      color: darkMode ? "#ffffff" : null,
+                    }}
+                    className="contact-h1"
+                  >
                     Interested in our services or need advice? Get in touch and
                     we'll be glad to help.
                   </h1>
@@ -54,7 +61,7 @@ function Contact({ darkMode, locationData }) {
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "100vh",
+          // minHeight: "100vh",
         }}
       >
         <Container>

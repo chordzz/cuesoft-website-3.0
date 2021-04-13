@@ -6,14 +6,16 @@ import { RenderField } from "../Basic";
 
 function ContactForm({ darkMode }) {
   return (
-    <main>
+    <main className="main-contact">
       <Form
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          marginBottom: "30px",
-        }}
+        // style={{
+        //   display: "flex",
+        //   flexDirection: "row",
+        //   justifyContent: "space-evenly",
+        //   marginBottom: "30px",
+        // }}
+
+        className="contact-form"
       >
         <Field
           component={RenderField}
@@ -22,6 +24,7 @@ function ContactForm({ darkMode }) {
           placeholder="What is your name?"
           name="name"
           required
+          style={{ borderTop: "1px solid transparent" }}
         />
         <Field
           component={RenderField}
@@ -33,12 +36,12 @@ function ContactForm({ darkMode }) {
         />
       </Form>
       <Form
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          marginBottom: "30px",
-        }}
+      // style={{
+      //   display: "flex",
+      //   flexDirection: "row",
+      //   justifyContent: "space-evenly",
+      //   marginBottom: "30px",
+      // }}
       >
         <Field
           component={RenderField}
@@ -58,12 +61,12 @@ function ContactForm({ darkMode }) {
         />
       </Form>
       <Form
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          marginBottom: "30px",
-        }}
+      // style={{
+      //   display: "flex",
+      //   flexDirection: "row",
+      //   justifyContent: "space-evenly",
+      //   marginBottom: "30px",
+      // }}
       >
         <Field
           component={RenderField}
@@ -96,8 +99,9 @@ function ContactForm({ darkMode }) {
         type="submit"
         size="large"
         color={darkMode ? "yellow" : "red"}
-        style={{ borderRadius: "30px", marginRight: "20px" }}
+        // style={{ borderRadius: "30px", marginRight: "20px", width: "150px" }}
         floated="right"
+        className="contact-button"
       >
         <span style={{ color: darkMode ? "#000000" : "#ffffff" }}>Send</span>
       </Button>

@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 function Footer2({ darkMode }) {
   return (
-    <div style={{ paddingBottom: "30px" }}>
+    <div style={{ paddingBottom: "30px" }} on="true">
       <p
         style={{
           color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "30px",
-          fontWeight: "bold",
+          fontWeight: "600",
         }}
       >
         Company
@@ -21,6 +21,7 @@ function Footer2({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             About
           </List.Content>
@@ -33,6 +34,7 @@ function Footer2({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Careers
           </List.Content>
@@ -45,6 +47,7 @@ function Footer2({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Contact
           </List.Content>
@@ -57,6 +60,7 @@ function Footer2({ darkMode }) {
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
             Investors
           </List.Content>

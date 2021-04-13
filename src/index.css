@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,600&display=swap"); */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body,
+/* body,
 h1,
 h2,
 h3,
@@ -17,6 +12,94 @@ input,
 textarea,
 button {
   font-family: "Montserrat", sans-serif !important;
+  font-family: 'Archivo', sans-serif;
+} */
+
+/* @font-face {
+  font-family: "AileronLight";
+  src: local("AileronLight"), url("./assets/fonts/aileron/Aileron-Light.otf");
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
+}
+
+p,
+span,
+.span-a {
+  font-size: 1.6rem;
+  /* line-height: 0.5; */
+}
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem; /* 4.8rem */
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 4rem; /* 4.5 */
+  line-height: 1;
+}
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 3.3rem; /* 3.6 */
+  /* color: #db4437; */
+}
+
+h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Aileron", sans-serif; */
+  font-weight: 600;
+  font-size: 1.5rem; /* 2rem */
+  /* font-size: 2rem !important; */
+  /* font-size: 24px;
+  line-height: 29px; */
+}
+
+h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4rem /* 1.7 */;
+}
+
+.h4-header {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.7rem !important /* 2.4 */;
+}
+
+.segment-p {
+  font-size: 1.2rem /*1.5rem*/;
+}
+
+.span-text {
+  /* background-color: aqua; */
+  font-size: 1.5rem; /*2rem*/
+}
+
+.tools-list {
+  font-size: 1.3rem !important;
+}
+
+.footer-list {
+  font-size: 1.3rem;
+}
+
+.footer-list a {
+  color: black;
 }
 
 header {
@@ -26,10 +109,10 @@ header {
   right: 0px;
 }
 
-main {
-  padding-top: 85.38px;
+/* main {
+  /* padding-top: 85.38px; 
   min-height: calc(100vh - 85.38px);
-}
+} */
 
 .web {
   width: 100%;
@@ -54,18 +137,46 @@ main {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 10px;
-  background-color: #db4437;
+  background-color: #e8e8e8;
 }
+
+.enterprise:hover,
+.web:hover,
+.mobile-app:hover {
+  background-color: #db4437;
+  color: white;
+}
+
+/* .enterprise-icon::before {
+  color: white;
+} */
 .form {
   width: 100%;
-  margin: 0 5px;
-  border: 0;
+  margin: 0 5px 20px;
   outline: none;
+}
+
+.ui.form input[type="text"],
+.ui.form input[type="email"] {
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
+.button {
+  border-radius: 30px !important;
+  margin-right: 20px;
+  width: 150px;
 }
 
 #menu-style {
   padding-top: 25px;
   margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 18.5px;
+  color: #201f1f;
 }
 
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
@@ -77,36 +188,58 @@ main {
 .ui.toggle.checkbox label:before {
   background-color: lightgrey !important;
 }
+
+.ui.toggle.checkbox label:before {
+  content: "\1F31B";
+  padding-top: 0.2em;
+  padding-right: 0.2em;
+  text-align: right;
+}
+
+.ui.toggle.checkbox input:checked ~ label:before {
+  content: "\1F31E" !important;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  text-align: left;
+  color: black;
+}
+
 .dev-img {
   position: relative;
-  top: 0;
-  right: -3rem;
+  top: 7rem;
+  right: 3rem;
 }
 .boxes {
   position: relative;
   top: 0;
   right: -3rem;
 }
-.img-1 {
+/* .img-1 {
   position: absolute;
   top: -200px;
   left: -30px;
   height: 150px;
   width: 200px;
+} */
+.img-1 {
+  border-radius: 5px;
 }
-.dev-img-2 {
+/* .dev-img-2 {
   position: relative;
-  top: 50px;
-}
+  top: -50px;
+} */
 .boxes-2 {
   position: relative;
 }
-.img-2 {
+/* .img-2 {
   position: absolute;
   top: -200px;
   left: -70px;
   height: 150px;
   width: 200px;
+} */
+.img-2 {
+  border-radius: 5px;
 }
 .navbar {
   background: transparent;
@@ -114,7 +247,38 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.2rem !important /*1.5rem*/;
 }
+
+.nav-btn span {
+  font-size: 1rem !important;
+}
+
+a.typeform-share {
+  display: inline-block;
+  text-decoration: none;
+  /* background-color: #db4437 !important; */
+  /* color: white; */
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  /* font-size: 17px;
+  line-height: 42.5px; */
+  text-align: center;
+  margin: 0;
+  height: 42.5px;
+  /* padding: 0px 28px; */
+  padding: 5px 10px;
+  border-radius: 21px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .brand-img {
   cursor: pointer;
   margin-left: 7.7rem;
@@ -175,7 +339,89 @@ main {
   margin-left: -0.3rem;
 }
 
-@media screen and (max-width: 768px) {
+/* New Section  */
+/* #intro-image {
+  margin-top: -100px;
+  width: 80%;
+} */
+
+/* .what-we-do {
+  text-align: center;
+  margin: 0 auto;
+} */
+
+.technologies {
+  text-align: left;
+}
+
+.technologies h3 {
+  font-weight: normal;
+  /* font-size: 32px;
+  line-height: 38px; */
+  /* text-align: "left"; */
+}
+
+/* .amazing-products {
+  width: 430px;
+  height: 92px;
+} */
+
+/* About US */
+/* .mission h1 {
+  font-size: 50px;
+} */
+
+.approach2-segment p {
+  padding-bottom: 30px;
+  padding-right: 120px;
+}
+
+.worked-with {
+  margin-right: 30px;
+}
+
+/* Contact US */
+.contact-h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+Form {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.location-segment {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.location-segment img {
+  margin-left: 90px;
+}
+
+.location-segment p {
+  padding-right: 20px;
+}
+
+.segment {
+  min-height: calc(100vmin - 85.38px);
+}
+
+/* For Mobile */
+
+/* New Section  */
+@media all and (max-width: 480px) {
+  /* .segment {
+    min-height: auto;
+  } */
+
+  .navbar {
+    background: rgb(47, 94, 47) !important;
+  }
+
   .menu-icon-1 {
     visibility: visible;
     padding-right: 3rem;
@@ -192,6 +438,9 @@ main {
   }
   .brand-img {
     margin-left: 1rem;
+  }
+  .brand-img img {
+    font-size: 100px;
   }
   .nav-menu {
     display: flex;
@@ -294,5 +543,101 @@ main {
     left: 1px;
     height: 100px;
     width: 100px;
+  }
+
+  /* h1 {
+    font-size: 30px;
+  } */
+  #intro-image {
+    margin-top: 0;
+  }
+
+  /* h2 {
+    font-size: 22px;
+  } */
+  .what-we-do {
+    text-align: left;
+    line-height: 1em;
+    margin-left: 20px;
+  }
+  .angle-up-img,
+  .angle-down-img {
+    visibility: hidden;
+  }
+
+  .developers h2 {
+    margin-top: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+  .dev-img {
+    width: 150%;
+    top: 10px;
+  }
+  .dev-img-2 {
+    width: 150%;
+    right: 10px;
+    left: 10px;
+  }
+
+  .technologies h3 {
+    font-size: 20px;
+    line-height: 1em;
+  }
+
+  .frontend-tools,
+  .backend-tools,
+  .mobile-tools {
+    margin-bottom: 30px;
+  }
+
+  .amazing-products {
+    width: 90%;
+    line-height: 1em;
+  }
+
+  /* About US */
+
+  .mission h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .kubernetes {
+    line-height: 1em;
+  }
+
+  .approach2-segment p {
+    padding-right: 0;
+  }
+
+  .worked-with {
+    line-height: 1em;
+  }
+
+  /* Contact US */
+  .contact-h1 {
+    font-size: 30px;
+  }
+
+  .form {
+    flex-direction: column;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+
+  .location-segment {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0;
+    min-height: 200px;
+  }
+
+  .location-segment img {
+    margin-left: 130px;
+  }
+
+  .location-segment p {
+    padding-right: 20px;
   }
 }

@@ -3,11 +3,15 @@ import React from "react";
 function Footer6({ darkMode }) {
   const year = new Date().getFullYear();
   return (
-    <div style={{ padding: "20px 0" }}>
-      <p style={{ color: darkMode ? "#ffffff" : "#000000" }}>
+    <div style={{ marginBottom: "20px" }}>
+      <p
+        style={{ color: darkMode ? "#ffffff" : "#000000", fontSize: "1.2rem" }}
+      >
         &copy; Cuesoft {year}. All rights reserved.
       </p>
-      <p style={{ color: darkMode ? "#ffffff" : "#000000" }}>
+      <p
+        style={{ color: darkMode ? "#ffffff" : "#000000", fontSize: "1.2rem" }}
+      >
         Cuesoft is a company registered in Nigeria
       </p>
     </div>

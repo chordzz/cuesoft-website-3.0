@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
@@ -12,6 +12,8 @@ import Smiley2 from "../assets/icons/smiley2.svg";
 import { Client } from "../components/Clients";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
       <Segment
@@ -21,14 +23,13 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
-          padding: "200px 0",
-          minHeight: "100vh",
         }}
+        // className="aboutPage-missionSection"
       >
         <Container>
           <Grid>
             <Grid.Row>
-              <Grid.Column computer={8} mobile={16}>
+              <Grid.Column computer={13} mobile={16}>
                 <Mission darkMode={darkMode} />
               </Grid.Column>
             </Grid.Row>
@@ -49,11 +50,12 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             }}
           >
             <h2
-              style={{ color: darkMode ? "#F4B400" : null }}
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-out"
+              style={{ color: darkMode ? "#F4B400" : "rgb(71, 70, 70)" }}
+              // data-aos="fade-right"
+              // data-aos-duration="1000"
+              // data-aos-offset="200"
+              // data-aos-easing="ease-in-out"
+              className="kubernetes"
             >
               We are the Kubernetes for technical teams
             </h2>
@@ -75,14 +77,14 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "100vh",
+          // minHeight: "100vh",
         }}
       >
         <Container
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+        // data-aos="fade-up"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
+        // data-aos-easing="ease-in-out"
         >
           <Header
             style={{
@@ -90,14 +92,15 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               marginBottom: "32px",
             }}
           >
-            <p
+            <h2
               style={{
-                color: darkMode ? "#ffffff" : null,
+                color: darkMode ? "#ffffff" : "inherit",
                 textAlign: "center",
+                // fontWeight: "600",
               }}
             >
               Our approach
-            </p>
+            </h2>
           </Header>
           <Header
             style={{
@@ -105,14 +108,14 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               marginBottom: "32px",
             }}
           >
-            <h2
+            <h3
               style={{
                 color: darkMode ? "#F4B400" : null,
                 textAlign: "center",
               }}
             >
               Analyze. Design. Build. Evolve
-            </h2>
+            </h3>
           </Header>
           <Grid>
             <Grid.Row>
@@ -137,7 +140,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "60px 0",
-          minHeight: "100vh",
+          // minHeight: "100vh",
         }}
       >
         <Container>
@@ -193,7 +196,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "100px 0",
-          minHeight: "100vh",
+          // minHeight: "100vh",
         }}
       >
         <Container
@@ -210,7 +213,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             <Grid>
               <Grid.Row>
                 <Grid.Column
-                  computer={9}
+                  computer={12}
                   mobile={16}
                   style={{
                     display: "flex",
@@ -218,13 +221,18 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                     justifyContent: "space-evenly",
                   }}
                 >
-                  <h2 style={{ color: darkMode ? "#F4B400" : null }}>
+                  <h2
+                    style={{
+                      color: darkMode ? "#F4B400" : null,
+                    }}
+                    className="worked-with"
+                  >
                     We've worked with lovely clients and all we did was put a
-                    smile on their face
+                    smile on their faces.
                   </h2>
                   <Image
                     src={darkMode ? Smiley2 : Smiley}
-                    size="mini"
+                    size="small"
                     centered
                   />
                 </Grid.Column>
@@ -255,7 +263,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
   );
 }
 
-About.prototypes = {
+About.propTypes = {
   approachTwo: PropTypes.array.isRequired,
   teamMembers: PropTypes.array.isRequired,
   clientsData: PropTypes.array.isRequired,

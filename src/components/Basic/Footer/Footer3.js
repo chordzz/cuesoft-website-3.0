@@ -1,6 +1,6 @@
 import React from "react";
 import { List } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Footer3({ darkMode }) {
   return (
@@ -9,56 +9,73 @@ function Footer3({ darkMode }) {
         style={{
           color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "30px",
-          fontWeight: "bold",
+          fontWeight: "600",
         }}
       >
         Community
       </p>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
-            Blog
+            <a href="https://medium.com/@cuesoft">Blog</a>
           </List.Content>
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
-            Facebook
+            <a href="https://www.facebook.com/cuesoft">Facebook</a>
           </List.Content>
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
-            Twitter
+            <a href="https://twitter.com/CuesoftCloud">Twitter</a>
           </List.Content>
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
             }}
+            className="footer-list"
           >
-            Instagram
+            <a href="https://www.instagram.com/cuesoftcloud/">Instagram </a>
+          </List.Content>
+        </List.Item>
+      </List>
+      <List>
+        <List.Item>
+          <List.Content
+            style={{
+              color: darkMode ? "#ffffff" : "#000000",
+              paddingBottom: "10px",
+            }}
+            className="footer-list"
+          >
+            <a href="https://www.linkedin.com/company/cuesoft">LinkedIn</a>
           </List.Content>
         </List.Item>
       </List>

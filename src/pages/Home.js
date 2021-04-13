@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Segment, Container, Grid, Image, Header } from "semantic-ui-react";
 import { ApproachSegment } from "../components/Approach";
 import { AboutSegment } from "../components/About";
 import {
   Developers,
   DevelopersImg,
-  DevelopersImg2,
+  // DevelopersImg2,
 } from "../components/Developers";
 import {
   FrontendSegment,
@@ -22,8 +22,8 @@ import PropTypes from "prop-types";
 import { Client } from "../components/Clients";
 import { connect } from "react-redux";
 import Space from "../assets/icons/space.svg";
-import Square from "../assets/icons/squircle.svg";
-import Square2 from "../assets/icons/squircle2.svg";
+// import Square from "../assets/icons/squircle.svg";
+// import Square2 from "../assets/icons/squircle2.svg";
 import AngleUp from "../assets/icons/angle-up.svg";
 import AngleDown from "../assets/icons/angle-down.svg";
 
@@ -34,6 +34,8 @@ const Home = ({
   innovationData,
   productsData,
 }) => {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
       <Segment
@@ -44,22 +46,31 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
-          display: "flex",
-          flexFlow: "column wrap",
-          justifyContent: "center",
+          // display: "flex",
+          // flexFlow: "column wrap",
+          // justifyContent: "center",
+          // alignContents: "stretch",
         }}
+        className="mainSegment"
       >
         <Container>
-          <Grid columns={2}>
+          <Grid
+            columns={2}
+            style={{
+              display: "flex",
+              flexFlow: "row wrap",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <Grid.Column mobile={16} computer={8}>
               <h1
-                style={{ fontSize: "46px" }}
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
+              // style={{ fontSize: "46px" }}
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-in-out"
               >
-                We build{" "}
+                {/* We build{" "}
                 <span
                   style={{
                     color: darkMode ? "#F4B400" : "#db4437",
@@ -67,13 +78,13 @@ const Home = ({
                   }}
                 >
                   Websites.{" "}
-                </span>
-                <br />
+                </span> */}
+                {/* <br /> */}
                 We develop functional processes that improve products and
                 services
               </h1>
               <br />
-              <Image
+              {/* <Image
                 src={darkMode ? Square2 : Square}
                 alt="square"
                 inline
@@ -82,18 +93,18 @@ const Home = ({
                 data-aos-duration="1000"
                 data-aos-delay="1000"
                 data-aos-easing="ease-in-out"
-              />
+              /> */}
               <span
                 style={{
-                  paddingLeft: 10,
-                  lineHeight: 1.5,
-                  fontSize: "17px",
+                  // paddingLeft: 10,
+                  lineHeight: 1,
                   color: darkMode ? "#ffffff" : "#474646",
                 }}
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-delay="1000"
-                data-aos-easing="ease-in-out"
+                className="span-text"
+                // data-aos="fade-right"
+                // data-aos-duration="1000"
+                // data-aos-delay="1000"
+                // data-aos-easing="ease-in-out"
               >
                 We help great companies simplify and grow their businesses by
                 designing and building beautiful products
@@ -101,7 +112,7 @@ const Home = ({
             </Grid.Column>
             <Grid.Column mobile={16} computer={8}>
               <Image
-                style={{ marginTop: "-100px" }}
+                // style={{ marginTop: "-100px" }}
                 src={Space}
                 alt="space"
                 inline
@@ -109,6 +120,7 @@ const Home = ({
                 data-aos-duration="2000"
                 data-aos-delay="1000"
                 data-aos-easing="ease-in-out"
+                id="intro-image"
               />
             </Grid.Column>
           </Grid>
@@ -122,24 +134,36 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
         }}
       >
         <Container
-          data-aos="fade-left"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        // data-aos="fade-left"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
         >
           <Header
             style={{
               color: !darkMode && "#474646",
-              marginBottom: "32px",
+              // marginBottom: "32px",
+              // fontWeight: "600",
             }}
           >
-            <p style={{ color: darkMode ? "#ffffff" : null }}>Our approach</p>
+            <h2
+              style={{
+                color: darkMode ? "#ffffff" : null,
+                // fontFamily: "Archivo",
+                // fontSize: "17px",
+                // lineHeight: "24px",
+                // fontWeight: 600,
+                // fontSize: "4.5rem",
+                fontFamily: "Source Sans Pro",
+              }}
+            >
+              Our approach
+            </h2>
           </Header>
           <Header
             style={{
@@ -147,9 +171,12 @@ const Home = ({
               marginBottom: "32px",
             }}
           >
-            <h2 style={{ color: darkMode ? "#F4B400" : null }}>
+            <span
+              style={{ color: darkMode ? "#F4B400" : null }}
+              className="span-text"
+            >
               Analyze. Design. Build. Evolve
-            </h2>
+            </span>
           </Header>
           <Grid centered>
             <Grid.Row>
@@ -157,7 +184,7 @@ const Home = ({
                 approachData.length &&
                 approachData.map((single, i) => {
                   return (
-                    <Grid.Column key={i} computer={4} mobile={8}>
+                    <Grid.Column key={i} computer={4} mobile={16}>
                       <ApproachSegment
                         single={single}
                         key={i}
@@ -178,26 +205,26 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
         }}
       >
         <Container
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        // data-aos="fade-up"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
         >
           <Header>
-            <Grid centered>
+            <Grid>
               <Grid.Row>
-                <Grid.Column mobile={8} computer={8}>
+                <Grid.Column mobile={10} computer={16}>
                   <h2
                     style={{
-                      textAlign: "center",
-                      color: darkMode ? "#F4B400" : "#db4437",
+                      textAlign: "left",
+                      color: darkMode ? "#F4B400" : "black",
                     }}
+                    className="what-we-do"
                   >
                     {" "}
                     We build innovative solutions for companies, enterprises and
@@ -207,7 +234,7 @@ const Home = ({
               </Grid.Row>
             </Grid>
           </Header>
-          <Grid centered>
+          <Grid>
             <Grid.Row>
               {innovationData &&
                 innovationData.length &&
@@ -230,7 +257,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0 100px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -242,6 +268,7 @@ const Home = ({
             size="mini"
             floated="right"
             style={{ margin: "-70px 0 20px 0" }}
+            className="angle-up-img"
           />
           <Grid>
             <Grid.Row style={{ margin: "60px 0" }}>
@@ -252,9 +279,9 @@ const Home = ({
                 <DevelopersImg />
               </Grid.Column>
               <Grid.Column mobile={1} computer={8}></Grid.Column>
-              <Grid.Column mobile={6} computer={5}>
+              {/* <Grid.Column mobile={6} computer={5}>
                 <DevelopersImg2 />
-              </Grid.Column>
+              </Grid.Column> */}
             </Grid.Row>
           </Grid>
         </Container>
@@ -267,7 +294,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
@@ -276,24 +302,36 @@ const Home = ({
         <Container>
           <Image
             src={AngleDown}
-            style={{ margin: "-200px 0 0 0" }}
+            style={{ margin: "-70px 0 0 0" }}
             size="mini"
             floated="left"
+            className="angle-down-img"
           />
           <Header
             style={{
               paddingBottom: "32px",
-              textAlign: "center",
+              paddingTop: "10px",
             }}
+            className="technologies"
           >
-            <h3 style={{ color: darkMode ? "white" : null }}>
+            <h3
+              style={{
+                color: darkMode ? "white" : null,
+                // fontSize: "1.8rem",
+                fontWeight: "600",
+              }}
+            >
               We make use of awesome technologies to build advanced enterprise
               systems, challenging and innovative produts. We are proud of our
-              technical skills
+              technical skills.
             </h3>
           </Header>
           <Grid>
-            <Grid.Row>
+            <Grid.Row
+            // style={{
+            //   left: "-4rem",
+            // }}
+            >
               <Grid.Column mobile={16} computer={5}>
                 <FrontendSegment darkMode={darkMode} />
               </Grid.Column>
@@ -315,20 +353,26 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="alignLeft">
           <Header
             style={{
               color: !darkMode && "#db4437",
               paddingBottom: "32px",
             }}
           >
-            <h2 style={{ color: darkMode ? "#F4B400" : null }}>Our Services</h2>
+            <h2
+              style={{
+                color: darkMode ? "#F4B400" : "black",
+                // marginLeft: "10px",
+              }}
+            >
+              Our services
+            </h2>
           </Header>
           <Grid>
             <Grid.Row>
@@ -353,16 +397,15 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
         }}
       >
         <Container
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        // data-aos="fade-right"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
         >
           <Header
             style={{
@@ -372,11 +415,12 @@ const Home = ({
           >
             <Grid>
               <Grid.Row>
-                <Grid.Column mobile={8} computer={4}>
+                <Grid.Column mobile={16} computer={8}>
                   <h2
                     style={{
-                      color: darkMode ? "#F4B400" : null,
+                      color: darkMode ? "#F4B400" : "black",
                     }}
+                    className="amazing-products"
                   >
                     Here are some of our amazing products
                   </h2>
@@ -407,16 +451,15 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           padding: "50px 0",
-          minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",
         }}
       >
         <Container
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        // data-aos="fade-up"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
         >
           <Header
             style={{
@@ -427,9 +470,15 @@ const Home = ({
             <Grid>
               <Grid.Row>
                 <Grid.Column mobile={8} computer={4}>
-                  <h2 style={{ color: darkMode ? "#F4B400" : null }}>
-                    Client We've Worked With
-                  </h2>
+                  <h3
+                    style={{
+                      color: darkMode ? "#F4B400" : "black",
+                      width: "430px",
+                      height: "92px",
+                    }}
+                  >
+                    Clients We've Worked With.
+                  </h3>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
