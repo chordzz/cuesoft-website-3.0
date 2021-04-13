@@ -100,7 +100,7 @@ const CustomHeader = ({ darkMode, toggleMode }) => {
           > */}
           {/* <span style={{ color: darkMode ? "#000000" : "#ffffff" }}> */}
           <a
-            class="typeform-share button"
+            className="typeform-share button"
             href="https://form.typeform.com/to/DEo6Wu47?typeform-medium=embed-snippet"
             data-mode="popup"
             data-size="100"
@@ -119,14 +119,22 @@ const CustomHeader = ({ darkMode, toggleMode }) => {
         </li>
         <li className="nav-item">
           <div className="nav-icon">
-            <Icon name="sun" color={darkMode ? "yellow" : null} />
             <Checkbox
               toggle
               onChange={toggleMode}
               checked={darkMode}
               className="check"
             />
-            <Icon name="moon" style={{ paddingLeft: "5px" }} />
+            {/* <Icon
+                name="sun"
+                color={darkMode ? "red" : null}
+              />
+
+              <Icon
+                name="moon"
+                color={darkMode ? "yellow" : null}
+                style={{ paddingLeft: "5px" }}
+              /> */}
           </div>
         </li>
       </ul>

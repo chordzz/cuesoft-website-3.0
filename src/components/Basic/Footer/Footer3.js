@@ -1,6 +1,6 @@
 import React from "react";
 import { List } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Footer3({ darkMode }) {
   return (
@@ -28,7 +28,7 @@ function Footer3({ darkMode }) {
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
@@ -54,7 +54,7 @@ function Footer3({ darkMode }) {
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",

@@ -47,7 +47,7 @@ function Footer1({ darkMode }) {
         the future
       </p>
       <a
-        class="typeform-share button"
+        className="typeform-share button"
         href="https://form.typeform.com/to/DEo6Wu47?typeform-medium=embed-snippet"
         data-mode="popup"
         data-size="100"

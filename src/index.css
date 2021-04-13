@@ -72,10 +72,12 @@ h4 {
 }
 
 h5 {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4rem /* 1.7 */;
 }
 
 .h4-header {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.7rem !important /* 2.4 */;
 }
 
@@ -154,6 +156,13 @@ header {
   outline: none;
 }
 
+.ui.form input[type="text"],
+.ui.form input[type="email"] {
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
 .button {
   border-radius: 30px !important;
   margin-right: 20px;
@@ -179,6 +188,22 @@ header {
 .ui.toggle.checkbox label:before {
   background-color: lightgrey !important;
 }
+
+.ui.toggle.checkbox label:before {
+  content: "\1F31B";
+  padding-top: 0.2em;
+  padding-right: 0.2em;
+  text-align: right;
+}
+
+.ui.toggle.checkbox input:checked ~ label:before {
+  content: "\1F31E" !important;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  text-align: left;
+  color: black;
+}
+
 .dev-img {
   position: relative;
   top: 7rem;

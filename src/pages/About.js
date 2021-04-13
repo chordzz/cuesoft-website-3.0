@@ -50,7 +50,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             }}
           >
             <h2
-              style={{ color: darkMode ? "#F4B400" : "black" }}
+              style={{ color: darkMode ? "#F4B400" : "rgb(71, 70, 70)" }}
               // data-aos="fade-right"
               // data-aos-duration="1000"
               // data-aos-offset="200"
@@ -92,15 +92,15 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               marginBottom: "32px",
             }}
           >
-            <p
+            <h2
               style={{
-                color: darkMode ? "#ffffff" : "black",
+                color: darkMode ? "#ffffff" : "inherit",
                 textAlign: "center",
-                fontWeight: "600",
+                // fontWeight: "600",
               }}
             >
               Our approach
-            </p>
+            </h2>
           </Header>
           <Header
             style={{
@@ -108,14 +108,14 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               marginBottom: "32px",
             }}
           >
-            <h2
+            <h3
               style={{
                 color: darkMode ? "#F4B400" : null,
                 textAlign: "center",
               }}
             >
               Analyze. Design. Build. Evolve
-            </h2>
+            </h3>
           </Header>
           <Grid>
             <Grid.Row>
