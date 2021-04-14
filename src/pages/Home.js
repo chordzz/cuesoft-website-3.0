@@ -159,7 +159,7 @@ const Home = ({
                 // lineHeight: "24px",
                 // fontWeight: 600,
                 // fontSize: "4.5rem",
-                fontFamily: "Source Sans Pro",
+                // fontFamily: "Source Sans Pro",
               }}
             >
               Our approach
@@ -218,7 +218,7 @@ const Home = ({
           <Header>
             <Grid>
               <Grid.Row>
-                <Grid.Column mobile={10} computer={16}>
+                <Grid.Column mobile={16} computer={16}>
                   <h2
                     style={{
                       textAlign: "left",
@@ -270,12 +270,12 @@ const Home = ({
             style={{ margin: "-70px 0 20px 0" }}
             className="angle-up-img"
           />
-          <Grid>
-            <Grid.Row style={{ margin: "60px 0" }}>
+          <Grid className="dev-team-grid">
+            <Grid.Row className="dev-team">
               <Grid.Column mobile={16} computer={11}>
                 <Developers darkMode={darkMode} />
               </Grid.Column>
-              <Grid.Column mobile={6} computer={5}>
+              <Grid.Column mobile={16} computer={5}>
                 <DevelopersImg />
               </Grid.Column>
               <Grid.Column mobile={1} computer={8}></Grid.Column>
@@ -473,8 +473,8 @@ const Home = ({
                   <h3
                     style={{
                       color: darkMode ? "#F4B400" : "black",
-                      width: "430px",
-                      height: "92px",
+                      // width: "430px",
+                      // height: "92px",
                     }}
                   >
                     Clients We've Worked With.
