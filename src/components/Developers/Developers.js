@@ -3,7 +3,6 @@ import React from "react";
 function Developers({ darkMode }) {
   return (
     <div
-      style={{ maxWidth: 500 }}
       // data-aos="fade-right"
       // data-aos-offset="200"
       // data-aos-duration="1000"

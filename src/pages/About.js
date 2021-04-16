@@ -108,14 +108,14 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               marginBottom: "32px",
             }}
           >
-            <h3
+            <h4
               style={{
                 color: darkMode ? "#F4B400" : null,
                 textAlign: "center",
               }}
             >
               Analyze. Design. Build. Evolve
-            </h3>
+            </h4>
           </Header>
           <Grid>
             <Grid.Row>
@@ -151,11 +151,11 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             }}
           >
             <h2
-              style={{ color: darkMode ? "#F4B400" : null }}
-              data-aos="fade-right"
-              data-aos-offset="200"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+            // style={{ color: darkMode ? "#F4B400" : null }}
+            // data-aos="fade-right"
+            // data-aos-offset="200"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
             >
               Our incredible team
             </h2>
@@ -169,11 +169,11 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
           </Grid>
           <Grid centered>
             <Grid.Row
-              data-aos="fade-up"
-              data-aos-offset="100"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="1000"
+            // data-aos="fade-up"
+            // data-aos-offset="100"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
+            // data-aos-delay="1000"
             >
               {teamMembers &&
                 teamMembers.length &&
@@ -200,9 +200,9 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         }}
       >
         <Container
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
+        // data-aos="fade-up"
+        // data-aos-offset="200"
+        // data-aos-duration="1000"
         >
           <Header
             style={{

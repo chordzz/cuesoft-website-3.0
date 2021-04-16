@@ -82,12 +82,13 @@ function Services({ darkMode, household }) {
         <Container>
           <Grid>
             <Grid.Row>
-              <Grid.Column computer={7}>
+              <Grid.Column computer={7} mobile={16}>
                 <WebContent darkMode={darkMode} />
               </Grid.Column>
               <Grid.Column computer={3}></Grid.Column>
               <Grid.Column
                 computer={6}
+                mobile={16}
                 style={{
                   paddingTop: "90px",
                   color: darkMode ? "#F4B400" : "#db4437",
@@ -118,12 +119,13 @@ function Services({ darkMode, household }) {
         <Container>
           <Grid>
             <Grid.Row>
-              <Grid.Column computer={7}>
+              <Grid.Column computer={7} mobile={16}>
                 <AppContent darkMode={darkMode} />
               </Grid.Column>
               <Grid.Column computer={3}></Grid.Column>
               <Grid.Column
                 computer={6}
+                mobile={16}
                 style={{
                   paddingTop: "40px",
                   color: darkMode ? "#F4B400" : "#db4437",
@@ -154,12 +156,13 @@ function Services({ darkMode, household }) {
         <Container>
           <Grid>
             <Grid.Row>
-              <Grid.Column computer={7}>
+              <Grid.Column computer={7} mobile={16}>
                 <EnterpriseContent darkMode={darkMode} />
               </Grid.Column>
               <Grid.Column computer={3}></Grid.Column>
               <Grid.Column
                 computer={6}
+                mobile={16}
                 style={{
                   paddingTop: "40px",
                   color: darkMode ? "#F4B400" : "#db4437",

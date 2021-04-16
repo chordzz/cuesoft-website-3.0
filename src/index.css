@@ -393,6 +393,17 @@ Form {
   margin-bottom: 30px;
 }
 
+.about-segment {
+  padding: 60px 30px;
+}
+
+.dev-team {
+  margin: 60px 0;
+}
+.developers {
+  max-width: 70%;
+}
+
 .location-segment {
   padding-top: 30px;
   text-align: center;
@@ -418,9 +429,9 @@ Form {
     min-height: auto;
   } */
 
-  .navbar {
+  /* .navbar {
     background: rgb(47, 94, 47) !important;
-  }
+  } */
 
   .menu-icon-1 {
     visibility: visible;
@@ -545,21 +556,119 @@ Form {
     width: 100px;
   }
 
-  /* h1 {
-    font-size: 30px;
-  } */
+  /* Ife */
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .h4-header {
+    font-size: 1.5rem !important;
+    margin: 1rem 0 !important;
+  }
+
+  p,
+  span {
+    font-size: 1.3rem;
+  }
+
+  .span-text {
+    font-size: 1.3rem;
+    /* line-height: 1; */
+  }
+
   #intro-image {
     margin-top: 0;
   }
 
-  /* h2 {
-    font-size: 22px;
-  } */
-  .what-we-do {
+  .about-segment {
+    padding: 30px 0;
+  }
+
+  .angle-up-img {
+    visibility: hidden;
+  }
+
+  .dev-team {
+    margin: 1rem 0;
+  }
+
+  .dev-team-grid {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .developers {
+    max-width: fit-content !important;
+  }
+
+  .dev-img {
+    position: relative;
+    top: 10rem;
+    right: 3rem;
+  }
+
+  .dev-img .img-1 {
+    width: auto;
+  }
+
+  .angle-down-img {
+    visibility: hidden;
+  }
+
+  .frontend-tools,
+  .backend-tools,
+  .mobile-tools {
+    text-align: center !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .tools-list {
+    margin-top: 0 !important;
+  }
+
+  .typeform-share {
+    margin: auto !important;
+  }
+
+  .approach2-segment p {
+    padding-right: 0;
+  }
+
+  .contact-h1 {
+    font-size: 2.5rem;
+  }
+
+  .form {
+    display: block;
+    margin-left: 0;
+  }
+
+  .location-segment img {
+    margin: auto;
+  }
+
+  /* .what-we-do {
     text-align: left;
     line-height: 1em;
     margin-left: 20px;
-  }
+  } */
+
+  /*
   .angle-up-img,
   .angle-down-img {
     visibility: hidden;
@@ -596,7 +705,7 @@ Form {
     line-height: 1em;
   }
 
-  /* About US */
+  /* About US 
 
   .mission h1 {
     font-size: 30px;
@@ -615,7 +724,7 @@ Form {
     line-height: 1em;
   }
 
-  /* Contact US */
+  /* Contact US 
   .contact-h1 {
     font-size: 30px;
   }
@@ -639,5 +748,5 @@ Form {
 
   .location-segment p {
     padding-right: 20px;
-  }
+  } */
 }

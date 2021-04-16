@@ -6,7 +6,7 @@ function EnterpriseSegment({ darkMode }) {
     <div
       className="enterprise"
       style={{
-        backgroundColor: darkMode ? "#F4B400" : null,
+        // backgroundColor: darkMode ? "#F4B400" : null,
         padding: "30px 30px",
       }}
       // data-aos="fade-up"

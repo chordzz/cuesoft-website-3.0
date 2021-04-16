@@ -7,12 +7,13 @@ const AboutSegment = ({ data, darkMode }) => {
     <div
       style={{
         color: "#000",
-        padding: "60px 30px",
+        // padding: "60px 30px",
         // fontSize: "1.6rem",
         // lineHeight: "1",
         // fontWeight: "300",
         paddingLeft: "0",
       }}
+      className="about-segment"
     >
       <span style={{ color: darkMode ? "#ffffff" : null }}>{data.body}</span>
       <br />
