@@ -197,24 +197,34 @@ header {
 
 .ui.toggle.checkbox label:before {
   content: "\1F31B";
-  padding-top: 0.25em;
+  padding-top: 0.2em;
   padding-right: 0em;
   text-align: right;
-  height: 1.8rem;
+  height: 1.7rem;
 }
 
 .ui.toggle.checkbox input:checked ~ label:before {
   content: "\1F31E" !important;
   padding-top: 0.2em;
   padding-left: 0em;
+  /* padding-bottom: 0.3rem; */
   text-align: left;
   color: black;
 }
 
-.ui.toggle.checkbox label:after {
-  width: 1.8rem;
-  height: 1.8rem;
+/* .ui.toggle.checkbox label:after {
+  width: 1.5rem;
+  height: 1.5rem;
+}*/
+
+.ui.toggle.checkbox input ~ label:after {
+  left: -0.05rem;
+  top: 0.1rem;
 }
+/*
+.ui.toggle.checkbox input:checked ~ label:after {
+  left: 1.88rem;
+} */
 
 .dev-img {
   position: relative;
