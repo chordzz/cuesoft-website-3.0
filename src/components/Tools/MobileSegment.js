@@ -13,10 +13,10 @@ function MobileSegment({ darkMode }) {
       <h4
         style={{ fontFamily: "Source Sans Pro, sans-serif", fontWeight: "600" }}
       >
-        Mobile development{" "}
+        Mobile Development{" "}
       </h4>
       <List style={{ fontWeight: "600" }} className="tools-list">
-        <List.Item style={{ paddingTop: "30px" }}>
+        <List.Item>
           <Image src={darkMode ? Android2 : Android1} size="mini" />
           <List.Content style={{ paddingTop: "10px" }}>Android</List.Content>
         </List.Item>

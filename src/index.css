@@ -99,7 +99,7 @@ h5 {
 }
 
 .footer-list a {
-  color: black;
+  color: inherit;
 }
 
 header {
@@ -443,6 +443,10 @@ Form {
   min-height: calc(100vmin - 85.38px);
 }
 
+.tools-list .item {
+  padding-top: 30px;
+}
+
 /* For Mobile */
 
 /* New Section  */
@@ -656,11 +660,16 @@ Form {
   .backend-tools,
   .mobile-tools {
     text-align: center !important;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
   }
 
   .tools-list {
     margin-top: 0 !important;
+    padding-top: 0;
+  }
+
+  .tools-list .item {
+    padding-top: 1rem;
   }
 
   .typeform-share {

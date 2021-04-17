@@ -13,10 +13,10 @@ function FrontendSegment({ darkMode }) {
       <h4
         style={{ fontFamily: "Source Sans Pro, sans-serif", fontWeight: "600" }}
       >
-        Frontend development{" "}
+        Frontend Development{" "}
       </h4>
       <List style={{ fontWeight: "600" }} className="tools-list">
-        <List.Item style={{ paddingTop: "30px" }}>
+        <List.Item>
           <Image src={darkMode ? React2 : React1} size="mini" />
           <List.Content style={{ paddingTop: "10px" }}>React</List.Content>
         </List.Item>

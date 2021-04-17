@@ -110,6 +110,7 @@ function Services({ darkMode, household }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
+          padding: "50px 0",
           // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
@@ -148,6 +149,7 @@ function Services({ darkMode, household }) {
         style={{
           backgroundColor: darkMode ? "#210806" : "#FCFAF6",
           // minHeight: "calc(100vh - 85.38px)",
+          padding: "50px 0",
           display: "flex",
           flexFlow: "column wrap",
           justifyContent: "center",

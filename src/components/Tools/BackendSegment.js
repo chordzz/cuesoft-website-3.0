@@ -13,10 +13,10 @@ function BackendSegment({ darkMode }) {
       <h4
         style={{ fontFamily: "Source Sans Pro, sans-serif", fontWeight: "600" }}
       >
-        Backend development{" "}
+        Backend Development{" "}
       </h4>
       <List style={{ fontWeight: "600" }} className="tools-list">
-        <List.Item style={{ paddingTop: "30px" }}>
+        <List.Item>
           <Image src={darkMode ? Node2 : Node1} size="mini" />
           <List.Content style={{ paddingTop: "10px" }}>Node.js</List.Content>
         </List.Item>

@@ -5,7 +5,8 @@ function Footer5({ darkMode }) {
     <div style={{ paddingBottom: "30px" }}>
       <p
         style={{
-          color: darkMode ? "#ffffff" : "#000000",
+          // color: darkMode ? "#ffffff" : "#000000",
+          color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "5px",
         }}
       >
@@ -14,7 +15,8 @@ function Footer5({ darkMode }) {
       </p>
       <p
         style={{
-          color: darkMode ? "#ffffff" : "#000000",
+          // color: darkMode ? "#ffffff" : "#000000",
+          color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "5px",
         }}
       >
@@ -23,7 +25,8 @@ function Footer5({ darkMode }) {
       </p>
       <p
         style={{
-          color: darkMode ? "#ffffff" : "#000000",
+          // color: darkMode ? "#ffffff" : "#000000",
+          color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "5px",
         }}
       >
@@ -32,7 +35,8 @@ function Footer5({ darkMode }) {
       </p>
       <p
         style={{
-          color: darkMode ? "#ffffff" : "#000000",
+          // color: darkMode ? "#ffffff" : "#000000",
+          color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "5px",
         }}
       >

@@ -15,7 +15,7 @@ function Footer2({ darkMode }) {
         Company
       </p>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item as={Link} to="/about">
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
@@ -41,7 +41,7 @@ function Footer2({ darkMode }) {
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link} to="#">
+        <List.Item as={Link} to="/contact">
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
