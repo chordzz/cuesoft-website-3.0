@@ -181,27 +181,39 @@ header {
 
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
 .ui.toggle.checkbox input:focus:checked ~ label:before {
-  background-color: #f4b400 !important;
+  /* background-color: #f4b400 !important; */
+  background-color: rgb(54, 54, 54) !important;
 }
 
 .ui.toggle.checkbox .box:before,
 .ui.toggle.checkbox label:before {
-  background-color: lightgrey !important;
+  /* background-color: lightgrey !important; */
+  background-color: rgb(54, 54, 54) !important;
+}
+
+.ui.checkbox label {
+  font-size: 1.3rem;
 }
 
 .ui.toggle.checkbox label:before {
   content: "\1F31B";
-  padding-top: 0.2em;
-  padding-right: 0.2em;
+  padding-top: 0.25em;
+  padding-right: 0em;
   text-align: right;
+  height: 1.8rem;
 }
 
 .ui.toggle.checkbox input:checked ~ label:before {
   content: "\1F31E" !important;
   padding-top: 0.2em;
-  padding-left: 0.2em;
+  padding-left: 0em;
   text-align: left;
   color: black;
+}
+
+.ui.toggle.checkbox label:after {
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .dev-img {
