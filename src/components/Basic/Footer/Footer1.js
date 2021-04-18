@@ -4,6 +4,8 @@ import { Image } from "semantic-ui-react";
 import Logo from "../../../assets/icons/LogoWeb.svg";
 import Logo2 from "../../../assets/icons/LogoWebDark.svg";
 
+import { Link } from "react-router-dom";
+
 function Footer1({ darkMode }) {
   const typeFormFunc = () => {
     var js,

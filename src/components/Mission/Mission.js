@@ -8,11 +8,11 @@ function Mission({ darkMode }) {
       // data-aos-easing="ease-in-out"
       // className="mission"
     >
-      <h1 style={{ fontWeight: "700" }}>
+      <h2 style={{ fontWeight: "700" }}>
         Our mission is to help enterprises accelerate adoption of new
         technologies, untangle complex issues that always emerge during digital
         evolution, and orchestrate ongoing innovation.
-      </h1>
+      </h2>
     </div>
   );
 }

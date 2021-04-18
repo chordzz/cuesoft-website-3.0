@@ -131,7 +131,7 @@ header {
   background-color: #e8e8e8;
 }
 .enterprise {
-  padding: 0 30px;
+  padding: 30px;
   width: 100%;
   min-height: 15rem;
   margin-top: 30px;
@@ -146,6 +146,24 @@ header {
   background-color: #db4437;
   color: white;
 }
+
+.mobile-app .icon,
+.web .icon {
+  /* position: relative;
+  bottom: 0; */
+  position: static;
+}
+
+/* .enterprise {
+  position: relative;
+  bottom: 1rem;
+} */
+
+/* .web,
+.mobile-app,
+.enterprise {
+  height: fit-content;
+} */
 
 /* .enterprise-icon::before {
   color: white;
@@ -692,6 +710,39 @@ Form {
   .location-segment img {
     margin: auto;
   }
+
+  .mobile-app {
+    padding: 0 20px 3rem;
+    margin-left: 0;
+  }
+
+  .enterprise {
+    padding: 30px 30px 3rem;
+    margin-left: 0;
+  }
+
+  .enterprise .icon {
+    bottom: 0;
+  }
+
+  /* .web,
+  .mobile-app,
+  .enterprise {
+    height: fit-content; */
+  /* display: flex;
+    flex-direction: column; */
+  /* padding-bottom: 1.5rem;
+  } */
+
+  /* .mobile-app .icon,
+  .web .icon {
+    position: static;
+  }
+
+  .mobile-app .icon {
+    display: block;
+    padding-bottom: 1rem;
+  } */
 
   /* .what-we-do {
     text-align: left;

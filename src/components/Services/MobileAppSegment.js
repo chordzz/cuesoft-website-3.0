@@ -41,8 +41,8 @@ function MobileAppSegment({ darkMode }) {
           fontSize: "25px",
           cursor: "pointer",
           color: darkMode ? "#F4B400" : "inherit",
-          position: "relative",
-          bottom: "0rem",
+          // position: "relative",
+          // bottom: "0rem",
         }}
       />
     </div>
