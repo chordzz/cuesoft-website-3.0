@@ -469,7 +469,7 @@ const Home = ({
           >
             <Grid>
               <Grid.Row>
-                <Grid.Column mobile={8} computer={4}>
+                <Grid.Column mobile={16} computer={7}>
                   <h3
                     style={{
                       color: darkMode ? "#F4B400" : "black",

@@ -23,6 +23,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
+          padding: "50px 0",
         }}
         // className="aboutPage-missionSection"
       >
@@ -146,7 +147,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         <Container>
           <Header
             style={{
-              color: !darkMode && "#db4437",
+              // color: !darkMode && "#db4437",
+              color: !darkMode ? "#db4437" : "#F4B400",
               marginBottom: "32px",
             }}
           >

@@ -99,7 +99,7 @@ h5 {
 }
 
 .footer-list a {
-  color: black;
+  color: inherit;
 }
 
 header {
@@ -131,7 +131,7 @@ header {
   background-color: #e8e8e8;
 }
 .enterprise {
-  padding: 0 30px;
+  padding: 30px;
   width: 100%;
   min-height: 15rem;
   margin-top: 30px;
@@ -146,6 +146,24 @@ header {
   background-color: #db4437;
   color: white;
 }
+
+.mobile-app .icon,
+.web .icon {
+  /* position: relative;
+  bottom: 0; */
+  position: static;
+}
+
+/* .enterprise {
+  position: relative;
+  bottom: 1rem;
+} */
+
+/* .web,
+.mobile-app,
+.enterprise {
+  height: fit-content;
+} */
 
 /* .enterprise-icon::before {
   color: white;
@@ -181,28 +199,50 @@ header {
 
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
 .ui.toggle.checkbox input:focus:checked ~ label:before {
-  background-color: #f4b400 !important;
+  /* background-color: #f4b400 !important; */
+  background-color: rgb(54, 54, 54) !important;
 }
 
 .ui.toggle.checkbox .box:before,
 .ui.toggle.checkbox label:before {
-  background-color: lightgrey !important;
+  /* background-color: lightgrey !important; */
+  background-color: rgb(54, 54, 54) !important;
+}
+
+.ui.checkbox label {
+  font-size: 1.3rem;
 }
 
 .ui.toggle.checkbox label:before {
   content: "\1F31B";
   padding-top: 0.2em;
-  padding-right: 0.2em;
+  padding-right: 0em;
   text-align: right;
+  height: 1.7rem;
 }
 
 .ui.toggle.checkbox input:checked ~ label:before {
   content: "\1F31E" !important;
   padding-top: 0.2em;
-  padding-left: 0.2em;
+  padding-left: 0em;
+  /* padding-bottom: 0.3rem; */
   text-align: left;
   color: black;
 }
+
+/* .ui.toggle.checkbox label:after {
+  width: 1.5rem;
+  height: 1.5rem;
+}*/
+
+.ui.toggle.checkbox input ~ label:after {
+  left: -0.05rem;
+  top: 0.1rem;
+}
+/*
+.ui.toggle.checkbox input:checked ~ label:after {
+  left: 1.88rem;
+} */
 
 .dev-img {
   position: relative;
@@ -421,6 +461,10 @@ Form {
   min-height: calc(100vmin - 85.38px);
 }
 
+.tools-list .item {
+  padding-top: 30px;
+}
+
 /* For Mobile */
 
 /* New Section  */
@@ -634,11 +678,16 @@ Form {
   .backend-tools,
   .mobile-tools {
     text-align: center !important;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
   }
 
   .tools-list {
     margin-top: 0 !important;
+    padding-top: 0;
+  }
+
+  .tools-list .item {
+    padding-top: 1rem;
   }
 
   .typeform-share {
@@ -661,6 +710,39 @@ Form {
   .location-segment img {
     margin: auto;
   }
+
+  .mobile-app {
+    padding: 0 20px 3rem;
+    margin-left: 0;
+  }
+
+  .enterprise {
+    padding: 30px 30px 3rem;
+    margin-left: 0;
+  }
+
+  .enterprise .icon {
+    bottom: 0;
+  }
+
+  /* .web,
+  .mobile-app,
+  .enterprise {
+    height: fit-content; */
+  /* display: flex;
+    flex-direction: column; */
+  /* padding-bottom: 1.5rem;
+  } */
+
+  /* .mobile-app .icon,
+  .web .icon {
+    position: static;
+  }
+
+  .mobile-app .icon {
+    display: block;
+    padding-bottom: 1rem;
+  } */
 
   /* .what-we-do {
     text-align: left;
