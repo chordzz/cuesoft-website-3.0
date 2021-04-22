@@ -5,15 +5,16 @@ import { Link } from "react-router-dom";
 function Footer2({ darkMode }) {
   return (
     <div style={{ paddingBottom: "30px" }} on="true">
-      <p
+      <h4
         style={{
           color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "30px",
           fontWeight: "600",
         }}
+        className="footer-header"
       >
         Company
-      </p>
+      </h4>
       <List>
         <List.Item as={Link} to="/about">
           <List.Content

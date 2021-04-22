@@ -21,7 +21,7 @@ function Household({ person }) {
       <Grid.Column computer={13}>
         <p>{person.quote}</p>
         <h5>{person.name}</h5>
-        <small>{person.title}</small>
+        <medium>{person.title}</medium>
       </Grid.Column>
     </Grid.Row>
   );

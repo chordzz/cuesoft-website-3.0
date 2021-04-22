@@ -19,7 +19,7 @@ const AboutSegment = ({ data, darkMode }) => {
       <br />
       <br />
       <Link
-        to="#"
+        to={data.info === "More about us" ? "about" : "services"}
         style={{
           color: darkMode ? "#F4B400" : "#db4437",
           fontWeight: "600",

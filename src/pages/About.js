@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
+// import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
+import { Segment, Container, Header, Grid } from "semantic-ui-react";
 import { Mission, Technical } from "../components/Mission";
-import slider from "../assets/images/about.png";
-import slider_webp from "../assets/images/about.webp";
-import { ApproachTwo } from "../components/Approach";
+// import slider from "../assets/images/about.png";
+// import slider_webp from "../assets/images/about.webp";
+// import { ApproachTwo } from "../components/Approach";
 import { Info, Members } from "../components/Team";
-import Smiley from "../assets/icons/smiley.svg";
-import Smiley2 from "../assets/icons/smiley2.svg";
-import { Client } from "../components/Clients";
+// import Smiley from "../assets/icons/smiley.svg";
+// import Smiley2 from "../assets/icons/smiley2.svg";
+// import { Client } from "../components/Clients";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -29,12 +30,12 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
       >
         <Container>
           <Grid>
-            <Grid.Row>
-              <Grid.Column computer={13} mobile={16}>
+            <Grid.Row centered>
+              <Grid.Column computer={9} mobile={16}>
                 <Mission darkMode={darkMode} />
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row centered>
+            {/* <Grid.Row centered>
               <Grid.Column computer={16} mobile={16}>
                 <picture>
                   <source srcSet={slider_webp} type="images/webp" />
@@ -42,7 +43,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                   <Image src={slider_webp} alt="about image" />
                 </picture>
               </Grid.Column>
-            </Grid.Row>
+            </Grid.Row> */}
           </Grid>
           <Header
             style={{
@@ -70,7 +71,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
           </Grid>
         </Container>
       </Segment>
-      <Segment
+      {/* <Segment
         as="section"
         basic
         vertical
@@ -132,14 +133,14 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             </Grid.Row>
           </Grid>
         </Container>
-      </Segment>
+      </Segment> */}
       <Segment
         as="section"
         basic
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#100403" : "#ffffff",
+          backgroundColor: darkMode ? "#100403" : "#fcfaf6",
           padding: "60px 0",
           // minHeight: "100vh",
         }}
@@ -148,7 +149,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
           <Header
             style={{
               // color: !darkMode && "#db4437",
-              color: !darkMode ? "#db4437" : "#F4B400",
+              // color: !darkMode ? "#db4437" : "#F4B400",
+              color: !darkMode ? "black" : "#F4B400",
               marginBottom: "32px",
             }}
           >
@@ -190,7 +192,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
           </Grid>
         </Container>
       </Segment>
-      <Segment
+      {/* <Segment
         as="section"
         basic
         vertical
@@ -260,7 +262,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             </Grid.Row>
           </Grid>
         </Container>
-      </Segment>
+      </Segment> */}
     </main>
   );
 }

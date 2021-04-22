@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Segment, Container, Header, Grid } from "semantic-ui-react";
 import { ContactForm } from "../components/Form";
-import { LocationSegment } from "../components/Location";
+// import { LocationSegment } from "../components/Location";
 
 function Contact({ darkMode, locationData }) {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -53,7 +53,7 @@ function Contact({ darkMode, locationData }) {
           </Grid>
         </Container>
       </Segment>
-      <Segment
+      {/* <Segment
         as="section"
         vertical
         basic
@@ -89,7 +89,7 @@ function Contact({ darkMode, locationData }) {
             </Grid.Row>
           </Grid>
         </Container>
-      </Segment>
+      </Segment> */}
     </main>
   );
 }

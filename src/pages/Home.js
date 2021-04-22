@@ -24,8 +24,8 @@ import { connect } from "react-redux";
 import Space from "../assets/icons/space.svg";
 // import Square from "../assets/icons/squircle.svg";
 // import Square2 from "../assets/icons/squircle2.svg";
-import AngleUp from "../assets/icons/angle-up.svg";
-import AngleDown from "../assets/icons/angle-down.svg";
+// import AngleUp from "../assets/icons/angle-up.svg";
+// import AngleDown from "../assets/icons/angle-down.svg";
 
 const Home = ({
   darkMode,
@@ -240,7 +240,7 @@ const Home = ({
                 innovationData.length &&
                 innovationData.map((data, i) => {
                   return (
-                    <Grid.Column key={i} mobile={16} computer={7}>
+                    <Grid.Column key={i} mobile={16} computer={8}>
                       <AboutSegment data={data} darkMode={darkMode} />
                     </Grid.Column>
                   );
@@ -263,13 +263,13 @@ const Home = ({
         }}
       >
         <Container>
-          <Image
+          {/* <Image
             src={AngleUp}
             size="mini"
             floated="right"
             style={{ margin: "-70px 0 20px 0" }}
             className="angle-up-img"
-          />
+          /> */}
           <Grid className="dev-team-grid">
             <Grid.Row className="dev-team">
               <Grid.Column mobile={16} computer={11}>
@@ -300,13 +300,13 @@ const Home = ({
         }}
       >
         <Container>
-          <Image
+          {/* <Image
             src={AngleDown}
             style={{ margin: "-70px 0 0 0" }}
             size="mini"
             floated="left"
             className="angle-down-img"
-          />
+          /> */}
           <Header
             style={{
               paddingBottom: "32px",
@@ -321,9 +321,10 @@ const Home = ({
                 fontWeight: "600",
               }}
             >
-              We make use of awesome technologies to build advanced enterprise
+              {/* We make use of awesome technologies to build advanced enterprise
               systems, challenging and innovative produts. We are proud of our
-              technical skills.
+              technical skills. */}
+              We are proud of our technical skills.
             </h3>
           </Header>
           <Grid>
@@ -484,7 +485,7 @@ const Home = ({
             </Grid>
           </Header>
           <Grid>
-            <Grid.Row>
+            <Grid.Row computer={16}>
               {clientsData &&
                 clientsData.length &&
                 clientsData.map((client, i) => {

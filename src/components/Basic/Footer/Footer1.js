@@ -41,11 +41,11 @@ function Footer1({ darkMode }) {
       >
         Let's get started
       </h3>
-      <p style={{ color: darkMode ? "#ffffff" : "#474646", paddingTop: "5px" }}>
+      {/* <p style={{ color: darkMode ? "#ffffff" : "#474646", paddingTop: "5px" }}>
         Let us show you what responsive, reliable and accountable software
         support looks like in today's world, as well as give you a glimpse of
         the future
-      </p>
+      </p> */}
       <a
         className="typeform-share button"
         href="https://form.typeform.com/to/DEo6Wu47?typeform-medium=embed-snippet"
@@ -59,7 +59,8 @@ function Footer1({ darkMode }) {
           backgroundColor: darkMode ? "yellow" : "#db4437",
         }}
       >
-        Start a Project
+        {/* Start a Project */}
+        Hire Experts
       </a>
       {/* <Button
         size="tiny"

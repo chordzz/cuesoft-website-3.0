@@ -31,13 +31,13 @@ button {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 p,
 span,
 .span-a {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   /* line-height: 0.5; */
 }
 
@@ -65,7 +65,7 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   /* font-family: "Aileron", sans-serif; */
   font-weight: 600;
-  font-size: 1.5rem; /* 2rem */
+  font-size: 1.7rem; /* 2rem */
   /* font-size: 2rem !important; */
   /* font-size: 24px;
   line-height: 29px; */
@@ -73,7 +73,7 @@ h4 {
 
 h5 {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.4rem /* 1.7 */;
+  font-size: 1.5rem /* 1.7 */;
 }
 
 .h4-header {
@@ -94,12 +94,17 @@ h5 {
   font-size: 1.3rem !important;
 }
 
-.footer-list {
+.footer-list,
+.footer-text {
   font-size: 1.3rem;
 }
 
 .footer-list a {
   color: inherit;
+}
+
+.footer-contact-header {
+  margin-bottom: 0 !important;
 }
 
 header {
@@ -465,6 +470,25 @@ Form {
   padding-top: 30px;
 }
 
+.footer-copyright {
+  text-align: center;
+  margin: auto;
+}
+
+.footer-copyright p {
+  display: inline;
+}
+
+.mission {
+  text-align: center;
+  margin: auto;
+  padding: 20% 0;
+}
+
+.mission p {
+  padding: 5% 0;
+}
+
 /* For Mobile */
 
 /* New Section  */
@@ -723,6 +747,11 @@ Form {
 
   .enterprise .icon {
     bottom: 0;
+  }
+
+  .footer-header,
+  .footer-contact-header {
+    font-size: 1.3rem;
   }
 
   /* .web,

@@ -19,15 +19,16 @@ function Footer4({ darkMode }) {
   };
   return (
     <div style={{ paddingBottom: "30px" }}>
-      <p
+      <h4
         style={{
           color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "30px",
           fontWeight: "600",
         }}
+        className="footer-header"
       >
         Resources
-      </p>
+      </h4>
       <List>
         <List.Item as={Link} to="#" onClick={activateTermsModal}>
           <List.Content
