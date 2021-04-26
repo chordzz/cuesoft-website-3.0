@@ -56,6 +56,7 @@ const Home = ({
         <Container>
           <Grid
             columns={2}
+            doubling
             style={{
               display: "flex",
               flexFlow: "row wrap",
