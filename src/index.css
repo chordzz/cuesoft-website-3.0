@@ -31,13 +31,13 @@ button {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 p,
 span,
 .span-a {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   /* line-height: 0.5; */
 }
 
@@ -65,7 +65,7 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   /* font-family: "Aileron", sans-serif; */
   font-weight: 600;
-  font-size: 1.5rem; /* 2rem */
+  font-size: 1.7rem; /* 2rem */
   /* font-size: 2rem !important; */
   /* font-size: 24px;
   line-height: 29px; */
@@ -73,7 +73,7 @@ h4 {
 
 h5 {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.4rem /* 1.7 */;
+  font-size: 1.5rem /* 1.7 */;
 }
 
 .h4-header {
@@ -94,12 +94,17 @@ h5 {
   font-size: 1.3rem !important;
 }
 
-.footer-list {
+.footer-list,
+.footer-text {
   font-size: 1.3rem;
 }
 
 .footer-list a {
   color: inherit;
+}
+
+.footer-contact-header {
+  margin-bottom: 0 !important;
 }
 
 header {
@@ -246,8 +251,13 @@ header {
 
 .dev-img {
   position: relative;
-  top: 7rem;
-  right: 3rem;
+  top: 1rem;
+  right: 15rem;
+  width: 600px;
+}
+
+.dev-img .img-1 {
+  height: 500px;
 }
 .boxes {
   position: relative;
@@ -439,9 +449,11 @@ Form {
 
 .dev-team {
   margin: 60px 0;
+  align-items: center;
 }
 .developers {
   max-width: 70%;
+  margin: 7rem 0;
 }
 
 .location-segment {
@@ -463,6 +475,25 @@ Form {
 
 .tools-list .item {
   padding-top: 30px;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin: auto;
+}
+
+.footer-copyright p {
+  display: inline;
+}
+
+.mission {
+  text-align: center;
+  margin: auto;
+  padding: 20% 0;
+}
+
+.mission p {
+  padding: 5% 0;
 }
 
 /* For Mobile */
@@ -658,16 +689,23 @@ Form {
 
   .developers {
     max-width: fit-content !important;
+    margin: 0;
   }
 
   .dev-img {
     position: relative;
     top: 10rem;
     right: 3rem;
+    width: auto;
   }
 
   .dev-img .img-1 {
-    width: auto;
+    width: 90%;
+    height: 70%;
+  }
+
+  .technologies h3 {
+    text-align: center;
   }
 
   .angle-down-img {
@@ -723,6 +761,11 @@ Form {
 
   .enterprise .icon {
     bottom: 0;
+  }
+
+  .footer-header,
+  .footer-contact-header {
+    font-size: 1.3rem;
   }
 
   /* .web,

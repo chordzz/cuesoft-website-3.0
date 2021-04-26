@@ -5,15 +5,16 @@ import { List } from "semantic-ui-react";
 function Footer3({ darkMode }) {
   return (
     <div style={{ paddingBottom: "30px" }}>
-      <p
+      <h4
         style={{
           color: darkMode ? "#F4B400" : "#db4437",
           paddingBottom: "30px",
           fontWeight: "600",
         }}
+        className="footer-header"
       >
         Community
-      </p>
+      </h4>
       <List>
         <List.Item>
           <List.Content

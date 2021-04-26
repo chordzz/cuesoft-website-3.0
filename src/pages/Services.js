@@ -53,7 +53,8 @@ function Services({ darkMode, household }) {
                     style={{
                       textAlign: "center",
                       padding: "30px 0",
-                      color: darkMode ? "#ffffff" : null,
+                      color: darkMode ? "#ffffff" : "#474646",
+                      fontWeight: "400",
                     }}
                   >
                     We help companies enhance what they're offering customers

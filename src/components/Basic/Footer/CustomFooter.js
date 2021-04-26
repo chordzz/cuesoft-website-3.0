@@ -44,7 +44,7 @@ function CustomFooter({ darkMode }) {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row only="computer">
-            <Grid.Column computer={5}>
+            <Grid.Column computer={16}>
               <Footer6 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>

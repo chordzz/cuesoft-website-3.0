@@ -1,20 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Header } from "semantic-ui-react";
+// import { Header } from "semantic-ui-react";
 
 const ApproachSegment = ({ darkMode, single }) => {
   return (
     <div>
-      <Header
+      {/* <Header
         as="h4"
         style={{
           color: darkMode && "#ffffff",
           margin: "32px 0",
         }}
-        className="h4-header"
+        className="span-text"
+      > */}
+      <h5
+        style={{
+          color: darkMode && "#ffffff",
+          margin: "32px 0",
+        }}
       >
         {single.title}
-      </Header>
+      </h5>
+      {/* </Header> */}
       <p
         style={{
           color: darkMode ? "#ffffff" : "#000000",

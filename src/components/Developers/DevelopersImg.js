@@ -1,7 +1,8 @@
 import React from "react";
 import { Image } from "semantic-ui-react";
 // import Top_img from "../../assets/images/top-img1.png";
-import Top_img_webp from "../../assets/images/top-img1.webp";
+//import Top_img_webp from "../../assets/images/top-img1.webp";
+import Developers_img from "../../assets/images/developers_img.jpg";
 // import Trial from "../../assets/icons/trial.svg";
 
 function DevelopersImg() {
@@ -18,7 +19,7 @@ function DevelopersImg() {
       <picture>
         {/* <source srcSet={Top_img_webp} type="image/webp" />
         <source srcSet={Top_img} type="image/png" /> */}
-        <Image src={Top_img_webp} alt="top image" className="img-1" />
+        <Image src={Developers_img} alt="top image" className="img-1" />
       </picture>
     </div>
   );
