@@ -496,6 +496,10 @@ Form {
   padding: 5% 0;
 }
 
+.footer-section {
+  min-height: fit-content;
+}
+
 /* For Smaller Screens E.g Tab */
 @media all and (max-width: 1024px) {
   .navbar {
