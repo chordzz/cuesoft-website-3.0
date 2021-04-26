@@ -468,7 +468,7 @@ const Home = ({
               paddingBottom: "32px",
             }}
           >
-            <Grid>
+            <Grid computer={16}>
               <Grid.Row>
                 <Grid.Column mobile={16} computer={7}>
                   <h3
@@ -485,7 +485,7 @@ const Home = ({
             </Grid>
           </Header>
           <Grid>
-            <Grid.Row computer={16}>
+            <Grid.Row>
               {clientsData &&
                 clientsData.length &&
                 clientsData.map((client, i) => {

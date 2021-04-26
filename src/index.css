@@ -251,8 +251,13 @@ header {
 
 .dev-img {
   position: relative;
-  top: 7rem;
-  right: 3rem;
+  top: 1rem;
+  right: 15rem;
+  width: 600px;
+}
+
+.dev-img .img-1 {
+  height: 500px;
 }
 .boxes {
   position: relative;
@@ -444,9 +449,11 @@ Form {
 
 .dev-team {
   margin: 60px 0;
+  align-items: center;
 }
 .developers {
   max-width: 70%;
+  margin: 7rem 0;
 }
 
 .location-segment {
@@ -682,16 +689,23 @@ Form {
 
   .developers {
     max-width: fit-content !important;
+    margin: 0;
   }
 
   .dev-img {
     position: relative;
     top: 10rem;
     right: 3rem;
+    width: auto;
   }
 
   .dev-img .img-1 {
-    width: auto;
+    width: 90%;
+    height: 70%;
+  }
+
+  .technologies h3 {
+    text-align: center;
   }
 
   .angle-down-img {
