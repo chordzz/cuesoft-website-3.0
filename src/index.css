@@ -473,6 +473,20 @@ Form {
   min-height: calc(100vmin - 85.38px);
 }
 
+.service-subject {
+  height: fit-content;
+}
+
+.service-subject .image {
+  max-height: 15rem;
+  border-radius: 5px;
+}
+
+.service-subject p {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
 .tools-list .item {
   padding-top: 30px;
 }
