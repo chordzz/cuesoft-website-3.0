@@ -273,10 +273,10 @@ const Home = ({
           /> */}
           <Grid className="dev-team-grid">
             <Grid.Row className="dev-team">
-              <Grid.Column mobile={16} computer={11}>
+              <Grid.Column mobile={16} computer={10}>
                 <Developers darkMode={darkMode} />
               </Grid.Column>
-              <Grid.Column mobile={16} computer={5}>
+              <Grid.Column mobile={16} computer={6}>
                 <DevelopersImg />
               </Grid.Column>
               <Grid.Column mobile={1} computer={8}></Grid.Column>
