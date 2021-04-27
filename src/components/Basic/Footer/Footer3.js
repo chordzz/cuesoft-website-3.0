@@ -24,7 +24,13 @@ function Footer3({ darkMode }) {
             }}
             className="footer-list"
           >
-            <a href="https://medium.com/@cuesoft">Blog</a>
+            <a
+              href="https://medium.com/@cuesoft"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Blog
+            </a>
           </List.Content>
         </List.Item>
       </List>
@@ -37,7 +43,13 @@ function Footer3({ darkMode }) {
             }}
             className="footer-list"
           >
-            <a href="https://www.facebook.com/cuesoft">Facebook</a>
+            <a
+              href="https://www.facebook.com/cuesoft"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
           </List.Content>
         </List.Item>
       </List>
@@ -50,7 +62,13 @@ function Footer3({ darkMode }) {
             }}
             className="footer-list"
           >
-            <a href="https://twitter.com/CuesoftCloud">Twitter</a>
+            <a
+              href="https://twitter.com/CuesoftCloud"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
           </List.Content>
         </List.Item>
       </List>
@@ -63,7 +81,13 @@ function Footer3({ darkMode }) {
             }}
             className="footer-list"
           >
-            <a href="https://www.instagram.com/cuesoftcloud/">Instagram </a>
+            <a
+              href="https://www.instagram.com/cuesoftcloud/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram{" "}
+            </a>
           </List.Content>
         </List.Item>
       </List>
@@ -76,7 +100,13 @@ function Footer3({ darkMode }) {
             }}
             className="footer-list"
           >
-            <a href="https://www.linkedin.com/company/cuesoft">LinkedIn</a>
+            <a
+              href="https://www.linkedin.com/company/cuesoft"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
           </List.Content>
         </List.Item>
       </List>

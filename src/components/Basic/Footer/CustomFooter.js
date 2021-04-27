@@ -21,6 +21,7 @@ function CustomFooter({ darkMode }) {
         backgroundColor: darkMode ? "#100403" : "#ffffff",
         padding: "80px 0 0 0",
       }}
+      className="footer-section"
     >
       <Container>
         <Grid>

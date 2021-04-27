@@ -127,7 +127,7 @@ header {
   margin: 30px 0;
 }
 .mobile-app {
-  padding: 0 20px;
+  padding: 0 15px;
   width: 100%;
   min-height: 15rem;
   margin-top: 30px;
@@ -143,6 +143,10 @@ header {
   margin-bottom: 30px;
   margin-left: 10px;
   background-color: #e8e8e8;
+}
+
+.mobile-app p {
+  margin-bottom: 0;
 }
 
 .enterprise:hover,
@@ -253,11 +257,11 @@ header {
   position: relative;
   top: 1rem;
   right: 15rem;
-  width: 600px;
+  width: 155%;
 }
 
 .dev-img .img-1 {
-  height: 500px;
+  height: 35rem;
 }
 .boxes {
   position: relative;
@@ -473,6 +477,20 @@ Form {
   min-height: calc(100vmin - 85.38px);
 }
 
+.service-subject {
+  height: fit-content;
+}
+
+.service-subject .image {
+  max-height: 15rem;
+  border-radius: 5px;
+}
+
+.service-subject p {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
 .tools-list .item {
   padding-top: 30px;
 }
@@ -494,6 +512,185 @@ Form {
 
 .mission p {
   padding: 5% 0;
+}
+
+.footer-section {
+  min-height: fit-content;
+}
+
+@media all and (min-width: 992px) {
+  .ui.grid > .row > [class*="five wide computer"].column {
+    width: 33.25% !important;
+  }
+}
+
+/* For Smaller Screens E.g Tab */
+@media all and (max-width: 1024px) {
+  .navbar {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .container {
+    margin: 0 2rem;
+  }
+
+  .brand-img {
+    margin-left: 0.5rem;
+  }
+
+  .nav-menu {
+    margin-right: 0.5rem;
+  }
+
+  .developers {
+    margin: 0;
+    max-width: fit-content;
+  }
+
+  .dev-img {
+    top: 2rem;
+    right: 0;
+  }
+
+  .dev-img .img-1 {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media all and (max-width: 768px) {
+  .navbar {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .container {
+    margin: 0 2rem;
+  }
+
+  .brand-img {
+    margin-left: 0.5rem;
+  }
+
+  .nav-menu {
+    margin-right: 0.5rem;
+  }
+
+  .developers {
+    margin: 0;
+    max-width: fit-content;
+  }
+
+  .dev-img {
+    top: 2rem;
+    right: 0;
+  }
+
+  .dev-img .img-1 {
+    width: 50%;
+    height: 50%;
+  }
+
+  /* .developers h2 {
+    max-width: 100%;
+  } */
+}
+
+@media all and (max-width: 700px) {
+  .menu-icon-1 {
+    visibility: visible;
+    padding-right: 3rem;
+    cursor: pointer;
+  }
+  .menu-icon-2 {
+    visibility: visible;
+    padding-right: 3rem;
+    cursor: pointer;
+    color: #ffffff !important;
+  }
+  .navbar {
+    position: relative;
+  }
+  .brand-img {
+    margin-left: 1rem;
+  }
+  .brand-img img {
+    font-size: 100px;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  .nav-menu.active {
+    background: #ffffff;
+    left: 0;
+    width: 100vw;
+    opacity: 1;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  .nav-menu-dark {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  .nav-menu-dark.active {
+    background: #100403;
+    left: 0;
+    width: 100vw;
+    opacity: 1;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  .nav-link-1 {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-btn {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    display: table;
+  }
+  .nav-icon {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    padding: 1rem;
+  }
+  .check {
+    position: absolute;
+    top: 0.3rem;
+  }
+  .nav-link-2 {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+
+  .typeform-share {
+    margin: auto !important;
+  }
 }
 
 /* For Mobile */
