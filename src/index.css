@@ -451,6 +451,18 @@ Form {
   padding: 60px 30px;
 }
 
+/* .kubernetes-img-col {
+  background: red;
+  display: flex;
+  align-content: center;
+} */
+
+.kubernetes-img {
+  margin-top: 50px;
+  border-radius: 5px;
+  height: 70%;
+}
+
 .dev-team {
   margin: 60px 0;
   align-items: center;
@@ -484,12 +496,19 @@ Form {
 .service-subject .image {
   max-height: 15rem;
   border-radius: 5px;
+  height: 100%;
+  width: 75%;
 }
 
 .service-subject p {
-  margin-top: 1.5rem;
-  margin-bottom: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
+
+/* .household-title {
+  background: red;
+  font-size: 0.7rem;
+} */
 
 .tools-list .item {
   padding-top: 30px;

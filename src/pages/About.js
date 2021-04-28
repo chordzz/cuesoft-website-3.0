@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 // import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
-import { Segment, Container, Header, Grid } from "semantic-ui-react";
+import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
 import { Mission, Technical } from "../components/Mission";
 // import slider from "../assets/images/about.png";
 // import slider_webp from "../assets/images/about.webp";
@@ -11,6 +11,7 @@ import { Info, Members } from "../components/Team";
 // import Smiley from "../assets/icons/smiley.svg";
 // import Smiley2 from "../assets/icons/smiley2.svg";
 // import { Client } from "../components/Clients";
+import Kubernetes from "../assets/images/kubernetes-img.jpg";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -45,27 +46,41 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
               </Grid.Column>
             </Grid.Row> */}
           </Grid>
-          <Header
-            style={{
-              color: !darkMode && "#db4437",
-              paddingTop: "60px",
-            }}
-          >
-            <h2
-              style={{ color: darkMode ? "#F4B400" : "rgb(71, 70, 70)" }}
-              // data-aos="fade-right"
-              // data-aos-duration="1000"
-              // data-aos-offset="200"
-              // data-aos-easing="ease-in-out"
-              className="kubernetes"
-            >
-              We are the Kubernetes for technical teams
-            </h2>
-          </Header>
           <Grid>
             <Grid.Row>
-              <Grid.Column computer={10} mobile={16}>
+              <Grid.Column computer={8} mobile={16}>
+                <Header
+                  style={{
+                    color: !darkMode && "#db4437",
+                    paddingTop: "60px",
+                  }}
+                >
+                  <h2
+                    style={{ color: darkMode ? "#F4B400" : "rgb(71, 70, 70)" }}
+                    // data-aos="fade-right"
+                    // data-aos-duration="1000"
+                    // data-aos-offset="200"
+                    // data-aos-easing="ease-in-out"
+                    className="kubernetes"
+                  >
+                    We are the Kubernetes for technical teams
+                  </h2>
+                </Header>
+                {/* <Grid>
+            <Grid.Row> */}
+                {/* <Grid.Column computer={10} mobile={16}> */}
                 <Technical darkMode={darkMode} />
+              </Grid.Column>
+              <Grid.Column
+                computer={8}
+                mobile={16}
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <Image
+                  src={Kubernetes}
+                  alt="Kubernetes Image"
+                  className="kubernetes-img"
+                />
               </Grid.Column>
             </Grid.Row>
           </Grid>

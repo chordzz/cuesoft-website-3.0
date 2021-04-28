@@ -9,7 +9,7 @@ function WebContent({ darkMode }) {
     >
       <h3
         style={{
-          color: darkMode ? "#F4B400" : "#db4437",
+          color: darkMode ? "#F4B400" : null,
         }}
       >
         Web Development

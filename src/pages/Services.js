@@ -13,13 +13,21 @@ import {
   BackendSegment,
 } from "../components/Tools";
 
-import E_commerce_img from "../assets/images/service-images/e-commerce_img.jpg";
+import E_commerce_img from "../assets/images/service-images/e-commerce1-img.jpg";
+// import E_commerce_img2 from "../assets/images/service-images/e-commerce2-img.jpg";
 
 import Responsive_web_design_img from "../assets/images/service-images/responsive_web_design.jpg";
 
-import SEO_img from "../assets/images/service-images/seo-img.jpg";
+import SEO_img from "../assets/images/service-images/seo1-img.jpg";
+import SEO_img2 from "../assets/images/service-images/seo2-img.jpg";
 
 import Web_dev from "../assets/images/service-images/web-dev_img.jpg";
+
+import Endpoint from "../assets/images/service-images/endpoint-img.jpg";
+
+import Infrastructure from "../assets/images/service-images/infrastructure-img.jpg";
+
+import Software_img from "../assets/images/service-images/software-apps-img.jpg";
 
 import PropTypes from "prop-types";
 
@@ -171,10 +179,39 @@ function Services({ darkMode, household }) {
                   color: darkMode ? "#F4B400" : "#db4437",
                 }}
               >
-                <p>01. Software Applications</p>
-                <p>02. Infrastructure</p>
-                <p>03. Endpoint Management</p>
-                <p>04. Optimized for SEO</p>
+                <div className="service-subject">
+                  <p>01. Software Applications</p>
+                  <Image
+                    // style={{ marginTop: "-100px" }}
+                    src={Software_img}
+                    alt="space"
+                  />
+                </div>
+
+                <div className="service-subject">
+                  <p>02. Infrastructure</p>
+                  <Image
+                    // style={{ marginTop: "-100px" }}
+                    src={Infrastructure}
+                    alt="space"
+                  />
+                </div>
+                <div className="service-subject">
+                  <p>03. Endpoint Management</p>
+                  <Image
+                    // style={{ marginTop: "-100px" }}
+                    src={Endpoint}
+                    alt="space"
+                  />
+                </div>
+                <div className="service-subject">
+                  <p>04. Optimized for SEO</p>
+                  <Image
+                    // style={{ marginTop: "-100px" }}
+                    src={SEO_img2}
+                    alt="space"
+                  />
+                </div>
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -209,10 +246,39 @@ function Services({ darkMode, household }) {
                   color: darkMode ? "#F4B400" : "#db4437",
                 }}
               >
-                <p>01. Software Applications</p>
-                <p>02. Infrastructure</p>
-                <p>03. Endpoint Management</p>
-                <p>04. Optimized for SEO</p>
+                <div className="service-subject">
+                  <p>01. Software Applications</p>
+                  <Image
+                    // style={{ marginTop: "-100px" }}
+                    src={Software_img}
+                    alt="space"
+                  />
+                </div>
+
+                <div className="service-subject">
+                  <p>02. Infrastructure</p>
+                  <Image
+                    // style={{ marginTop: "-100px" }}
+                    src={Infrastructure}
+                    alt="space"
+                  />
+                </div>
+                <div className="service-subject">
+                  <p>03. Endpoint Management</p>
+                  <Image
+                    // style={{ marginTop: "-100px" }}
+                    src={Endpoint}
+                    alt="space"
+                  />
+                </div>
+                <div className="service-subject">
+                  <p>04. Optimized for SEO</p>
+                  <Image
+                    // style={{ marginTop: "-100px" }}
+                    src={SEO_img2}
+                    alt="space"
+                  />
+                </div>
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -241,7 +307,7 @@ function Services({ darkMode, household }) {
           >
             <h3
               style={{
-                color: darkMode ? "#F4B400" : "#db4437",
+                color: darkMode ? "#F4B400" : null,
                 textAlign: "center",
                 fontWeight: "bold",
                 fontSize: "32px",
@@ -285,7 +351,7 @@ function Services({ darkMode, household }) {
           <Header
             as="h3"
             style={{
-              color: darkMode ? "#F4B400" : "#db4437",
+              color: darkMode ? "#F4B400" : null,
               textAlign: "left",
               fontWeight: "bold",
               fontSize: "30px",
@@ -299,7 +365,7 @@ function Services({ darkMode, household }) {
             {household &&
               household.length &&
               household.map((person, i) => {
-                return <Household person={person} />;
+                return <Household key={i} person={person} />;
               })}
           </Grid>
         </Container>
