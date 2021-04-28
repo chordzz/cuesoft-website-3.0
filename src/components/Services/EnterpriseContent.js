@@ -5,7 +5,7 @@ function EnterpriseContent({ darkMode }) {
     <div>
       <h3
         style={{
-          color: darkMode ? "#F4B400" : "#db4437",
+          color: darkMode ? "#F4B400" : null,
         }}
       >
         Enterprise Software Development
