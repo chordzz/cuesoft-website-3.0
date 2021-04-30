@@ -26,10 +26,11 @@ function CustomFooter({ darkMode }) {
       <Container>
         <Grid>
           <Grid.Row only="computer">
+            {/* <Grid.Column computer={1}></Grid.Column> */}
             <Grid.Column computer={4}>
               <Footer1 darkMode={darkMode} />
             </Grid.Column>
-            <Grid.Column computer={2}></Grid.Column>
+            {/* <Grid.Column computer={2}></Grid.Column> */}
             <Grid.Column computer={2}>
               <Footer2 darkMode={darkMode} />
             </Grid.Column>
@@ -39,8 +40,8 @@ function CustomFooter({ darkMode }) {
             <Grid.Column computer={2}>
               <Footer4 darkMode={darkMode} />
             </Grid.Column>
-            <Grid.Column computer={1}></Grid.Column>
-            <Grid.Column computer={3}>
+            <Grid.Column computer={2}></Grid.Column>
+            <Grid.Column computer={4}>
               <Footer5 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>

@@ -16,17 +16,17 @@ function BackendSegment({ darkMode }) {
         Backend Development{" "}
       </h4>
       <List style={{ fontWeight: "600" }} className="tools-list">
-        <List.Item>
-          <Image src={darkMode ? Node2 : Node1} size="mini" />
-          <List.Content style={{ paddingTop: "10px" }}>Node.js</List.Content>
+        <List.Item className="tool-details">
+          <Image src={darkMode ? Node2 : Node1} size="mini" className="tools" />
+          <List.Content style={{ paddingTop: "15px" }}>Node.js</List.Content>
         </List.Item>
-        <List.Item style={{ paddingTop: "30px" }}>
-          <Image src={darkMode ? Php2 : Php1} size="mini" />
-          <List.Content style={{ paddingTop: "10px" }}>PHP</List.Content>
+        <List.Item className="tools-details">
+          <Image src={darkMode ? Php2 : Php1} size="mini" className="tools" />
+          <List.Content style={{ paddingTop: "15px" }}>PHP</List.Content>
         </List.Item>
-        <List.Item style={{ paddingTop: "30px" }}>
-          <Image src={darkMode ? Java2 : Java} size="mini" />
-          <List.Content style={{ paddingTop: "10px" }}>Java</List.Content>
+        <List.Item className="tools-details">
+          <Image src={darkMode ? Java2 : Java} size="mini" className="tools" />
+          <List.Content style={{ paddingTop: "20px" }}>Java</List.Content>
         </List.Item>
       </List>
     </div>

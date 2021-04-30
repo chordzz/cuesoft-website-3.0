@@ -136,7 +136,7 @@ header {
   background-color: #e8e8e8;
 }
 .enterprise {
-  padding: 30px;
+  padding: 20px;
   width: 100%;
   min-height: 15rem;
   margin-top: 30px;
@@ -464,7 +464,7 @@ Form {
 }
 
 .dev-team {
-  margin: 60px 0;
+  margin: 30px 0;
   align-items: center;
 }
 .developers {
@@ -510,8 +510,27 @@ Form {
   font-size: 0.7rem;
 } */
 
+.ui.mini.image.tools {
+  width: 60px;
+}
+
+.ui.mini.image.tools-m,
+.ui.mini.image.tools-f {
+  width: 40px;
+}
+
+.tool-details {
+  display: flex !important;
+  justify-content: center;
+  align-content: center !important;
+}
+
 .tools-list .item {
-  padding-top: 30px;
+  padding-top: 10px;
+}
+
+.tools-list .tool-details {
+  padding-top: 10px;
 }
 
 .footer-copyright {
@@ -608,6 +627,10 @@ Form {
   .dev-img .img-1 {
     width: 50%;
     height: 50%;
+  }
+
+  .product-segment {
+    margin-left: 13rem;
   }
 
   /* .developers h2 {
@@ -965,6 +988,10 @@ Form {
     margin: auto;
   }
 
+  .product-segment {
+    margin-left: 0;
+  }
+
   .mobile-app {
     padding: 0 20px 3rem;
     margin-left: 0;
@@ -983,6 +1010,11 @@ Form {
   .footer-contact-header {
     font-size: 1.3rem;
   }
+
+  /* .product-segment {
+    background: red;
+    margin: 0 auto;
+  } */
 
   /* .web,
   .mobile-app,
