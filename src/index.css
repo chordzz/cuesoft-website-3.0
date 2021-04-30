@@ -514,10 +514,10 @@ Form {
   width: 60px;
 }
 
-.ui.mini.image.tools-m,
+/* .ui.mini.image.tools-m,
 .ui.mini.image.tools-f {
   width: 40px;
-}
+} */
 
 .tool-details {
   display: flex !important;
