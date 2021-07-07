@@ -1,3 +1,9 @@
+// import React from "react";
+// import { ReactComponent as Analyse } from "../assets/illustrations/Analyse.svg";
+// import Build from "../assets/illustrations/Build.svg";
+// import Design from "../assets/illustrations/Design.svg";
+// import Evolve from "../assets/illustrations/Evolve.svg";
+
 const initialState = {
   data: [
     {
@@ -6,6 +12,7 @@ const initialState = {
         "Our design approach is to simplify. We embrace the joy that comes from making something that was complicated easy.",
       body:
         "Our design approach is to simplify. We embrace the joy that comes from making something that was complicated, easy. We like to take your brand back to its absolute essence. What are the questions you like to ask, and why? We like to peel back the onion, and pick your brain for a while. Bold ideas take commitment, so we tailor every message and interaction to assure consistency.",
+      image_type: "Analyse",
     },
     {
       title: "02. Design",
@@ -13,6 +20,8 @@ const initialState = {
         "Our design approach is to simplify. We embrace the joy that comes from making something that was complicated easy.",
       body:
         "Our design approach is to simplify. We embrace the joy that comes from making something that was complicated, easy. We like to take your brand back to its absolute essence. What are the questions you like to ask, and why? We like to peel back the onion, and pick your brain for a while. Bold ideas take commitment, so we tailor every message and interaction to assure consistency.",
+
+      image_type: "Design",
     },
     {
       title: "03. Build",
@@ -20,6 +29,8 @@ const initialState = {
         "Our design approach is to simplify. We embrace the joy that comes from making something that was complicated easy.",
       body:
         "Our design approach is to simplify. We embrace the joy that comes from making something that was complicated, easy. We like to take your brand back to its absolute essence. What are the questions you like to ask, and why? We like to peel back the onion, and pick your brain for a while. Bold ideas take commitment, so we tailor every message and interaction to assure consistency.",
+
+      image_type: "Build",
     },
     {
       title: "04. Evolve",
@@ -27,6 +38,8 @@ const initialState = {
         "Our design approach is to simplify. We embrace the joy that comes from making something that was complicated easy.",
       body:
         "Our design approach is to simplify. We embrace the joy that comes from making something that was complicated, easy. We like to take your brand back to its absolute essence. What are the questions you like to ask, and why? We like to peel back the onion, and pick your brain for a while. Bold ideas take commitment, so we tailor every message and interaction to assure consistency.",
+
+      image_type: "Evolve",
     },
   ],
 };
