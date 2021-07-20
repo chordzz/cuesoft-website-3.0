@@ -9,7 +9,7 @@ build:
     - npm install
     - npm run build
   artifacts:
-    name: "coverage-$CI_COMMIT_SHORT_SHA"
+    name: build
     paths:
       - build/
     expire_in: 30 days
