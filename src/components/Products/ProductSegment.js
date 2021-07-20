@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function ProductSegment({ product, darkMode }) {
   return (
-    <div style={{ marginBottom: "30px" }}>
+    <div style={{ marginBottom: "30px" }} className="product-segment">
       <Image src={product.banner} />
       <h4
         style={{ color: darkMode ? "#ffffff" : "#000000", textAlign: "center" }}

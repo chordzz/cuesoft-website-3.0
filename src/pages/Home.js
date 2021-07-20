@@ -437,7 +437,7 @@ const Home = ({
                 productsData.length &&
                 productsData.map((product, i) => {
                   return (
-                    <Grid.Column key={i} mobile={16} computer={5}>
+                    <Grid.Column key={i} mobile={16} computer={5} tablet={10}>
                       <ProductSegment product={product} darkMode={darkMode} />
                     </Grid.Column>
                   );
