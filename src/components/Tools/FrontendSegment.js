@@ -17,15 +17,23 @@ function FrontendSegment({ darkMode }) {
       </h4>
       <List style={{ fontWeight: "600" }} className="tools-list">
         <List.Item>
-          <Image src={darkMode ? React2 : React1} size="mini" />
+          <Image
+            src={darkMode ? React2 : React1}
+            size="mini"
+            className="tools"
+          />
           <List.Content style={{ paddingTop: "10px" }}>React</List.Content>
         </List.Item>
-        <List.Item style={{ paddingTop: "30px" }}>
-          <Image src={darkMode ? Vue2 : Vue1} size="mini" />
+        <List.Item>
+          <Image src={darkMode ? Vue2 : Vue1} size="mini" className="tools" />
           <List.Content style={{ paddingTop: "10px" }}>Vue.js</List.Content>
         </List.Item>
-        <List.Item style={{ paddingTop: "30px" }}>
-          <Image src={darkMode ? Angular2 : Angular1} size="mini" />
+        <List.Item>
+          <Image
+            src={darkMode ? Angular2 : Angular1}
+            size="mini"
+            className="tools"
+          />
           <List.Content style={{ paddingTop: "10px" }}>Angular</List.Content>
         </List.Item>
       </List>

@@ -1,3 +1,5 @@
+[![Website CI](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/website.yml/badge.svg?branch=develop)](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/website.yml)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
