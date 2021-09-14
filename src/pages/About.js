@@ -11,7 +11,7 @@ import { Info, Members } from "../components/Team";
 // import Smiley from "../assets/icons/smiley.svg";
 // import Smiley2 from "../assets/icons/smiley2.svg";
 // import { Client } from "../components/Clients";
-import Kubernetes from "../assets/images/kubernetes-img.jpg";
+import Kubernetes from "../assets/illustrations/Analyse.svg";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
   useEffect(() => window.scrollTo(0, 0), []);

@@ -2,7 +2,7 @@ import React from "react";
 import { Image } from "semantic-ui-react";
 // import Top_img from "../../assets/images/top-img1.png";
 //import Top_img_webp from "../../assets/images/top-img1.webp";
-import Developers_img from "../../assets/images/developers_img.jpg";
+import Developers_img from "../../assets/illustrations/Build.svg";
 // import Developers_img from "../../assets/images/developers_img2.jpg";
 // import Trial from "../../assets/icons/trial.svg";
 
