@@ -9,7 +9,7 @@ import { Info, Members } from "../components/Team";
 
 import Kubernetes from "../assets/illustrations/Analyse.svg";
 // import Kubernetes from "../assets/images/kubernetes-img.jpg";
-import Space from "../assets/icons/space.svg";
+// import Space from "../assets/icons/space.svg";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -81,7 +81,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                 style={{ display: "flex", alignItems: "center" }}
               >
                 <Image
-                  src={Space}
+                  src={Kubernetes}
                   alt="Kubernetes Image"
                   className="kubernetes-img"
                 />
