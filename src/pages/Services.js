@@ -13,26 +13,10 @@ import {
   BackendSegment,
 } from "../components/Tools";
 
-// import E_commerce_img from "../assets/images/service-images/e-commerce1-img.jpg";
-// import E_commerce_img2 from "../assets/images/service-images/e-commerce2-img.jpg";
-
-// import Responsive_web_design_img from "../assets/images/service-images/responsive_web_design.jpg";
-
 import PlaceHolder_img1 from "../assets/illustrations/Build.svg";
 import PlaceHolder_img2 from "../assets/illustrations/Analyse.svg";
 import PlaceHolder_img3 from "../assets/illustrations/Evolve.svg";
 import PlaceHolder_img4 from "../assets/illustrations/Design.svg";
-
-// import SEO_img from "../assets/images/service-images/seo1-img.jpg";
-// import SEO_img2 from "../assets/images/service-images/seo2-img.jpg";
-
-// import Web_dev from "../assets/images/service-images/web-dev_img.jpg";
-
-// import Endpoint from "../assets/images/service-images/endpoint-img.jpg";
-
-// import Infrastructure from "../assets/images/service-images/infrastructure-img.jpg";
-
-// import Software_img from "../assets/images/service-images/software-apps-img.jpg";
 
 import PropTypes from "prop-types";
 

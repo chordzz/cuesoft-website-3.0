@@ -1,16 +1,12 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-// import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
+
 import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
 import { Mission, Technical } from "../components/Mission";
-// import slider from "../assets/images/about.png";
-// import slider_webp from "../assets/images/about.webp";
-// import { ApproachTwo } from "../components/Approach";
+
 import { Info, Members } from "../components/Team";
-// import Smiley from "../assets/icons/smiley.svg";
-// import Smiley2 from "../assets/icons/smiley2.svg";
-// import { Client } from "../components/Clients";
+
 import Kubernetes from "../assets/illustrations/Analyse.svg";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
