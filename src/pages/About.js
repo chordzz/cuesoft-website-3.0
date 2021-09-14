@@ -8,6 +8,8 @@ import { Mission, Technical } from "../components/Mission";
 import { Info, Members } from "../components/Team";
 
 import Kubernetes from "../assets/illustrations/Analyse.svg";
+// import Kubernetes from "../assets/images/kubernetes-img.jpg";
+import Space from "../assets/icons/space.svg";
 
 function About({ darkMode, approachTwo, teamMembers, clientsData }) {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -25,14 +27,19 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         }}
         // className="aboutPage-missionSection"
       >
-        <Container>
-          <Grid>
-            <Grid.Row centered>
-              <Grid.Column computer={9} mobile={16}>
-                <Mission darkMode={darkMode} />
-              </Grid.Column>
-            </Grid.Row>
-            {/* <Grid.Row centered>
+        <Grid>
+          <Grid.Row
+            style={{
+              width: "100%",
+              backgroundColor: darkMode ? "#100403" : "whitesmoke",
+            }}
+            centered
+          >
+            <Grid.Column computer={9} mobile={16}>
+              <Mission darkMode={darkMode} />
+            </Grid.Column>
+          </Grid.Row>
+          {/* <Grid.Row centered>
               <Grid.Column computer={16} mobile={16}>
                 <picture>
                   <source srcSet={slider_webp} type="images/webp" />
@@ -41,7 +48,8 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                 </picture>
               </Grid.Column>
             </Grid.Row> */}
-          </Grid>
+        </Grid>
+        <Container>
           <Grid>
             <Grid.Row>
               <Grid.Column computer={8} mobile={16}>
@@ -73,7 +81,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
                 style={{ display: "flex", alignItems: "center" }}
               >
                 <Image
-                  src={Kubernetes}
+                  src={Space}
                   alt="Kubernetes Image"
                   className="kubernetes-img"
                 />

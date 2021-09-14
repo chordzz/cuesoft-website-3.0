@@ -13,10 +13,29 @@ import {
   BackendSegment,
 } from "../components/Tools";
 
+// import E_commerce_img from "../assets/images/service-images/e-commerce1-img.jpg";
+// import E_commerce_img2 from "../assets/images/service-images/e-commerce2-img.jpg";
+
+// import Responsive_web_design_img from "../assets/images/service-images/responsive_web_design.jpg";
+
 import PlaceHolder_img1 from "../assets/illustrations/Build.svg";
 import PlaceHolder_img2 from "../assets/illustrations/Analyse.svg";
 import PlaceHolder_img3 from "../assets/illustrations/Evolve.svg";
 import PlaceHolder_img4 from "../assets/illustrations/Design.svg";
+
+// import SEO_img from "../assets/images/service-images/seo1-img.jpg";
+// import SEO_img2 from "../assets/images/service-images/seo2-img.jpg";
+
+// import SEO_img from "../assets/images/service-images/seo1-img.jpg";
+// import SEO_img2 from "../assets/images/service-images/seo2-img.jpg";
+
+// import Web_dev from "../assets/images/service-images/web-dev_img.jpg";
+
+// import Endpoint from "../assets/images/service-images/endpoint-img.jpg";
+
+// import Infrastructure from "../assets/images/service-images/infrastructure-img.jpg";
+
+// import Software_img from "../assets/images/service-images/software-apps-img.jpg";
 
 import PropTypes from "prop-types";
 
@@ -31,7 +50,7 @@ function Services({ darkMode, household }) {
         basic
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#100403" : "#ffffff",
+          backgroundColor: darkMode ? "#100403" : "whitesmoke",
           padding: "50px 0",
           // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
@@ -78,7 +97,7 @@ function Services({ darkMode, household }) {
         basic
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#100403" : "#ffffff",
+          backgroundColor: darkMode ? "#100403" : "whitesmoke",
           padding: "50px 0",
           // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
@@ -109,14 +128,14 @@ function Services({ darkMode, household }) {
                     alt="space"
                   />
                 </div>
-                <div className="service-subject">
+                {/* <div className="service-subject">
                   <p>02. Responsive and Fluid Design</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
                     src={PlaceHolder_img2}
                     alt="space"
                   />
-                </div>
+                </div> */}
 
                 <div className="service-subject">
                   <p>03. Best Web Development Approach</p>
@@ -126,14 +145,14 @@ function Services({ darkMode, household }) {
                     alt="space"
                   />
                 </div>
-                <div className="service-subject">
+                {/* <div className="service-subject">
                   <p>04. Optimized for SEO</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
                     src={PlaceHolder_img4}
                     alt="space"
                   />
-                </div>
+                </div> */}
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -145,7 +164,7 @@ function Services({ darkMode, household }) {
         basic
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
+          backgroundColor: darkMode ? "#210806" : "whitesmoke",
           padding: "50px 0",
           // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
@@ -193,14 +212,14 @@ function Services({ darkMode, household }) {
                     alt="space"
                   />
                 </div>
-                <div className="service-subject">
+                {/* <div className="service-subject">
                   <p>04. Optimized for SEO</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
                     src={PlaceHolder_img1}
                     alt="space"
                   />
-                </div>
+                </div> */}
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -212,7 +231,7 @@ function Services({ darkMode, household }) {
         basic
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
+          backgroundColor: darkMode ? "#210806" : "whitesmoke",
           // minHeight: "calc(100vh - 85.38px)",
           padding: "50px 0",
           display: "flex",
@@ -260,14 +279,14 @@ function Services({ darkMode, household }) {
                     alt="space"
                   />
                 </div>
-                <div className="service-subject">
+                {/* <div className="service-subject">
                   <p>04. Optimized for SEO</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
                     src={PlaceHolder_img4}
                     alt="space"
                   />
-                </div>
+                </div> */}
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -279,7 +298,7 @@ function Services({ darkMode, household }) {
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#100403" : "#ffffff",
+          backgroundColor: darkMode ? "#100403" : "whitesmoke",
           padding: "50px 0",
           // minHeight: "100vh",
           display: "flex",
@@ -328,7 +347,7 @@ function Services({ darkMode, household }) {
         vertical
         inverted={darkMode}
         style={{
-          backgroundColor: darkMode ? "#210806" : "#FCFAF6",
+          backgroundColor: darkMode ? "#210806" : "whitesmoke",
           // minHeight: "calc(100vh - 85.38px)",
           display: "flex",
           flexFlow: "column wrap",
