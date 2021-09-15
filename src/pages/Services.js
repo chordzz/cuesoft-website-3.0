@@ -13,21 +13,29 @@ import {
   BackendSegment,
 } from "../components/Tools";
 
-import E_commerce_img from "../assets/images/service-images/e-commerce1-img.jpg";
+// import E_commerce_img from "../assets/images/service-images/e-commerce1-img.jpg";
 // import E_commerce_img2 from "../assets/images/service-images/e-commerce2-img.jpg";
 
 // import Responsive_web_design_img from "../assets/images/service-images/responsive_web_design.jpg";
 
+import PlaceHolder_img1 from "../assets/illustrations/Build.svg";
+import PlaceHolder_img2 from "../assets/illustrations/Analyse.svg";
+import PlaceHolder_img3 from "../assets/illustrations/Evolve.svg";
+import PlaceHolder_img4 from "../assets/illustrations/Design.svg";
+
 // import SEO_img from "../assets/images/service-images/seo1-img.jpg";
 // import SEO_img2 from "../assets/images/service-images/seo2-img.jpg";
 
-import Web_dev from "../assets/images/service-images/web-dev_img.jpg";
+// import SEO_img from "../assets/images/service-images/seo1-img.jpg";
+// import SEO_img2 from "../assets/images/service-images/seo2-img.jpg";
 
-import Endpoint from "../assets/images/service-images/endpoint-img.jpg";
+// import Web_dev from "../assets/images/service-images/web-dev_img.jpg";
 
-import Infrastructure from "../assets/images/service-images/infrastructure-img.jpg";
+// import Endpoint from "../assets/images/service-images/endpoint-img.jpg";
 
-import Software_img from "../assets/images/service-images/software-apps-img.jpg";
+// import Infrastructure from "../assets/images/service-images/infrastructure-img.jpg";
+
+// import Software_img from "../assets/images/service-images/software-apps-img.jpg";
 
 import PropTypes from "prop-types";
 
@@ -116,7 +124,7 @@ function Services({ darkMode, household }) {
                   <p>01. E-Commerce Development</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={E_commerce_img}
+                    src={PlaceHolder_img1}
                     alt="space"
                   />
                 </div>
@@ -124,7 +132,7 @@ function Services({ darkMode, household }) {
                   <p>02. Responsive and Fluid Design</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={Responsive_web_design_img}
+                    src={PlaceHolder_img2}
                     alt="space"
                   />
                 </div> */}
@@ -133,7 +141,7 @@ function Services({ darkMode, household }) {
                   <p>03. Best Web Development Approach</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={Web_dev}
+                    src={PlaceHolder_img3}
                     alt="space"
                   />
                 </div>
@@ -141,7 +149,7 @@ function Services({ darkMode, household }) {
                   <p>04. Optimized for SEO</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={SEO_img}
+                    src={PlaceHolder_img4}
                     alt="space"
                   />
                 </div> */}
@@ -183,7 +191,7 @@ function Services({ darkMode, household }) {
                   <p>01. Software Applications</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={Software_img}
+                    src={PlaceHolder_img4}
                     alt="space"
                   />
                 </div>
@@ -192,7 +200,7 @@ function Services({ darkMode, household }) {
                   <p>02. Infrastructure</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={Infrastructure}
+                    src={PlaceHolder_img3}
                     alt="space"
                   />
                 </div>
@@ -200,7 +208,7 @@ function Services({ darkMode, household }) {
                   <p>03. Endpoint Management</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={Endpoint}
+                    src={PlaceHolder_img2}
                     alt="space"
                   />
                 </div>
@@ -208,7 +216,7 @@ function Services({ darkMode, household }) {
                   <p>04. Optimized for SEO</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={SEO_img2}
+                    src={PlaceHolder_img1}
                     alt="space"
                   />
                 </div> */}
@@ -250,7 +258,7 @@ function Services({ darkMode, household }) {
                   <p>01. Software Applications</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={Software_img}
+                    src={PlaceHolder_img1}
                     alt="space"
                   />
                 </div>
@@ -259,7 +267,7 @@ function Services({ darkMode, household }) {
                   <p>02. Infrastructure</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={Infrastructure}
+                    src={PlaceHolder_img2}
                     alt="space"
                   />
                 </div>
@@ -267,7 +275,7 @@ function Services({ darkMode, household }) {
                   <p>03. Endpoint Management</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={Endpoint}
+                    src={PlaceHolder_img3}
                     alt="space"
                   />
                 </div>
@@ -275,7 +283,7 @@ function Services({ darkMode, household }) {
                   <p>04. Optimized for SEO</p>
                   <Image
                     // style={{ marginTop: "-100px" }}
-                    src={SEO_img2}
+                    src={PlaceHolder_img4}
                     alt="space"
                   />
                 </div> */}

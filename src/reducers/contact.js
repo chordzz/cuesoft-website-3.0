@@ -11,7 +11,8 @@ const initialState = {
       lightImg: LocationLight,
       darkImage: LocationDark,
       title: "Address",
-      body: "Address: 26A Lewis Street, Asiwaju House, 1st Floor, Lagos Island, Lagos NG.",
+      body:
+        "Address: 26A Lewis Street, Asiwaju House, 1st Floor, Lagos Island, Lagos NG.",
     },
     {
       lightImg: MailLight,
@@ -27,7 +28,8 @@ const initialState = {
       lightImg: QuestionLight,
       darkImage: QuestionDark,
       title: "Have questions?",
-      body: "Being a software development company, we understand that every enterprise has a different software requirement and therefore, we provide custom software development services to meet their expectations.",
+      body:
+        "Being a software development company, we understand that every enterprise has a different software requirement and therefore, we provide custom software development services to meet their expectations.",
     },
   ],
 };

@@ -21,12 +21,8 @@ import { ProductSegment } from "../components/Products";
 import PropTypes from "prop-types";
 import { Client } from "../components/Clients";
 import { connect } from "react-redux";
-// import Space from "../assets/icons/space.svg";
+
 import Space from "../assets/illustrations/Functional_processes.svg";
-// import Square from "../assets/icons/squircle.svg";
-// import Square2 from "../assets/icons/squircle2.svg";
-// import AngleUp from "../assets/icons/angle-up.svg";
-// import AngleDown from "../assets/icons/angle-down.svg";
 
 const Home = ({
   darkMode,
