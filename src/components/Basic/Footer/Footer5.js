@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer5({ darkMode }) {
+function Footer5({ footer, darkMode }) {
   return (
     <div style={{ paddingBottom: "30px" }}>
       <div
@@ -16,8 +16,9 @@ function Footer5({ darkMode }) {
           Address:
         </h4>
         <p className="footer-text">
-          39 Alfred Rewane Road, 3rd & 7th Floors, Mulliner Towers, Lagos,
-          Nigeria
+          {/* 39 Alfred Rewane Road, 3rd & 7th Floors, Mulliner Towers, Lagos,
+          Nigeria */}
+          {footer.Address}
         </p>
       </div>
       <div
@@ -32,7 +33,10 @@ function Footer5({ darkMode }) {
         >
           Phone:{" "}
         </h4>
-        <p className="footer-text">+234 8109103898</p>
+        <p className="footer-text">
+          {/* +234 8109103898 */}
+          {footer.Phone}
+        </p>
       </div>
       <div
         style={{
@@ -46,7 +50,10 @@ function Footer5({ darkMode }) {
         >
           Tel:{" "}
         </h4>
-        <p className="footer-text">+1 (408) 495-2909</p>
+        <p className="footer-text">
+          {/* +1 (408) 495-2909 */}
+          {footer.Tel}
+        </p>
       </div>
       <div
         style={{
@@ -62,7 +69,10 @@ function Footer5({ darkMode }) {
         >
           Mail:
         </h4>{" "}
-        <p className="footer-text">support@cuesoft.io</p>
+        <p className="footer-text">
+          {/* support@cuesoft.io */}
+          {footer.Email}
+        </p>
       </div>
     </div>
   );
