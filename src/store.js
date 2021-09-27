@@ -1,18 +1,27 @@
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./reducers/index";
-import { persistStore, persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage";
+// import { persistStore, persistReducer } from "redux-persist";
+// import storage from "redux-persist/lib/storage";
 
-const persistConfig = {
-  key: "root",
-  storage,
-};
-
-const persistedReducer = persistReducer(persistConfig, rootReducer);
+// const persistConfig = {
+//   key: "root",
+//   storage,
+//   blacklist: ['clients'],
+// };
 
 const store = configureStore({
-  reducer: persistedReducer,
+  reducer: rootReducer,
 });
 
-const persistor = persistStore(store);
-export { store, persistor };
+export { store };
+
+// console.log(rootReducer);
+
+// const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+// const store = configureStore({
+//   reducer: persistedReducer,
+// });
+
+// const persistor = persistStore(store);
+// export { store, persistor };
