@@ -10,6 +10,7 @@ import mode from "./mode";
 import termsData from "./terms";
 import privacyData from "./privacy";
 import household from "./household";
+import footerDetails from "./footerDetails";
 
 export default combineReducers({
   form,
@@ -23,4 +24,5 @@ export default combineReducers({
   termsData,
   privacyData,
   household,
+  footerDetails,
 });
