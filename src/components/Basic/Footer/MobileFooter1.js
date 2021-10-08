@@ -1,5 +1,4 @@
 import React from "react";
-// import { Button } from "semantic-ui-react";
 
 function MobileFooter1({ darkMode }) {
   const typeFormFunc = () => {
@@ -31,16 +30,6 @@ function MobileFooter1({ darkMode }) {
         support looks like in today's world, as well as give you a glimpse of
         future
       </p>
-      {/* <Button
-        size="tiny"
-        as="a"
-        color={darkMode ? "yellow" : "red"}
-        style={{ borderRadius: "30px" }}
-      >
-        <span style={{ color: darkMode ? "#000000" : "#ffffff" }}>
-          Start a project
-        </span>
-      </Button> */}
       <a
         className="typeform-share button"
         href="https://form.typeform.com/to/DEo6Wu47?typeform-medium=embed-snippet"

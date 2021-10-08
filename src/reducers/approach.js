@@ -1,9 +1,3 @@
-// import React from "react";
-// import { ReactComponent as Analyse } from "../assets/illustrations/Analyse.svg";
-// import Build from "../assets/illustrations/Build.svg";
-// import Design from "../assets/illustrations/Design.svg";
-// import Evolve from "../assets/illustrations/Evolve.svg";
-
 const initialState = {
   data: [
     {

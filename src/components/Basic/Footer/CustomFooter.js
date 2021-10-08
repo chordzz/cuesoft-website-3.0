@@ -42,9 +42,6 @@ function CustomFooter({ contactData, darkMode }) {
               <Footer4 darkMode={darkMode} />
             </Grid.Column>
             <Grid.Column width={1}></Grid.Column>
-            {/* <Grid.Column width={3}>
-              <Footer5 darkMode={darkMode} />
-            </Grid.Column> */}
             {contactData.map((footer, i) => {
               return (
                 <Grid.Column width={3}>
@@ -58,7 +55,6 @@ function CustomFooter({ contactData, darkMode }) {
               <Footer6 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
-          {/* tablet footer visibility */}
           <Grid.Row only="tablet">
             <Grid.Column width={4}>
               <Footer1 darkMode={darkMode} />
@@ -72,9 +68,6 @@ function CustomFooter({ contactData, darkMode }) {
             <Grid.Column width={3}>
               <Footer4 darkMode={darkMode} />
             </Grid.Column>
-            {/* <Grid.Column style={{ paddingRight: ".5rem" }} width={3}>
-              <Footer5 darkMode={darkMode} />
-            </Grid.Column> */}
             {contactData.map((footer, i) => {
               return (
                 <Grid.Column style={{ paddingRight: ".5rem" }} width={3}>
@@ -88,7 +81,6 @@ function CustomFooter({ contactData, darkMode }) {
               <Footer6 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
-          {/* End of tablet visibility */}
           <Grid.Row columns="1" only="mobile">
             <Grid.Column>
               <MobileFooter1 darkMode={darkMode} />

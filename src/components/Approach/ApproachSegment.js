@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { Header } from "semantic-ui-react";
 import { Image } from "semantic-ui-react";
 import Analyse from "../../assets/illustrations/Analyse.svg";
 import Build from "../../assets/illustrations/Build.svg";
@@ -34,12 +33,10 @@ const ApproachSegment = ({ darkMode, single }) => {
       >
         {single.title}
       </h5>
-      {/* </Header> */}
       <p
         style={{
           color: darkMode ? "#ffffff" : "#000000",
           marginBottom: "32px",
-          // fontSize: "2rem",
         }}
       >
         {single.body}

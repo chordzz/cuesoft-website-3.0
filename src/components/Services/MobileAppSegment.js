@@ -3,14 +3,7 @@ import { Icon } from "semantic-ui-react";
 
 function MobileAppSegment({ darkMode }) {
   return (
-    <div
-      className="mobile-app"
-      // data-aos="fade-up"
-      // data-aos-duration="1000"
-      // data-aos-offset="200"
-      // data-aos-delay="1000"
-      // data-aos-easing="ease-in-out"
-    >
+    <div className="mobile-app">
       <h5
         style={{
           textAlign: "center",
@@ -18,7 +11,6 @@ function MobileAppSegment({ darkMode }) {
           color: darkMode ? "#000000" : null,
           marginBottom: "0",
           marginTop: "0",
-          // fontSize: "1.8rem",
         }}
       >
         Mobile App Development
@@ -27,7 +19,6 @@ function MobileAppSegment({ darkMode }) {
         style={{
           textAlign: "center",
           color: darkMode ? "#000000" : null,
-          // fontSize: "1.3rem",
         }}
         className="segment-p"
       >
@@ -41,8 +32,6 @@ function MobileAppSegment({ darkMode }) {
           fontSize: "25px",
           cursor: "pointer",
           color: darkMode ? "#F4B400" : "inherit",
-          // position: "relative",
-          // bottom: "0rem",
         }}
       />
     </div>
