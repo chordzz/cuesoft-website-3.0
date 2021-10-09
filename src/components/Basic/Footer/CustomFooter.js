@@ -10,7 +10,9 @@ import MobileFooter1 from "./MobileFooter1";
 import Logo from "../../../assets/icons/LogoWeb.svg";
 import Logo2 from "../../../assets/icons/LogoWebDark.svg";
 
-function CustomFooter({ darkMode }) {
+import { connect } from "react-redux";
+
+function CustomFooter({ contactData, darkMode }) {
   return (
     <Segment
       as="section"
@@ -40,16 +42,19 @@ function CustomFooter({ darkMode }) {
               <Footer4 darkMode={darkMode} />
             </Grid.Column>
             <Grid.Column width={1}></Grid.Column>
-            <Grid.Column width={3}>
-              <Footer5 darkMode={darkMode} />
-            </Grid.Column>
+            {contactData.map((footer, i) => {
+              return (
+                <Grid.Column width={3}>
+                  <Footer5 footer={footer} darkMode={darkMode} />
+                </Grid.Column>
+              );
+            })}
           </Grid.Row>
           <Grid.Row only="computer">
             <Grid.Column width={16}>
               <Footer6 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
-          {/* tablet footer visibility */}
           <Grid.Row only="tablet">
             <Grid.Column width={4}>
               <Footer1 darkMode={darkMode} />
@@ -63,16 +68,19 @@ function CustomFooter({ darkMode }) {
             <Grid.Column width={3}>
               <Footer4 darkMode={darkMode} />
             </Grid.Column>
-            <Grid.Column style={{ paddingRight: ".5rem" }} width={3}>
-              <Footer5 darkMode={darkMode} />
-            </Grid.Column>
+            {contactData.map((footer, i) => {
+              return (
+                <Grid.Column style={{ paddingRight: ".5rem" }} width={3}>
+                  <Footer5 footer={footer} darkMode={darkMode} />
+                </Grid.Column>
+              );
+            })}
           </Grid.Row>
           <Grid.Row only="tablet">
             <Grid.Column width={16}>
               <Footer6 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
-          {/* End of tablet visibility */}
           <Grid.Row columns="1" only="mobile">
             <Grid.Column>
               <MobileFooter1 darkMode={darkMode} />
@@ -98,9 +106,13 @@ function CustomFooter({ darkMode }) {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row only="mobile" columns="1">
-            <Grid.Column>
-              <Footer5 darkMode={darkMode} />
-            </Grid.Column>
+            {contactData.map((footer, i) => {
+              return (
+                <Grid.Column>
+                  <Footer5 footer={footer} darkMode={darkMode} />
+                </Grid.Column>
+              );
+            })}
             <Grid.Column>
               <Footer6 darkMode={darkMode} />
             </Grid.Column>
@@ -111,4 +123,10 @@ function CustomFooter({ darkMode }) {
   );
 }
 
-export default CustomFooter;
+const mapStateToProps = (state) => {
+  return {
+    contactData: state.footerDetails.data,
+  };
+};
+
+export default connect(mapStateToProps)(CustomFooter);

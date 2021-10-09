@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-// import { Image, Button, Icon, Checkbox } from "semantic-ui-react";
 import { Image, Icon, Checkbox } from "semantic-ui-react";
 import Logo from "../../assets/icons/LogoWeb.svg";
 import Logo2 from "../../assets/icons/LogoWebDark.svg";
@@ -82,23 +81,6 @@ const CustomHeader = ({ darkMode, toggleMode }) => {
           </Link>
         </li>
         <li className="nav-item">
-          {/* <Button
-            size="tiny"
-            as={Link}
-            // to="#"
-            color={darkMode ? "yellow" : "red"}
-            style={{ borderRadius: "30px" }}
-            onClick={(closeMobileMenu, typeFormFunc)}
-            className="nav-btn"
-            // class="typeform-share button"
-            // href="https://form.typeform.com/to/DEo6Wu47?typeform-medium=embed-snippet"
-            // data-mode="popup"
-            // data-size="100"
-            // target="_blank"
-            // rel="noopener noreferrer"
-            // onClick={typeFormFunc}
-          > */}
-          {/* <span style={{ color: darkMode ? "#000000" : "#ffffff" }}> */}
           <a
             className="typeform-share button"
             href="https://form.typeform.com/to/DEo6Wu47?typeform-medium=embed-snippet"
@@ -114,8 +96,6 @@ const CustomHeader = ({ darkMode, toggleMode }) => {
           >
             Hire Experts
           </a>
-          {/* </span> */}
-          {/* </Button> */}
         </li>
         <li className="nav-item">
           <div className="nav-icon">
@@ -125,16 +105,6 @@ const CustomHeader = ({ darkMode, toggleMode }) => {
               checked={darkMode}
               className="check"
             />
-            {/* <Icon
-                name="sun"
-                color={darkMode ? "red" : null}
-              />
-
-              <Icon
-                name="moon"
-                color={darkMode ? "yellow" : null}
-                style={{ paddingLeft: "5px" }}
-              /> */}
           </div>
         </li>
       </ul>
