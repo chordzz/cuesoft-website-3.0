@@ -2,11 +2,7 @@ import React, { useEffect } from "react";
 import { Segment, Container, Grid, Image, Header } from "semantic-ui-react";
 import { ApproachSegment } from "../components/Approach";
 import { AboutSegment } from "../components/About";
-import {
-  Developers,
-  DevelopersImg,
-  // DevelopersImg2,
-} from "../components/Developers";
+import { Developers, DevelopersImg } from "../components/Developers";
 import {
   FrontendSegment,
   BackendSegment,
@@ -43,10 +39,6 @@ const Home = ({
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
           padding: "50px 0",
-          // display: "flex",
-          // flexFlow: "column wrap",
-          // justifyContent: "center",
-          // alignContents: "stretch",
         }}
         className="mainSegment"
       >
@@ -62,47 +54,18 @@ const Home = ({
             }}
           >
             <Grid.Column mobile={16} computer={8}>
-              <h1
-              // style={{ fontSize: "46px" }}
-              // data-aos="fade-up"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-              >
-                {/* We build{" "}
-                <span
-                  style={{
-                    color: darkMode ? "#F4B400" : "#db4437",
-                    textDecoration: "underline",
-                  }}
-                >
-                  Websites.{" "}
-                </span> */}
-                {/* <br /> */}
+              <h1>
                 We develop functional processes that improve products and
                 services
               </h1>
               <br />
-              {/* <Image
-                src={darkMode ? Square2 : Square}
-                alt="square"
-                inline
-                style={{ color: darkMode ? "#F4B400" : null }}
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-delay="1000"
-                data-aos-easing="ease-in-out"
-              /> */}
+
               <span
                 style={{
-                  // paddingLeft: 10,
                   lineHeight: 1,
                   color: darkMode ? "#ffffff" : "#474646",
                 }}
                 className="span-text"
-                // data-aos="fade-right"
-                // data-aos-duration="1000"
-                // data-aos-delay="1000"
-                // data-aos-easing="ease-in-out"
               >
                 We help great companies simplify and grow their businesses by
                 designing and building beautiful products
@@ -110,7 +73,6 @@ const Home = ({
             </Grid.Column>
             <Grid.Column mobile={16} computer={8}>
               <Image
-                // style={{ marginTop: "-100px" }}
                 src={Space}
                 alt="space"
                 inline
@@ -137,27 +99,15 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container
-        // data-aos="fade-left"
-        // data-aos-offset="200"
-        // data-aos-duration="1000"
-        >
+        <Container>
           <Header
             style={{
               color: !darkMode && "#474646",
-              // marginBottom: "32px",
-              // fontWeight: "600",
             }}
           >
             <h2
               style={{
                 color: darkMode ? "#ffffff" : null,
-                // fontFamily: "Archivo",
-                // fontSize: "17px",
-                // lineHeight: "24px",
-                // fontWeight: 600,
-                // fontSize: "4.5rem",
-                // fontFamily: "Source Sans Pro",
               }}
             >
               Our approach
@@ -208,11 +158,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container
-        // data-aos="fade-up"
-        // data-aos-offset="200"
-        // data-aos-duration="1000"
-        >
+        <Container>
           <Header>
             <Grid>
               <Grid.Row>
@@ -261,13 +207,6 @@ const Home = ({
         }}
       >
         <Container>
-          {/* <Image
-            src={AngleUp}
-            size="mini"
-            floated="right"
-            style={{ margin: "-70px 0 20px 0" }}
-            className="angle-up-img"
-          /> */}
           <Grid className="dev-team-grid">
             <Grid.Row className="dev-team">
               <Grid.Column mobile={16} computer={10}>
@@ -277,9 +216,6 @@ const Home = ({
                 <DevelopersImg />
               </Grid.Column>
               <Grid.Column mobile={1} computer={8}></Grid.Column>
-              {/* <Grid.Column mobile={6} computer={5}>
-                <DevelopersImg2 />
-              </Grid.Column> */}
             </Grid.Row>
           </Grid>
         </Container>
@@ -298,13 +234,6 @@ const Home = ({
         }}
       >
         <Container>
-          {/* <Image
-            src={AngleDown}
-            style={{ margin: "-70px 0 0 0" }}
-            size="mini"
-            floated="left"
-            className="angle-down-img"
-          /> */}
           <Header
             style={{
               paddingBottom: "32px",
@@ -315,22 +244,14 @@ const Home = ({
             <h3
               style={{
                 color: darkMode ? "white" : null,
-                // fontSize: "1.8rem",
                 fontWeight: "600",
               }}
             >
-              {/* We make use of awesome technologies to build advanced enterprise
-              systems, challenging and innovative produts. We are proud of our
-              technical skills. */}
               We are proud of our technical skills.
             </h3>
           </Header>
           <Grid>
-            <Grid.Row
-            // style={{
-            //   left: "-4rem",
-            // }}
-            >
+            <Grid.Row>
               <Grid.Column mobile={16} computer={5}>
                 <FrontendSegment darkMode={darkMode} />
               </Grid.Column>
@@ -367,7 +288,6 @@ const Home = ({
             <h2
               style={{
                 color: darkMode ? "#F4B400" : "black",
-                // marginLeft: "10px",
               }}
             >
               Our services
@@ -401,11 +321,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container
-        // data-aos="fade-right"
-        // data-aos-offset="200"
-        // data-aos-duration="1000"
-        >
+        <Container>
           <Header
             style={{
               color: !darkMode && "#db4437",
@@ -455,11 +371,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container
-        // data-aos="fade-up"
-        // data-aos-offset="200"
-        // data-aos-duration="1000"
-        >
+        <Container>
           <Header
             style={{
               color: !darkMode && "#db4437",
@@ -472,8 +384,6 @@ const Home = ({
                   <h3
                     style={{
                       color: darkMode ? "#F4B400" : "black",
-                      // width: "430px",
-                      // height: "92px",
                     }}
                   >
                     Clients We've Worked With.

@@ -3,14 +3,7 @@ import { Icon } from "semantic-ui-react";
 
 function WebSegment({ darkMode }) {
   return (
-    <div
-      className="web"
-      // data-aos="fade-up"
-      // data-aos-duration="1000"
-      // data-aos-offset="200"
-      // data-aos-easing="ease-in-out"
-      // style = {{padding:'10px 20px'}}
-    >
+    <div className="web">
       <h5
         style={{
           textAlign: "center",
@@ -26,7 +19,6 @@ function WebSegment({ darkMode }) {
         style={{
           textAlign: "center",
           color: darkMode ? "#000000" : null,
-          // fontSize: "1.3rem",
         }}
         className="segment-p"
       >
@@ -40,8 +32,6 @@ function WebSegment({ darkMode }) {
           fontSize: "25px",
           cursor: "pointer",
           color: darkMode ? "#F4B400" : "inherit",
-          // position: "relative",
-          // bottom: "0rem",
         }}
       />
     </div>

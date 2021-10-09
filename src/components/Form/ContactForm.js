@@ -7,16 +7,7 @@ import { RenderField } from "../Basic";
 function ContactForm({ darkMode }) {
   return (
     <main className="main-contact">
-      <Form
-        // style={{
-        //   display: "flex",
-        //   flexDirection: "row",
-        //   justifyContent: "space-evenly",
-        //   marginBottom: "30px",
-        // }}
-
-        className="contact-form"
-      >
+      <Form className="contact-form">
         <Field
           component={RenderField}
           id="contact-form-name"
@@ -35,14 +26,7 @@ function ContactForm({ darkMode }) {
           required
         />
       </Form>
-      <Form
-      // style={{
-      //   display: "flex",
-      //   flexDirection: "row",
-      //   justifyContent: "space-evenly",
-      //   marginBottom: "30px",
-      // }}
-      >
+      <Form>
         <Field
           component={RenderField}
           id="contact-form-phone"
@@ -60,14 +44,7 @@ function ContactForm({ darkMode }) {
           required
         />
       </Form>
-      <Form
-      // style={{
-      //   display: "flex",
-      //   flexDirection: "row",
-      //   justifyContent: "space-evenly",
-      //   marginBottom: "30px",
-      // }}
-      >
+      <Form>
         <Field
           component={RenderField}
           id="contact-form-size"
@@ -99,7 +76,6 @@ function ContactForm({ darkMode }) {
         type="submit"
         size="large"
         color={darkMode ? "yellow" : "red"}
-        // style={{ borderRadius: "30px", marginRight: "20px", width: "150px" }}
         floated="right"
         className="contact-button"
       >

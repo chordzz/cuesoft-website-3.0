@@ -5,7 +5,6 @@ function Footer5({ footer, darkMode }) {
     <div style={{ paddingBottom: "30px" }}>
       <div
         style={{
-          // color: darkMode ? "#ffffff" : "#000000",
           paddingBottom: "10px",
         }}
       >
@@ -15,15 +14,10 @@ function Footer5({ footer, darkMode }) {
         >
           Address:
         </h4>
-        <p className="footer-text">
-          {/* 39 Alfred Rewane Road, 3rd & 7th Floors, Mulliner Towers, Lagos,
-          Nigeria */}
-          {footer.Address}
-        </p>
+        <p className="footer-text">{footer.Address}</p>
       </div>
       <div
         style={{
-          // color: darkMode ? "#ffffff" : "#000000",
           paddingBottom: "10px",
         }}
       >
@@ -33,14 +27,10 @@ function Footer5({ footer, darkMode }) {
         >
           Phone:{" "}
         </h4>
-        <p className="footer-text">
-          {/* +234 8109103898 */}
-          {footer.Phone}
-        </p>
+        <p className="footer-text">{footer.Phone}</p>
       </div>
       <div
         style={{
-          // color: darkMode ? "#ffffff" : "#000000",
           paddingBottom: "10px",
         }}
       >
@@ -50,14 +40,10 @@ function Footer5({ footer, darkMode }) {
         >
           Tel:{" "}
         </h4>
-        <p className="footer-text">
-          {/* +1 (408) 495-2909 */}
-          {footer.Tel}
-        </p>
+        <p className="footer-text">{footer.Tel}</p>
       </div>
       <div
         style={{
-          // color: darkMode ? "#ffffff" : "#000000",
           paddingTop: "10px",
         }}
       >
@@ -69,10 +55,7 @@ function Footer5({ footer, darkMode }) {
         >
           Mail:
         </h4>{" "}
-        <p className="footer-text">
-          {/* support@cuesoft.io */}
-          {footer.Email}
-        </p>
+        <p className="footer-text">{footer.Email}</p>
       </div>
     </div>
   );
