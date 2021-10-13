@@ -21,7 +21,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
-          padding: "50px 0",
+          // padding: "50px 0",
         }}
       >
         <Grid>
