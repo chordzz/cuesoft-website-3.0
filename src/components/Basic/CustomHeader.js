@@ -29,7 +29,7 @@ const CustomHeader = ({ darkMode, toggleMode }) => {
     }
   };
   return (
-    <nav className="navbar">
+    <nav className="navbar custom-container">
       <Link to="/" onClick={closeMobileMenu}>
         <Image
           src={darkMode ? Logo2 : Logo}

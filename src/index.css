@@ -228,6 +228,13 @@ header {
   /* background-color: green; */
 }
 
+.custom-container {
+  /* background-color: red; */
+  margin: 0 auto;
+  width: 85% !important;
+  padding: 0;
+}
+
 .nav-btn span {
   font-size: 1rem !important;
 }
@@ -254,7 +261,7 @@ a.typeform-share {
 
 .brand-img {
   cursor: pointer;
-  margin-left: 7.7rem;
+  /* margin-left: 7.7rem; */
 }
 .nav-menu {
   display: grid;
@@ -264,7 +271,7 @@ a.typeform-share {
   text-align: center;
   width: 50vw;
   justify-content: end;
-  margin-right: 7.7rem;
+  /* margin-right: 7.7rem; */
 }
 .nav-menu-dark {
   display: grid;

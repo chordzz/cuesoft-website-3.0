@@ -38,7 +38,7 @@ function Services({ darkMode, household }) {
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Header>
             <Grid centered>
               <Grid.Row>
@@ -84,7 +84,7 @@ function Services({ darkMode, household }) {
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Grid>
             <Grid.Row>
               <Grid.Column computer={7} mobile={16}>
@@ -125,7 +125,7 @@ function Services({ darkMode, household }) {
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Grid>
             <Grid.Row>
               <Grid.Column computer={7} mobile={16}>
@@ -171,7 +171,7 @@ function Services({ darkMode, household }) {
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Grid>
             <Grid.Row>
               <Grid.Column computer={7} mobile={16}>
@@ -217,7 +217,7 @@ function Services({ darkMode, household }) {
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Header
             style={{
               paddingBottom: "32px",
@@ -265,7 +265,7 @@ function Services({ darkMode, household }) {
           padding: "50px 0",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Header
             as="h3"
             style={{
