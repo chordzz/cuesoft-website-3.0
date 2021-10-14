@@ -40,7 +40,7 @@ const initialState = {
       title: "Product Designer",
     },
     {
-      photo: Face7,
+      photo: Face8,
       name: "Victor Jerry",
       title: "Creative Writer",
     },
