@@ -42,7 +42,7 @@ const Home = ({
         }}
         className="mainSegment"
       >
-        <Container>
+        <Container className="custom-container">
           <Grid
             columns={2}
             doubling
@@ -99,7 +99,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Header
             style={{
               color: !darkMode && "#474646",
@@ -158,7 +158,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Header>
             <Grid>
               <Grid.Row>
@@ -206,7 +206,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Grid className="dev-team-grid">
             <Grid.Row className="dev-team">
               <Grid.Column mobile={16} computer={10}>
@@ -233,7 +233,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Header
             style={{
               paddingBottom: "32px",
@@ -278,7 +278,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container className="alignLeft">
+        <Container className="alignLeft custom-container">
           <Header
             style={{
               color: !darkMode && "#db4437",
@@ -321,7 +321,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Header
             style={{
               color: !darkMode && "#db4437",
@@ -371,7 +371,7 @@ const Home = ({
           justifyContent: "center",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Header
             style={{
               color: !darkMode && "#db4437",

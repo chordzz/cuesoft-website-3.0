@@ -16,7 +16,6 @@ function Contact({ darkMode, locationData }) {
         inverted={darkMode}
         style={{
           backgroundColor: darkMode ? "#100403" : "#ffffff",
-          padding: "50px 0",
         }}
       >
         <Container>
