@@ -25,7 +25,7 @@ function CustomFooter({ contactData, darkMode }) {
       }}
       className="footer-section"
     >
-      <Container>
+      <Container className="custom-container">
         <Grid>
           <Grid.Row only="computer">
             <Grid.Column width={4}>

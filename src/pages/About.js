@@ -36,7 +36,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <Container>
+        <Container className="custom-container">
           <Grid>
             <Grid.Row>
               <Grid.Column computer={8} mobile={16}>
@@ -81,7 +81,7 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
           padding: "60px 0",
         }}
       >
-        <Container>
+        <Container className="custom-container">
           <Header
             style={{
               color: !darkMode ? "black" : "#F4B400",
