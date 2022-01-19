@@ -36,13 +36,8 @@ const initialState = {
     },
     {
       photo: Face6,
-      name: "Praise Alabi",
+      name: "Similoluwa Adeloye",
       title: "Product Designer",
-    },
-    {
-      photo: Face8,
-      name: "Victor Jerry",
-      title: "Creative Writer",
     },
     {
       photo: Face2,
