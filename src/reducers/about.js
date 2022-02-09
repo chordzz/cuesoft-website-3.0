@@ -2,12 +2,12 @@ const initialState = {
   data: [
     {
       body:
-        "We are a remote company, we are project managers, we outsource our developers to join your team but we still remain the project managers. Project can be web, mobile and enterprise (we decide which tool to use)",
+        "We are dedicated to the community that we serve, helping our clients and shareholders grow their capital by committing people and innovative ideas to help them get much more out of life. We built Cuesoft for you to get much more.",
       info: "More about us",
     },
     {
       body:
-        "Once you have a brilliant idea, we can work with you on a game plan, create a gorgeous logo and style guide, design a beautiful, functional app, turn it into high-performance code and then help people find out about it.",
+        "We work hard to continually produce quality and insist on it from others. We never compromise on high standards because we believe people will appreciate you for it, and you will become the domain expert on whom your team and others can rely.",
       info: "Our Capabilities",
     },
   ],
