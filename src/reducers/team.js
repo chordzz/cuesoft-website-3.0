@@ -35,7 +35,7 @@ const initialState = {
     },
     {
       photo: Face6,
-      name: "Similoluwa Adeloye",
+      name: "Ayodele Owoetoni",
       title: "Product Designer",
     },
     {
