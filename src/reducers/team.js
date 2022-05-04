@@ -35,8 +35,18 @@ const initialState = {
     },
     {
       photo: Face6,
-      name: "Similoluwa Adeloye",
+      name: "Ayodele Owoetoni",
       title: "Product Designer",
+    },
+    {
+      photo: Face3,
+      name: "Toluwalase Adeniyi",
+      title: "Head of People\n(HR/Admin)",
+    },
+    {
+      photo: Face7,
+      name: "Norbert Aburime",
+      title: "Content Marketing Manager",
     },
     {
       photo: Face2,
