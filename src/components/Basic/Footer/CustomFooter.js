@@ -50,11 +50,13 @@ function CustomFooter({ contactData, darkMode }) {
               );
             })}
           </Grid.Row>
+
           <Grid.Row only="computer">
             <Grid.Column width={16}>
               <Footer6 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
+
           <Grid.Row only="tablet">
             <Grid.Column width={4}>
               <Footer1 darkMode={darkMode} />
@@ -76,11 +78,13 @@ function CustomFooter({ contactData, darkMode }) {
               );
             })}
           </Grid.Row>
+
           <Grid.Row only="tablet">
             <Grid.Column width={16}>
               <Footer6 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
+
           <Grid.Row columns="1" only="mobile">
             <Grid.Column>
               <MobileFooter1 darkMode={darkMode} />
@@ -94,6 +98,7 @@ function CustomFooter({ contactData, darkMode }) {
               />
             </Grid.Column>
           </Grid.Row>
+
           <Grid.Row columns={3} only="mobile">
             <Grid.Column>
               <Footer2 darkMode={darkMode} />
@@ -105,6 +110,7 @@ function CustomFooter({ contactData, darkMode }) {
               <Footer4 darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
+
           <Grid.Row only="mobile" columns="1">
             {contactData.map((footer, i) => {
               return (

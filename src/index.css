@@ -602,6 +602,7 @@ Form {
   }
   .navbar {
     position: relative;
+    width: 100vw;
   }
   .brand-img img {
     font-size: 100px;
@@ -609,6 +610,7 @@ Form {
   .nav-menu {
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
     width: 100%;
     height: 85vh;
     position: absolute;
@@ -616,6 +618,8 @@ Form {
     left: -100%;
     opacity: 1;
     transition: all 1s ease;
+    margin-right: 0;
+    margin-left: 0;
   }
   .nav-menu.active {
     background: #ffffff;
