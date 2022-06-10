@@ -8,9 +8,11 @@ function Mission({ darkMode }) {
         Our mission
       </h1>
       <p style={{ color: darkMode ? "#ffffff" : "#474646" }}>
-        We help enterprises accelerate adoption of new technologies, untangle
-        complex issues that always emerge during digital evolution, and
-        orchestrate ongoing innovation.
+        Our company's mission is to{" "}
+        <strong>
+          use software and cloud computing to make enterprise software
+          affordable and accessible to all types of businesses.
+        </strong>
       </p>
     </div>
   );
