@@ -33,10 +33,10 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             centered
           >
             <Grid.Column computer={7} mobile={16}>
-              <Mission darkMode={darkMode} />
+              <Vision darkMode={darkMode} />
             </Grid.Column>
             <Grid.Column computer={7} mobile={16}>
-              <Vision darkMode={darkMode} />
+              <Mission darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
         </Grid>
