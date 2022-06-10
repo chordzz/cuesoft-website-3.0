@@ -10,20 +10,17 @@ const initialState = {
     {
       lightLogo: UnileverLight,
       darkLogo: UnileverDark,
-      body:
-        "Arm yourself with a cutting edge website built to fit your needs today and to grow along with your organization",
+      body: "Arm yourself with a cutting edge website built to fit your needs today and to grow along with your organization",
     },
     {
       lightLogo: FerrariLight,
       darkLogo: FerrariDark,
-      body:
-        "Arm yourself with a cutting edge website built to fit your needs today and to grow along with your organization",
+      body: "Arm yourself with a cutting edge website built to fit your needs today and to grow along with your organization",
     },
     {
       lightLogo: ClarksLight,
       darkLogo: ClarksDark,
-      body:
-        "Arm yourself with a cutting edge website built to fit your needs today and to grow along with your organization",
+      body: "Arm yourself with a cutting edge website built to fit your needs today and to grow along with your organization",
     },
   ],
 };
