@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 import { Segment, Container, Header, Grid, Image } from "semantic-ui-react";
-import { Mission, Technical } from "../components/Mission";
+import { Mission, Technical, Vision } from "../components/Mission";
 
 import { Info, Members } from "../components/Team";
 
@@ -32,7 +32,10 @@ function About({ darkMode, approachTwo, teamMembers, clientsData }) {
             }}
             centered
           >
-            <Grid.Column computer={9} mobile={16}>
+            <Grid.Column computer={7} mobile={16}>
+              <Vision darkMode={darkMode} />
+            </Grid.Column>
+            <Grid.Column computer={7} mobile={16}>
               <Mission darkMode={darkMode} />
             </Grid.Column>
           </Grid.Row>
