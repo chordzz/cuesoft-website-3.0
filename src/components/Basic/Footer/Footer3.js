@@ -1,5 +1,11 @@
 import React from "react";
 import { List } from "semantic-ui-react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 function Footer3({ darkMode }) {
   return (
@@ -33,7 +39,7 @@ function Footer3({ darkMode }) {
           </List.Content>
         </List.Item>
       </List>
-      <List>
+      {/* <List>
         <List.Item>
           <List.Content
             style={{
@@ -47,7 +53,7 @@ function Footer3({ darkMode }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Facebook
+              <FaFacebookF />
             </a>
           </List.Content>
         </List.Item>
@@ -66,7 +72,7 @@ function Footer3({ darkMode }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Twitter
+              <FaTwitter />
             </a>
           </List.Content>
         </List.Item>
@@ -85,7 +91,7 @@ function Footer3({ darkMode }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram{" "}
+              <FaInstagram />
             </a>
           </List.Content>
         </List.Item>
@@ -104,11 +110,53 @@ function Footer3({ darkMode }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              <FaLinkedinIn />
             </a>
           </List.Content>
         </List.Item>
-      </List>
+      </List> */}
+      <div style={{ paddingTop: "1rem" }}>
+        <span style={{ paddingRight: "0.5rem" }}>
+          <a
+            href="https://www.facebook.com/cuesoft"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: darkMode ? "#ffffff" : "#000000" }}
+          >
+            <FaFacebookF />
+          </a>
+        </span>
+        <span style={{ paddingRight: "0.5rem" }}>
+          <a
+            href="https://twitter.com/CuesoftCloud"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: darkMode ? "#ffffff" : "#000000" }}
+          >
+            <FaTwitter />
+          </a>
+        </span>
+        <span style={{ paddingRight: "0.5rem" }}>
+          <a
+            href="https://www.instagram.com/cuesoftcloud/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: darkMode ? "#ffffff" : "#000000" }}
+          >
+            <FaInstagram />
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://www.linkedin.com/company/cuesoft"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: darkMode ? "#ffffff" : "#000000" }}
+          >
+            <FaLinkedinIn />
+          </a>
+        </span>
+      </div>
     </div>
   );
 }

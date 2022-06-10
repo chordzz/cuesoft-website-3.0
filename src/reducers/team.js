@@ -5,7 +5,6 @@ import Face4 from "../assets/icons/face4.svg";
 import Face5 from "../assets/icons/face5.svg";
 import Face6 from "../assets/icons/face6.svg";
 import Face7 from "../assets/icons/face7.svg";
-import Face8 from "../assets/icons/face8.svg";
 
 const initialState = {
   data: [
@@ -36,13 +35,18 @@ const initialState = {
     },
     {
       photo: Face6,
-      name: "Praise Alabi",
+      name: "Ayodele Owoetoni",
       title: "Product Designer",
     },
     {
-      photo: Face8,
-      name: "Victor Jerry",
-      title: "Creative Writer",
+      photo: Face3,
+      name: "Toluwalase Adeniyi",
+      title: "Head of People\n(HR/Admin)",
+    },
+    {
+      photo: Face7,
+      name: "Norbert Aburime",
+      title: "Content Marketing Manager",
     },
     {
       photo: Face2,
