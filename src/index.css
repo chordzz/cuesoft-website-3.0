@@ -427,13 +427,15 @@ Form {
   display: inline;
 }
 
-.mission {
+.mission,
+.vision {
   text-align: center;
   margin: auto;
   padding: 20% 0;
 }
 
-.mission p {
+.mission p,
+.vision p {
   padding: 5% 0;
 }
 
