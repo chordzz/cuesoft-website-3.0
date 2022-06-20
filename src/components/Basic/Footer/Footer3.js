@@ -30,7 +30,7 @@ function Footer3({ darkMode }) {
             className="footer-list"
           >
             <a
-              href="https://medium.com/@cuesoft"
+              href="https://medium.com/cuesoft"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -39,82 +39,6 @@ function Footer3({ darkMode }) {
           </List.Content>
         </List.Item>
       </List>
-      {/* <List>
-        <List.Item>
-          <List.Content
-            style={{
-              color: darkMode ? "#ffffff" : "#000000",
-              paddingBottom: "10px",
-            }}
-            className="footer-list"
-          >
-            <a
-              href="https://www.facebook.com/cuesoft"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookF />
-            </a>
-          </List.Content>
-        </List.Item>
-      </List>
-      <List>
-        <List.Item>
-          <List.Content
-            style={{
-              color: darkMode ? "#ffffff" : "#000000",
-              paddingBottom: "10px",
-            }}
-            className="footer-list"
-          >
-            <a
-              href="https://twitter.com/CuesoftCloud"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter />
-            </a>
-          </List.Content>
-        </List.Item>
-      </List>
-      <List>
-        <List.Item>
-          <List.Content
-            style={{
-              color: darkMode ? "#ffffff" : "#000000",
-              paddingBottom: "10px",
-            }}
-            className="footer-list"
-          >
-            <a
-              href="https://www.instagram.com/cuesoftcloud/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram />
-            </a>
-          </List.Content>
-        </List.Item>
-      </List>
-      <List>
-        <List.Item>
-          <List.Content
-            style={{
-              color: darkMode ? "#ffffff" : "#000000",
-              paddingBottom: "10px",
-            }}
-            className="footer-list"
-          >
-            <a
-              href="https://www.linkedin.com/company/cuesoft"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedinIn />
-            </a>
-          </List.Content>
-        </List.Item>
-      </List> */}
       <div style={{ paddingTop: "1rem" }}>
         <span style={{ paddingRight: "0.5rem" }}>
           <a
