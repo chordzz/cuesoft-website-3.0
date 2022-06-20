@@ -1,21 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { List } from "semantic-ui-react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import { Terms, Privacy } from "../../Modals";
+import { Link, useHistory } from "react-router-dom";
 
 function Footer4({ darkMode }) {
-  const [termsModalActive, setTermsModalActive] = useState(false);
-  const [policyModalActive, setPolicyModalActive] = useState(false);
-  const activateTermsModal = () => {
-    setTermsModalActive(true);
+  const handleTerms = () => {
+    window.open("https://terms.cuesoft.io/", "_blank");
   };
-  const activatePolicyModal = () => {
-    setPolicyModalActive(true);
-  };
-  const deactivateModal = () => {
-    setTermsModalActive(false);
-    setPolicyModalActive(false);
+  const handlePrivacy = () => {
+    window.open("https://privacy.cuesoft.io/", "_blank");
   };
   return (
     <div style={{ paddingBottom: "30px" }}>
@@ -30,11 +22,12 @@ function Footer4({ darkMode }) {
         Resources
       </h4>
       <List>
-        <List.Item as={Link} to="#" onClick={activateTermsModal}>
+        <List.Item onClick={handleTerms}>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
+              cursor: "pointer",
             }}
             className="footer-list"
           >
@@ -43,11 +36,12 @@ function Footer4({ darkMode }) {
         </List.Item>
       </List>
       <List>
-        <List.Item as={Link} to="#" onClick={activatePolicyModal}>
+        <List.Item onClick={handlePrivacy}>
           <List.Content
             style={{
               color: darkMode ? "#ffffff" : "#000000",
               paddingBottom: "10px",
+              cursor: "pointer",
             }}
             className="footer-list"
           >
@@ -81,24 +75,8 @@ function Footer4({ darkMode }) {
           </List.Content>
         </List.Item>
       </List>
-      <Terms
-        activateModal={activateTermsModal}
-        closeModal={deactivateModal}
-        modalActive={termsModalActive}
-      />
-      <Privacy
-        activateModal={activatePolicyModal}
-        closeModal={deactivateModal}
-        modalActive={policyModalActive}
-      />
     </div>
   );
 }
-
-Footer4.propTypes = {
-  modalActive: PropTypes.bool.isRequired,
-  closeModal: PropTypes.func.isRequired,
-  activateModal: PropTypes.func.isRequired,
-};
 
 export default Footer4;
