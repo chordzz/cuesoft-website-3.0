@@ -1,6 +1,6 @@
 import React from "react";
 import { List } from "semantic-ui-react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer4({ darkMode }) {
   const handleTerms = () => {
