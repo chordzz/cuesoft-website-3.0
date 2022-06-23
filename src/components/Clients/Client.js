@@ -8,7 +8,7 @@ function Client({ client, darkMode }) {
       <Image
         src={darkMode ? client.darkLogo : client.lightLogo}
         alt="logo"
-        style={{ height: "60px", width: "60px", marginTop: "50px" }}
+        style={{ height: "100px", width: "150px", marginTop: "40px" }}
       />
       <p
         style={{ color: darkMode ? "#ffffff" : "#474646", paddingTop: "32px" }}
