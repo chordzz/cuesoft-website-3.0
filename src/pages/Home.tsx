@@ -14,7 +14,7 @@ import {
   MobileAppSegment,
   EnterpriseSegment,
 } from "../components/Services";
-import { ProductSegment } from "../components/Products";
+// import { ProductSegment } from "../components/Products";
 import { Client } from "../components/Clients";
 import { connect } from "react-redux";
 import Space from "../assets/illustrations/Functional_processes.svg";
@@ -333,11 +333,11 @@ const Home = ({
                 <Grid.Column mobile={16} computer={8}>
                   <h2
                     style={{
-                      color: darkMode ? "#F4B400" : "black",
+                      color: darkMode ? "#F4B400" : "#db4437",
                     }}
                     className="amazing-products"
                   >
-                    Here are some of our amazing products
+                    Case Study
                   </h2>
                 </Grid.Column>
               </Grid.Row>
@@ -345,7 +345,7 @@ const Home = ({
           </Header>
           <Grid>
             <Grid.Row>
-              {productsData &&
+              {/* {productsData &&
                 productsData.length &&
                 productsData.map((product, i) => {
                   return (
@@ -353,7 +353,15 @@ const Home = ({
                       <ProductSegment product={product} darkMode={darkMode} />
                     </Grid.Column>
                   );
-                })}
+                })} */}
+                <h4
+                  style={{
+                    color: darkMode ? "white" : "black",
+                    margin: '0 auto'
+                  }}  
+                >
+                  Coming Soon...
+                </h4>
             </Grid.Row>
           </Grid>
         </Container>
