@@ -12,7 +12,7 @@ const initialState = {
     {
       photo: Face1,
       name: "Ibukun Dairo",
-      title: "Founder and CEO",
+      title: "CEO",
     },
     {
       photo: Face2,
@@ -27,12 +27,12 @@ const initialState = {
     {
       photo: Face4,
       name: "Segun Adeyemi",
-      title: "CMO and Product Manager",
+      title: "CMO",
     },
     {
       photo: Face5,
       name: "Ayanfe Oluyomi",
-      title: "CSO",
+      title: "CRO",
     },
     {
       photo: Face6,
@@ -42,12 +42,12 @@ const initialState = {
     {
       photo: Face3,
       name: "Toluwalase Adeniyi",
-      title: "Head of People\n(HR/Admin)",
+      title: "Head of People",
     },
     {
       photo: Face7,
       name: "Norbert Aburime",
-      title: "Content Marketing Manager",
+      title: "Marketing Manager",
     },
     {
       photo: Face2,
@@ -57,12 +57,17 @@ const initialState = {
     {
       photo: Face1,
       name: "Oluwasegun Esho",
-      title: "Software Developer",
+      title: "Software Engineer",
     },
     {
       photo: Face7,
       name: "Olaife Olawore",
       title: "Frontend Engineer",
+    },
+    {
+      photo: Face1,
+      name: "Joel Inaku",
+      title: "Backend Engineer",
     },
   ],
 };
