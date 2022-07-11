@@ -2,6 +2,7 @@ import { Image } from "semantic-ui-react";
 import Logo from "../../../assets/icons/LogoWeb.svg";
 import Logo2 from "../../../assets/icons/LogoWebDark.svg";
 import { Footer1Props } from "../../../types/componentTypes";
+import { MailchimpModal } from "../../MailchimpForm/index"
 
 function Footer1({ darkMode }: Footer1Props) {
   const typeFormFunc = () => {
@@ -50,6 +51,7 @@ function Footer1({ darkMode }: Footer1Props) {
       >
         Hire Experts
       </a>
+      <MailchimpModal />
     </div>
   );
 }
