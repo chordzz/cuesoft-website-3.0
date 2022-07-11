@@ -1,31 +1,26 @@
-import React, { useEffect } from "react";
-import { connect } from "react-redux";
-import { BrowserRouter as Router } from "react-router-dom";
-import { renderRoutes } from "react-router-config";
-import routes from "./routes";
-import { CustomHeader, CustomFooter } from "./components/Basic";
-import { AppProps } from "./types/componentTypes";
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-function App({ darkMode }: AppProps) {
-  useEffect(() => {
-    document.body.style.backgroundColor = darkMode ? "#100403" : "#ffffff";
-  }, [darkMode]);
-
+function App() {
   return (
-    <div>
-      <Router>
-        <CustomHeader darkMode={darkMode} />
-        {renderRoutes(routes)}
-        <CustomFooter darkMode={darkMode} />
-      </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
 
-const mapStateToProps = (state: any) => {
-  return {
-    darkMode: state.mode.darkMode,
-  };
-};
-
-export default connect(mapStateToProps)(App);
+export default App;
