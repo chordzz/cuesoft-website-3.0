@@ -15,6 +15,7 @@ function Footer6({ darkMode }: Footer6Props) {
         {" "}
         Cuesoft is a company registered in Nigeria
       </p>
+
     </div>
   );
 }

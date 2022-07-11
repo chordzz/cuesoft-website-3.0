@@ -20,6 +20,7 @@ import { connect } from "react-redux";
 import Space from "../assets/illustrations/Functional_processes.svg";
 import { HomeProps } from "../types/pagesTypes";
 
+
 const Home = ({
   darkMode,
   approachData,
@@ -31,6 +32,7 @@ const Home = ({
 
   return (
     <main>
+      
       <Segment
         as="section"
         basic
