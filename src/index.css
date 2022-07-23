@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.my-container {
+    @apply w-11/12 mx-auto;
+}

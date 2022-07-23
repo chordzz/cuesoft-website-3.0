@@ -7,7 +7,7 @@ import { Home, AboutPage, ContactPage, NotFoundPage, ServicesPage } from './page
 
 function App() {
   return (
-    <div className="">
+    <div className="font-poppins">
       <Home />
     </div>
   );
