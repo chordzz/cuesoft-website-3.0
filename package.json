@@ -1,43 +1,49 @@
 {
-  "name": "home",
+  "name": "cuesoft-website",
   "version": "3.0.0",
   "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.7.4",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "docker:build": "docker build --build-arg GITHUB_TOKEN=${GITHUB_TOKEN} -t cuesoftcloud/cuesoft-website .",
+    "docker:run": "docker run --name cuesoft-website -p 5000:5000 -d cuesoftcloud/cuesoft-website",
+    "docker:start": "docker-compose up -d",
+    "predocker:watch": "npm run docker:build",
+    "docker:watch": "concurrently \"npm run build -- -w\" \"npm run docker:start\"",
+    "docker:stop": "docker-compose down",
     "lint": "npm run prettier:check && npm run eslint",
     "lint:fix": "npm run eslint:fix && npm run prettier:fix",
-    "prettier:cli": "prettier \"**/*.js\" \"**/*.ts\" \"**/*.tsx\" \"**/*.html\"",
+    "prettier:cli": "prettier \"**/*.ts\" \"**/*.js\" \"**/*.tsx\" \"**/*.html\"",
     "prettier:check": "npm run prettier:cli -- -l",
     "prettier:fix": "npm run prettier:cli -- --write",
     "eslint": "eslint --report-unused-disable-directives .",
-    "eslint:fix": "npm run eslint -- --fix"
+    "eslint:fix": "npm run eslint -- --fix",
+    "prepare": "husky install || true"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CuesoftCloud/cuesoft-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CuesoftCloud/cuesoft-website/issues"
+  },
+  "homepage": "https://v3.cuesoft.io",
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,html,md}": [
-      "prettier --write"
-    ]
+    "src/**/*.{js,jsx,ts,tsx,json}": "eslint --cache --fix",
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,html,md}": "prettier --write"
   },
   "browserslist": {
     "production": [
@@ -51,20 +57,29 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.43",
+    "@testing-library/user-event": "^14.3.0",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.6.2",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
-    "autoprefixer": "^10.4.7",
-    "eslint": "^8.19.0",
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.20.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
-    "tailwindcss": "^3.1.6"
+    "tailwindcss": "^3.1.7",
+    "typescript": "^4.7.4"
   }
 }

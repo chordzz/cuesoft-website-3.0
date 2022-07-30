@@ -1,0 +1,7 @@
+services:
+  cuesoft-website:
+    image: cuesoftcloud/cuesoft-website
+    build:
+      context: .
+      args:
+        GITHUB_TOKEN: ${GITHUB_TOKEN}
