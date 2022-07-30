@@ -26,6 +26,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 17
+          registry-url: https://npm.pkg.github.com/
+          cache: "npm"
+      - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GH_PACKAGE_PAT}}
+      - run: npm run build --if-present
+        env:
+          REACT_APP_MAILCHIMP_URL: ${{ secrets.REACT_APP_MAILCHIMP_URL }}
+          REACT_APP_MAILCHIMP_U: ${{ secrets.REACT_APP_MAILCHIMP_U }}
+          REACT_APP_MAILCHIMP_ID: ${{ secrets.REACT_APP_MAILCHIMP_ID }}
       - uses: actions/configure-pages@v1
       - uses: actions/upload-pages-artifact@v1
         with:
