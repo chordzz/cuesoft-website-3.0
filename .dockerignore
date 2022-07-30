@@ -12,4 +12,5 @@
 .github
 
 .DS_Store
+.eslintcache
 docker-compose.yml
