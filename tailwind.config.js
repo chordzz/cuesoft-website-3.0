@@ -17,6 +17,7 @@ module.exports = {
         textNormalLight: '#505050',
         textNormalSupLight: '#5D5D5D',
         textBold: '#474646',
+        textDarkBlue: '#091638',
     
         brightRed: '#DB4437',
         brightRedLight: '#EE8888',
@@ -26,11 +27,17 @@ module.exports = {
         brightBrown: '#935B50',
 
         bgLight: '#FFF8F8',
+        bgLight2: '#FCFAF6',
+        bgLightCard: '#FFF9F9',
+        cardHover: '#FFF1F1'
       }
     },
     fontFamily: {
       'poppins': 'Poppins',
     }
+  },
+  variants: {
+    fill: ['hover', 'focus'], // this line does the trick
   },
   plugins: [],
 };
