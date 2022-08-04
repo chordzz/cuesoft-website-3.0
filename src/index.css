@@ -8,11 +8,11 @@
 
 .card {
     @apply bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg
-    md:w-1/3 h-64 md:h-80 py-8 px-2 hover:bg-cardHover
+    md:w-1/3 h-64 md:h-80 py-8 px-2 hover:bg-cardHover dark:bg-darkModeBg
 }
 
 .a-btn {
-    @apply py-3 px-6 text-white bg-brightRed rounded-lg hover:bg-red-700  text-center
+    @apply py-3 px-6 text-white bg-brightRed dark:bg-darkModeRed rounded-lg hover:bg-red-700 dark:hover:bg-red-700  text-center
 }
 
 

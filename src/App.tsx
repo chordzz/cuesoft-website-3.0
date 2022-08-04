@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./App.css";
+import { Footer } from "./components/footer/Footer";
+import NavigationBar from "./components/navigation-bar/NavigationBar";
 
 import {
   Home
@@ -13,8 +15,10 @@ import {
 
 function App() {
   return (
-    <div className="font-poppins">
+    <div className="font-poppins dark:bg-darkModeBg dark:text-white">
+      <NavigationBar />
       <Home />
+      <Footer />
     </div>
   );
 }
