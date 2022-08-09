@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useContext, useState } from "react";
 
 import CuesoftLogo from "../../assets/logos/cuesoft-logo.svg";
@@ -30,10 +29,6 @@ const NavigationBar = () => {
               className="w-[150px] h-[90px] lg:h-[113px] lg:w-[201px]"
             />
           </div>
-
-          <a href="#" className="a-btn hidden md:block">
-            Start a Project
-          </a>
 
           <div className="hidden text-textNormal dark:text-white md:flex space-x-6 ">
             <div className="hover:text-blue-500">About</div>

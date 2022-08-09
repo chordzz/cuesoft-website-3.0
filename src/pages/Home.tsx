@@ -1,4 +1,4 @@
-import HeroImg from "../assets/imgs/hero-img.svg";
+import HeroImg from "../assets/imgs/hero-img.png";
 import Umobile from "../assets/logos/umobile.svg";
 import Finchglow from "../assets/logos/finchglow.svg";
 import Sycamore from "../assets/logos/sycamore.svg";
@@ -76,7 +76,7 @@ export const Home = () => {
             <img
               src={HeroImg}
               alt="Hero"
-              className="w-[400px] h-[320px] lg:w-[600px] lg:h-[550px]"
+              className="w-[500px] h-[400px] lg:w-[600px] lg:h-[500px]"
             />
           </div>
         </div>
