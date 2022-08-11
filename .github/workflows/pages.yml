@@ -39,6 +39,7 @@ jobs:
           path: build
 
   deploy:
+    needs: build-and-test
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
