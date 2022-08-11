@@ -4,8 +4,6 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: ["release/v3.0.0"]
   pull_request:
     branches: ["release/v3.0.0"]
 
