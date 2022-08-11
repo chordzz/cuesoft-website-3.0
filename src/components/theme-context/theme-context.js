@@ -13,7 +13,10 @@ const getInitialTheme = () => {
   return "light";
 };
 
-export const ThemeContext = React.createContext();
+export const ThemeContext = React.createContext({
+  theme: null,
+  setTheme: null
+});
 
 export const ThemeProvider = ({ initialTheme, children }) => {
   const [theme, setTheme] = React.useState(getInitialTheme);

@@ -112,8 +112,8 @@ export const Footer = () => {
       <div className="my-container pt-6 pb-16 text-center">
         <span className="text-[12px] lg:text-lg">
           © Cuesoft 2022. All rights reserved.
-          <br className="md:hidden" /> Cuesoft is a company registered in
-          Nigeria.
+          <br className="md:hidden" /> Cuesoft Inc. is a Delaware Company
+          registered in the US with a Subsidiary in Nigeria.
         </span>
       </div>
     </footer>

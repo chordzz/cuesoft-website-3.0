@@ -19,6 +19,8 @@ module.exports = {
         textNormalSupLight: "#5D5D5D",
         textBold: "#474646",
         textDarkBlue: "#091638",
+        textReview: "#9C9C9C",
+        ratingStar: "#FBC400",
 
         brightRed: "#DB4437",
         brightRedLight: "#EE8888",

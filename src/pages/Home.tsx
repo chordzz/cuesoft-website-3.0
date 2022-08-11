@@ -43,6 +43,10 @@ import Avatar from "../assets/imgs/avatar.svg";
 
 import CustomerReviewHolderImage from "../assets/imgs/customer-review-holder-img.svg";
 
+import ClientAy from "../assets/imgs/client-ay.svg";
+import ClientAguy from "../assets/imgs/client-aguy.svg";
+import ClientGuy from "../assets/imgs/client-guy.svg";
+
 import { useContext } from "react";
 import { ThemeContext } from "../components/theme-context/theme-context";
 
@@ -71,12 +75,48 @@ export const Home = () => {
               custom-built software, we help forward-thinking organizations
               transform, scale, and achieve a competitive edge
             </p>
+
+            <div className="hidden md:flex items-center xl:w-1/2 mt-6 lg:mt-12 relative ">
+              <div className="w-1/4 lg:w-1/3">
+                <img
+                  src={ClientGuy}
+                  alt="Avatar"
+                  className="absolute top-1 lg:top-0 w-[35px] h-[35px] lg:w-[50px] lg:h-[60px]"
+                />
+                <img
+                  src={ClientAguy}
+                  alt="Avatar"
+                  className="absolute top-1 lg:top-0 left-6 lg:left-6 w-[35px] h-[35px] lg:w-[50px] lg:h-[60px]"
+                />
+                <img
+                  src={ClientAy}
+                  alt="Avatar"
+                  className="absolute top-1 lg:top-0 left-12 lg:left-12 w-[35px] h-[35px] lg:w-[50px] lg:h-[60px]"
+                />
+              </div>
+              <div className="lg:w-2/3">
+                <h5 className="text-[12px] font-bold text-textNormal lg:text-[20px] dark:text-white">
+                  Client's Review
+                </h5>
+                <p>
+                  <span className="text-ratingStar text-[13px] lg:text-xl">
+                    &#9733;
+                  </span>
+                  <span className="mx-1 text-[10px] lg:text-[15px] font-bold text-textNormal dark:text-white">
+                    4.8
+                  </span>
+                  <span className="text-textReview text-[10px] dark:text-white">
+                    (5k reviews)
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
           <div className="right-item mt-4 md:mt-0">
             <img
               src={HeroImg}
               alt="Hero"
-              className="w-[500px] h-[400px] lg:w-[600px] lg:h-[500px]"
+              className="w-[400px] h-[300px] lg:w-[700px] lg:h-[500px]"
             />
           </div>
         </div>

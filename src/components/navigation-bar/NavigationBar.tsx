@@ -19,7 +19,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <div>
+    <div data-testid="navigation-bar">
       <nav className="my-container relative text-[13px] lg:text-[17px]">
         <div className="flex items-center justify-between gap-4">
           <div className="grow lg:grow-0 ">
@@ -31,10 +31,18 @@ const NavigationBar = () => {
           </div>
 
           <div className="hidden text-textNormal dark:text-white md:flex space-x-6 ">
-            <div className="hover:text-blue-500">About</div>
-            <div className="hover:text-blue-500">Services</div>
-            <div className="hover:text-blue-500">Product</div>
-            <div className="hover:text-blue-500">Contact</div>
+            <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+              About
+            </div>
+            <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+              Services
+            </div>
+            <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+              Product
+            </div>
+            <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+              Contact
+            </div>
           </div>
 
           <div className="flex gap-4 items-center">
