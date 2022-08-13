@@ -12,7 +12,10 @@ import CuesoftLogoDark from "../../assets/logos/cuesoft-logo-dark.svg";
 export const Footer = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <footer className="pt-36 md:pt-14 text-center md:text-left">
+    <footer
+      data-testid="footer"
+      className="pt-36 md:pt-14 text-center md:text-left"
+    >
       <div className="my-container flex flex-col md:flex-row gap-5 md:gap-10 lg:gap-20">
         <div className="md:w-[30%] text-center md:text-left">
           <div className="hidden md:block">

@@ -7,3 +7,15 @@ test("renders navigation bar", () => {
   const navigationBar = screen.getByTestId("navigation-bar");
   expect(navigationBar).toBeInTheDocument();
 });
+
+test("renders footer", () => {
+  render(<App />);
+  const footer = screen.getByTestId("footer");
+  expect(footer).toBeInTheDocument();
+});
+
+test("renders homepage", () => {
+  render(<App />);
+  const homepage = screen.getByTestId("homepage");
+  expect(homepage).toBeInTheDocument();
+});

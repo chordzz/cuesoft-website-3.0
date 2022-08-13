@@ -54,7 +54,7 @@ export const Home = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div>
+    <div data-testid="homepage">
       <section
         id="hero"
         className="flex lg:items-center lg:min-h-full dark:text-white"
