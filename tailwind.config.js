@@ -57,7 +57,13 @@ module.exports = {
         bgLight2: "#FCFAF6",
 
         bgLightCard: "#FFF9F9",
-        cardHover: "#FFF1F1"
+        cardHover: "#FFF1F1",
+
+        toggleBg: "#F5F7FA",
+        toggleBtn: "#D3DAE6",
+
+        toggleBtnDark: "#343741",
+        toggleBgDark: "#212121"
       }
     },
     fontFamily: {

@@ -4,6 +4,7 @@ import CuesoftLogo from "../../assets/logos/cuesoft-logo.svg";
 import CuesoftLogoDark from "../../assets/logos/cuesoft-logo-dark.svg";
 import { ThemeContext } from "../theme-context/theme-context";
 import Toggle from "../toggle/toggle";
+import { LanguageDropdown } from "../language-dropdown/LanguageDropdown";
 
 const NavigationBar = () => {
   const { theme } = useContext(ThemeContext);
@@ -30,7 +31,7 @@ const NavigationBar = () => {
             />
           </div>
 
-          <div className="hidden text-textNormal dark:text-white md:flex space-x-6 ">
+          <div className=" xl:w-[30%] hidden text-textNormal dark:text-white md:flex md:justify-between space-x-6 ">
             <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
               About
             </div>
@@ -45,12 +46,14 @@ const NavigationBar = () => {
             </div>
           </div>
 
-          <div className="flex gap-4 items-center">
-            <button className="a-btn hidden md:block">Start a Project</button>
-
+          <div className="flex gap-4 items-center ">
+            <div className="hidden md:block">
+              <LanguageDropdown />
+            </div>
             <div className="hidden md:block">
               <Toggle />
             </div>
+            <button className="a-btn hidden md:block">Start a Project</button>
           </div>
 
           {/* Mobile View */}
@@ -80,6 +83,7 @@ const NavigationBar = () => {
               <button className="hover:text-blue-500">Product</button>
               <button className="hover:text-blue-500">Contact</button>
               <button className="a-btn">Start a Project</button>
+              <LanguageDropdown />
               <Toggle />
             </div>
           </div>
