@@ -47,6 +47,9 @@ import ClientAy from "../assets/imgs/client-ay.svg";
 import ClientAguy from "../assets/imgs/client-aguy.svg";
 import ClientGuy from "../assets/imgs/client-guy.svg";
 
+import FlagshipProduct from "../assets/imgs/flagship-product.png";
+import FlagshipProductMobile from "../assets/imgs/flagship-product-mobile.png";
+
 import { useContext } from "react";
 import { ThemeContext } from "../components/theme-context/theme-context";
 
@@ -612,6 +615,46 @@ export const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="flagship-product" className="md:py-16">
+        <div className="my-container py-6">
+          <h3 className="text-brightRed text-center dark:text-darkModeRed text-[24px] lg:text-[40px] font-bold mb-20">
+            This is our flagship product
+          </h3>
+
+          <div>
+            <img
+              src={FlagshipProduct}
+              alt="flagship product"
+              className="hidden md:block mx-auto"
+            />
+            <img
+              src={FlagshipProductMobile}
+              alt="flagship product"
+              className="md:hidden mx-auto"
+            />
+          </div>
+
+          <div className="mt-20">
+            <span className="font-bold text-textBold dark:text-white text-[15px] lg:text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
+            </span>
+            <p className="my-8 text-textNormal dark:text-white text-[12px] lg:text-[15px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
+              tristique tellus mi risus id velit et consequat nam. Purus euismod
+              potenti turpis magna leo, tortor sed tempus leo. Sollicitudin
+              egestas etiam pellentesque egestas vulputate augue suspendisse.
+              Laoreet aliquam tortor, vestibulum, at mi. Ut augue fermentum, sit
+              iaculis ut at sed in. Tincidunt tellus sit vulputate morbi
+              consequat at morbi sit quis. Velit ut nec in urna mattis egestas
+              dapibus leo neque. Vitae, aliquam tortor sed faucibus. Porttitor
+              sed orci eget felis.
+            </p>
+          </div>
+
+          <button className="a-btn hidden md:block">Learn More</button>
         </div>
       </section>
 

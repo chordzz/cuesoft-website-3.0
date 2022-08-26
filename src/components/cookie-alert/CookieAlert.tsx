@@ -7,7 +7,6 @@ export const CookieAlert = () => {
       <img src={Cookie} alt="cookie" />
 
       <p className="text-textNormal md:w-[50%]">
-
         We use third-party <span className="underline">cookies</span> to provide
         you the best user experience and for performance analytics.
       </p>
