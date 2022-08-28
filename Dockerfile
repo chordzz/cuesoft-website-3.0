@@ -1,28 +1,31 @@
 FROM node:17.0.1-alpine as build-stage
 
-ARG GITHUB_TOKEN
+RUN mkdir -p /app
+WORKDIR /app
 
-USER node
-
-RUN mkdir -p /home/node/app
-WORKDIR /home/node/app
-
-COPY --chown=node package*.json ./
+COPY package*.json ./
+COPY /patches ./patches
 
 ENV NODE_ENV=development
 
-RUN npm config set '//npm.pkg.github.com/:_authToken' "${GITHUB_TOKEN}"
-RUN npm ci
+RUN --mount=type=secret,id=npmrc,dst=/root/.npmrc npm install
 
-COPY --chown=node . .
+COPY . .
 
 RUN npm run build --if-present
 
+CMD npx serve -s build
+
 FROM nginx as production-stage
 
-RUN mkdir /app
+RUN mkdir -p /app
 
-COPY --from=build-stage /home/node/app/build /app
+ENV NODE_ENV=production
+ENV PORT=80
+
+COPY --from=build-stage /app/build /app
 COPY nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE $PORT
 
 CMD sed -i -e 's/$PORT/'"$PORT"'/g' /etc/nginx/nginx.conf && nginx -g 'daemon off;'

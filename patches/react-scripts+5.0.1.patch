@@ -1,0 +1,33 @@
+diff --git a/node_modules/react-scripts/config/webpack.config.js b/node_modules/react-scripts/config/webpack.config.js
+index e465d8e..bb9bd3e 100644
+--- a/node_modules/react-scripts/config/webpack.config.js
++++ b/node_modules/react-scripts/config/webpack.config.js
+@@ -13,6 +13,7 @@ const path = require('path');
+ const webpack = require('webpack');
+ const resolve = require('resolve');
+ const HtmlWebpackPlugin = require('html-webpack-plugin');
++const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
+ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+ const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin');
+ const TerserPlugin = require('terser-webpack-plugin');
+@@ -303,6 +304,9 @@ module.exports = function (webpackEnv) {
+       ],
+     },
+     resolve: {
++      fallback: {
++        "fs": false
++      },
+       // This allows you to set a fallback for where webpack should look for modules.
+       // We placed these paths second because we want `node_modules` to "win"
+       // if there are any conflicts. This matches Node resolution mechanism.
+@@ -604,6 +608,10 @@ module.exports = function (webpackEnv) {
+       ].filter(Boolean),
+     },
+     plugins: [
++      new NodePolyfillPlugin({ 
++        process: 'process/browser', 
++        Buffer: ['buffer', 'Buffer'] 
++      }),
+       // Generates an `index.html` file with the <script> injected.
+       new HtmlWebpackPlugin(
+         Object.assign(
