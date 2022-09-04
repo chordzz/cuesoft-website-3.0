@@ -13,6 +13,10 @@ module.exports = {
       xl: "1440px"
     },
     extend: {
+      backgroundImage: {
+        "aboutPage-heroImg": "url('./assets/imgs/about-hero.jpg')",
+        "aboutPage-peopleGroupImg": "url('./assets/imgs/people-group.svg')"
+      },
       colors: {
         textNormal: "#555555",
         textNormalLight: "#505050",

@@ -5,7 +5,7 @@ import MessageSent from "../../assets/imgs/message-sent.svg";
 export const Newsletter = () => {
   return (
     <section>
-      <div className="my-container text-center min-h-screen flex flex-col lg:flex-row items-center justify-center">
+      <div className="my-container text-center mt-12 md:mt-0 md:min-h-screen flex flex-col lg:flex-row items-center justify-center">
         <div className="hidden lg:block lg:w-1/3">
           <img src={MessageSent} alt="Message Sent" />
         </div>
