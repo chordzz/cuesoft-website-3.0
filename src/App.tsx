@@ -5,6 +5,7 @@ import "./App.css";
 import { Footer } from "./components/footer/Footer";
 import NavigationBar from "./components/navigation-bar/NavigationBar";
 import { Newsletter } from "./components/newsletter-subscribe/Newsletter";
+import { CareersPage } from "./pages/CareersPage";
 
 import {
   Home,
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/careers" element={<CareersPage />} />
         </>
       </Routes>
       <Newsletter />

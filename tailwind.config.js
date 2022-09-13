@@ -15,7 +15,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "aboutPage-heroImg": "url('./assets/imgs/about-hero.jpg')",
-        "aboutPage-peopleGroupImg": "url('./assets/imgs/people-group.svg')"
+        "aboutPage-peopleGroupImg": "url('./assets/imgs/people-group.svg')",
+        "careersPage-heroImg": "url('./assets/imgs/career-page-hero-img.jpg')"
       },
       colors: {
         textNormal: "#555555",
@@ -67,7 +68,8 @@ module.exports = {
         toggleBtn: "#D3DAE6",
 
         toggleBtnDark: "#343741",
-        toggleBgDark: "#212121"
+        toggleBgDark: "#212121",
+
       }
     },
     fontFamily: {

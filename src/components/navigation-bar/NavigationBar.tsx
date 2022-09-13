@@ -45,6 +45,11 @@ const NavigationBar = () => {
                 Services
               </div>
             </Link>
+            <Link to="/careers">
+              <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+                Careers
+              </div>
+            </Link>
             <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
               Product
             </div>
