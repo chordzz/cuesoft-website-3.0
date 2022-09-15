@@ -6,6 +6,7 @@ import CuesoftLogoDark from "../../assets/logos/cuesoft-logo-dark.svg";
 import { ThemeContext } from "../theme-context/theme-context";
 import Toggle from "../toggle/toggle";
 import { LanguageDropdown } from "../language-dropdown/LanguageDropdown";
+import { TypeformButton } from "../typeform-button/TypeformButton";
 
 const NavigationBar = () => {
   const { theme } = useContext(ThemeContext);
@@ -45,11 +46,6 @@ const NavigationBar = () => {
                 Services
               </div>
             </Link>
-            <Link to="/careers">
-              <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
-                Careers
-              </div>
-            </Link>
             <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
               Product
             </div>
@@ -65,7 +61,7 @@ const NavigationBar = () => {
             <div className="hidden md:block">
               <Toggle />
             </div>
-            <button className="a-btn hidden md:block">Start a Project</button>
+            <TypeformButton />
           </div>
 
           {/* Mobile View */}

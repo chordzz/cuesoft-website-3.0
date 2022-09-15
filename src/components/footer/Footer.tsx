@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 
 import { ThemeContext } from "../theme-context/theme-context";
 
@@ -8,6 +9,7 @@ import TwitterIcon from "../../assets/icons/twitter-icon.svg";
 import InstagramIcon from "../../assets/icons/instagram-icon.svg";
 
 import CuesoftLogoDark from "../../assets/logos/cuesoft-logo-dark.svg";
+import { TypeformButton } from "../typeform-button/TypeformButton";
 
 export const Footer = () => {
   const { theme } = useContext(ThemeContext);
@@ -33,7 +35,7 @@ export const Footer = () => {
             support looks like in today’s world, as well as give you a glimpse
             of the future.
           </p>
-          <button className="a-btn mb-20 ">Start a Project</button>
+          <TypeformButton />
         </div>
         <div className="md:hidden mx-auto">
           <img
@@ -48,10 +50,16 @@ export const Footer = () => {
               <li className="text-brightRed font-bold dark:text-darkModeRed">
                 Company
               </li>
-              <li>About</li>
-              <li>Careers</li>
+              <Link to="/about">
+                <li>About</li>
+              </Link>
+              <Link to="/careers">
+                <li>Careers</li>
+              </Link>
               <li>Contact</li>
-              <li>Investors</li>
+              <Link to="/investors">
+                <li>Investors</li>
+              </Link>
             </ul>
           </div>
           <div>
@@ -59,28 +67,52 @@ export const Footer = () => {
               <li className="text-brightRed font-bold dark:text-darkModeRed">
                 Community
               </li>
-              <li>Blog</li>
-              <li>
-                <img
-                  src={FacebookIcon}
-                  alt="facebook"
-                  className="w-[24px] h-[24px] mx-auto md:mx-0"
-                />
-              </li>
-              <li>
-                <img
-                  src={TwitterIcon}
-                  alt="twitter"
-                  className="w-[24px] h-[24px] mx-auto md:mx-0"
-                />
-              </li>
-              <li>
-                <img
-                  src={InstagramIcon}
-                  alt="instagram"
-                  className="w-[24px] h-[24px] mx-auto md:mx-0"
-                />
-              </li>
+              <a
+                href="https://blog.cuesoft.io/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <li>Blog</li>
+              </a>
+              <a
+                href="https://facebook.com/cuesoft"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <li>
+                  <img
+                    src={FacebookIcon}
+                    alt="facebook"
+                    className="w-[24px] h-[24px] mx-auto md:mx-0"
+                  />
+                </li>
+              </a>
+              <a
+                href="https://twitter.com/cuesoftinc/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <li>
+                  <img
+                    src={TwitterIcon}
+                    alt="twitter"
+                    className="w-[24px] h-[24px] mx-auto md:mx-0"
+                  />
+                </li>
+              </a>
+              <a
+                href="https://instagram.com/cuesoftinc/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <li>
+                  <img
+                    src={InstagramIcon}
+                    alt="instagram"
+                    className="w-[24px] h-[24px] mx-auto md:mx-0"
+                  />
+                </li>
+              </a>
             </ul>
           </div>
           <div>
@@ -88,8 +120,20 @@ export const Footer = () => {
               <li className="text-brightRed font-bold dark:text-darkModeRed">
                 Resources
               </li>
-              <li>Terms</li>
-              <li>Privacy Policy</li>
+              <a
+                href="https://terms.cuesoft.io/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <li>Terms</li>
+              </a>
+              <a
+                href="https://privacy.cuesoft.io/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <li>Privacy Policy</li>
+              </a>
               <li>FAQ</li>
               <li>Partners</li>
             </ul>
