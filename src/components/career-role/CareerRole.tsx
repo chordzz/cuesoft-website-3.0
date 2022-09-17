@@ -3,22 +3,20 @@ import LocationVector from "../../assets/icons/location-vector.svg";
 
 type myProps = {
   role: {
-    mode: string;
-    name: string;
-    location: string;
-    image: string;
-    barColor: string;
+    mode?: string;
+    name?: string;
+    location?: string;
+    image?: string;
+    type?: string;
   };
 };
 
 export const CareerRole = ({
-  role: { name, mode, location, image, barColor }
+  role: { name, mode, location, image }
 }: myProps) => {
   return (
     <div className="w-[100%] md:w-[70%] lg:w-[47%] mx-auto">
-      <div className="flex  items-center w-full">
-        <div className="w-[10px] bg-[#00BFB3] lg:mr-4"> </div>
-
+      <div className="flex items-center w-full">
         <div className="w-[100%] xl:w-[90%] bg-[#FAFAFA] dark:bg-[#161616] flex items-center px-4 py-2">
           <div className="w-[80%] flex lg:ml-2 items-center">
             <img

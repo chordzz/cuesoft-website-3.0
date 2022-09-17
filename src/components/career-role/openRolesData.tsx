@@ -8,55 +8,55 @@ export const roles = [
     mode: "Remote",
     location: "Lagos, Nigeria",
     image: CodingRoleVector,
-    barColor: "#F04E98"
+    type: "engineering"
   },
   {
     name: "Sales Personnel",
     mode: "Full-time",
     location: "Lagos, Nigeria",
     image: SalesRoleVector,
-    barColor: "#A987D1"
+    type: "sales"
   },
   {
     name: "Graphics Designer",
     mode: "Remote",
     location: "Lagos, Nigeria",
     image: DesignRoleVector,
-    barColor: "#00BFB3"
+    type: "design"
   },
   {
     name: "Product Designer",
     mode: "Remote",
     location: "Lagos, Nigeria",
     image: DesignRoleVector,
-    barColor: "#00BFB3"
+    type: "design"
   },
   {
     name: "Graphics Designer",
     mode: "Remote",
     location: "Lagos, Nigeria",
     image: DesignRoleVector,
-    barColor: "#A987D1"
+    type: "design"
   },
   {
     name: "Product Designer",
     mode: "Remote",
     location: "Lagos, Nigeria",
     image: DesignRoleVector,
-    barColor: "#00BFB3"
+    type: "design"
   },
   {
     name: "Graphics Designer",
     mode: "Remote",
     location: "Lagos, Nigeria",
     image: DesignRoleVector,
-    barColor: "#A987D1"
+    type: "design"
   },
   {
     name: "Product Designer",
     mode: "Remote",
     location: "Lagos, Nigeria",
     image: DesignRoleVector,
-    barColor: "#00BFB3"
+    type: "design"
   }
 ];

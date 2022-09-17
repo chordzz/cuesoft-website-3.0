@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { WhyCuesoftVector } from "../components/custom-svgs/WhyCuesoftSvg";
 import { RoleRegister } from "../components/custom-svgs/RoleRegister";
@@ -16,6 +16,47 @@ import { roles } from "../components/career-role/openRolesData";
 import { CareerRole } from "../components/career-role/CareerRole";
 
 export const CareersPage = () => {
+  const [renderedRoles, setRenderedRoles] = useState(roles);
+  const [filter, setFilter] = useState("all");
+
+  const handleClick = (item: string) => {
+    switch (item) {
+      case "all":
+        setRenderedRoles(roles.filter((role) => role).map((role) => role));
+        setFilter("all");
+        break;
+      case "sales":
+        setRenderedRoles(
+          roles.filter((role) => role.type === "sales").map((role) => role)
+        );
+        setFilter("sales");
+        break;
+      case "design":
+        setRenderedRoles(
+          roles.filter((role) => role.type === "design").map((role) => role)
+        );
+        setFilter("design");
+        break;
+      case "engineering":
+        setRenderedRoles(
+          roles
+            .filter((role) => role.type === "engineering")
+            .map((role) => role)
+        );
+        setFilter("engineering");
+        break;
+      case "others":
+        setRenderedRoles(
+          roles.filter((role) => role.type === "others").map((role) => role)
+        );
+        setFilter("others");
+        break;
+
+      default:
+        break;
+    }
+  };
+
   return (
     <div>
       <section className="lg:mb-20">
@@ -74,19 +115,54 @@ export const CareersPage = () => {
 
           <div className="mt-16">
             <div className="md:w-[50%] mx-auto text-center flex items-center justify-center">
-              <span className="text-brightRed  font-bold py-2 px-2 md:py-4 md:px-8 border-b-2 border-brightRed cursor-pointer">
+              <span
+                className={` py-2 px-2 border-b-2 md:py-4 md:px-8 ${
+                  filter === "all"
+                    ? "font-bold text-brightRed border-brightRed"
+                    : ""
+                } cursor-pointer`}
+                onClick={() => handleClick("all")}
+              >
                 All
               </span>
-              <span className="text-textNormal py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer">
-                ICT
+              <span
+                className={` py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer ${
+                  filter === "design"
+                    ? "font-bold text-brightRed border-brightRed"
+                    : ""
+                }`}
+                onClick={() => handleClick("design")}
+              >
+                Design
               </span>
-              <span className="text-textNormal py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer">
+              <span
+                className={` py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer ${
+                  filter === "sales"
+                    ? "font-bold text-brightRed border-brightRed"
+                    : ""
+                }`}
+                onClick={() => handleClick("sales")}
+              >
                 Sales
               </span>
-              <span className="text-textNormal py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer">
+              <span
+                className={` py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer ${
+                  filter === "engineering"
+                    ? "font-bold text-brightRed border-brightRed"
+                    : ""
+                }`}
+                onClick={() => handleClick("engineering")}
+              >
                 Engineering
               </span>
-              <span className="text-textNormal py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer">
+              <span
+                className={` py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer ${
+                  filter === "others"
+                    ? "font-bold text-brightRed border-brightRed"
+                    : ""
+                }`}
+                onClick={() => handleClick("others")}
+              >
                 Others
               </span>
             </div>
@@ -94,9 +170,15 @@ export const CareersPage = () => {
 
           <div className="">
             <div className="flex flex-col md:flex-wrap md:flex-row mt-12 gap-10 justify-end">
-              {roles.map((role, idx) => (
-                <CareerRole key={`${idx}-${role.name}`} role={role} />
-              ))}
+              {renderedRoles.length > 0 ? (
+                renderedRoles.map((role, idx) => {
+                  return <CareerRole key={`${idx}-${role.name}`} role={role} />;
+                })
+              ) : (
+                <div className="mx-auto text-textNormal text-3xl">
+                  There are no roles available for this filter right now
+                </div>
+              )}
             </div>
           </div>
 
