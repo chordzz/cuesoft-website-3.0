@@ -84,7 +84,7 @@ const NavigationBar = () => {
                 hidden ? "hidden" : ""
               } ${
                 flex ? "flex" : ""
-              } items-center justify-center text-[15px] py-8 mt-10 space-y-6 font-bold bg-white dark:bg-darkModeBg w-full left-0 drop-shadow-md text-center`}
+              } items-center justify-center text-[15px] py-8 mt-10 space-y-6 font-bold bg-white dark:bg-darkModeBg w-full left-0 drop-shadow-md text-center z-50`}
             >
               <Link to="/about">
                 <button className="hover:text-blue-500">About</button>

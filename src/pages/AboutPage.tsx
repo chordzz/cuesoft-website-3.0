@@ -6,23 +6,15 @@ import Checklist from "../assets/imgs/checklist.svg";
 
 import { Data } from "../components/team-members/membersData";
 import { TeamMembers } from "../components/team-members/TeamMembers";
+import { CustomSlider } from "../components/slider/CustomSlider";
 
 export const AboutPage = () => {
   return (
     <div>
       <div className="bg-aboutPage-peopleGroupImg bg-cover ">
         <section className="md:mb-20">
-          <div className="my-container w-[100%] h-[220px] bg-cover bg-center bg-no-repeat bg-aboutPage-heroImg md:h-[500px] py-14 md:py-32">
-            <div className="mx-auto lg:w-2/3 text-center">
-              <h1 className="text-[27px] md:text-[55px] text-brightRed font-semibold ">
-                Our Vision
-              </h1>
-              <p className="text-[12px] md:text-2xl text-white">
-                Our company's mission is to use software and cloud computing to
-                make enterprise software affordable and accessible to all types
-                of businesses.
-              </p>
-            </div>
+          <div className="my-container">
+            <CustomSlider />
           </div>
         </section>
 

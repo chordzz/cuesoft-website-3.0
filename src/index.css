@@ -2,99 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .my-container {
-    @apply w-11/12 mx-auto;
+  @apply w-11/12 mx-auto;
 }
 
 .card {
-    @apply bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg
-    md:w-1/3 h-64 md:h-80 py-8 px-2 hover:bg-cardHover dark:bg-darkModeBg
+  @apply bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg
+    md:w-1/3 h-64 md:h-80 py-8 px-2 hover:bg-cardHover dark:bg-darkModeBg;
 }
 
 .a-btn {
-    @apply py-3 px-6 text-white border-2 border-transparent bg-brightRed dark:bg-darkModeRed rounded-[10px] hover:bg-transparent hover:border-2 hover:border-brightRed hover:text-black dark:hover:bg-red-700  text-center
+  @apply py-3 px-6 text-white border-2 border-transparent bg-brightRed dark:bg-darkModeRed rounded-[10px] hover:bg-transparent hover:border-2 hover:border-brightRed hover:text-black dark:hover:bg-red-700  text-center;
 }
 
 .a-btn-inv {
-    @apply py-3 px-6 text-black border-2 border-brightRed dark:bg-darkModeRed rounded-[10px] hover:bg-brightRed dark:hover:bg-red-700 hover:text-white hover:border-white  text-center
+  @apply py-3 px-6 text-black border-2 border-brightRed dark:bg-darkModeRed rounded-[10px] hover:bg-brightRed dark:hover:bg-red-700 hover:text-white hover:border-white  text-center;
 }
-
 
 /* Dark-mode Toggle Start */
 
 .toggle-bg:after {
-    content: '';
-    background: url("./assets/icons/sun-toggle.svg") no-repeat center;
-    @apply absolute bg-toggleBtn border border-toggleBtn rounded-full h-8 w-7 right-8  transition shadow-sm p-4 dark:hidden;
+  content: "";
+  background: url("./assets/icons/sun-toggle.svg") no-repeat center;
+  @apply absolute bg-toggleBtn border border-toggleBtn rounded-full h-8 w-7 right-8  transition shadow-sm p-4 dark:hidden;
 }
 
 .toggle-bg:before {
-    content: '';
-    background: url("./assets/icons/moon-stars.svg") no-repeat center;
-    @apply absolute bg-toggleBtnDark border border-toggleBtnDark rounded-full h-8 w-7 transition shadow-sm p-4 hidden dark:block;
+  content: "";
+  background: url("./assets/icons/moon-stars.svg") no-repeat center;
+  @apply absolute bg-toggleBtnDark border border-toggleBtnDark rounded-full h-8 w-7 transition shadow-sm p-4 hidden dark:block;
 }
 
-
 input + .toggle-bg:after {
-    transform: translateX(90%);
-    @apply border-toggleBtn;
+  transform: translateX(90%);
+  @apply border-toggleBtn;
 }
 
 input:checked + .toggle-bg {
-    @apply bg-toggleBg border-toggleBg dark:bg-toggleBgDark dark:border-toggleBgDark;
+  @apply bg-toggleBg border-toggleBg dark:bg-toggleBgDark dark:border-toggleBgDark;
 }
 
 /* Dark-mode toggle end */
 
+.bg-vision {
+  @apply bg-aboutPageHeroImgVision;
+}
 
+.bg-mission {
+  @apply bg-aboutPageHeroImgMission;
+}
 
 /* Mobile Hamburger Menu start*/
 
 .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    transition: all 0.25s;
-    position: relative;
-} 
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
 
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background: #000;
-    transform: rotate(0);
-    transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
-    transform: translateY(7px);
+  transform: translateY(7px);
 }
 
 .hamburger-bottom {
-    transform: translateY(14px);
+  transform: translateY(14px);
 }
 
 .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
+  transform: rotate(90deg);
+  transform: translateY(0px);
 }
 
 .open .hamburger-top {
-transform: rotate(45deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
 .open .hamburger-middle {
-display: none;
+  display: none;
 }
 
 .open .hamburger-bottom {
-transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
 /* Mobile Hamburger menu end */

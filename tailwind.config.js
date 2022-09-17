@@ -14,7 +14,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "aboutPage-heroImg": "url('./assets/imgs/about-hero.jpg')",
+        "aboutPageHeroImgVision": "url('./assets/imgs/about-hero-vision.jpg')",
+        "aboutPageHeroImgMission": "url('./assets/imgs/about-hero-mission.jpg')",
         "aboutPage-peopleGroupImg": "url('./assets/imgs/people-group.svg')",
         "careersPage-heroImg": "url('./assets/imgs/career-page-hero-img.jpg')",
         "investorsPage-heroImg": "url('./assets/imgs/investors-page-hero.png')"
