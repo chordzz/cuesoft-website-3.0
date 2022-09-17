@@ -44,6 +44,31 @@ input:checked + .toggle-bg {
 
 /* Dark-mode toggle end */
 
+/* FAQ section start*/
+.faq-active {
+  @apply flex justify-between p-6 items-center bg-[#FAFBFF] dark:bg-[#0F0F0F] shadow-sm;
+}
+
+.faq-active > span {
+  @apply w-[30px] h-[30px] bg-[#FF5151] dark:bg-[#FF6B6B] rounded-[100%];
+}
+
+.faq-active > p {
+  @apply w-[80%] font-semibold;
+}
+
+.faq-inactive {
+  @apply flex p-4 items-start;
+}
+
+.faq-inactive > span {
+  @apply w-[20px] h-[20px] bg-[#FFF1F1] dark:bg-[#221210] rounded-[100%];
+}
+
+.faq-inactive > p {
+  @apply ml-6 w-[90%];
+}
+
 .bg-vision {
   @apply bg-aboutPageHeroImgVision;
 }
