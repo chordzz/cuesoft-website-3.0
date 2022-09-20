@@ -3,7 +3,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["release/v3.0.0"]
+    branches: ["main"]
 
 permissions:
   contents: read
