@@ -20,9 +20,10 @@ export const Newsletter = () => {
             <input
               type="email"
               placeholder="Your e-mail address"
-              className="lg:w-[321px] border py-3 px-8 rounded-[4px] dark:text-white dark:bg-transparent"
+              className="lg:w-[321px] bg-[#FBFCFD] border border-[#132295]/[.1] py-3 px-8 rounded-[4px] dark:text-white dark:bg-[#161616]"
             />
-            <button className="a-btn mx-auto w-[170px] lg:ml-8 text-[13px] lg:w-[246px] lg:text-[17px]">
+
+            <button className="a-btn mx-auto w-full lg:ml-8 text-[13px] lg:w-[246px] lg:text-[17px]">
               Subscribe to Mail
             </button>
           </div>

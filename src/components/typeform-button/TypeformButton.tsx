@@ -18,7 +18,7 @@ export const TypeformButton = () => {
   };
 
   return (
-    <button className="a-btn hidden md:block">
+    <button className="a-btn text-[13px] lg:w-[246px] lg:text-[17px]">
       <a
         className="typeform-share button"
         href="https://form.typeform.com/to/DEo6Wu47?typeform-medium=embed-snippet"

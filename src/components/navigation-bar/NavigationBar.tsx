@@ -94,7 +94,7 @@ const NavigationBar = () => {
               </Link>
               <button className="hover:text-blue-500">Product</button>
               <button className="hover:text-blue-500">Contact</button>
-              <button className="a-btn">Start a Project</button>
+              <TypeformButton />
               <LanguageDropdown />
               <Toggle />
             </div>
