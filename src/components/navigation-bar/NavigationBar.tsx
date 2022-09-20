@@ -77,7 +77,7 @@ const NavigationBar = () => {
             <span className="hamburger-bottom dark:bg-white"></span>
           </button>
 
-          <div className="lg:hidden" onClick={handleClick}>
+          <div className="lg:hidden">
             <div
               id="menu"
               className={`text-textNormal dark:text-white lg:flex absolute gap-8 flex-col ${
@@ -87,13 +87,21 @@ const NavigationBar = () => {
               } items-center justify-center text-[15px] py-8 mt-10 space-y-6 font-bold bg-white dark:bg-darkModeBg w-full left-0 drop-shadow-md text-center z-50`}
             >
               <Link to="/about">
-                <button className="hover:text-blue-500">About</button>
+                <button onClick={handleClick} className="hover:text-blue-500">
+                  About
+                </button>
               </Link>
               <Link to="/services">
-                <button className="hover:text-blue-500">Services</button>
+                <button onClick={handleClick} className="hover:text-blue-500">
+                  Services
+                </button>
               </Link>
-              <button className="hover:text-blue-500">Product</button>
-              <button className="hover:text-blue-500">Contact</button>
+              <button onClick={handleClick} className="hover:text-blue-500">
+                Product
+              </button>
+              <button onClick={handleClick} className="hover:text-blue-500">
+                Contact
+              </button>
               <TypeformButton />
               <LanguageDropdown />
               <Toggle />

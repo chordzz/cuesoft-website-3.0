@@ -19,7 +19,7 @@ import HexagonMod from "../assets/icons/vectors/hexagon-mod-vector.svg";
 import ChartVector from "../assets/icons/vectors/chart-vector.svg";
 import TeamsVector from "../assets/icons/vectors/teams-vector.svg";
 
-import BorderStyle from "../assets/imgs/border-style-img.svg";
+import BorderStyle from "../assets/imgs/border-style-img.png";
 
 import ReactIcon from "../assets/icons/react-icon.svg";
 import NodeIcon from "../assets/icons/node-icon.svg";
@@ -272,15 +272,15 @@ export const Home = () => {
                   objectives.
                 </p>
 
-                <div className="absolute -right-12 bottom-0 ">
+                <div className="absolute -right-[82px] bottom-0 max-w-[100px]">
                   <img
                     src={BorderStyle}
                     alt="Border Style"
-                    className="w-[90px] lg:w-[110px] h-[542px]"
+                    className="w-[150px] h-[100%] relative top-14"
                   />
                 </div>
               </div>
-              <div className=" absolute -top-6 md:-top-8 left-0">
+              <div className=" absolute -top-6 md:-top-8 left-0 ">
                 <img
                   src={ConnectionScreen}
                   alt="Connection Screen"
@@ -301,11 +301,11 @@ export const Home = () => {
                   objectives.
                 </p>
 
-                <div className="absolute -right-12 bottom-0 ">
+                <div className="absolute -right-[82px] bottom-0 max-w-[100px]">
                   <img
                     src={BorderStyle}
                     alt="Border Style"
-                    className="w-[90px] lg:w-[110px] h-[542px]"
+                    className="w-[150px] h-[100%] relative top-14"
                   />
                 </div>
               </div>
@@ -330,11 +330,11 @@ export const Home = () => {
                   a detailed study of your brand while targeting your business
                   objectives.
                 </p>
-                <div className="absolute -right-12 bottom-0 ">
+                <div className="absolute -right-[82px] bottom-0 max-w-[100px]">
                   <img
                     src={BorderStyle}
                     alt="Border Style"
-                    className="w-[90px] lg:w-[110px] h-[542px]"
+                    className="w-[150px] h-[100%] relative top-14"
                   />
                 </div>
               </div>
@@ -359,11 +359,11 @@ export const Home = () => {
                   a detailed study of your brand while targeting your business
                   objectives.
                 </p>
-                <div className="absolute -right-12 bottom-0 ">
+                <div className="absolute -right-[80px] bottom-0 max-w-[100px] ">
                   <img
                     src={BorderStyle}
                     alt="Border Style"
-                    className="w-[90px] lg:w-[110px] h-[542px]"
+                    className="w-[150px] h-[100%] relative top-14"
                   />
                 </div>
               </div>

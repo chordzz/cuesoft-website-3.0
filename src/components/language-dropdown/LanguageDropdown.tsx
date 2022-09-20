@@ -3,7 +3,7 @@ import USA from "../../assets/flags/usa.svg";
 
 export const LanguageDropdown = () => {
   const [toggleDropdown, setToggleDropdown] = useState<boolean>(false);
-  const [currLanguage] = useState<any>({
+  const [currLanguage, setCurrLanguage] = useState<any>({
     language: "EN",
     flag: USA
   });
@@ -27,6 +27,14 @@ export const LanguageDropdown = () => {
 
   const handleDropdownClick = () => {
     setToggleDropdown(!toggleDropdown);
+  };
+
+  const handleLanguageSelectClick = (item: {
+    flag: string;
+    language: string;
+  }) => {
+    setToggleDropdown(!toggleDropdown);
+    setCurrLanguage(item);
   };
 
   return (
@@ -63,6 +71,7 @@ export const LanguageDropdown = () => {
           <div
             key={item.language}
             className="px-4 py-2 text-sm text-textNormal  flex hover:bg-gray-200 dark:hover:bg-toggleBtnDark dark:text-white hover:font-semibold"
+            onClick={() => handleLanguageSelectClick(item)}
           >
             <img src={item.flag} alt="U.S flag" className="mr-2" />
             <span className="">{item.language}</span>

@@ -54,5 +54,20 @@ export const Data = [
     imageUrl: Face10,
     name: "Opeyemi Oluleye",
     position: "Accountant"
+  },
+  {
+    imageUrl: Face7,
+    name: "Oluwasegun Esho",
+    position: "Software Engineer"
+  },
+  {
+    imageUrl: Face3,
+    name: "Olaife Olawore",
+    position: "Frontend Engineer"
+  },
+  {
+    imageUrl: Face10,
+    name: "Joel Inaku",
+    position: "Backend Engineer"
   }
 ];
