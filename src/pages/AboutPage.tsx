@@ -6,7 +6,8 @@ import Checklist from "../assets/imgs/checklist.svg";
 
 import { Data } from "../components/team-members/membersData";
 import { TeamMembers } from "../components/team-members/TeamMembers";
-import { CustomSlider } from "../components/slider/CustomSlider";
+import { CustomSlider } from "../components/slider/aboutPage-hero-slider/CustomSlider";
+import { CustomInvestorsSlider } from "../components/slider/aboutPage-investors-slider/CustomInvestorsSlider";
 
 export const AboutPage = () => {
   return (
@@ -18,7 +19,7 @@ export const AboutPage = () => {
           </div>
         </section>
 
-        <section className="">
+        <section>
           <div className="my-container flex justify-between md:px-16">
             <div className="md:w-[50%]  text-left py-16">
               <h3 className="text-[24px] lg:text-[40px] text-brightRed font-semibold mb-8 text-center md:text-left">
@@ -124,6 +125,17 @@ export const AboutPage = () => {
             {Data.map((person) => (
               <TeamMembers person={person} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="my-24">
+        <div className="">
+          <h3 className="text-brightRed dark:text-darkModeRed text-[24px] lg:text-[40px] font-bold mb-8 md:mt-8 text-center">
+            Our Investors
+          </h3>
+          <div className="bg-[#F9F9F9] dark:bg-[#151111]">
+            <CustomInvestorsSlider />
           </div>
         </div>
       </section>
