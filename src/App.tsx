@@ -1,31 +1,44 @@
-import React, { useEffect } from "react";
-import { connect } from "react-redux";
-import { BrowserRouter as Router } from "react-router-dom";
-import { renderRoutes } from "react-router-config";
-import routes from "./routes";
-import { CustomHeader, CustomFooter } from "./components/Basic";
-import { AppProps } from "./types/componentTypes";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { useWinstonLogger } from "winston-react";
+import "./App.css";
+import { Footer } from "./components/footer/Footer";
+import NavigationBar from "./components/navigation-bar/NavigationBar";
+import { Newsletter } from "./components/newsletter-subscribe/Newsletter";
+import { CareersPage } from "./pages/CareersPage";
 
-function App({ darkMode }: AppProps) {
-  useEffect(() => {
-    document.body.style.backgroundColor = darkMode ? "#100403" : "#ffffff";
-  }, [darkMode]);
+import {
+  Home,
+  AboutPage,
+  // ContactPage,
+  // NotFoundPage,
+  ServicesPage
+} from "./pages/index";
+import { InvestorsPage } from "./pages/InvestorsPage";
+
+function App() {
+  const logger = useWinstonLogger();
+
+  React.useEffect(() => {
+    logger.debug("App Page");
+  });
 
   return (
-    <div>
-      <Router>
-        <CustomHeader darkMode={darkMode} />
-        {renderRoutes(routes)}
-        <CustomFooter darkMode={darkMode} />
-      </Router>
+    <div className="font-poppins dark:bg-darkModeBg dark:text-white">
+      <NavigationBar />
+      <Routes>
+        <>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/investors" element={<InvestorsPage />} />
+        </>
+      </Routes>
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
 
-const mapStateToProps = (state: any) => {
-  return {
-    darkMode: state.mode.darkMode,
-  };
-};
-
-export default connect(mapStateToProps)(App);
+export default App;

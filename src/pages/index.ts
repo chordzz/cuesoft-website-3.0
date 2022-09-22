@@ -1,7 +1,7 @@
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
-import NotFound from "./NotFound";
-import Services from "./Services";
+import { Home } from "./Home";
+import { AboutPage } from "./AboutPage";
+import { ContactPage } from "./ContactPage";
+import { NotFoundPage } from "./NotFoundPage";
+import { ServicesPage } from "./ServicesPage";
 
-export { Home, About, Contact, Services, NotFound };
+export { Home, AboutPage, ContactPage, ServicesPage, NotFoundPage };

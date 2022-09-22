@@ -1,0 +1,14 @@
+secrets:
+  npmrc:
+    file: ${HOME}/.npmrc
+
+services:
+  cuesoft-website:
+    image: cuesoftcloud/cuesoft-website
+    build:
+      context: .
+      target: build-stage
+    secrets:
+      - npmrc
+    ports:
+      - "3000:3000"

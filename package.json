@@ -1,55 +1,56 @@
 {
-  "name": "home",
-  "version": "2.2.0",
+  "name": "cuesoft-website",
+  "version": "3.0.0",
   "private": true,
-  "dependencies": {
-    "@reduxjs/toolkit": "^1.8.2",
-    "@semantic-ui-react/css-patch": "^1.0.0",
-    "aos": "^2.3.4",
-    "final-form": "^4.20.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-final-form": "^6.5.9",
-    "react-icons": "^4.4.0",
-    "react-redux": "^8.0.2",
-    "react-router-config": "^5.1.1",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "^5.0.1",
-    "redux": "^4.2.0",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.1.3",
-    "typescript": "^4.7.4",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --clearMocks --watchAll=false --detectOpenHandles",
+    "test:cover": "npm test -- --coverage",
     "eject": "react-scripts eject",
+    "docker:build": "DOCKER_BUILDKIT=1 docker build --secret id=npmrc,src=${HOME}/.npmrc -t cuesoftcloud/cuesoft-website .",
+    "predocker:run": "npm run docker:build",
+    "docker:run": "docker run --name cuesoft-website --env-file .env -p 80:80 -d cuesoftcloud/cuesoft-website",
+    "docker:start": "docker-compose up --build -d",
+    "docker:stop": "docker-compose down",
+    "predocker:test": "npm run docker:build -- --target build-stage",
+    "docker:test": "docker-compose run cuesoft-website npm run test:cover",
+    "postdocker:test": "npm run docker:stop",
+    "predocker:watch": "npm run docker:build -- --target build-stage",
+    "docker:watch": "docker-compose run -v ${PWD}/src:/app/src -p 3000:3000 cuesoft-website npm start || npm run docker:stop",
     "lint": "npm run prettier:check && npm run eslint",
     "lint:fix": "npm run eslint:fix && npm run prettier:fix",
-    "prettier:cli": "prettier \"**/*.js\" \"**/*.ts\" \"**/*.tsx\"",
+    "prettier:cli": "prettier \"**/*.ts\" \"**/*.js\" \"**/*.tsx\" \"**/*.html\"",
     "prettier:check": "npm run prettier:cli -- -l",
     "prettier:fix": "npm run prettier:cli -- --write",
     "eslint": "eslint --report-unused-disable-directives .",
     "eslint:fix": "npm run eslint -- --fix",
-    "postinstall": "semantic-ui-css-patch"
+    "postinstall": "npx patch-package",
+    "prepare": "husky install || true"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CuesoftCloud/cuesoft-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CuesoftCloud/cuesoft-website/issues"
+  },
+  "homepage": "https://staging.cuesoft.io",
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
+    "src/**/*.{js,jsx,ts,tsx,json}": "eslint --cache --fix",
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,html,md}": "prettier --write"
   },
   "browserslist": {
     "production": [
@@ -63,25 +64,36 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "@cuesoftcloud/logger": "^1.1.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.0.3",
+    "@types/react": "^18.0.20",
+    "@types/react-dom": "^18.0.6",
+    "eslint-config-prettier": "^8.5.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.0",
+    "react-scripts": "5.0.1",
+    "setimmediate": "^1.0.5",
+    "tailwindcss": "^3.1.8",
+    "web-vitals": "^3.0.2",
+    "winston-react": "^1.0.0-RC.0"
+  },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^14.2.1",
-    "@types/aos": "^3.0.4",
-    "@types/jest": "^28.1.3",
-    "@types/node": "^18.0.0",
-    "@types/react": "^18.0.14",
-    "@types/react-dom": "^18.0.5",
-    "@types/react-mailchimp-subscribe": "^2.1.1",
-    "@types/react-router-config": "^5.0.6",
-    "@types/react-router-dom": "^5.3.3",
-    "eslint": "^8.18.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/node": "^18.7.18",
+    "autoprefixer": "^10.4.11",
+    "eslint": "^8.23.1",
+    "eslint-config-react-app": "^7.0.1",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.4.16",
     "prettier": "^2.7.1",
-    "nth-check": "2.1.1"
-  },
-  "peerDependencies": {
-    "react-router": "5.2.0"
+    "typescript": "^4.8.3"
   }
 }
