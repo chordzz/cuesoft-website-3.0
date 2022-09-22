@@ -1,7 +1,7 @@
 import React from "react";
 
-import SliderIndicatorEllipseActive from "../../assets/icons/slider-indicator-ellipse-active.svg";
-import SliderIndicatorEllipseInactive from "../../assets/icons/slider-indicator-ellipse-inactive.svg";
+import SliderIndicatorEllipseActive from "../../../assets/icons/slider-indicator-ellipse-active.svg";
+import SliderIndicatorEllipseInactive from "../../../assets/icons/slider-indicator-ellipse-inactive.svg";
 
 type myProps = {
   active: boolean;
