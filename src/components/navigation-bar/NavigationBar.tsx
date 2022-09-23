@@ -49,9 +49,11 @@ const NavigationBar = () => {
             <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
               Product
             </div>
-            <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
-              Contact
-            </div>
+            <Link to="/contact">
+              <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+                Contact
+              </div>
+            </Link>
           </div>
 
           <div className="lg:flex gap-2 items-center hidden">
@@ -99,9 +101,11 @@ const NavigationBar = () => {
               <button onClick={handleClick} className="hover:text-blue-500">
                 Product
               </button>
-              <button onClick={handleClick} className="hover:text-blue-500">
-                Contact
-              </button>
+              <Link to="contact">
+                <button onClick={handleClick} className="hover:text-blue-500">
+                  Contact
+                </button>
+              </Link>
               <TypeformButton />
               <LanguageDropdown />
               <Toggle />
