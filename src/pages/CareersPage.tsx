@@ -256,7 +256,7 @@ export const CareersPage = () => {
                     className="text-[16px] font-bold text-[#1A1C21] dark:text-white"
                   >
                     Resume/Cv Upload
-                    <span className="w-full py-24 bg-[#FBFCFD] h-24 flex flex-col gap-4 justify-center items-center dark:bg-[#161616]">
+                    <span className="w-full py-24 bg-[#FBFCFD] h-24 flex flex-col gap-4 justify-center items-center dark:bg-[#161616] border border-[#132295]/[.1] rounded-md">
                       <img
                         src={FileUploadVector}
                         alt="upload"

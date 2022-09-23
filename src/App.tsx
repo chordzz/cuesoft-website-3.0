@@ -1,16 +1,16 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import { useWinstonLogger } from "winston-react";
 import "./App.css";
 import { Footer } from "./components/footer/Footer";
 import NavigationBar from "./components/navigation-bar/NavigationBar";
 import { Newsletter } from "./components/newsletter-subscribe/Newsletter";
-import { CareersPage } from "./pages/CareersPage";
+import { Routes, Route } from "react-router-dom";
 
 import {
   Home,
   AboutPage,
-  // ContactPage,
+  ContactPage,
+  CareersPage,
   // NotFoundPage,
   ServicesPage
 } from "./pages/index";
@@ -33,6 +33,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/investors" element={<InvestorsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </>
       </Routes>
       <Newsletter />
