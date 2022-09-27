@@ -15,6 +15,7 @@ import {
   ServicesPage
 } from "./pages/index";
 import { InvestorsPage } from "./pages/InvestorsPage";
+import { PartnersPage } from "./pages/PartnersPage";
 
 function App() {
   const logger = useWinstonLogger();
@@ -34,6 +35,7 @@ function App() {
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/investors" element={<InvestorsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/partners" element={<PartnersPage />} />
         </>
       </Routes>
       <Newsletter />
