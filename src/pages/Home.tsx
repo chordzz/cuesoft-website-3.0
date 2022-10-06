@@ -48,7 +48,7 @@ import ClientAguy from "../assets/imgs/client-aguy.svg";
 import ClientGuy from "../assets/imgs/client-guy.svg";
 
 import FlagshipProduct from "../assets/imgs/flagship-product.png";
-import FlagshipProductMobile from "../assets/imgs/flagship-product-mobile.png";
+import FlagshipProductMobile from "../assets/imgs/flagship-product-mobile.jpg";
 
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "../components/theme-context/theme-context";
