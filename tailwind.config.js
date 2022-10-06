@@ -18,7 +18,8 @@ module.exports = {
         "aboutPageHeroImgMission": "url('./assets/imgs/about-hero-mission.jpg')",
         "aboutPage-peopleGroupImg": "url('./assets/imgs/people-group.svg')",
         "careersPage-heroImg": "url('./assets/imgs/career-page-hero-img.jpg')",
-        "investorsPage-heroImg": "url('./assets/imgs/investors-page-hero.png')"
+        "investorsPage-heroImg": "url('./assets/imgs/investors-page-hero.png')",
+        "partnersPage-heroImg": "url('./assets/imgs/partners-page-hero.svg')"
       },
       colors: {
         textNormal: "#555555",

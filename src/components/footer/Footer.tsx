@@ -137,7 +137,9 @@ export const Footer = () => {
                 <li>Privacy Policy</li>
               </a>
               <li>FAQ</li>
-              <li>Partners</li>
+              <Link to="/partners">
+                <li>Partners</li>
+              </Link>
             </ul>
           </div>
         </div>
