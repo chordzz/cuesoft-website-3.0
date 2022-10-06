@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { WhyCuesoftVector } from "../components/custom-svgs/WhyCuesoftSvg";
 import { RoleRegister } from "../components/custom-svgs/RoleRegister";
@@ -16,6 +16,10 @@ import { roles } from "../components/career-role/openRolesData";
 import { CareerRole } from "../components/career-role/CareerRole";
 
 export const CareersPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [renderedRoles, setRenderedRoles] = useState(roles);
   const [filter, setFilter] = useState("all");
 

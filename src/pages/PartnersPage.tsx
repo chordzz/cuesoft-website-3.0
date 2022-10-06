@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import NectarInfotelLogo from "../assets/logos/nectar-infotel-logo.svg";
 import PartnersPageGroup from "../assets/imgs/partners-page-group.jpg";
 
 export const PartnersPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <section>

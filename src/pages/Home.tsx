@@ -50,11 +50,15 @@ import ClientGuy from "../assets/imgs/client-guy.svg";
 import FlagshipProduct from "../assets/imgs/flagship-product.png";
 import FlagshipProductMobile from "../assets/imgs/flagship-product-mobile.png";
 
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "../components/theme-context/theme-context";
 
 export const Home = () => {
   const { theme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div data-testid="homepage">

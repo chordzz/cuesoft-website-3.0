@@ -21,11 +21,13 @@ export const Footer = () => {
       <div className="my-container flex flex-col md:flex-row gap-5 md:gap-10 lg:gap-20">
         <div className="md:w-[30%] text-center md:text-left">
           <div className="hidden md:block">
-            <img
-              src={theme === "dark" ? CuesoftLogoDark : CuesoftLogo}
-              alt="Cuesoft"
-              className="w-[150px] h-[90px] md:h-[113px] md:w-[201px]"
-            />
+            <Link to="/">
+              <img
+                src={theme === "dark" ? CuesoftLogoDark : CuesoftLogo}
+                alt="Cuesoft"
+                className="w-[150px] h-[90px] md:h-[113px] md:w-[201px]"
+              />
+            </Link>
           </div>
           <h3 className="text-[24px] lg:text-4xl mb-4 lg:mb-8 font-bold">
             Let's get started
@@ -38,11 +40,13 @@ export const Footer = () => {
           <TypeformButton />
         </div>
         <div className="md:hidden mx-auto">
-          <img
-            src={theme === "dark" ? CuesoftLogoDark : CuesoftLogo}
-            alt="Cuesoft"
-            className="w-[150px] h-[90px] md:h-[113px] md:w-[201px] "
-          />
+          <Link to="/">
+            <img
+              src={theme === "dark" ? CuesoftLogoDark : CuesoftLogo}
+              alt="Cuesoft"
+              className="w-[150px] h-[90px] md:h-[113px] md:w-[201px] "
+            />
+          </Link>
         </div>
         <div className="text-center md:text-left text-[13px] lg:text-lg md:pt-8 flex flex-col md:flex-row gap-8 md:gap-12 md:w-[40%]">
           <div>

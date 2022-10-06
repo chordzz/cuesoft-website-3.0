@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Avatar from "../assets/imgs/avatar.svg";
 
@@ -6,6 +6,9 @@ import QuotesIconLeft from "../assets/icons/quotes-icon.svg";
 import QuotesIconRight from "../assets/icons/quotes-icon-right.svg";
 
 export const InvestorsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <section>

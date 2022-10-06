@@ -12,10 +12,10 @@ import {
   ContactPage,
   CareersPage,
   // NotFoundPage,
-  ServicesPage
+  ServicesPage,
+  PartnersPage,
+  InvestorsPage
 } from "./pages/index";
-import { InvestorsPage } from "./pages/InvestorsPage";
-import { PartnersPage } from "./pages/PartnersPage";
 
 function App() {
   const logger = useWinstonLogger();

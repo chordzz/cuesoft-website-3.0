@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Phone from "../assets/icons/phone-settings.svg";
 import Email from "../assets/icons/email-alternate.svg";
@@ -6,6 +6,10 @@ import Home from "../assets/icons/home.svg";
 import ContactImg from "../assets/imgs/contact-us-img.svg";
 
 export const ContactPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <section className="my-20">

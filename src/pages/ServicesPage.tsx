@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaqMain } from "../components/faq/FaqMain";
 
 import ProductDesignVector from "../assets/icons/vectors/product-design-servicesPage.svg";
@@ -6,6 +6,10 @@ import CodeVector from "../assets/icons/vectors/code-vector-servicesPage.svg";
 import HexagonChartVector from "../assets/icons/vectors/hexagon-chart-servicesPage.svg";
 
 export const ServicesPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <section className="lg:mb-20">

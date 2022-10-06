@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import ProPerson from "../assets/imgs/pro-person.svg";
 import WorldWeb from "../assets/imgs/world-web.svg";
@@ -10,6 +10,10 @@ import { CustomSlider } from "../components/slider/aboutPage-hero-slider/CustomS
 import { CustomInvestorsSlider } from "../components/slider/aboutPage-investors-slider/CustomInvestorsSlider";
 
 export const AboutPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="bg-aboutPage-peopleGroupImg bg-cover ">
