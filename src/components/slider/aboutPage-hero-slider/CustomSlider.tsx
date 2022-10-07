@@ -11,6 +11,9 @@ export const CustomSlider = () => {
   const [activeRightBtn, setActiveRightBtn] = useState(true);
   const [activeLeftBtn, setActiveLeftBtn] = useState(false);
 
+  const [slideRight, setSlideRight] = useState(false);
+  const [slideLeft, setSlideLeft] = useState(false);
+
   const sliderContent = [
     {
       header: "Our Vision",
@@ -31,6 +34,7 @@ export const CustomSlider = () => {
       activePage + 1 < sliderContent.length
     ) {
       setActivePage((prev) => prev + 1);
+      setSlideRight(true);
     }
   };
 
@@ -41,6 +45,7 @@ export const CustomSlider = () => {
       activePage - 1 >= 0
     ) {
       setActivePage((prev) => prev - 1);
+      setSlideLeft(true);
     }
   };
 
@@ -62,20 +67,38 @@ export const CustomSlider = () => {
 
   useEffect(() => {
     const interval = setTimeout(() => {
-      if (activePage + 1 >= sliderContent.length) setActivePage(0);
-      else setActivePage((prevCounter) => prevCounter + 1);
+      if (activePage + 1 >= sliderContent.length) {
+        setActivePage(0);
+        // setSlideRight(true)
+      } else setActivePage((prevCounter) => prevCounter + 1);
     }, 10000);
 
-    return () => clearTimeout(interval);
+    return () => {
+      clearTimeout(interval);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activePage]);
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      setSlideRight(false);
+      setSlideLeft(false);
+    }, 500);
+
+    return () => {
+      clearTimeout(interval);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activePage]);
 
   return (
-    <div className="relative w-[100%] h-[220px] md:h-[500px] py-14 md:py-32 ">
+    <div className="relative w-[100%] h-[220px] md:h-[500px] py-14 md:py-32 overflow-hidden">
       <div
         className={`bg-cover bg-center bg-no-repeat bg-${
           sliderContent[activePage] ? sliderContent[activePage].bImage : ""
-        } w-[100%] h-[100%] absolute top-0 z-10`}
+        } w-[100%] h-[100%] absolute top-0  z-10 transition-all ease-in-out duration-1000 ${
+          slideRight ? "-translate-x-full" : "right-0"
+        } ${slideLeft ? "translate-x-full" : ""}`}
       ></div>
       <div className="bg-[#000000] w-[100%] h-[100%] absolute top-0 opacity-75 z-10"></div>
       <div className="absolute z-20 h-[100%] top-0">

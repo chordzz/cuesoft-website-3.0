@@ -9,6 +9,9 @@ export const CustomInvestorsSlider = () => {
   const [activeRightBtn, setActiveRightBtn] = useState(true);
   const [activeLeftBtn, setActiveLeftBtn] = useState(false);
 
+  const [slideRight, setSlideRight] = useState(false);
+  const [slideLeft, setSlideLeft] = useState(false);
+
   let horizontalSection = document.querySelector(".horizontal-section");
 
   const sliderContent = [
@@ -25,6 +28,13 @@ export const CustomInvestorsSlider = () => {
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula iaculis morbi nulla at. Nunc eget lectus egestas vivamus duis nisi, et interdum mi. Et massa consectetur diam tempus, imperdiet tortor. Malesuada purus sit consequat commodo sagittis. Sed sapien eu enim fermentum turpis gravida id cras id. Blandit varius auctor morbi nibh mi sollicitudin massa faucibus. Arcu risus turpis a sagittis semper diam arcu duis pharetra. Nibh fusce eget tincidunt ipsum vitae tempus ullamcorper tellus. Odio habitant integer neque quis urna. A nam viverra a.",
       img: AmazonInvestor,
       rating: [Star, Star, Star]
+    },
+    {
+      header: "Amazon Incorporated",
+      subHeader: "No 019, lorem Ipsum Street, Lorem Ipsium, Lorem Ipsium",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula iaculis morbi nulla at. Nunc eget lectus egestas vivamus duis nisi, et interdum mi. Et massa consectetur diam tempus, imperdiet tortor. Malesuada purus sit consequat commodo sagittis. Sed sapien eu enim fermentum turpis gravida id cras id. Blandit varius auctor morbi nibh mi sollicitudin massa faucibus. Arcu risus turpis a sagittis semper diam arcu duis pharetra. Nibh fusce eget tincidunt ipsum vitae tempus ullamcorper tellus. Odio habitant integer neque quis urna. A nam viverra a.",
+      img: AmazonInvestor,
+      rating: [Star, Star]
     }
   ];
 
@@ -56,6 +66,7 @@ export const CustomInvestorsSlider = () => {
       activePage + 1 < sliderContent.length
     ) {
       setActivePage((prev) => prev + 1);
+      setSlideRight(true);
     }
   };
 
@@ -70,8 +81,21 @@ export const CustomInvestorsSlider = () => {
       activePage - 1 >= 0
     ) {
       setActivePage((prev) => prev - 1);
+      setSlideLeft(true);
     }
   };
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      setSlideRight(false);
+      setSlideLeft(false);
+    }, 500);
+
+    return () => {
+      clearTimeout(interval);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activePage]);
 
   return (
     <div>
@@ -83,7 +107,9 @@ export const CustomInvestorsSlider = () => {
                 activePage + 1 >= sliderContent.length
                   ? "flex min-w-[90%] items-center"
                   : "hidden"
-              }`}
+              } transition-all duration-1000 ease-in-out relative ${
+                slideRight ? "translate-x-full" : ""
+              } ${slideLeft ? "translate-x-full" : ""} `}
             >
               <div className="w-1/2 bg-transparent hidden md:block">
                 <img
@@ -131,7 +157,11 @@ export const CustomInvestorsSlider = () => {
               </div>
             </div>
 
-            <div className={`min-w-[90%] flex items-center`}>
+            <div
+              className={`min-w-[90%] flex items-center transition-all duration-1000 ${
+                slideRight ? "translate-x-[1000px]" : ""
+              } ${slideLeft ? "translate-x-full" : ""}`}
+            >
               <div className="w-1/2 bg-transparent hidden md:block">
                 <img
                   src={
@@ -183,7 +213,9 @@ export const CustomInvestorsSlider = () => {
                 activePage + 1 >= sliderContent.length
                   ? "hidden"
                   : "flex min-w-[90%] items-center"
-              }`}
+              } transition-all  ease-in-out relative ${
+                slideRight ? "translate-x-[1000px]" : ""
+              } ${slideLeft ? "translate-x-full" : ""} `}
             >
               <div className="w-1/2 bg-transparent hidden md:block">
                 <img
