@@ -42,7 +42,7 @@ export const FaqMain = () => {
 
   return (
     <div className="my-container">
-      <h3 className="text-brightRed text-center dark:text-darkModeRed text-[24px] lg:text-[40px] font-bold mb-16">
+      <h3 className="text-brightRed text-center dark:text-darkModeRed text-[24px] lg:text-[40px] font-bold mb-32">
         Frequently Asked Questions
       </h3>
 
@@ -81,7 +81,7 @@ export const FaqMain = () => {
       <div className="lg:hidden">
         {questions.map((questionItem) => {
           return (
-            <div>
+            <div key={questionItem.id}>
               <span
                 key={questionItem.id}
                 className={`${

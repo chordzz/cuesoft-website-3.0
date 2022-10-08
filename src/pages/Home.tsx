@@ -80,7 +80,7 @@ export const Home = () => {
             <p className="text-textNormalSupLight dark:text-white text-left mt-6 lg:mt-9 text-[12px] lg:text-2xl lg:max-w-2xl">
               Through our competent process of creating intelligent,
               custom-built software, we help forward-thinking organizations
-              transform, scale, and achieve a competitive edge
+              transform, scale, and achieve a competitive edge.
             </p>
 
             <div className="hidden md:flex items-center xl:w-1/2 mt-6 lg:mt-12 relative ">
@@ -188,9 +188,9 @@ export const Home = () => {
                 Plan
               </h5>
               <p className="mx-auto max-w-xs text-[15px] text-textNormal dark:text-white">
-                Once you contact us and we have your idea tabled. We would
-                identify your problems alongside fitting solutions, afterwards
-                creating a schedule while assigning duties to our team members.{" "}
+                Book a free discovery session with our solutions engineer and
+                get your needs defined. After which we will work closely with
+                you to create a brilliant game plan.{" "}
               </p>
               <div className="hidden md:block absolute text-xs -right-14 top-56">
                 <img
@@ -209,8 +209,9 @@ export const Home = () => {
               />
               <h5 className="md:text-xl text-brightRed font-bold">Build</h5>
               <p className="mx-auto max-w-xs text-[15px] text-textNormal dark:text-white">
-                Consequently, our team of engineers begin writing code for the
-                complete system utilizing the necessary technologies.
+                The steps and strategies are designed in this phase. While the
+                software developers transform the specifications and prototypes
+                of your project into a working product.
               </p>
               <div className="hidden md:block absolute text-xs -right-14 top-56">
                 <img
@@ -229,8 +230,8 @@ export const Home = () => {
               />
               <h5 className="md:text-xl text-brightRed font-bold">Launch</h5>
               <p className="mx-auto max-w-xs text-[15px] text-textNormal dark:text-white">
-                Soon the beta live project is launched, and eventually, the live
-                project is launched.
+                The beta live project gets completed at this stage and then
+                launched.
               </p>
               <div className="hidden md:block absolute text-xs -right-14 top-56">
                 <img
@@ -249,8 +250,8 @@ export const Home = () => {
               />
               <h5 className="md:text-xl text-brightRed font-bold">Iterate</h5>
               <p className="mx-auto max-w-xs text-[15px] text-textNormal dark:text-white">
-                This is the testing phase. The product is now monitored for bugs
-                and defaults and checked to see for necessary upgrades.{" "}
+                This is the testing phase. Your product is now monitored for
+                bugs and observed for necessary upgrades.{" "}
               </p>
             </div>
           </div>
@@ -266,14 +267,14 @@ export const Home = () => {
             <div className="relative w-[90%] md:w-[45%]">
               <div className="border-boxBlueBorder dark:border-darkBoxBlueBorder rounded-3xl border p-8 py-12 pr-20 text-left relative overflow-hidden">
                 <h3 className="text-boxBlue text-[12px] lg:text-xl mb-4 font-bold dark:text-darkBoxBlue">
-                  Go From An Idea To A Published Site
+                  You Go From Just An Idea To A Working Product.
                 </h3>
 
                 <p className="text-[10px] lg:text-[15px] text-textNormal dark:text-white">
-                  With your creatively thought out idea and you sending us a
-                  message, you have our world-class team develop your idea after
-                  a detailed study of your brand while targeting your business
-                  objectives.
+                  With your idea and you booking a discovery call in seconds,
+                  you have our world-class team develop that idea into a
+                  software tailored for your business after a detailed study of
+                  your brand.
                 </p>
 
                 <div className="absolute -right-[82px] bottom-0 max-w-[100px]">
@@ -299,10 +300,9 @@ export const Home = () => {
                   Increased business efficiency
                 </h3>
                 <p className="text-[10px] lg:text-[15px] text-textNormal dark:text-white">
-                  With your creatively thought out idea and you sending us a
-                  message, you have our world-class team develop your idea after
-                  a detailed study of your brand while targeting your business
-                  objectives.
+                  You are eased of the stress of managing a software development
+                  team as you have us building the best software solution
+                  targeting your business objectives while your company thrives.
                 </p>
 
                 <div className="absolute -right-[82px] bottom-0 max-w-[100px]">
@@ -329,10 +329,10 @@ export const Home = () => {
                 </h3>
 
                 <p className="text-[10px] lg:text-[15px]">
-                  With your creatively thought out idea and you sending us a
-                  message, you have our world-class team develop your idea after
-                  a detailed study of your brand while targeting your business
-                  objectives.
+                  We hire the most ingenious and savvy software developers,
+                  UI/UX designers, Product Managers and software consultants on
+                  our team. We would excite the most relevant and innovative
+                  product out of your abstract brainchild.
                 </p>
                 <div className="absolute -right-[82px] bottom-0 max-w-[100px]">
                   <img
@@ -358,10 +358,9 @@ export const Home = () => {
                 </h3>
 
                 <p className="text-[10px] lg:text-[15px]">
-                  With your creatively thought out idea and you sending us a
-                  message, you have our world-class team develop your idea after
-                  a detailed study of your brand while targeting your business
-                  objectives.
+                  Having worked with several brands and with numerous projects
+                  completed, we have a solid testimonial of solving real world
+                  problems.
                 </p>
                 <div className="absolute -right-[80px] bottom-0 max-w-[100px] ">
                   <img
@@ -547,9 +546,9 @@ export const Home = () => {
                   </h4>
 
                   <p className="text-[12px] lg:text-[15px] lg:leading-6 text-textNormal dark:text-white">
-                    Two factors converge in the creation of extraordinary
-                    digital solutions: User experience and powerful backend
-                    technology. We arm you with both
+                    Having worked with several brands and with numerous projects
+                    completed, we have a solid testimonial of solving real world
+                    problems.
                   </p>
                 </div>
               </div>
@@ -577,8 +576,9 @@ export const Home = () => {
                   </h4>
 
                   <p className="text-[12px] lg:text-[15px] lg:leading-6 text-textNormal dark:text-white">
-                    Arm yourself with a cutting edge website built to fit your
-                    needs today and to grow along with your organization
+                    Over the years, we've taken pride in transforming the most
+                    audacious ideas into flawless websites. We go beyond just
+                    creating web pages, we design business solutions.
                   </p>
                 </div>
               </div>
@@ -643,18 +643,15 @@ export const Home = () => {
 
           <div className="mt-20">
             <span className="font-bold text-textBold dark:text-white text-[15px] lg:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
+              Cueprise
             </span>
             <p className="my-8 text-textNormal dark:text-white text-[12px] lg:text-[15px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-              tristique tellus mi risus id velit et consequat nam. Purus euismod
-              potenti turpis magna leo, tortor sed tempus leo. Sollicitudin
-              egestas etiam pellentesque egestas vulputate augue suspendisse.
-              Laoreet aliquam tortor, vestibulum, at mi. Ut augue fermentum, sit
-              iaculis ut at sed in. Tincidunt tellus sit vulputate morbi
-              consequat at morbi sit quis. Velit ut nec in urna mattis egestas
-              dapibus leo neque. Vitae, aliquam tortor sed faucibus. Porttitor
-              sed orci eget felis.
+              After two years of pursuing this vision, we launched our first
+              flagship product, Cueprise with the goal of simplifying and
+              optimizing business operations. And this we do while serving
+              businesses all over the world with resource planning, payroll
+              management, tracking supply chains and inventories, while making
+              it easy for their customers to place orders.
             </p>
           </div>
 
@@ -666,10 +663,10 @@ export const Home = () => {
         <div className="my-container text-center">
           <div className="relative">
             <h3 className="text-brightRed dark:text-darkModeRed text-[24px] lg:text-[40px] font-bold mb-4 mt-16 md:mb-8">
-              What our customers are saying about us
+              What our customers are saying about us ?
             </h3>
             <p className="text-[15px] lg:text-xl text-textDarkBlue dark:text-darkModeTextLight font-bold">
-              Here are some of the words and comments from our clients
+              This is what some of our customers are saying about us.
             </p>
 
             <div className="hidden xl:block md:absolute right-24 -top-20">
@@ -678,7 +675,7 @@ export const Home = () => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-8 mt-12 justify-around">
-            <div className="bg-bgLightCard dark:bg-darkModeReviewCardBg shadow-sm justify-center relative p-8 rounded overflow-hidden md:w-1/2 text-textDarkBlue">
+            <div className="bg-bgLightCard dark:bg-darkModeReviewCardBg shadow-sm flex flex-col justify-between relative p-8 rounded overflow-hidden md:w-1/2 text-textDarkBlue">
               <div className="flex gap-2 items-start">
                 <img
                   src={QuotesIcon}
@@ -687,11 +684,10 @@ export const Home = () => {
                 />
 
                 <p className="text-[12px] lg:text-[17px] text-left dark:text-darkModeTextLight">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Tristique in pellentesque ultrices et massa neque, convallis
-                  lorem. Erat proin in posuere dui accumsan lorem. Diam nunc
-                  scelerisque mi vestibulum scelerisque mi ac nisi. Dictumst
-                  nunc placerat ultricies pretium.
+                  Choosing to work with Cuesoft is absolutely one of the best
+                  business decisions we made this year. Not only are their
+                  services affordable, they wholesomely captured our idea for
+                  the software product and blew our minds at Fixtech.
                 </p>
               </div>
 
@@ -703,16 +699,16 @@ export const Home = () => {
                 />
                 <div className="text-left">
                   <h4 className="font-bold  text-[13px] lg:text-[21px] dark:text-darkModeTextLight">
-                    Ayodele Joseph
+                    Jeremiah Adeife
                   </h4>
                   <p className="text-[12px] dark:text-darkModeTextLight">
-                    Product Designer
+                    CEO, Fixtech.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-bgLightCard dark:bg-darkModeReviewCardBg shadow-sm justify-center relative p-8 rounded overflow-hidden md:w-1/2 text-textDarkBlue">
+            <div className="bg-bgLightCard flex flex-col justify-between dark:bg-darkModeReviewCardBg shadow-sm relative p-8 rounded overflow-hidden md:w-1/2 text-textDarkBlue">
               <div className="flex gap-2 items-start">
                 <img
                   src={QuotesIcon}
@@ -721,11 +717,8 @@ export const Home = () => {
                 />
 
                 <p className=" text-[12px] lg:text-[17px] text-left dark:text-darkModeTextLight">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Tristique in pellentesque ultrices et massa neque, convallis
-                  lorem. Erat proin in posuere dui accumsan lorem. Diam nunc
-                  scelerisque mi vestibulum scelerisque mi ac nisi. Dictumst
-                  nunc placerat ultricies pretium.
+                  Quite innovative and brilliant. Cuesoft helped us get the
+                  modern outlook we needed.
                 </p>
               </div>
 
@@ -737,10 +730,10 @@ export const Home = () => {
                 />
                 <div className="text-left">
                   <h4 className="font-bold  text-[13px] lg:text-[21px] dark:text-darkModeTextLight">
-                    Ayodele Joseph
+                    Jide Badmus
                   </h4>
                   <p className="text-[12px] dark:text-darkModeTextLight">
-                    Product Designer
+                    Co-founder and CEO, Mide touch.
                   </p>
                 </div>
               </div>

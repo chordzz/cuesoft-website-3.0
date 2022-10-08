@@ -14,7 +14,8 @@ export const Newsletter = () => {
             Subscribe to our Newsletter
           </h3>
           <p className="mb-4 text-textNormal text-[12px] lg:text-2xl dark:text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Join our mailing list to receive weekly emails on our offers,
+            company news and other helpful content.
           </p>
           <div className="flex flex-col gap-8 lg:flex-row">
             <input
