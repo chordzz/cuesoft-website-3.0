@@ -11,8 +11,7 @@ export const CookieAlert = () => {
     }
 
     if (!cookieConsent) {
-      const timerId = setTimeout(() => setRenderCookieConsent(true), 1000);
-
+      const timerId = setTimeout(() => setRenderCookieConsent(true), 2000);
       return () => clearTimeout(timerId);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -45,8 +44,8 @@ export const CookieAlert = () => {
   return (
     <>
       {renderCookieConsent && (
-        <div className="fixed left-16 z-[1000]">
-          <div className="fixed my-container bg-gray-100 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left px-6 py-8">
+        <div className="sticky bottom-10">
+          <div className="my-container bg-gray-100 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left px-6 py-8">
             <img src={Cookie} alt="cookie" />
 
             <p className="text-textNormal md:w-[50%]">

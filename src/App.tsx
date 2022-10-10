@@ -31,7 +31,6 @@ function App() {
   return (
     <div className="font-poppins dark:bg-darkModeBg dark:text-white">
       <NavigationBar />
-      <CookieAlert />
       <Routes>
         <>
           <Route path="/" element={<Home />} />
@@ -45,6 +44,7 @@ function App() {
       </Routes>
       <Newsletter />
       <Footer />
+      <CookieAlert />
     </div>
   );
 }
