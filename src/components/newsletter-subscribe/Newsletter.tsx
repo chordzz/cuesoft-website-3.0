@@ -1,8 +1,48 @@
 import React from "react";
+import axios from "axios";
 
 import MessageSent from "../../assets/imgs/message-sent.svg";
 
 export const Newsletter = () => {
+  // Test Function to post from outside the form, Replace URL as needed
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    console.log(e.target.elements.EMAIL.value);
+
+    const url = "enter url";
+    const data = { EMAIL: e.target.elements.EMAIL.value };
+
+    const options = {
+      method: "POST",
+      // mode: 'no-cors',
+      headers: {
+        "Content-Type": "text/plain;charset=UTF-8",
+        accept: "*/*",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE, PUT",
+        "Access-Control-Allow-Headers":
+          "append,delete,entries,foreach,get,has,keys,set,values,Authorization"
+      },
+      data: JSON.stringify(data),
+      url
+    };
+
+    axios(options);
+
+    // fetch('enter url', {
+    //   method: 'POST', // or 'PUT'
+    //   // mode: 'no-cors',
+    //   body: JSON.stringify(data),
+    //   headers: {
+    //     'Content-Type': 'text/plain;charset=UTF-8',
+    //     'accept': '*/*',
+    //     "Access-Control-Allow-Origin": "http://localhost:3001/",
+    //     // 'EMAIL': e.target.elements.EMAIL.value,
+    //   },
+    // })
+    // .then(resp => console.log(resp))
+  };
+
   return (
     <section>
       <div className="my-container text-center mt-12 md:mt-0 md:min-h-screen flex flex-col lg:flex-row items-center justify-center">
@@ -19,14 +59,15 @@ export const Newsletter = () => {
           <div>
             <form
               className="flex flex-col gap-8 lg:flex-row validate"
-              action="https://cuesoft.us14.list-manage.com/subscribe/post?u=cf78d03209bc58066c06332ab&amp;id=dcd37aeaf4&amp;f_id=001a8de0f0"
-              method="post"
+              // Replacing this with the URL I sent to you will make the form work
+              // action="enter url"
+              // method="post"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
               target="_blank"
+              // Contains test function to try posting from outside the form
+              onSubmit={handleSubmit}
             >
-              {/* <input type="hidden" name="u" value={process.env.REACT_APP_MAILCHIMP_U}/> */}
-              {/* <input type="hidden" name="id" value={process.env.REACT_APP_MAILCHIMP_ID}/> */}
               <input
                 type="email"
                 placeholder="Your e-mail address"
@@ -49,8 +90,6 @@ export const Newsletter = () => {
                 ></div>
               </div>
 
-              {/* <input type="hidden" name="ht" value="d28c3f4aff69a15419f00dea8fa1a2478a220866:MTY1NzAzNTU0NC43MzMx"/>
-              <input type="hidden" name="mc_signupsource" value="hosted"/> */}
               <button
                 type="submit"
                 id="mc-embedded-subscribe"
