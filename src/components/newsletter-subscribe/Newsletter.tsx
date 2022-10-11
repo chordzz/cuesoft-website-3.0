@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import Axios from "axios";
 
 import MessageSent from "../../assets/imgs/message-sent.svg";
 
@@ -27,7 +27,7 @@ export const Newsletter = () => {
       url
     };
 
-    axios(options);
+    Axios(options);
 
     // fetch('enter url', {
     //   method: 'POST', // or 'PUT'
