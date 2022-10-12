@@ -1,47 +1,35 @@
 import React from "react";
-import Axios from "axios";
+// import axios from "axios";
 
 import MessageSent from "../../assets/imgs/message-sent.svg";
 
 export const Newsletter = () => {
   // Test Function to post from outside the form, Replace URL as needed
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    console.log(e.target.elements.EMAIL.value);
 
-    const url = "enter url";
-    const data = { EMAIL: e.target.elements.EMAIL.value };
+  // const handleSubmit = (e: any) => {
+  //   e.preventDefault();
+  //   console.log(e.target.elements.EMAIL.value);
 
-    const options = {
-      method: "POST",
-      // mode: 'no-cors',
-      headers: {
-        "Content-Type": "text/plain;charset=UTF-8",
-        accept: "*/*",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE, PUT",
-        "Access-Control-Allow-Headers":
-          "append,delete,entries,foreach,get,has,keys,set,values,Authorization"
-      },
-      data: JSON.stringify(data),
-      url
-    };
+  //   const url = "enter url";
+  //   const data = { EMAIL: e.target.elements.EMAIL.value };
 
-    Axios(options);
+  //   const options = {
+  //     method: "POST",
+  //     // mode: 'no-cors',
+  //     headers: {
+  //       "Content-Type": "text/plain;charset=UTF-8",
+  //       accept: "*/*",
+  //       "Access-Control-Allow-Origin": "*",
+  //       "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE, PUT",
+  //       "Access-Control-Allow-Headers":
+  //         "append,delete,entries,foreach,get,has,keys,set,values,Authorization"
+  //     },
+  //     data: JSON.stringify(data),
+  //     url
+  //   };
 
-    // fetch('enter url', {
-    //   method: 'POST', // or 'PUT'
-    //   // mode: 'no-cors',
-    //   body: JSON.stringify(data),
-    //   headers: {
-    //     'Content-Type': 'text/plain;charset=UTF-8',
-    //     'accept': '*/*',
-    //     "Access-Control-Allow-Origin": "http://localhost:3001/",
-    //     // 'EMAIL': e.target.elements.EMAIL.value,
-    //   },
-    // })
-    // .then(resp => console.log(resp))
-  };
+  //   axios(options);
+  // };
 
   return (
     <section>
@@ -60,13 +48,13 @@ export const Newsletter = () => {
             <form
               className="flex flex-col gap-8 lg:flex-row validate"
               // Replacing this with the URL I sent to you will make the form work
-              // action="enter url"
-              // method="post"
+              action="enter url"
+              method="post"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
               target="_blank"
               // Contains test function to try posting from outside the form
-              onSubmit={handleSubmit}
+              // onSubmit={handleSubmit}
             >
               <input
                 type="email"
