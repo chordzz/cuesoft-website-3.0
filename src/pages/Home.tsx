@@ -69,8 +69,7 @@ export const Home = () => {
       )
       .then((res) => {
         setTopStories(res.data.items);
-      })
-      .catch((error) => console.log(error));
+      });
   }, []);
 
   useEffect(() => {}, [topStories]);
