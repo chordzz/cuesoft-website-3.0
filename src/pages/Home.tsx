@@ -1,3 +1,5 @@
+import axios from "axios";
+
 import HeroImg from "../assets/imgs/hero-img.png";
 import Umobile from "../assets/logos/umobile.svg";
 import Finchglow from "../assets/logos/finchglow.svg";
@@ -50,15 +52,28 @@ import ClientGuy from "../assets/imgs/client-guy.svg";
 import FlagshipProduct from "../assets/imgs/flagship-product.png";
 import FlagshipProductMobile from "../assets/imgs/flagship-product-mobile.jpg";
 
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../components/theme-context/theme-context";
 
 export const Home = () => {
   const { theme } = useContext(ThemeContext);
 
+  const [topStories, setTopStories] = useState<Array<any>>([]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    axios
+      .get(
+        "https://api.rss2json.com/v1/api.json?rss_url=https://blog.cuesoft.io/feed"
+      )
+      .then((res) => {
+        setTopStories(res.data.items);
+      })
+      .catch((error) => console.log(error));
   }, []);
+
+  useEffect(() => {}, [topStories]);
 
   return (
     <div data-testid="homepage">
@@ -742,6 +757,153 @@ export const Home = () => {
         </div>
       </section>
       {/* <Footer /> */}
+
+      <section>
+        <div className="my-container ">
+          <h3 className="text-brightRed text-center dark:text-darkModeRed text-[24px] lg:text-[40px] font-bold mb-4 mt-16 md:mb-8">
+            Latest updates and post from our Blogs
+          </h3>
+
+          {topStories.length > 0 ? (
+            <div>
+              <div className="hidden md:flex flex-col gap-12">
+                <div className="flex flex-wrap justify-between">
+                  <div className="rounded-lg bg-[#F5F5FA] dark:bg-[#151111] w-[100%] md:w-[40%] p-8">
+                    <img
+                      src={topStories ? topStories[0].thumbnail : ""}
+                      alt={topStories ? topStories[0].title : ""}
+                    />
+                    <div className="text-left mt-4 flex flex-col gap-2">
+                      <h6 className="text-brightRed text-[12px] md:text-[16px] lg:text-[20px] font-bold">
+                        {topStories ? topStories[0].title : ""}
+                      </h6>
+                      <p className="text-[#515158] dark:text-[#A6A6B0] text-[10px] md:text-[12px] lg:text-[16px]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Asperiores dolores numquam quae assumenda eius
+                        natus doloribus veritatis soluta ab nostrum, ex placeat
+                        excepturi molestiae tempore, autem labore dolore? A, id.
+                      </p>
+                      <a
+                        href={topStories ? topStories[0].guid : "/"}
+                        className="w-fit self-end"
+                      >
+                        <button className="a-btn text-[10px] md:text-[12px] lg:text-[16px]">
+                          Read post
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="rounded-lg bg-[#F5F5FA] dark:bg-[#151111] w-[100%] md:w-[40%] p-8">
+                    <img
+                      src={topStories ? topStories[1].thumbnail : ""}
+                      alt={topStories ? topStories[1].title : ""}
+                    />
+                    <div className="text-left mt-4 flex flex-col gap-2">
+                      <h6 className="text-brightRed text-[12px] md:text-[16px] lg:text-[20px] font-bold">
+                        {topStories ? topStories[1].title : ""}
+                      </h6>
+                      <p className="text-[#515158] dark:text-[#A6A6B0] text-[10px] md:text-[12px] lg:text-[16px]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Asperiores dolores numquam quae assumenda eius
+                        natus doloribus veritatis soluta ab nostrum, ex placeat
+                        excepturi molestiae tempore, autem labore dolore? A, id.
+                      </p>
+                      <a
+                        href={topStories ? topStories[1].guid : "/"}
+                        className="w-fit self-end"
+                      >
+                        <button className="a-btn text-[10px] md:text-[12px] lg:text-[16px]">
+                          Read post
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <span className="text-brightRed underline cursor-pointer text-[16px] md:text-[20px] lg:text-[24px] w-fit self-end">
+                  <a
+                    href="https://blog.cuesoft.io"
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                  >
+                    See all blog articles{" "}
+                  </a>
+                </span>
+              </div>
+
+              {/* Mobile */}
+              <div className="flex flex-col md:hidden">
+                <div className=" my-container w-[1200px] flex overflow-x-scroll gap-12 py-12 items-">
+                  <div className="rounded-lg bg-[#F5F5FA] dark:bg-[#151111] min-w-[80%] md:w-[40%] p-4">
+                    <img
+                      src={topStories ? topStories[0].thumbnail : ""}
+                      alt={topStories ? topStories[0].title : ""}
+                    />
+                    <div className="text-left mt-4 flex flex-col gap-2">
+                      <h6 className="text-brightRed text-[12px] md:text-[16px] lg:text-[20px] font-bold">
+                        {topStories ? topStories[0].title : ""}
+                      </h6>
+                      <p className="text-[#515158] dark:text-[#A6A6B0] text-[10px] md:text-[12px] lg:text-[16px]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Asperiores dolores numquam quae assumenda eius
+                        natus doloribus veritatis soluta ab nostrum, ex placeat
+                        excepturi molestiae tempore, autem labore dolore? A, id.
+                      </p>
+                      <a
+                        href={topStories ? topStories[0].guid : "/"}
+                        className="w-fit self-end"
+                      >
+                        <button className="a-btn text-[10px] md:text-[12px] lg:text-[16px]">
+                          Read post
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="rounded-lg bg-[#F5F5FA] dark:bg-[#151111] min-w-[80%] md:w-[40%] p-4">
+                    <img
+                      src={topStories ? topStories[1].thumbnail : ""}
+                      alt={topStories ? topStories[1].title : ""}
+                    />
+                    <div className="text-left mt-4 flex flex-col gap-2">
+                      <h6 className="text-brightRed text-[12px] md:text-[16px] lg:text-[20px] font-bold">
+                        {topStories ? topStories[1].title : ""}
+                      </h6>
+                      <p className="text-[#515158] dark:text-[#A6A6B0] text-[10px] md:text-[12px] lg:text-[16px]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Asperiores dolores numquam quae assumenda eius
+                        natus doloribus veritatis soluta ab nostrum, ex placeat
+                        excepturi molestiae tempore, autem labore dolore? A, id.
+                      </p>
+                      <a
+                        href={topStories ? topStories[1].guid : "/"}
+                        className="w-fit self-end"
+                      >
+                        <button className="a-btn text-[10px] md:text-[12px] lg:text-[16px]">
+                          Read post
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <span className="text-brightRed underline cursor-pointer text-[16px] md:text-[20px] lg:text-[24px] w-fit self-end mt-12">
+                  <a
+                    href="https://blog.cuesoft.io"
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                  >
+                    See all blog articles{" "}
+                  </a>
+                </span>
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
+      </section>
     </div>
   );
 };
