@@ -1,10 +1,14 @@
 import React from "react";
-import { useWinstonLogger } from "winston-react";
+import { Routes, Route } from "react-router-dom";
+
 import "./App.css";
+
+import { useWinstonLogger } from "winston-react";
+
 import { Footer } from "./components/footer/Footer";
 import NavigationBar from "./components/navigation-bar/NavigationBar";
 import { Newsletter } from "./components/newsletter-subscribe/Newsletter";
-import { Routes, Route } from "react-router-dom";
+import { CookieAlert } from "./components/cookie-alert/CookieAlert";
 
 import {
   Home,
@@ -40,6 +44,7 @@ function App() {
       </Routes>
       <Newsletter />
       <Footer />
+      <CookieAlert />
     </div>
   );
 }

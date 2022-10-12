@@ -31,9 +31,8 @@ export const AboutPage = () => {
               </h3>
               <div className="text-[12px] lg:text-2xl text-textNormal dark:text-white flex flex-col items-center gap-6 md:gap-2">
                 <p>
-                  We are a custom and proprietary software development company
-                  that builds innovative and secure digital solutions for
-                  companies, enterprises and startups.
+                  Being creative in problem solving is the foundation of
+                  developing unrivaled and cutting-edge software.
                 </p>
                 <br className="hidden lg:block" />
                 <div>
@@ -44,15 +43,18 @@ export const AboutPage = () => {
                   />
                 </div>
                 <p>
-                  Our team of consultants, UX experts and software developers
-                  converts an idea into reality.Being a leading software
-                  development company.
+                  And with a strong belief that creativity is seeing the unseen
+                  in the seen, we founded Cuesoft to assist professionals,
+                  startups, and businesses without access to world-class
+                  technological products. By developing affordable software
+                  solutions that would put them on a global scale and beat their
+                  competitors.
                 </p>
                 <br className="hidden lg:block" />
                 <p>
-                  We understand that every enterprise has a different software
-                  requirement and therefore, we provide custom software
-                  development services to meet their expectations.
+                  So, after two years of pursuing this vision, we launched our
+                  first flagship product, Cueprise with the goal of simplifying
+                  and optimizing business operations.
                 </p>
                 <br className="hidden lg:block" />
                 <div>
@@ -63,17 +65,10 @@ export const AboutPage = () => {
                   />
                 </div>
                 <p>
-                  Our values are the guiding principles upon which Cuesoft was
-                  founded and how we strive to conduct our business on a daily
-                  basis. Values establish our view of the world as we shape the
-                  future. They determine how we treat each other.
-                </p>
-                <br className="hidden lg:block" />
-                <p>
-                  Our drive for exceptional service delivery is built on the
-                  belief that we are nothing if you are not satisfied with us.
-                  Our passion for helping you achieve your goals, no matter
-                  what, is what truly differentiates us from our competitors.
+                  And this we did while serving businesses all over the world
+                  with resource planning, payroll management, tracking supply
+                  chains and inventories, while making it easy for their
+                  customers to place orders.
                 </p>
                 <div>
                   <img
@@ -118,10 +113,10 @@ export const AboutPage = () => {
               Our Incredible Team
             </h4>
             <p className="text-[12px] lg:text-2xl text-textNormal dark:text-white">
-              We build effective, scalable development teams fitting your
-              project’s needs. Our experienced developers are ready to join your
-              project. We support their growth and keep them motivated so they
-              can take up the most challenging jobs.
+              We are a team of Leading Consultants, Brilliant Solution
+              Engineers, UX Experts, Software Developers, and Whizkids who share
+              the values of providing custom software development services to
+              every enterprise while growing their careers.
             </p>
           </div>
 

@@ -30,7 +30,7 @@ export const Footer = () => {
             </Link>
           </div>
           <h3 className="text-[24px] lg:text-4xl mb-4 lg:mb-8 font-bold">
-            Let's get started
+            Ready to get started ?
           </h3>
           <p className="text-[12px] lg:text-sm mb-8">
             Let us show you what responsive, reliable and accountable software

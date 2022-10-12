@@ -19,11 +19,9 @@ export const ServicesPage = () => {
               OUR SERVICES
             </h2>
             <p className="text-[#98A2B3] text-[12px] md:text-[16px] lg:text-[20px] xl:text-[24px] w-[85%] mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sit
-              sed faucibus et sed enim accumsan, ultrices. Porta tincidunt
-              malesuada ullamcorper tellus sed viverra. Porttitor nam nunc
-              elementum massa. Sagittis quis pulvinar etiam amet quam libero
-              velit.
+              Leading brands trust us to level-up their businesses and beat
+              their competition through our real world process of creating
+              intelligent and custom-built software.
             </p>
           </div>
         </div>
@@ -45,11 +43,10 @@ export const ServicesPage = () => {
             </div>
             <div className="text-center w-[80%]">
               <span className="text-[#808089] text-[12px] md:text-[16px]">
-                Cuesoft does not just help you curate your website to
-                perfection, we stay on top of the latest standards to ensure
-                that your website remains current and relevant as well as
-                provide you with updates and maintenance as new devices and
-                browsers change how sites are accessed and displayed.
+                Having prided ourselves in transforming the most audacious
+                concepts into flawless web apps over the years. And with
+                multiple projects tied to our belt, we go beyond just creating
+                web pages. We create business solutions.
               </span>
             </div>
             <div className="absolute -bottom-6">
@@ -72,10 +69,10 @@ export const ServicesPage = () => {
             </div>
             <div className="text-center w-[80%]">
               <span className="text-[#808089] text-[12px] md:text-[16px]">
-                Enterprises are always looking for the ways to bring automation
-                in the work process and services to improve productivity and
-                performance at a time, and with the aid of properly tailored
-                software, that can be achieved to great effect..
+                Being a software development company with well-tested techniques
+                for solving custom software problems in various sectors for
+                several years, you can trust us to do it again with your
+                business.
               </span>
             </div>
             <div className="absolute -bottom-6">
@@ -98,12 +95,10 @@ export const ServicesPage = () => {
             </div>
             <div className="text-center w-[80%]">
               <span className="text-[#808089] text-[12px] md:text-[16px]">
-                With the exploding popularity of smartphones and tablets, mobile
-                application development is becoming an increasingly popular
-                medium of software creation. This prolific and growing industry
-                is attracting businesses from every corner of the marketplace
-                looking for returns, and we at Cuesoft are willing, able and
-                ready to bring your perfect mobile app to life.
+                With numerous years of experience with custom mobile development
+                across different industries, we have prided ourselves in
+                understanding your customers’ needs and pain points while
+                designing a product that perfectly fits your business goals.
               </span>
             </div>
             <div className="absolute -bottom-6">
