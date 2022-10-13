@@ -45,10 +45,10 @@ export const CookieAlert = () => {
     <>
       {renderCookieConsent && (
         <div className="sticky bottom-10">
-          <div className="my-container bg-gray-100 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left px-6 py-8">
+          <div className="my-container bg-gray-100 dark:bg-[#0D0D0D] flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left px-6 py-8">
             <img src={Cookie} alt="cookie" />
 
-            <p className="text-textNormal md:w-[50%]">
+            <p className="text-textNormal dark:text-white md:w-[50%]">
               We use third-party <span className="underline">cookies</span> to
               provide you the best user experience and for performance
               analytics.
