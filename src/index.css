@@ -12,11 +12,11 @@
 }
 
 .a-btn {
-  @apply py-3 px-6 text-white border-2 border-transparent bg-brightRed dark:bg-darkModeRed rounded-[10px] hover:bg-transparent hover:border-2 hover:border-brightRed hover:text-black dark:hover:bg-red-700 text-center font-semibold;
+  @apply py-3 px-6 text-white border-2 border-transparent bg-brightRed dark:bg-darkModeRed rounded-[10px] hover:bg-transparent hover:border-2 hover:border-brightRed hover:text-black dark:hover:bg-transparent dark:hover:text-white text-center font-semibold;
 }
 
 .a-btn-inv {
-  @apply py-3 px-6 text-black border-2 border-brightRed dark:bg-darkModeRed rounded-[10px] hover:bg-brightRed dark:hover:bg-red-700 hover:text-white hover:border-white text-center font-semibold;
+  @apply py-3 px-6 text-black border-2 border-brightRed dark:bg-transparent dark:text-white rounded-[10px] hover:bg-brightRed dark:hover:bg-darkModeRed dark:hover:border-transparent hover:text-white hover:border-white text-center font-semibold;
 }
 
 /* Dark-mode Toggle Start */
