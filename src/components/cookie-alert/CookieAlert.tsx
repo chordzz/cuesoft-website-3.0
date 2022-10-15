@@ -14,7 +14,6 @@ export const CookieAlert = () => {
       const timerId = setTimeout(() => setRenderCookieConsent(true), 2000);
       return () => clearTimeout(timerId);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleClick = (choice: string) => {
