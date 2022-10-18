@@ -61,7 +61,7 @@ export const Home = () => {
   const [topStories, setTopStories] = useState<Array<any>>([]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
 
     fetch(
       "https://api.rss2json.com/v1/api.json?rss_url=https://blog.cuesoft.io/feed"
@@ -762,7 +762,7 @@ export const Home = () => {
       </section>
       {/* <Footer /> */}
 
-      <section>
+      <section id="blog">
         <div className="my-container ">
           <h3 className="text-brightRed text-center dark:text-darkModeRed text-[24px] lg:text-[40px] font-bold mb-4 mt-16 md:mb-8">
             Latest updates and posts from our Blog
@@ -775,8 +775,12 @@ export const Home = () => {
                   {topStories
                     .map((story) => (
                       <div className="rounded-lg bg-[#F5F5FA] dark:bg-[#151111] w-[100%] md:w-[30%] p-8">
-                        <img src={story.thumbnail} alt={story.title} />
-                        <div className="text-left mt-4 flex flex-col gap-2">
+                        <img
+                          src={story.thumbnail}
+                          alt={story.title}
+                          className="h-[50%] w-[100%]"
+                        />
+                        <div className="text-left mt-4 flex flex-col h-[50%] justify-between">
                           <h6 className="text-brightRed text-[12px] md:text-[16px] lg:text-[20px] font-bold">
                             {story.title}
                           </h6>
