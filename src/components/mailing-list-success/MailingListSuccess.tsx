@@ -2,9 +2,13 @@ import React from "react";
 import CheckCircle from "../../assets/icons/check-circle.svg";
 import CloseCircle from "../../assets/icons/close-circle.svg";
 
-export const MailingListSuccess = () => {
+type myProps = {
+  handleClose: any;
+};
+
+export const MailingListSuccess = ({ handleClose }: myProps) => {
   return (
-    <div className="my-container">
+    <div className="">
       <div className="flex flex-row items-center justify-between shadow-lg px-4 py-7 md:py-6 md:px-9">
         <img
           src={CheckCircle}
@@ -25,7 +29,8 @@ export const MailingListSuccess = () => {
         <img
           src={CloseCircle}
           alt="close icon"
-          className="hidden md:block w-[36px] h-[36px]"
+          className="hidden md:block w-[36px] h-[36px] cursor-pointer"
+          onClick={handleClose}
         />
       </div>
       <div className="flex">
