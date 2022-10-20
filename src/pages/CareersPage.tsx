@@ -7,59 +7,113 @@ import { ConfusedBusinessman } from "../components/custom-svgs/ConfusedBusinessm
 import ChevronDownVector from "../assets/icons/chevron-down-no-bg.svg";
 import FileUploadVector from "../assets/icons/file-upload.svg";
 
-import NextArrow from "../assets/nav-btn-icons/next.svg";
-import NextNextArrow from "../assets/nav-btn-icons/next-next.svg";
-import PrevArrow from "../assets/nav-btn-icons/prev.svg";
-import PrevPrevArrow from "../assets/nav-btn-icons/prev-prev.svg";
-
 import { roles } from "../components/career-role/openRolesData";
 import { CareerRole } from "../components/career-role/CareerRole";
 
-export const CareersPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+import { NextSvg } from "../components/career-role/NextSvg";
+import { ExtremeNextSvg } from "../components/career-role/ExtremeNextSvg";
+import { ExtremePrevSvg } from "../components/career-role/ExtremePrevSvg";
+import { PrevSvg } from "../components/career-role/PrevSvg";
 
-  const [renderedRoles, setRenderedRoles] = useState(roles);
+export const CareersPage = () => {
+  const [allRoles, setAllRoles] = useState(roles);
+  const [renderedRoles, setRenderedRoles] = useState(allRoles);
   const [filter, setFilter] = useState("all");
+  const [pages, setPages] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [noPerPage] = useState(2);
+
+  const handlePagination = (mode: string) => {
+    if (mode === "prev") {
+      setCurrentPage((prevState) =>
+        prevState - 1 === 0 ? prevState : prevState - 1
+      );
+    }
+
+    if (mode === "next") {
+      setCurrentPage((prevState) =>
+        prevState + 1 > pages ? prevState : prevState + 1
+      );
+    }
+
+    if (mode === "extremeNext") {
+      setCurrentPage(pages);
+    }
+
+    if (mode === "extremePrev") {
+      setCurrentPage(1);
+    }
+
+    calculateRender();
+  };
+
+  const calculateRender = () => {
+    let startPointer = noPerPage * currentPage - noPerPage;
+    let endPointer = noPerPage * currentPage;
+
+    let renderArr = allRoles.slice(startPointer, endPointer);
+    setRenderedRoles(renderArr);
+  };
 
   const handleClick = (item: string) => {
     switch (item) {
       case "all":
-        setRenderedRoles(roles.filter((role) => role).map((role) => role));
+        setAllRoles(roles.filter((role) => role).map((role) => role));
         setFilter("all");
+        setCurrentPage(1);
         break;
       case "sales":
-        setRenderedRoles(
+        setAllRoles(
           roles.filter((role) => role.type === "sales").map((role) => role)
         );
         setFilter("sales");
+        setCurrentPage(1);
         break;
       case "design":
-        setRenderedRoles(
+        setAllRoles(
           roles.filter((role) => role.type === "design").map((role) => role)
         );
         setFilter("design");
+        setCurrentPage(1);
         break;
       case "engineering":
-        setRenderedRoles(
+        setAllRoles(
           roles
             .filter((role) => role.type === "engineering")
             .map((role) => role)
         );
         setFilter("engineering");
+        setCurrentPage(1);
         break;
       case "others":
-        setRenderedRoles(
+        setAllRoles(
           roles.filter((role) => role.type === "others").map((role) => role)
         );
         setFilter("others");
+        setCurrentPage(1);
         break;
 
       default:
         break;
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    setPages(Math.ceil(allRoles.length / noPerPage));
+    calculateRender();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allRoles, pages]);
+
+  useEffect(() => {
+    calculateRender();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentPage]);
 
   return (
     <div>
@@ -187,13 +241,30 @@ export const CareersPage = () => {
           </div>
 
           <div className="flex items-center justify-center mt-8 gap-4">
-            <img src={PrevArrow} alt="next" />
-            <img src={PrevPrevArrow} alt="next" />
-            <div>
-              <span className="underline text-brightRed font-bold">1</span> of 4
+            <div onClick={() => handlePagination("extremePrev")}>
+              <ExtremePrevSvg active={currentPage === 1 ? false : true} />
             </div>
-            <img src={NextArrow} alt="next" />
-            <img src={NextNextArrow} alt="next" />
+
+            <div onClick={() => handlePagination("prev")}>
+              <PrevSvg active={currentPage - 1 > 0 ? true : false} />
+            </div>
+
+            <div>
+              <span className="underline text-brightRed font-bold">
+                {pages > 0 ? currentPage : 0}
+              </span>{" "}
+              of {pages}
+            </div>
+
+            <div onClick={() => handlePagination("next")}>
+              <NextSvg active={currentPage + 1 <= pages ? true : false} />
+            </div>
+
+            <div onClick={() => handlePagination("extremeNext")}>
+              <ExtremeNextSvg
+                active={currentPage === pages || pages === 0 ? false : true}
+              />
+            </div>
           </div>
         </div>
       </section>
