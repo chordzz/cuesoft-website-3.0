@@ -1,0 +1,153 @@
+{
+    "navBar": {
+        "about": "About",
+        "services": "Services",
+        "product": "Product",
+        "contact": "Contact",
+        "btnText": "Start a Project"
+    },
+    "homepage": {
+        "heroSectionText": {
+            "header": {
+                "part1": "Re-Imagine ",
+                "part2": "Software",
+                "part3": "Modernizing ",
+                "part4": "Businesses"
+            },
+            "paragraphText": "Through our competent process of creating intelligent, custom-built software, we help forward-thinking organizations transform, scale, and achieve a competitive edge.",
+            "reviews": {
+                "main": "Client's Review",
+                "secondary": "5k reviews",
+                "rating": "4.8"
+            }
+        },
+        "processSection": {
+            "title": "How Cuesoft Does It",
+            "child1": {
+                "title": "Plan",
+                "body": " Book a free discovery session with our solutions engineer and get your needs defined. After which we will work closely with you to create a brilliant game plan."
+            },
+            "child2": {
+                "title": "Build",
+                "body": "The steps and strategies are designed in this phase. While the software developers transform the specifications and prototypes of your project into a working product."
+            },
+            "child3": {
+                "title": "Launch",
+                "body": "The beta live project gets completed at this stage and then launched."
+            },
+            "child4": {
+                "title": "Iterate",
+                "body": "This is the testing phase. Your product is now monitored for bugs and observed for necessary upgrades."
+            }
+            
+        },
+        "whyCuesoft": {
+            "title": "Why Cuesoft",
+            "child1": {
+                "title": "You Go From Just An Idea To A Working Product.",
+                "body": "With your idea and you booking a discovery call in seconds, you have our world-class team develop that idea into a software tailored for your business after a detailed study of your brand."
+            },
+            "child2": {
+                "title": "Increased business efficiency",
+                "body": "You are eased of the stress of managing a software development team as you have us building the best software solution targeting your business objectives while your company thrives."
+            },
+            "child3": {
+                "title": "We are an excellent team",
+                "body": "We hire the most ingenious and savvy software developers, UI/UX designers, Product Managers and software consultants on our team. We would excite the most relevant and innovative product out of your abstract brainchild."
+            },
+            "child4": {
+                "title": "Our Products speaks volume",
+                "body": "Having worked with several brands and with numerous projects completed, we have a solid testimonial of solving real world problems."
+            }
+        },
+        "toolsSection": {
+            "title": "Our Tools",
+            "subTitle": "We make use of awesome technologies to build advanced enterprise systems,challenging and innovative products. We are proud of our technical skills",
+            "FE": {
+                "title": "Frontend Development"
+            },
+            "BE": {
+                "title": "Backend Development"
+            },
+            "mobile": {
+                "title": "Mobile Development"
+            }
+        },
+        "servicesSection": {
+            "title": "Our Services",
+            "mobile": {
+                "title": "Mobile App Development",
+                "body": "Having worked with several brands and with numerous projects completed, we have a solid testimonial of solving real world problems."
+            },
+            "web": {
+                "title": "Web Development",
+                "body": "Over the years, we've taken pride in transforming the most audacious ideas into flawless websites. We go beyond just creating web pages, we design business solutions."
+            },
+            "enterprise": {
+                "title": "Enterprise Development",
+                "body": "Delight your end users with handcrafted easy to use software"
+            }
+        },
+        "flagshipProduct": {
+            "title": "This is our flagship product",
+            "subtitle": "Cueprise",
+            "body": "After two years of pursuing this vision, we launched our first flagship product, Cueprise with the goal of simplifying and optimizing business operations. And this we do while serving businesses all over the world with resource planning, payroll management, tracking supply chains and inventories, while making it easy for their customers to place orders.",
+            "btnText": "Learn More"
+        },
+        "reviews": {
+            "title": "What our customers are saying about us?",
+            "subtitle": "This is what some of our customers are saying about us.",
+            "review1": {
+                "name": "Jeremiah Adeife",
+                "position": "CEO, Fixtech",
+                "body": "Choosing to work with Cuesoft is absolutely one of the best business decisions we made this year. Not only are their services affordable, they wholesomely captured our idea for the software product and blew our minds at Fixtech."
+            },
+            "review2": {
+                "name": "Jide Badmus",
+                "position": "Co-founder and CEO, Mide touch",
+                "body": "Quite innovative and brilliant. Cuesoft helped us get the modern outlook we needed."
+            }
+        },
+        "blog": {
+            "title": "Latest updates and posts from our blog",
+            "btnText": "Read Post",
+            "linkToBlog": "See all blog articles"
+        }
+    },
+    "newsletter": {
+        "title": "Subscribe to our Newsletter",
+        "subtitle": "Join our mailing list to receive weekly emails on our offers, company news and other helpful content.",
+        "btnText": "Subscribe to Mail",
+        "emailPlaceholder": "Your e-mail address"
+    },
+    "cookie": {
+        "paragraph": "We use third-party ", 
+        "decor": "cookies",
+        "paragraph2": " to provide you the best user experience and for performance analytics.",
+        "accBtn": "Accept",
+        "denyBtn": "Deny"
+    },
+    "footer": {
+        "call-to-action": "Ready to get started ?",
+        "sell-point": "Let us show you what responsive, reliable and accountable software support looks like in today’s world, as well as give you a glimpse of the future.",
+        "company": "Company",
+        "about": "About",
+        "careers": "Careers",
+        "contact": "Contact",
+        "investors": "Investors",
+        "community": "Community",
+        "blog": "Blog",
+        "resources": "Resources",
+        "terms": "Terms",
+        "privacy-policy": "Privacy Policy",
+        "faq": "FAQ",
+        "partners": "partners",
+        "phoneUS": "US Phone",
+        "phoneNG": "Nigeria Phone",
+        "mail": "Mail",
+        "rights": "All rights reserved.",
+        "copyright": "Cuesoft Inc. is a Delaware Company registered in the US with a Subsidiary in Nigeria." 
+        
+    }
+}
+  

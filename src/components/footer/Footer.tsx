@@ -11,8 +11,13 @@ import InstagramIcon from "../../assets/icons/instagram-icon.svg";
 import CuesoftLogoDark from "../../assets/logos/cuesoft-logo-dark.svg";
 import { TypeformButton } from "../typeform-button/TypeformButton";
 
+import { useTranslation } from "react-i18next";
+
 export const Footer = () => {
   const { theme } = useContext(ThemeContext);
+
+  const { t } = useTranslation();
+
   return (
     <footer
       data-testid="footer"
@@ -30,12 +35,10 @@ export const Footer = () => {
             </Link>
           </div>
           <h3 className="text-[24px] lg:text-4xl mb-4 lg:mb-8 font-bold">
-            Ready to get started ?
+            <>{t("footer.call-to-action")}</>
           </h3>
           <p className="text-[12px] lg:text-sm mb-8">
-            Let us show you what responsive, reliable and accountable software
-            support looks like in today’s world, as well as give you a glimpse
-            of the future.
+            <>{t("footer.sell-point")}</>
           </p>
           <TypeformButton />
         </div>
@@ -52,33 +55,43 @@ export const Footer = () => {
           <div>
             <ul className="flex flex-col gap-3 md:gap-6 ">
               <li className="text-brightRed font-bold dark:text-darkModeRed">
-                Company
+                <>{t("footer.company")}</>
               </li>
               <Link to="/about">
-                <li>About</li>
+                <li>
+                  <>{t("footer.about")}</>
+                </li>
               </Link>
               <Link to="/careers">
-                <li>Careers</li>
+                <li>
+                  <>{t("footer.company")}</>
+                </li>
               </Link>
               <Link to="/contact">
-                <li>Contact</li>
+                <li>
+                  <>{t("footer.contact")}</>
+                </li>
               </Link>
               <Link to="/investors">
-                <li>Investors</li>
+                <li>
+                  <>{t("footer.investors")}</>
+                </li>
               </Link>
             </ul>
           </div>
           <div>
             <ul className="flex flex-col gap-3 md:gap-6 justify-end">
               <li className="text-brightRed font-bold dark:text-darkModeRed">
-                Community
+                <>{t("footer.community")}</>
               </li>
               <a
                 href="https://blog.cuesoft.io/"
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <li>Blog</li>
+                <li>
+                  <>{t("footer.blog")}</>
+                </li>
               </a>
               <a
                 href="https://facebook.com/cuesoft"
@@ -124,7 +137,7 @@ export const Footer = () => {
           <div>
             <ul className="flex flex-col gap-3 md:gap-6 ">
               <li className="text-brightRed font-bold dark:text-darkModeRed">
-                Resources
+                <>{t("footer.resources")}</>
               </li>
               <a
                 href="https://terms.cuesoft.io/"
@@ -138,11 +151,17 @@ export const Footer = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <li>Privacy Policy</li>
+                <li>
+                  <>{t("footer.privacy-policy")}</>
+                </li>
               </a>
-              <li>FAQ</li>
+              <li>
+                <>{t("footer.faq")}</>
+              </li>
               <Link to="/partners">
-                <li>Partners</li>
+                <li>
+                  <>{t("footer.partners")}</>
+                </li>
               </Link>
             </ul>
           </div>
@@ -157,18 +176,21 @@ export const Footer = () => {
             Nigeria
           </p>
 
-          <span className="text-[12px] lg:text-sm">US Phone: +13025724020</span>
           <span className="text-[12px] lg:text-sm">
-            Nigeria Phone: +234 902 650 9478
+            <>{t("footer.phoneUS")}</>: +13025724020
           </span>
-          <span className="text-[12px] lg:text-sm">Mail: hello@cuesoft.io</span>
+          <span className="text-[12px] lg:text-sm">
+            <>{t("footer.phoneNG")}</>: +234 902 650 9478
+          </span>
+          <span className="text-[12px] lg:text-sm">
+            <>{t("footer.mail")}</>: hello@cuesoft.io
+          </span>
         </div>
       </div>
       <div className="my-container pt-6 pb-16 text-center">
         <span className="text-[12px] lg:text-lg">
-          © Cuesoft 2022. All rights reserved.
-          <br className="md:hidden" /> Cuesoft Inc. is a Delaware Company
-          registered in the US with a Subsidiary in Nigeria.
+          © Cuesoft 2022. <>{t("footer.rights")}</>
+          <br className="md:hidden" /> <>{t("footer.copyright")}</>
         </span>
       </div>
     </footer>

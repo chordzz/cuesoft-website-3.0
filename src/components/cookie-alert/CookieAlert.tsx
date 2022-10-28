@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Cookie from "../../assets/imgs/cookie.svg";
+import { useTranslation } from "react-i18next";
 
 export const CookieAlert = () => {
   const [renderCookieConsent, setRenderCookieConsent] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const cookieConsent = localStorage.getItem("cookie-consent");
@@ -48,9 +50,16 @@ export const CookieAlert = () => {
             <img src={Cookie} alt="cookie" />
 
             <p className="text-textNormal dark:text-white md:w-[50%]">
-              We use third-party <span className="underline">cookies</span> to
+              {/* We use third-party <span className="underline">cookies</span> to
               provide you the best user experience and for performance
-              analytics.
+              analytics. */}
+              <>
+                {t("cookie.paragraph")}
+                <span className="underline">
+                  <>{t("cookie.decor")}</>
+                </span>
+                {t("cookie.paragraph2")}
+              </>
             </p>
 
             <div className="md:w-[40%] flex  md:flex-row justify-between gap-6">
@@ -58,14 +67,14 @@ export const CookieAlert = () => {
                 className="a-btn-inv md:w-[40%]"
                 onClick={() => handleClick("deny")}
               >
-                Deny
+                <>{t("cookie.denyBtn")}</>
               </button>
 
               <button
                 className="a-btn md:w-[40%]"
                 onClick={() => handleClick("accept")}
               >
-                Accept
+                <>{t("cookie.accBtn")}</>
               </button>
             </div>
           </div>

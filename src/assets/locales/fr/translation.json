@@ -1,0 +1,153 @@
+{
+    "navBar": {
+        "about": "À propos de",
+        "services": "Prestations de service",
+        "product": "Produit",
+        "contact": "Contact",
+        "btnText": "Démarrer un projet"
+    },
+    "homepage": {
+        "heroSectionText": {
+            "header": {
+                "part1": "Ré-imaginer ",
+                "part2": "Logiciel",
+                "part3": "Modernisateur ",
+                "part4": "Entreprises"
+            },
+            "paragraphText": "Grâce à notre processus compétent de création de logiciels intelligents et personnalisés, nous aidons les organisations avant-gardistes à se transformer, à évoluer et à obtenir un avantage concurrentiel.",
+            "reviews": {
+                "main": "Avis du client",
+                "secondary": "5000 avis",
+                "rating": "4.8"
+            }
+        },
+        "processSection": {
+            "title": "Comment Cuesoft le fait",
+            "child1": {
+                "title": "Planifier",
+                "body": "Réservez une séance de découverte gratuite avec notre ingénieur solutions et définissez vos besoins. Après quoi, nous travaillerons en étroite collaboration avec vous pour créer un plan de match brillant."
+            },
+            "child2": {
+                "title": "Construire",
+                "body": "Les étapes et les stratégies sont conçues dans cette phase. Tandis que les développeurs de logiciels transforment les spécifications et les prototypes de votre projet en un produit fonctionnel."
+            },
+            "child3": {
+                "title": "Lancement",
+                "body": "Le projet bêta en direct est terminé à ce stade, puis lancé."
+            },
+            "child4": {
+                "title": "Répéter",
+                "body": "C'est la phase de test. Votre produit est maintenant surveillé pour les bogues et observé pour les mises à niveau nécessaires."
+            }
+            
+        },
+        "whyCuesoft": {
+            "title": "Pourquoi Cuesoft",
+            "child1": {
+                "title": "Vous passez d'une simple idée à un produit fonctionnel.",
+                "body": "Avec votre idée et vous réservez un appel de découverte en quelques secondes, vous demandez à notre équipe de classe mondiale de développer cette idée en un logiciel adapté à votre entreprise après une étude détaillée de votre marque."
+            },
+            "child2": {
+                "title": "Efficacité commerciale accrue",
+                "body": "Vous êtes soulagé du stress lié à la gestion d'une équipe de développement de logiciels car vous nous faites construire la meilleure solution logicielle ciblant vos objectifs commerciaux pendant que votre entreprise prospère."
+            },
+            "child3": {
+                "title": "Nous sommes une excellente équipe",
+                "body": "Nous embauchons les développeurs de logiciels, les concepteurs UI/UX, les chefs de produit et les consultants en logiciels les plus ingénieux et les plus avisés de notre équipe. Nous exciterions le produit le plus pertinent et le plus innovant de votre idée abstraite."
+            },
+            "child4": {
+                "title": "Nos produits en disent long",
+                "body": "Ayant travaillé avec plusieurs marques et avec de nombreux projets achevés, nous avons un solide témoignage de résolution de problèmes réels."
+            }
+        },
+        "toolsSection": {
+            "title": "Nos outils",
+            "subTitle": "Nous utilisons des technologies impressionnantes pour créer des systèmes d'entreprise avancés, des produits stimulants et innovants. Nous sommes fiers de nos compétences techniques",
+            "FE": {
+                "title": "Développement frontal"
+            },
+            "BE": {
+                "title": "Développement back-end"
+            },
+            "mobile": {
+                "title": "Développement mobile"
+            }
+        },
+        "servicesSection": {
+            "title": "Nos services",
+            "mobile": {
+                "title": "Développement d'applications mobiles",
+                "body": "Ayant travaillé avec plusieurs marques et avec de nombreux projets achevés, nous avons un solide témoignage de résolution de problèmes réels."
+            },
+            "web": {
+                "title": "Développement web",
+                "body": "Au fil des ans, nous sommes fiers de transformer les idées les plus audacieuses en sites Web impeccables. Nous allons au-delà de la simple création de pages Web, nous concevons des solutions commerciales."
+            },
+            "enterprise": {
+                "title": "Développement d'entreprise",
+                "body": "Faites plaisir à vos utilisateurs finaux avec un logiciel artisanal facile à utiliser"
+            }
+        },
+        "flagshipProduct": {
+            "title": "C'est notre produit phare",
+            "subtitle": "Cueprise",
+            "body": "Après deux ans de poursuite de cette vision, nous avons lancé notre premier produit phare, Cueprise dans le but de simplifier et d'optimiser les opérations commerciales. Et cela, nous le faisons tout en servant les entreprises du monde entier avec la planification des ressources, la gestion de la paie, le suivi des chaînes d'approvisionnement et des stocks, tout en permettant à leurs clients de passer facilement des commandes.",
+            "btnText": "Apprendre encore plus"
+        },
+        "reviews": {
+            "title": "Que disent nos clients de nous ?",
+            "subtitle": "C'est ce que certains de nos clients disent de nous.",
+            "review1": {
+                "name": "Jeremiah Adeife",
+                "position": "CEO, Fixtech",
+                "body": "Choisir de travailler avec Cuesoft est absolument l'une des meilleures décisions commerciales que nous ayons prises cette année. Non seulement leurs services sont abordables, mais ils ont parfaitement capturé notre idée du produit logiciel et nous ont époustouflés chez Fixtech."
+            },
+            "review2": {
+                "name": "Jide Badmus",
+                "position": "Co-founder and CEO, Mide touch",
+                "body": "Assez innovant et brillant. Cuesoft nous a aidés à obtenir les perspectives modernes dont nous avions besoin."
+            }
+        },
+        "blog": {
+            "title": "Dernières mises à jour et articles de notre blog",
+            "btnText": "Lire le message",
+            "linkToBlog": "Voir tous les articles du blog"
+        }
+    },
+    "newsletter": {
+        "title": "Abonnez-vous à notre newsletter",
+        "subtitle": "Rejoignez notre liste de diffusion pour recevoir des e-mails hebdomadaires sur nos offres, les nouvelles de l'entreprise et d'autres contenus utiles.",
+        "btnText": "Abonnez-vous au courrier",
+        "emailPlaceholder": "Votre adresse e-mail"
+    },
+    "cookie": {
+        "paragraph": "Nous utilisons des tiers ", 
+        "decor": "paramètres des cookies",
+        "paragraph2": " pour vous offrir la meilleure expérience utilisateur et pour l'analyse des performances.",
+        "accBtn": "Accepter",
+        "denyBtn": "Refuser"
+    },
+    "footer": {
+        "call-to-action": "Prêt à commencer ?",
+        "sell-point": "Laissez-nous vous montrer à quoi ressemble un support logiciel réactif, fiable et responsable dans le monde d'aujourd'hui, et vous donner un aperçu de l'avenir.",
+        "company": "Compagnie",
+        "about": "À propos de",
+        "careers": "Carrières",
+        "contact": "Contact",
+        "investors": "Investisseurs",
+        "community": "Communauté",
+        "blog": "Blog",
+        "resources": "Ressources",
+        "terms": "Conditions",
+        "privacy-policy": "Politique de confidentialité",
+        "faq": "FAQ",
+        "partners": "les partenaires",
+        "phoneUS": "Téléphone américain",
+        "phoneNG": "Téléphone nigérian",
+        "mail": "Courrier",
+        "rights": "Tous les droits sont réservés.",
+        "copyright": "Cuesoft Inc. est une société du Delaware enregistrée aux États-Unis avec une filiale au Nigeria." 
+        
+    }
+}
+  

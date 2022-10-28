@@ -51,7 +51,7 @@ export const CustomInvestorsSlider = () => {
     if (sliderContent[activePage] && sliderContent[activePage - 1]) {
       setActiveLeftBtn(true);
     }
-    // console.log(activePage)
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activePage]);
 

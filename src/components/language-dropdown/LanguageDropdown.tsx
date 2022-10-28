@@ -1,40 +1,48 @@
-import React, { useState } from "react";
-import USA from "../../assets/flags/usa.svg";
+import React, { useEffect, useState } from "react";
+
+import "flag-icons";
+import i18n from "../../i18n";
 
 export const LanguageDropdown = () => {
   const [toggleDropdown, setToggleDropdown] = useState<boolean>(false);
-  const [currLanguage, setCurrLanguage] = useState<any>({
-    language: "EN",
-    flag: USA
-  });
+  const [currLanguage, setCurrLanguage] = useState<any>({});
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem("i18nextLng");
+
+    languages.forEach((item) => {
+      if (item.language.toLowerCase() === savedLang) setCurrLanguage(item);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const languages = [
     {
       language: "EN",
-      flag: USA
+      country_code: "gb"
     },
 
     {
       language: "FR",
-      flag: USA
-    },
-
-    {
-      language: "ESP",
-      flag: USA
+      country_code: "fr"
     }
   ];
+
+  const changeLanguage = (ln: string) => {
+    i18n.changeLanguage(ln);
+  };
 
   const handleDropdownClick = () => {
     setToggleDropdown(!toggleDropdown);
   };
 
   const handleLanguageSelectClick = (item: {
-    flag: string;
+    country_code: string;
     language: string;
   }) => {
     setToggleDropdown(!toggleDropdown);
     setCurrLanguage(item);
+    changeLanguage(item.language.toLowerCase());
   };
 
   return (
@@ -44,7 +52,7 @@ export const LanguageDropdown = () => {
         onClick={handleDropdownClick}
       >
         <div className="flex">
-          <img src={currLanguage.flag} alt="U.S flag" className="mr-2" />
+          <span className={`fi fi-${currLanguage.country_code} mr-2`}></span>
           <span>{currLanguage.language}</span>
         </div>
         <svg
@@ -73,7 +81,7 @@ export const LanguageDropdown = () => {
             className="px-4 py-2 text-sm text-textNormal  flex hover:bg-gray-200 dark:hover:bg-toggleBtnDark dark:text-white hover:font-semibold"
             onClick={() => handleLanguageSelectClick(item)}
           >
-            <img src={item.flag} alt="U.S flag" className="mr-2" />
+            <span className={`fi fi-${item.country_code} mr-2`}></span>
             <span className="">{item.language}</span>
           </div>
         ))}

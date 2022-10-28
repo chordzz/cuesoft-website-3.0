@@ -49,8 +49,8 @@
     ]
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json}": "eslint --cache --fix",
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,html,md}": "prettier --write"
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "src/**/*.{js,jsx,ts,tsx,css,scss,html,md}": "prettier --write"
   },
   "browserslist": {
     "production": [
@@ -72,9 +72,14 @@
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "eslint-config-prettier": "^8.5.0",
+    "flag-icons": "^6.6.6",
+    "i18next": "^22.0.2",
+    "i18next-browser-languagedetector": "^6.1.8",
+    "i18next-http-backend": "^2.0.0",
     "node-polyfill-webpack-plugin": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.0.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "setimmediate": "^1.0.5",

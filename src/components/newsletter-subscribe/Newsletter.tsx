@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React, { useEffect, useState } from "react";
 import MessageSent from "../../assets/imgs/message-sent.svg";
 import { MailingListSuccess } from "../mailing-list-success/MailingListSuccess";
@@ -47,11 +48,10 @@ export const Newsletter = () => {
         </div>
         <div className="lg:w-2/3 lg:text-left lg:pl-20">
           <h3 className="text-brightRed dark:text-darkModeRed text-[24px] lg:text-[40px] font-bold ">
-            Subscribe to our Newsletter
+            <>{t("newsletter.title")}</>
           </h3>
           <p className="mb-4 text-textNormal text-[12px] lg:text-2xl dark:text-white">
-            Join our mailing list to receive weekly emails on our offers,
-            company news and other helpful content.
+            <>{t("newsletter.subtitle")}</>
           </p>
           <div id="mc_embed_signup">
             <form
@@ -63,7 +63,7 @@ export const Newsletter = () => {
             >
               <input
                 type="email"
-                placeholder="Your e-mail address"
+                placeholder={t("newsletter.emailPlaceholder")}
                 className="lg:w-[60%] bg-[#FBFCFD] border border-[#132295]/[.1] py-3 px-8 rounded-[4px] dark:text-white dark:bg-[#161616] required email mc-field-group"
                 name="EMAIL"
                 id="mce-EMAIL"
@@ -90,7 +90,7 @@ export const Newsletter = () => {
                 id="mc-embedded-subscribe"
                 className="a-btn mx-auto w-full lg:ml-8 text-[13px] lg:w-[40%] lg:text-[17px] "
               >
-                Subscribe to Mail
+                <>{t("newsletter.btnText")}</>
               </button>
             </form>
           </div>

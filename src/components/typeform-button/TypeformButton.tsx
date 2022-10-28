@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+
 export const TypeformButton = () => {
   const typeFormFunc = () => {
     var q,
@@ -17,6 +19,8 @@ export const TypeformButton = () => {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <button className="a-btn text-[13px] lg:w-[246px] lg:text-[17px]">
       <a
@@ -28,7 +32,7 @@ export const TypeformButton = () => {
         rel="noopener noreferrer"
         onClick={typeFormFunc}
       >
-        Start a Project
+        <>{t("navBar.btnText")}</>
       </a>
     </button>
   );

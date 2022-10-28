@@ -8,12 +8,16 @@ import Toggle from "../toggle/toggle";
 import { LanguageDropdown } from "../language-dropdown/LanguageDropdown";
 import { TypeformButton } from "../typeform-button/TypeformButton";
 
+import { useTranslation } from "react-i18next";
+
 const NavigationBar = () => {
   const { theme } = useContext(ThemeContext);
 
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(true);
   const [flex, setFlex] = useState(false);
+
+  const { t } = useTranslation();
 
   const handleClick = () => {
     setOpen(!open);
@@ -35,23 +39,23 @@ const NavigationBar = () => {
             </Link>
           </div>
 
-          <div className=" xl:w-[30%] hidden text-textNormal dark:text-white lg:flex md:justify-between space-x-6 ">
+          <div className=" xl:w-[40%] hidden text-textNormal dark:text-white lg:flex md:justify-between space-x-6 items-center">
             <Link to="/about">
               <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
-                About
+                <>{t("navBar.about")}</>
               </div>
             </Link>
             <Link to="/services">
               <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
-                Services
+                <>{t("navBar.services")}</>
               </div>
             </Link>
             <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
-              Product
+              <>{t("navBar.product")}</>
             </div>
             <Link to="/contact">
               <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
-                Contact
+                <>{t("navBar.contact")}</>
               </div>
             </Link>
           </div>
@@ -90,20 +94,20 @@ const NavigationBar = () => {
             >
               <Link to="/about">
                 <button onClick={handleClick} className="hover:text-blue-500">
-                  About
+                  <>{t("navBar.about")}</>
                 </button>
               </Link>
               <Link to="/services">
                 <button onClick={handleClick} className="hover:text-blue-500">
-                  Services
+                  <>{t("navBar.services")}</>
                 </button>
               </Link>
               <button onClick={handleClick} className="hover:text-blue-500">
-                Product
+                <>{t("navBar.product")}</>
               </button>
               <Link to="contact">
                 <button onClick={handleClick} className="hover:text-blue-500">
-                  Contact
+                  <>{t("navBar.contact")}</>
                 </button>
               </Link>
               <TypeformButton />
