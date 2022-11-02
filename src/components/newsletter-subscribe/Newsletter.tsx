@@ -1,5 +1,5 @@
-import { t } from "i18next";
 import React, { useEffect, useState } from "react";
+import { t } from "i18next";
 import MessageSent from "../../assets/imgs/message-sent.svg";
 import { MailingListSuccess } from "../mailing-list-success/MailingListSuccess";
 

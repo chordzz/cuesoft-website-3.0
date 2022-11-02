@@ -148,6 +148,156 @@
         "rights": "All rights reserved.",
         "copyright": "Cuesoft Inc. is a Delaware Company registered in the US with a Subsidiary in Nigeria." 
         
+    },
+    "aboutpage": {
+        "custom-slider": {
+            "vision": {
+                "header": "Our Vision",
+                "body": "Our company's mission is to use software and cloud computing to make enterprise software affordable and accessible to all types of businesses."
+            },
+            "mission": {
+                "header": "Our Mission",
+                "body": "Our mission is to help enterprises accelerate adoption of new technologies, untangle complex issues that always emerge during digital evolution, and orchestrate ongoing innovation."
+            }
+        },
+        "who-we-are": {
+            "header": "We are the Kubernetes for technical teams.",
+            "paragraph1": "Being creative in problem solving is the foundation of developing unrivaled and cutting-edge software.",
+            "paragraph2": "And with a strong belief that creativity is seeing the unseen in the seen, we founded Cuesoft to assist professionals, startups, and businesses without access to world-class technological products. By developing affordable software solutions that would put them on a global scale and beat their competitors.",
+            "paragraph3": "So, after two years of pursuing this vision, we launched our first flagship product, Cueprise with the goal of simplifying and optimizing business operations.",
+            "paragraph4": "And this we did while serving businesses all over the world with resource planning, payroll management, tracking supply chains and inventories, while making it easy for their customers to place orders."
+        },
+        "team": {
+            "header": "Our Incredible Team",
+            "subtitle": "We are a team of Leading Consultants, Brilliant Solution Engineers, UX Experts, Software Developers, and Whizkids who share the values of providing custom software development services to every enterprise while growing their careers."
+        },
+        "investors": {
+            "header": "Our Investors"
+        }
+    },
+    "servicespage": {
+        "heroSectionHeader": "OUR SERVICES",
+        "heroSectionText": "Leading brands trust us to level-up their businesses and beat their competition through our real world process of creating intelligent and custom-built software.",
+        "servicesSection": {
+            "btn-text": "Read More",
+            "web-dev": {
+                "header": "Web Development",
+                "paragraph": "Having prided ourselves in transforming the most audacious concepts into flawless web apps over the years. And with multiple projects tied to our belt, we go beyond just creating web pages. We create business solutions."
+            },
+            "enterprise-dev": {
+                "header": "Enterprise Development",
+                "paragraph": "Being a software development company with well-tested techniques for solving custom software problems in various sectors for several years, you can trust us to do it again with your business."
+            },
+            "mobile-dev": {
+                "header": "Mobile App Development",
+                "paragraph": "With numerous years of experience with custom mobile development across different industries, we have prided ourselves in understanding your customers’ needs and pain points while designing a product that perfectly fits your business goals."
+            }
+        },
+        "services-contact": {
+            "header": "Need any of these Services?",
+            "sub-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna rhoncus pulvinar arcu, a nascetur ullamcorper aliquam. Montes, lacus at nulla habitasse mattis. Semper aliquam sed aliquam.",
+            "btn-text": "Contact Us Today"
+        }
+
+    },
+    "contactpage": {
+        "hero-section": {
+            "address": {
+                "header": "ADDRESS",
+                "address-US": "8 The Green, Ste A, Dover, 19901, Delaware, United States",
+                "address-NG": "39 Alfred Rewane Road, Mulliner Towers, Ikoyi, 101233, Lagos, Nigeria"
+            },
+            "email": {
+                "header": "EMAIL",
+                "label": "Mail: ",
+                "address": "hello@cuesoft.io"
+            },
+            "phone-no": {
+                "header": "PHONE NUMBER",
+                "phone-US": "US Phone: ",
+                "phone-NG": "Nigeria Phone: "
+            }
+        },
+        "contact-us-form": {
+            "sub-header": "Let us work together",
+            "header": "Reach out to us",
+            "form-labels": {
+                "name": "Name",
+                "email": "Email",
+                "message": "Message"
+            },
+            "btn-text": "Contact Us"
+        }
+    },
+    "careerspage": {
+        "hero-section": {
+            "text-1": "Do you have what it takes",
+            "span-text": "Come ",
+            "text-2": "work with us"
+        },
+        "read-more-span": "Read More",
+        "open-roles-section": {
+            "header": {
+                "main": "Here are the open positions in",
+                "span": "Lagos, Nigeria"
+            },
+            "sub-headers": {
+                "all": "All",
+                "design": "Design",
+                "sales": "Sales",
+                "engineering": "Engineering",
+                "others": "Others"
+            },
+            "empty": "There are no roles available for this filter right now",
+            "of": "of"
+        },
+        "contact-form": {
+            "sub-header": "Let us work together",
+            "header": "Send us your CV",
+            "form-labels": {
+                "name": "Name",
+                "email": "Email",
+                "phone-number": "Phone Number",
+                "cv-upload": "Resume/Cv Upload",
+                "cv-upload-span": "Select or drag and drop multiple files",
+                "btn-text": "Submit"
+            },
+            "btn-text": "Contact Us"
+        }   
+    },
+    "investorspage": {
+        "hero-section": {
+            "text-1": "Why you should",
+            "text-2": "Invest with us"
+        },
+        "about-us": {
+            "header": "ABOUT US",
+            "read-more-span": "Read More"
+        },
+        "our-values": {
+            "header": "OUR VALUES"
+        },
+        "our-investors": {
+            "header": "OUR INVESTORS",
+            "children": {
+                "child-1": {
+                    "post": "CEO Amazon and Co"
+                }
+            }
+        }
+    },
+    "partnerspage": {
+        "hero-section": {
+            "main": "Our Partners"
+        },
+        "about-partners": {
+            "partner-1": {
+                "header": "About Nectar Infotel"
+            }
+        },
+        "partnership": {
+            "header": "Partnership with Cuesoft Enterprise"
+        }
     }
 }
   

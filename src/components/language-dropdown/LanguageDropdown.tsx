@@ -72,7 +72,7 @@ export const LanguageDropdown = () => {
       <div
         className={`absolute ${
           toggleDropdown ? "block" : "hidden"
-        } right-0 py-2 mt-2 bg-toggleBg dark:bg-toggleBgDark rounded-md shadow-xl w-24 z-10 cursor-pointer`}
+        } right-0 py-2 mt-2 bg-toggleBg dark:bg-toggleBgDark rounded-md shadow-xl w-24 z-50 cursor-pointer`}
       >
         {/* <ul> */}
         {languages.map((item) => (

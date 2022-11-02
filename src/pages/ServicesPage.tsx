@@ -5,23 +5,25 @@ import ProductDesignVector from "../assets/icons/vectors/product-design-services
 import CodeVector from "../assets/icons/vectors/code-vector-servicesPage.svg";
 import HexagonChartVector from "../assets/icons/vectors/hexagon-chart-servicesPage.svg";
 
+import { useTranslation } from "react-i18next";
+
 export const ServicesPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const { t } = useTranslation();
+
   return (
     <div>
-      <section className="lg:mb-20">
+      <section id="services-hero" className="lg:mb-20">
         <div className="my-container flex items-center w-[100%] h-[220px] bg-[#383737] dark:bg-[#171111] lg:h-[320px]">
           <div className="text-center">
             <h2 className="text-[14px] md:text-[27px] xl:text-[48px] mb-4 text-brightRed font-semibold ">
-              OUR SERVICES
+              <>{t("servicespage.heroSectionHeader")}</>
             </h2>
             <p className="text-[#98A2B3] text-[12px] md:text-[16px] lg:text-[20px] xl:text-[24px] w-[85%] mx-auto">
-              Leading brands trust us to level-up their businesses and beat
-              their competition through our real world process of creating
-              intelligent and custom-built software.
+              <>{t("servicespage.heroSectionText")}</>
             </p>
           </div>
         </div>
@@ -36,21 +38,19 @@ export const ServicesPage = () => {
             </div>
             <div className="flex flex-col items-center">
               <span className="text-[#515158] dark:text-[#EBEBF0] text-[16px] md:text-[24px] my-2 font-semibold">
-                {" "}
-                Web Development{" "}
+                <>{t("servicespage.servicesSection.web-dev.header")}</>
               </span>
               <span className="bg-brightRed h-[2px] w-[80%]"></span>
             </div>
             <div className="text-center w-[80%]">
               <span className="text-[#808089] text-[12px] md:text-[16px]">
-                Having prided ourselves in transforming the most audacious
-                concepts into flawless web apps over the years. And with
-                multiple projects tied to our belt, we go beyond just creating
-                web pages. We create business solutions.
+                <>{t("servicespage.servicesSection.web-dev.paragraph")}</>
               </span>
             </div>
             <div className="absolute -bottom-6">
-              <button className="a-btn">Read More</button>
+              <button className="a-btn">
+                <>{t("servicespage.servicesSection.btn-text")}</>
+              </button>
             </div>
           </div>
 
@@ -62,21 +62,21 @@ export const ServicesPage = () => {
             </div>
             <div className="flex flex-col items-center">
               <span className="text-[#515158] dark:text-[#EBEBF0] text-[16px] md:text-[24px] my-2 font-semibold">
-                {" "}
-                Enterprise Development{" "}
+                <>{t("servicespage.servicesSection.enterprise-dev.header")}</>
               </span>
               <span className="bg-brightRed h-[2px] w-[80%]"></span>
             </div>
             <div className="text-center w-[80%]">
               <span className="text-[#808089] text-[12px] md:text-[16px]">
-                Being a software development company with well-tested techniques
-                for solving custom software problems in various sectors for
-                several years, you can trust us to do it again with your
-                business.
+                <>
+                  {t("servicespage.servicesSection.enterprise-dev.paragraph")}
+                </>
               </span>
             </div>
             <div className="absolute -bottom-6">
-              <button className="a-btn">Read More</button>
+              <button className="a-btn">
+                <>{t("servicespage.servicesSection.btn-text")}</>
+              </button>
             </div>
           </div>
 
@@ -87,22 +87,20 @@ export const ServicesPage = () => {
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-[#515158] dark:text-[#EBEBF0] text-[16px] md:text-[24px] my-2 font-semibold">
-                {" "}
-                Mobile App Development{" "}
+              <span className="text-[#515158] text-center dark:text-[#EBEBF0] text-[16px] md:text-[24px] my-2 font-semibold">
+                <>{t("servicespage.servicesSection.mobile-dev.header")}</>
               </span>
               <span className="bg-brightRed h-[2px] w-[80%]"></span>
             </div>
             <div className="text-center w-[80%]">
               <span className="text-[#808089] text-[12px] md:text-[16px]">
-                With numerous years of experience with custom mobile development
-                across different industries, we have prided ourselves in
-                understanding your customers’ needs and pain points while
-                designing a product that perfectly fits your business goals.
+                <>{t("servicespage.servicesSection.mobile-dev.paragraph")}</>
               </span>
             </div>
             <div className="absolute -bottom-6">
-              <button className="a-btn">Read More</button>
+              <button className="a-btn">
+                <>{t("servicespage.servicesSection.btn-text")}</>
+              </button>
             </div>
           </div>
         </div>
@@ -112,15 +110,13 @@ export const ServicesPage = () => {
         <div className="my-container text-center">
           <div className="w-[90%] mx-auto">
             <h3 className="text-[16px] md:text-[48px] text-[#64646D] dark:text-[#EBEBF0] mb-12 font-bold">
-              Need any of these Services?
+              <>{t("servicespage.services-contact.header")}</>
             </h3>
             <p className="text-[14px] md:text-[24px] text-[#808089] mb-12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
-              rhoncus pulvinar arcu, a nascetur ullamcorper aliquam. Montes,
-              lacus at nulla habitasse mattis. Semper aliquam sed aliquam.
+              <>{t("servicespage.services-contact.sub-text")}</>
             </p>
             <button className="a-btn md:w-[50%] text-[16px] md:text-[24px]">
-              Contact Us Today
+              <>{t("servicespage.services-contact.btn-text")}</>
             </button>
           </div>
         </div>

@@ -3,17 +3,22 @@ import React, { useEffect } from "react";
 import NectarInfotelLogo from "../assets/logos/nectar-infotel-logo.svg";
 import PartnersPageGroup from "../assets/imgs/partners-page-group.jpg";
 
+import { useTranslation } from "react-i18next";
+
 export const PartnersPage = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div>
       <section>
         <div className="my-container flex items-center bg-contain lg:bg-cover bg-center bg-no-repeat bg-partnersPage-heroImg lg:h-[250px] rounded">
           <div className="mx-auto text-center py-6">
             <h2 className="text-[13px] md:text-[27px] lg:text-[55px] text-white font-bold ">
-              Our Partners
+              <>{t("partnerspage.hero-section.main")}</>
             </h2>
           </div>
         </div>
@@ -29,7 +34,7 @@ export const PartnersPage = () => {
           <div className="flex flex-wrap items-center">
             <div className="md:w-1/2">
               <h3 className="text-brightRed text-[24px] font-semibold mb-6">
-                About Nectar Infotel
+                <>{t("partnerspage.about-partners.partner-1.header")}</>
               </h3>
               <p className="text-[16px] leading-8 dark:text-[#A6A6B0]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
@@ -67,7 +72,7 @@ export const PartnersPage = () => {
       <section className="mt-16">
         <div className="my-container">
           <h3 className="text-brightRed text-[24px] font-semibold mb-6">
-            Partnership with Cuesoft Enterprise
+            <>{t("partnerspage.partnership.header")}</>
           </h3>
           <p className="dark:text-[#A6A6B0]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui

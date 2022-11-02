@@ -5,6 +5,8 @@ import { DirectionArrowRight } from "./DirectionArrowRight";
 import { TextContent } from "./TextContent";
 import { Indicator } from "./Indicator";
 
+import { useTranslation } from "react-i18next";
+
 export const CustomSlider = () => {
   const [activePage, setActivePage] = useState(0);
 
@@ -14,15 +16,17 @@ export const CustomSlider = () => {
   const [slideRight, setSlideRight] = useState(false);
   const [slideLeft, setSlideLeft] = useState(false);
 
+  const { t } = useTranslation();
+
   const sliderContent = [
     {
-      header: "Our Vision",
-      body: "Our company's mission is to use software and cloud computing to make enterprise software affordable and accessible to all types of businesses.",
+      header: t("aboutpage.custom-slider.vision.header"),
+      body: t("aboutpage.custom-slider.vision.body"),
       bImage: "vision"
     },
     {
-      header: "Our Mission",
-      body: "Our mission is to help enterprises accelerate adoption of new technologies, untangle complex issues that always emerge during digital evolution, and orchestrate ongoing innovation.",
+      header: t("aboutpage.custom-slider.mission.header"),
+      body: t("aboutpage.custom-slider.mission.body"),
       bImage: "mission"
     }
   ];

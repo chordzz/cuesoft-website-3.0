@@ -148,6 +148,156 @@
         "rights": "Tous les droits sont réservés.",
         "copyright": "Cuesoft Inc. est une société du Delaware enregistrée aux États-Unis avec une filiale au Nigeria." 
         
+    },
+    "aboutpage": {
+        "custom-slider": {
+            "vision": {
+                "header": "Notre vision",
+                "body": "La mission de notre entreprise est d'utiliser les logiciels et le cloud computing pour rendre les logiciels d'entreprise abordables et accessibles à tous les types d'entreprises."
+            },
+            "mission": {
+                "header": "Notre mission",
+                "body": "Notre mission est d'aider les entreprises à accélérer l'adoption de nouvelles technologies, à démêler les problèmes complexes qui surgissent toujours au cours de l'évolution numérique et à orchestrer l'innovation continue."
+            }
+        },
+        "who-we-are": {
+            "header": "Nous sommes le Kubernetes des équipes techniques.",
+            "paragraph1": "Être créatif dans la résolution de problèmes est la base du développement de logiciels inégalés et de pointe.",
+            "paragraph2": "Et avec la ferme conviction que la créativité consiste à voir l'invisible dans le visible, nous avons fondé Cuesoft pour aider les professionnels, les startups et les entreprises qui n'ont pas accès à des produits technologiques de classe mondiale. En développant des solutions logicielles abordables qui les placeraient à l'échelle mondiale et devanceraient leurs concurrents.",
+            "paragraph3": "Ainsi, après deux ans de poursuite de cette vision, nous avons lancé notre premier produit phare, Cueprise dans le but de simplifier et d'optimiser les opérations commerciales.",
+            "paragraph4": "Et cela, nous l'avons fait tout en servant des entreprises du monde entier avec la planification des ressources, la gestion de la paie, le suivi des chaînes d'approvisionnement et des inventaires, tout en permettant à leurs clients de passer facilement des commandes."
+        },
+        "team": {
+            "header": "Notre incroyable équipe",
+            "subtitle": "Nous sommes une équipe de consultants de premier plan, d'ingénieurs en solutions brillants, d'experts UX, de développeurs de logiciels et de Whizkids qui partagent les valeurs de fournir des services de développement de logiciels personnalisés à chaque entreprise tout en développant leur carrière."
+        },
+        "investors": {
+            "header": "Nos investisseurs"
+        }
+    },
+    "servicespage": {
+        "heroSectionHeader": "NOS SERVICES",
+        "heroSectionText": "Les grandes marques nous font confiance pour améliorer leurs activités et battre leurs concurrents grâce à notre processus réel de création de logiciels intelligents et personnalisés.",
+        "servicesSection": {
+            "btn-text": "Lire la suite",
+            "web-dev": {
+                "header": "Développement web",
+                "paragraph": "Nous sommes fiers de transformer les concepts les plus audacieux en applications Web sans faille au fil des ans. Et avec plusieurs projets liés à notre ceinture, nous allons au-delà de la simple création de pages Web. Nous créons des solutions d'affaires."
+            },
+            "enterprise-dev": {
+                "header": "Développement d'entreprise",
+                "paragraph": "En tant qu'entreprise de développement de logiciels avec des techniques éprouvées pour résoudre des problèmes de logiciels personnalisés dans divers secteurs depuis plusieurs années, vous pouvez nous faire confiance pour le faire à nouveau avec votre entreprise."
+            },
+            "mobile-dev": {
+                "header": "Développement d'applications mobiles",
+                "paragraph": "Avec de nombreuses années d'expérience dans le développement mobile personnalisé dans différents secteurs, nous sommes fiers de comprendre les besoins et les points faibles de vos clients tout en concevant un produit qui correspond parfaitement à vos objectifs commerciaux."
+            }
+        },
+        "services-contact": {
+            "header": "Besoin de l'un de ces services ?",
+            "sub-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna rhoncus pulvinar arcu, a nascetur ullamcorper aliquam. Montes, lacus at nulla habitasse mattis. Semper aliquam sed aliquam.",
+            "btn-text": "Contactez-nous aujourd'hui"
+        }
+
+    },
+    "contactpage": {
+        "hero-section": {
+            "address": {
+                "header": "ADRESSE",
+                "address-US": "8 The Green, Ste A, Dover, 19901, Delaware, United States",
+                "address-NG": "39 Alfred Rewane Road, Mulliner Towers, Ikoyi, 101233, Lagos, Nigeria"
+            },
+            "email": {
+                "header": "E-MAIL",
+                "label": "Courrier: ",
+                "address": "hello@cuesoft.io"
+            },
+            "phone-no": {
+                "header": "numéro de téléphone",
+                "phone-US": "Téléphone américain: ",
+                "phone-NG": "Nigéria Téléphone: "
+            }
+        },
+        "contact-us-form": {
+            "sub-header": "Travaillons ensemble",
+            "header": "Contactez-nous",
+            "form-labels": {
+                "name": "Nom",
+                "email": "E-mail",
+                "message": "Message"
+            },
+            "btn-text": "Nous contacter"
+        }
+    },
+    "careerspage": {
+        "hero-section": {
+            "text-1": "Avez-vous ce qu'il faut",
+            "span-text": "Viens ",
+            "text-2": "travaille avec nous"
+        },
+        "read-more-span": "Lire la suite",
+        "open-roles-section": {
+            "header": {
+                "main": "Voici les postes vacants dans",
+                "span": "Lagos, Nigeria"
+            },
+            "sub-headers": {
+                "all": "Tout",
+                "design": "Concevoir",
+                "sales": "Ventes",
+                "engineering": "Ingénierie",
+                "others": "Les autres"
+            },
+            "empty": "Aucun rôle n'est disponible pour ce filtre pour le moment",
+            "of": "de"
+        },
+        "contact-form": {
+            "sub-header": "Travaillons ensemble",
+            "header": "Envoyez-nous votre CV",
+            "form-labels": {
+                "name": "Nom",
+                "email": "Email",
+                "phone-number": "Numéro de téléphone",
+                "cv-upload": "Téléchargement de CV/Cv",
+                "cv-upload-span": "Sélectionnez ou faites glisser et déposez plusieurs fichiers",
+                "btn-text": "Soumettre"
+            },
+            "btn-text": "Nous contacter"
+        }   
+    },
+    "investorspage": {
+        "hero-section": {
+            "text-1": "Pourquoi devriez-vous",
+            "text-2": "Investissez avec nous"
+        },
+        "about-us": {
+            "header": "À PROPOS DE NOUS",
+            "read-more-span": "Lire la suite"
+        },
+        "our-values": {
+            "header": "NOS VALEURS"
+        },
+        "our-investors": {
+            "header": "NOS INVESTISSEURS",
+            "children": {
+                "child-1": {
+                    "post": "PDG Amazon et Co"
+                }
+            }
+        }
+    },
+    "partnerspage": {
+        "hero-section": {
+            "main": "Nos partenaires"
+        },
+        "about-partners": {
+            "partner-1": {
+                "header": "À propos de Nectar Infotel"
+            }
+        },
+        "partnership": {
+            "header": "Partenariat avec Cuesoft Enterprise"
+        }
     }
 }
   

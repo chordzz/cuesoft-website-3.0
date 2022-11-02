@@ -15,6 +15,8 @@ import { ExtremeNextSvg } from "../components/career-role/ExtremeNextSvg";
 import { ExtremePrevSvg } from "../components/career-role/ExtremePrevSvg";
 import { PrevSvg } from "../components/career-role/PrevSvg";
 
+import { useTranslation } from "react-i18next";
+
 export const CareersPage = () => {
   const [allRoles, setAllRoles] = useState(roles);
   const [renderedRoles, setRenderedRoles] = useState(allRoles);
@@ -22,6 +24,8 @@ export const CareersPage = () => {
   const [pages, setPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [noPerPage] = useState(2);
+
+  const { t } = useTranslation();
 
   const handlePagination = (mode: string) => {
     if (mode === "prev") {
@@ -121,11 +125,14 @@ export const CareersPage = () => {
         <div className="my-container flex items-center w-[100%] h-[220px] bg-contain xl:bg-cover bg-center bg-no-repeat bg-careersPage-heroImg lg:h-[500px] py-14 xl:py-32">
           <div className="mx-auto lg:w-2/3 text-center">
             <h2 className="text-[20px] md:text-[27px] xl:text-[55px] text-white font-semibold ">
-              Do you have what it takes{" "}
+              <>{t("careerspage.hero-section.text-1")}</>{" "}
               <span className="text-brightRed">?</span>
             </h2>
             <h2 className="text-[20px] md:text-[27px] xl:text-[55px] text-white font-semibold ">
-              <span className="text-brightRed">-Come</span> work with us
+              <span className="text-brightRed">
+                -<>{t("careerspage.hero-section.span-text")}</>
+              </span>{" "}
+              <>{t("careerspage.hero-section.text-2")}</>
             </h2>
           </div>
         </div>
@@ -150,7 +157,7 @@ export const CareersPage = () => {
               pharetra, vulputate. Lectus lectus mi cras amet. Egestas nisi elit
               arcu a......{" "}
               <span className="text-brightRed underline font-semibold">
-                Read More..
+                <>{t("careerspage.read-more-span")}</>..
               </span>
             </p>
           </div>
@@ -160,9 +167,9 @@ export const CareersPage = () => {
       <section>
         <div className="my-container">
           <h3 className="text-textNormal text-center dark:text-darkModeRed text-[14px] md:text-[24px] lg:text-[40px] font-bold mt-32 mb-24 ">
-            Here are the open positions in{" "}
+            <>{t("careerspage.open-roles-section.header.main")}</>{" "}
             <span className="text-brightRed underline">
-              Lagos, Nigeria
+              <>{t("careerspage.open-roles-section.header.span")}</>
               <img
                 src={ChevronDownVector}
                 alt="expand more"
@@ -172,56 +179,58 @@ export const CareersPage = () => {
           </h3>
 
           <div className="mt-16">
-            <div className="md:w-[50%] mx-auto text-center flex items-center justify-center">
+            <div className="md:min-w-[50%] mx-auto text-center flex items-center justify-center">
               <span
-                className={` py-2 px-2 border-b-2 md:py-4 md:px-8 ${
+                className={` py-1 px-1 border-b-2 md:py-4 md:px-8 ${
                   filter === "all"
                     ? "font-bold text-brightRed border-brightRed"
                     : ""
                 } cursor-pointer`}
                 onClick={() => handleClick("all")}
               >
-                All
+                <>{t("careerspage.open-roles-section.sub-headers.all")}</>
               </span>
               <span
-                className={` py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer ${
+                className={` py-1 px-1 md:py-4 md:px-8 border-b-2 cursor-pointer ${
                   filter === "design"
                     ? "font-bold text-brightRed border-brightRed"
                     : ""
                 }`}
                 onClick={() => handleClick("design")}
               >
-                Design
+                <>{t("careerspage.open-roles-section.sub-headers.design")}</>
               </span>
               <span
-                className={` py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer ${
+                className={` py-1 px-1 md:py-4 md:px-8 border-b-2 cursor-pointer ${
                   filter === "sales"
                     ? "font-bold text-brightRed border-brightRed"
                     : ""
                 }`}
                 onClick={() => handleClick("sales")}
               >
-                Sales
+                <>{t("careerspage.open-roles-section.sub-headers.sales")}</>
               </span>
               <span
-                className={` py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer ${
+                className={` py-1 px-1 md:py-4 md:px-8 border-b-2 cursor-pointer ${
                   filter === "engineering"
                     ? "font-bold text-brightRed border-brightRed"
                     : ""
                 }`}
                 onClick={() => handleClick("engineering")}
               >
-                Engineering
+                <>
+                  {t("careerspage.open-roles-section.sub-headers.engineering")}
+                </>
               </span>
               <span
-                className={` py-2 px-2 md:py-4 md:px-8 border-b-2 cursor-pointer ${
+                className={` py-1 px-1 md:py-4 md:px-8 border-b-2 cursor-pointer ${
                   filter === "others"
                     ? "font-bold text-brightRed border-brightRed"
                     : ""
                 }`}
                 onClick={() => handleClick("others")}
               >
-                Others
+                <>{t("careerspage.open-roles-section.sub-headers.others")}</>
               </span>
             </div>
           </div>
@@ -233,8 +242,8 @@ export const CareersPage = () => {
                   return <CareerRole key={`${idx}-${role.name}`} role={role} />;
                 })
               ) : (
-                <div className="mx-auto text-textNormal text-3xl">
-                  There are no roles available for this filter right now
+                <div className="mx-auto text-center text-textNormal text-3xl">
+                  <>{t("careerspage.open-roles-section.empty")}</>
                 </div>
               )}
             </div>
@@ -253,7 +262,7 @@ export const CareersPage = () => {
               <span className="underline text-brightRed font-bold">
                 {pages > 0 ? currentPage : 0}
               </span>{" "}
-              of {pages}
+              <>{t("careerspage.open-roles-section.of")}</> {pages}
             </div>
 
             <div onClick={() => handlePagination("next")}>
@@ -274,10 +283,10 @@ export const CareersPage = () => {
           <div className="flex flex-col-reverse md:flex-row justify-between items-center">
             <div className="md:w-1/3">
               <span className="text-[16px] lg:text-[24px] text-textNormal font-semibold dark:text-white">
-                Let us work together
+                <>{t("careerspage.contact-form.sub-header")}</>
               </span>
               <h3 className="text-[32px] lg:text-[48px] mb-16 text-brightRed font-bold">
-                Send us your CV
+                <>{t("careerspage.contact-form.header")}</>
               </h3>
               <form className="flex flex-col gap-12">
                 <div>
@@ -285,7 +294,7 @@ export const CareersPage = () => {
                     htmlFor="name"
                     className="text-[16px] font-bold text-[#1A1C21] dark:text-white"
                   >
-                    Name
+                    <>{t("careerspage.contact-form.form-labels.name")}</>
                   </label>
                   <input
                     type="text"
@@ -300,7 +309,7 @@ export const CareersPage = () => {
                     htmlFor="email"
                     className="text-[16px] font-bold text-[#1A1C21] dark:text-white"
                   >
-                    Email
+                    <>{t("careerspage.contact-form.form-labels.email")}</>
                   </label>
                   <input
                     type="text"
@@ -315,7 +324,9 @@ export const CareersPage = () => {
                     htmlFor="tel-number"
                     className="text-[16px] font-bold text-[#1A1C21] dark:text-white"
                   >
-                    Phone Number
+                    <>
+                      {t("careerspage.contact-form.form-labels.phone-number")}
+                    </>
                   </label>
                   <input
                     type="tel"
@@ -330,7 +341,7 @@ export const CareersPage = () => {
                     htmlFor="file-input"
                     className="text-[16px] font-bold text-[#1A1C21] dark:text-white"
                   >
-                    Resume/Cv Upload
+                    <>{t("careerspage.contact-form.form-labels.cv-upload")}</>
                     <span className="w-full py-24 bg-[#FBFCFD] h-24 flex flex-col gap-4 justify-center items-center dark:bg-[#161616] border border-[#132295]/[.1] rounded-md">
                       <img
                         src={FileUploadVector}
@@ -338,7 +349,11 @@ export const CareersPage = () => {
                         className="dark:fill-white"
                       />
                       <p className="text-textNormal font-medium text-center dark:text-white">
-                        Select or drag and drop multiple files
+                        <>
+                          {t(
+                            "careerspage.contact-form.form-labels.cv-upload-span"
+                          )}
+                        </>
                       </p>
                     </span>
                   </label>
@@ -350,7 +365,9 @@ export const CareersPage = () => {
                     multiple
                   />
                 </div>
-                <button className="a-btn">Submit</button>
+                <button className="a-btn">
+                  <>{t("careerspage.contact-form.form-labels.btn-text")}</>
+                </button>
               </form>
             </div>
             <div className="text-center mx-auto">

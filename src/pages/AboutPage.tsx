@@ -8,6 +8,7 @@ import { Data } from "../components/team-members/membersData";
 import { TeamMembers } from "../components/team-members/TeamMembers";
 import { CustomSlider } from "../components/slider/aboutPage-hero-slider/CustomSlider";
 import { CustomInvestorsSlider } from "../components/slider/aboutPage-investors-slider/CustomInvestorsSlider";
+import { t } from "i18next";
 
 export const AboutPage = () => {
   useEffect(() => {
@@ -23,16 +24,15 @@ export const AboutPage = () => {
           </div>
         </section>
 
-        <section>
+        <section id="who-we-are">
           <div className="my-container flex justify-between md:px-16">
             <div className="md:w-[50%]  text-left py-16">
               <h3 className="text-[24px] lg:text-[40px] text-brightRed font-semibold mb-8 text-center md:text-left">
-                We are the Kubernetes for technical teams.{" "}
+                <>{t("aboutpage.who-we-are.header")}</>
               </h3>
               <div className="text-[12px] lg:text-2xl text-textNormal dark:text-white flex flex-col items-center gap-6 md:gap-2">
                 <p>
-                  Being creative in problem solving is the foundation of
-                  developing unrivaled and cutting-edge software.
+                  <>{t("aboutpage.who-we-are.paragraph1")}</>
                 </p>
                 <br className="hidden lg:block" />
                 <div>
@@ -43,18 +43,11 @@ export const AboutPage = () => {
                   />
                 </div>
                 <p>
-                  And with a strong belief that creativity is seeing the unseen
-                  in the seen, we founded Cuesoft to assist professionals,
-                  startups, and businesses without access to world-class
-                  technological products. By developing affordable software
-                  solutions that would put them on a global scale and beat their
-                  competitors.
+                  <>{t("aboutpage.who-we-are.paragraph2")}</>
                 </p>
                 <br className="hidden lg:block" />
                 <p>
-                  So, after two years of pursuing this vision, we launched our
-                  first flagship product, Cueprise with the goal of simplifying
-                  and optimizing business operations.
+                  <>{t("aboutpage.who-we-are.paragraph3")}</>
                 </p>
                 <br className="hidden lg:block" />
                 <div>
@@ -65,10 +58,7 @@ export const AboutPage = () => {
                   />
                 </div>
                 <p>
-                  And this we did while serving businesses all over the world
-                  with resource planning, payroll management, tracking supply
-                  chains and inventories, while making it easy for their
-                  customers to place orders.
+                  <>{t("aboutpage.who-we-are.paragraph4")}</>
                 </p>
                 <div>
                   <img
@@ -110,13 +100,10 @@ export const AboutPage = () => {
         <div className="my-container">
           <div className="md:w-[80%] mx-auto text-center">
             <h4 className="text-[27px] lg:text-[55px] text-brightRed font-semibold mb-6">
-              Our Incredible Team
+              <>{t("aboutpage.team.header")}</>
             </h4>
             <p className="text-[12px] lg:text-2xl text-textNormal dark:text-white">
-              We are a team of Leading Consultants, Brilliant Solution
-              Engineers, UX Experts, Software Developers, and Whizkids who share
-              the values of providing custom software development services to
-              every enterprise while growing their careers.
+              <>{t("aboutpage.team.subtitle")}</>
             </p>
           </div>
 
@@ -131,7 +118,7 @@ export const AboutPage = () => {
       <section className="my-24">
         <div className="">
           <h3 className="text-brightRed dark:text-darkModeRed text-[24px] lg:text-[40px] font-bold mb-8 md:mt-8 text-center">
-            Our Investors
+            <>{t("aboutpage.investors.header")}</>
           </h3>
           <div className="bg-[#F9F9F9] dark:bg-[#151111]">
             <CustomInvestorsSlider />

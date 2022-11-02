@@ -5,7 +5,11 @@ import Avatar from "../assets/imgs/avatar.svg";
 import QuotesIconLeft from "../assets/icons/quotes-icon.svg";
 import QuotesIconRight from "../assets/icons/quotes-icon-right.svg";
 
+import { useTranslation } from "react-i18next";
+
 export const InvestorsPage = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -15,10 +19,10 @@ export const InvestorsPage = () => {
         <div className="my-container flex items-center bg-contain lg:bg-cover bg-center bg-no-repeat bg-investorsPage-heroImg lg:h-[250px] rounded">
           <div className="mx-auto text-center py-6">
             <h2 className="text-[13px] md:text-[27px] lg:text-[55px] text-white font-bold ">
-              Why you should
+              <>{t("investorspage.hero-section.text-1")}</>
             </h2>
             <h2 className="text-[13px] md:text-[27px] lg:text-[55px] text-[#00BFB3] font-bold ">
-              Invest with us
+              <>{t("investorspage.hero-section.text-2")}</>
             </h2>
           </div>
         </div>
@@ -27,7 +31,7 @@ export const InvestorsPage = () => {
       <section>
         <div className="my-container lg:mt-20">
           <h3 className="text-center text-brightRed text-[16px] md:text-[24px] lg:text-[40px] mx-auto font-bold my-8 lg:my-0">
-            ABOUT US
+            <>{t("investorspage.about-us.header")}</>
           </h3>
           <p className="text-[14px] md:text-[24px] lg:mt-10 text-[#69707D] dark:text-[#69707D]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non aliquam
@@ -40,7 +44,7 @@ export const InvestorsPage = () => {
             Pellentesque placerat mauris pharetra, vulputate. Lectus lectus mi
             cras amet. Egestas nisi elit arcu a......{" "}
             <span className="text-brightRed underline font-semibold">
-              Read More..
+              <>{t("investorspage.about-us.read-more-span")}</>..
             </span>
           </p>
         </div>
@@ -49,7 +53,7 @@ export const InvestorsPage = () => {
       <section>
         <div className="my-container lg:mt-20">
           <h3 className="text-center text-brightRed md:text-[24px] lg:text-[40px] text-[16px] mx-auto font-bold my-14 lg:my-0">
-            OUR VALUES
+            <>{t("investorspage.our-values.header")}</>
           </h3>
           <div className="flex flex-col lg:flex-row justify-between lg:mt-20 gap-8 lg:gap-0">
             <div className="flex lg:w-[47%]">
@@ -87,7 +91,7 @@ export const InvestorsPage = () => {
       <section className="min-h-screen">
         <div className="my-container mt-20">
           <h3 className="text-center text-brightRed text-[16px] md:text-[24px] lg:text-[40px] mx-auto font-bold">
-            OUR INVESTORS
+            <>{t("investorspage.our-investors.header")}</>
           </h3>
           <div className="mt-8 lg:mt-20">
             <div>
@@ -102,7 +106,9 @@ export const InvestorsPage = () => {
                     Ayodele Joseph
                   </span>
                   <span className="text-[12px] md:text-[16px] lg:text-[24px] dark:text-[#C7D4F6]">
-                    CEO Amazon and Co
+                    <>
+                      {t("investorspage.our-investors.children.child-1.post")}
+                    </>
                   </span>
                   <span className="text-ratingStar text-[13px] md:text-[20px] lg:text-[24px]">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
@@ -147,7 +153,9 @@ export const InvestorsPage = () => {
                     Ayodele Joseph
                   </span>
                   <span className="text-[12px] md:text-[16px] lg:text-[24px] dark:text-[#C7D4F6]">
-                    CEO Amazon and Co
+                    <>
+                      {t("investorspage.our-investors.children.child-1.post")}
+                    </>
                   </span>
                   <span className="text-ratingStar text-[13px] md:text-[20px] lg:text-[24px]">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
