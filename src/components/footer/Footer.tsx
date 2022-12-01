@@ -168,7 +168,7 @@ export const Footer = () => {
         </div>
         <div className="md:w-[30%] flex flex-col gap-4 md:gap-8 pt-8">
           <p className="font-bold text-[12px] lg:text-sm">
-            8 The Green, Ste A, Dover, 19901, Delaware, United States
+            8 The Green, Ste 300, Dover, 19901, Delaware, United States
           </p>
 
           <p className="font-bold text-[12px] lg:text-sm">
