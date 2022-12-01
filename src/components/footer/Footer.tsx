@@ -64,7 +64,7 @@ export const Footer = () => {
               </Link>
               <Link to="/careers">
                 <li>
-                  <>{t("footer.company")}</>
+                  <>{t("footer.careers")}</>
                 </li>
               </Link>
               <Link to="/contact">
