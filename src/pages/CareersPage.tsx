@@ -24,6 +24,7 @@ export const CareersPage = () => {
   const [pages, setPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [noPerPage] = useState(2);
+  const [toggleReadmore, setToggleReadmore] = useState(false);
 
   const { t } = useTranslation();
 
@@ -102,6 +103,10 @@ export const CareersPage = () => {
     }
   };
 
+  const handleToggleReadMore = () => {
+    setToggleReadmore(true);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -146,18 +151,27 @@ export const CareersPage = () => {
           </div>
           <div>
             <p className="text-[14px] md:text-[24px] mt-10 text-textNormal dark:text-[#69707D]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
-              aliquam elementum suspendisse ornare elit aliquam nulla elit. Non
-              amet vitae nunc, adipiscing quisque etiam. Amet risus quam et
-              natoque consequat semper aliquet. Ligula scelerisque mus amet
-              massa morbi sed egestas pellentesque. Etiam semper pellentesque
-              accumsan massa viverra enim iaculis. Quis lacus, nascetur semper
-              arcu fermentum nisi, molestie turpis. At est vitae sit leo
-              venenatis elementum, enim pulvinar. Pellentesque placerat mauris
-              pharetra, vulputate. Lectus lectus mi cras amet. Egestas nisi elit
-              arcu a......{" "}
-              <span className="text-brightRed underline font-semibold">
-                <>{t("careerspage.read-more-span")}</>..
+              <>{t("careerspage.why-cuesoft.p1")}</>{" "}
+              <div className={`${toggleReadmore ? "block" : "hidden"}`}>
+                <br />
+                <p>
+                  <>{t("careerspage.why-cuesoft.p2")}</>
+                </p>
+
+                <br />
+                <p>
+                  <>{t("careerspage.why-cuesoft.p3")}</>
+                </p>
+              </div>
+              <span
+                className={`${
+                  toggleReadmore
+                    ? "hidden"
+                    : "text-brightRed underline font-semibold"
+                } cursor-pointer`}
+                onClick={handleToggleReadMore}
+              >
+                ...<>{t("careerspage.read-more-span")}</>
               </span>
             </p>
           </div>
