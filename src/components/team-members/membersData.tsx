@@ -36,6 +36,11 @@ export const Data = [
     position: "Chief Revenue Officer"
   },
   {
+    imageUrl: Face1,
+    name: "Mitchell Chiadika",
+    position: "Tech Lead (Flutter Engineer)"
+  },
+  {
     imageUrl: Face6,
     name: "Ayodele Owoetoni",
     position: "Product Designer"
