@@ -63,7 +63,7 @@ export const Newsletter = () => {
             >
               <input
                 type="email"
-                placeholder={t("newsletter.emailPlaceholder")}
+                placeholder={t("newsletter.emailPlaceholder").toString()}
                 className="lg:w-[60%] bg-[#FBFCFD] border border-[#132295]/[.1] py-3 px-8 rounded-[4px] dark:text-white dark:bg-[#161616] required email mc-field-group"
                 name="EMAIL"
                 id="mce-EMAIL"
