@@ -7,7 +7,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --clearMocks --watchAll=false --detectOpenHandles",
+    "test": "react-scripts test --clearMocks --watchAll=false",
     "test:cover": "npm test -- --coverage",
     "eject": "react-scripts eject",
     "docker:build": "DOCKER_BUILDKIT=1 docker build --secret id=npmrc,src=${HOME}/.npmrc -t cuesoftcloud/cuesoft-website .",

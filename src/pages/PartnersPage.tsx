@@ -13,7 +13,7 @@ export const PartnersPage = () => {
   }, []);
 
   return (
-    <div>
+    <div data-testid="partnerspage">
       <section>
         <div className="my-container flex items-center bg-contain lg:bg-cover bg-center bg-no-repeat bg-partnersPage-heroImg lg:h-[250px] rounded">
           <div className="mx-auto text-center py-6">

@@ -12,6 +12,7 @@ export const LanguageDropdown = () => {
 
     languages.forEach((item) => {
       if (item.language.toLowerCase() === savedLang) setCurrLanguage(item);
+      else setCurrLanguage(languages[0]);
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -48,6 +49,7 @@ export const LanguageDropdown = () => {
   return (
     <div className="relative">
       <button
+        data-testid="language-dropdown-btn"
         className="flex items-center justify-between p-2 bg-toggleBg dark:bg-toggleBgDark rounded-md w-24 text-textNormal dark:text-white font-semibold"
         onClick={handleDropdownClick}
       >
@@ -70,6 +72,7 @@ export const LanguageDropdown = () => {
       </button>
 
       <div
+        data-testid="language-dropdown-list"
         className={`absolute ${
           toggleDropdown ? "block" : "hidden"
         } right-0 py-2 mt-2 bg-toggleBg dark:bg-toggleBgDark rounded-md shadow-xl w-24 z-50 cursor-pointer`}

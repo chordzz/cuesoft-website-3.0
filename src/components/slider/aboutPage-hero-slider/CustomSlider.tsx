@@ -120,7 +120,10 @@ export const CustomSlider = () => {
             </div>
             <div className="flex">
               {sliderContent.map((content, idx) => (
-                <Indicator active={activePage === idx ? true : false} />
+                <Indicator
+                  key={`${content.header}`}
+                  active={activePage === idx ? true : false}
+                />
               ))}
             </div>
           </div>
