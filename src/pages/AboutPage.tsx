@@ -16,7 +16,7 @@ export const AboutPage = () => {
   }, []);
 
   return (
-    <div>
+    <div data-testid="aboutpage">
       <div className="bg-aboutPage-peopleGroupImg bg-cover ">
         <section className="md:mb-20">
           <div className="my-container">
@@ -109,7 +109,10 @@ export const AboutPage = () => {
 
           <div className="flex justify-center md:gap-12 flex-wrap text-textNormal lg:mt-28">
             {Data.map((person) => (
-              <TeamMembers person={person} />
+              <TeamMembers
+                key={`${person.name}-${person.position}`}
+                person={person}
+              />
             ))}
           </div>
         </div>

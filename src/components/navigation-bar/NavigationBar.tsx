@@ -35,18 +35,25 @@ const NavigationBar = () => {
                 src={theme === "dark" ? CuesoftLogoDark : CuesoftLogo}
                 alt="Logo"
                 className="w-[150px] h-[90px] lg:h-[113px] lg:w-[201px]"
+                data-testid="homepage-nav-link-logo"
               />
             </Link>
           </div>
 
           <div className=" xl:w-[40%] hidden text-textNormal dark:text-white lg:flex md:justify-between space-x-6 items-center">
             <Link to="/about">
-              <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+              <div
+                data-testid="aboutpage-nav-link"
+                className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300"
+              >
                 <>{t("navBar.about")}</>
               </div>
             </Link>
             <Link to="/services">
-              <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+              <div
+                data-testid="servicespage-nav-link"
+                className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300"
+              >
                 <>{t("navBar.services")}</>
               </div>
             </Link>
@@ -56,7 +63,10 @@ const NavigationBar = () => {
               </div>
             </a>
             <Link to="/contact">
-              <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+              <div
+                data-testid="contactpage-nav-link"
+                className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300"
+              >
                 <>{t("navBar.contact")}</>
               </div>
             </Link>
@@ -95,12 +105,20 @@ const NavigationBar = () => {
               } items-center justify-center text-[15px] py-8 mt-10 space-y-6 font-bold bg-white dark:bg-darkModeBg w-full left-0 drop-shadow-md text-center z-50`}
             >
               <Link to="/about">
-                <button onClick={handleClick} className="hover:text-blue-500">
+                <button
+                  onClick={handleClick}
+                  data-testid="aboutpage-nav-link"
+                  className="hover:text-blue-500"
+                >
                   <>{t("navBar.about")}</>
                 </button>
               </Link>
               <Link to="/services">
-                <button onClick={handleClick} className="hover:text-blue-500">
+                <button
+                  onClick={handleClick}
+                  data-testid="servicespage-nav-link"
+                  className="hover:text-blue-500"
+                >
                   <>{t("navBar.services")}</>
                 </button>
               </Link>
@@ -110,7 +128,11 @@ const NavigationBar = () => {
                 </button>
               </a>
               <Link to="contact">
-                <button onClick={handleClick} className="hover:text-blue-500">
+                <button
+                  onClick={handleClick}
+                  data-testid="contactpage-nav-link"
+                  className="hover:text-blue-500"
+                >
                   <>{t("navBar.contact")}</>
                 </button>
               </Link>

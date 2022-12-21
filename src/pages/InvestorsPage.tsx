@@ -14,7 +14,7 @@ export const InvestorsPage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div data-testid="investorspage">
       <section>
         <div className="my-container flex items-center bg-contain lg:bg-cover bg-center bg-no-repeat bg-investorsPage-heroImg lg:h-[250px] rounded">
           <div className="mx-auto text-center py-6">

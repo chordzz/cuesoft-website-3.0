@@ -15,7 +15,7 @@ export const ServicesPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div data-testid="servicespage">
       <section id="services-hero" className="lg:mb-20">
         <div className="my-container flex items-center w-[100%] h-[220px] bg-[#383737] dark:bg-[#171111] lg:h-[320px]">
           <div className="text-center">

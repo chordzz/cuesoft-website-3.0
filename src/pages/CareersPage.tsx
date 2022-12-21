@@ -125,7 +125,7 @@ export const CareersPage = () => {
   }, [currentPage]);
 
   return (
-    <div>
+    <div data-testid="careerspage">
       <section className="lg:mb-20">
         <div className="my-container flex items-center w-[100%] h-[220px] bg-contain xl:bg-cover bg-center bg-no-repeat bg-careersPage-heroImg lg:h-[500px] py-14 xl:py-32">
           <div className="mx-auto lg:w-2/3 text-center">
