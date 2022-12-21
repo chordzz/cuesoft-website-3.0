@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import Phone from "../assets/icons/phone-settings.svg";
 import Email from "../assets/icons/email-alternate.svg";
@@ -6,13 +6,54 @@ import Home from "../assets/icons/home.svg";
 import ContactImg from "../assets/imgs/contact-us-img.svg";
 
 import { useTranslation } from "react-i18next";
+import logger from "../libs/logger";
 
 export const ContactPage = () => {
   const { t } = useTranslation();
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const table_id = process.env.REACT_APP_AIRTABLE_TABLE_ID_CONTACT_INFO;
+    const base_id = process.env.REACT_APP_AIRTABLE_BASE_ID;
+    const api_key = process.env.REACT_APP_AIRTABLE_API_KEY;
+
+    const myHeaders_ = {
+      Authorization: `Bearer ${api_key}`,
+      "Content-Type": "application/json"
+    };
+
+    const data = {
+      fields: {
+        Name: name,
+        Email: email,
+        Message: message
+      }
+    };
+
+    fetch(`https://api.airtable.com/v0/${base_id}/${table_id}`, {
+      method: "POST",
+      headers: myHeaders_,
+      body: JSON.stringify(data)
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        logger.info(data);
+      })
+      .catch((error) => {
+        logger.error(error);
+      });
+  };
 
   return (
     <div data-testid="contactpage">
@@ -89,7 +130,11 @@ export const ContactPage = () => {
               <h3 className="text-[32px] lg:text-[48px] mb-16 text-brightRed font-bold">
                 <>{t("contactpage.contact-us-form.header")}</>
               </h3>
-              <form className="flex flex-col gap-12">
+              <form
+                id="contact-form"
+                className="flex flex-col gap-12"
+                onSubmit={handleFormSubmit}
+              >
                 <div>
                   <label
                     htmlFor="name"
@@ -102,6 +147,9 @@ export const ContactPage = () => {
                     id="name"
                     className="bg-[#FBFCFD] border border-[#132295]/[.1] w-full p-3 rounded-md dark:bg-[#161616]"
                     placeholder="Enter your name"
+                    name="Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
 
@@ -113,10 +161,13 @@ export const ContactPage = () => {
                     <>{t("contactpage.contact-us-form.form-labels.email")}</>
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     id="name"
                     className="bg-[#FBFCFD] border border-[#132295]/[.1] w-full p-3 rounded-md dark:bg-[#161616]"
                     placeholder="Enter your email address"
+                    name="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
 
@@ -131,9 +182,12 @@ export const ContactPage = () => {
                     className="text-textNormal p-4 font-medium dark:text-white bg-[#FBFCFD] dark:bg-[#161616] resize-none border border-[#132295]/[.1] rounded-md"
                     id="message"
                     rows={5}
+                    name="Message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
-                <button className="a-btn">
+                <button type="submit" className="a-btn">
                   <>{t("contactpage.contact-us-form.btn-text")}</>
                 </button>
               </form>
