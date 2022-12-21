@@ -57,9 +57,11 @@ const NavigationBar = () => {
                 <>{t("navBar.services")}</>
               </div>
             </Link>
-            <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
-              <>{t("navBar.product")}</>
-            </div>
+            <a href="https://cueprise.com" target={"_blank"} rel="noreferrer">
+              <div className="text-brightRed hover:text-brightRedLight font-semibold cursor-pointer dark:text-white dark:hover:text-gray-300">
+                <>{t("navBar.product")}</>
+              </div>
+            </a>
             <Link to="/contact">
               <div
                 data-testid="contactpage-nav-link"
@@ -120,9 +122,11 @@ const NavigationBar = () => {
                   <>{t("navBar.services")}</>
                 </button>
               </Link>
-              <button onClick={handleClick} className="hover:text-blue-500">
-                <>{t("navBar.product")}</>
-              </button>
+              <a href="https://cueprise.com" target={"_blank"} rel="noreferrer">
+                <button onClick={handleClick} className="hover:text-blue-500">
+                  <>{t("navBar.product")}</>
+                </button>
+              </a>
               <Link to="contact">
                 <button
                   onClick={handleClick}

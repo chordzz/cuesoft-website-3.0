@@ -675,9 +675,11 @@ export const Home = () => {
             </p>
           </div>
 
-          <button className="a-btn hidden md:block">
-            <>{t("homepage.flagshipProduct.btnText")}</>
-          </button>
+          <a href="https://cueprise.com" target={"_blank"} rel="noreferrer">
+            <button className="a-btn md:text-[16px] text-[12px]">
+              <>{t("homepage.flagshipProduct.btnText")}</>
+            </button>
+          </a>
         </div>
       </section>
 
