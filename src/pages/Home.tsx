@@ -63,8 +63,6 @@ export const Home = () => {
   const [topStories, setTopStories] = useState<Array<any>>([]);
 
   useEffect(() => {
-    // window.scrollTo(0, 0);
-
     fetch(
       "https://api.rss2json.com/v1/api.json?rss_url=https://blog.cuesoft.io/feed"
     )
