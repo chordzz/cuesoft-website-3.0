@@ -31,7 +31,7 @@ export const CustomInvestorsSlider = () => {
     },
     {
       header: "Amazon Incorporated",
-      subHeader: "No 019, lorem Ipsum Street, Lorem Ipsium, Lorem Ipsium",
+      subHeader: "No 020, lorem Ipsum Street, Lorem Ipsium, Lorem Ipsium",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula iaculis morbi nulla at. Nunc eget lectus egestas vivamus duis nisi, et interdum mi. Et massa consectetur diam tempus, imperdiet tortor. Malesuada purus sit consequat commodo sagittis. Sed sapien eu enim fermentum turpis gravida id cras id. Blandit varius auctor morbi nibh mi sollicitudin massa faucibus. Arcu risus turpis a sagittis semper diam arcu duis pharetra. Nibh fusce eget tincidunt ipsum vitae tempus ullamcorper tellus. Odio habitant integer neque quis urna. A nam viverra a.",
       img: AmazonInvestor,
       rating: [Star, Star]
@@ -134,9 +134,11 @@ export const CustomInvestorsSlider = () => {
                     </span>
                     <span className="flex">
                       {sliderContent[activePage - 1]
-                        ? sliderContent[activePage - 1].rating.map((rating) => (
-                            <img src={rating} alt="A rating star" />
-                          ))
+                        ? sliderContent[activePage - 1].rating.map(
+                            (rating, idx) => (
+                              <img key={idx} src={rating} alt="A rating star" />
+                            )
+                          )
                         : undefined}
                     </span>
                   </div>
@@ -185,9 +187,11 @@ export const CustomInvestorsSlider = () => {
                     </span>
                     <span className="flex">
                       {sliderContent[activePage]
-                        ? sliderContent[activePage].rating.map((rating) => (
-                            <img src={rating} alt="A rating star" />
-                          ))
+                        ? sliderContent[activePage].rating.map(
+                            (rating, idx) => (
+                              <img key={idx} src={rating} alt="A rating star" />
+                            )
+                          )
                         : undefined}
                     </span>
                   </div>
@@ -240,9 +244,11 @@ export const CustomInvestorsSlider = () => {
                     </span>
                     <span className="flex">
                       {sliderContent[activePage + 1]
-                        ? sliderContent[activePage + 1].rating.map((rating) => (
-                            <img src={rating} alt="A rating star" />
-                          ))
+                        ? sliderContent[activePage + 1].rating.map(
+                            (rating, idx) => (
+                              <img key={idx} src={rating} alt="A rating star" />
+                            )
+                          )
                         : undefined}
                     </span>
                   </div>
@@ -303,7 +309,10 @@ export const CustomInvestorsSlider = () => {
       {/* Mobile */}
       <div className="lg:hidden my-container w-[1200px] flex overflow-x-scroll gap-12 py-12 items-">
         {sliderContent.map((item) => (
-          <div className="min-w-[80%] inline-block md:w-1/2">
+          <div
+            key={`${item.header}-${item.subHeader}`}
+            className="min-w-[80%] inline-block md:w-1/2"
+          >
             <div className="flex flex-col">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <h6 className="text-[15px] md:text-2xl font-bold">
@@ -312,8 +321,9 @@ export const CustomInvestorsSlider = () => {
                 <div className="flex flex-1 items-center md:justify-end">
                   <span className="text-[12px] md:text-sm mr-6">Rating</span>
                   <span className="flex">
-                    {item.rating.map((rating) => (
+                    {item.rating.map((rating, idx) => (
                       <img
+                        key={idx}
                         src={rating}
                         alt="A rating star"
                         className="w-[15px]"
