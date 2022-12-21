@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaqMain } from "../components/faq/FaqMain";
 
 import ProductDesignVector from "../assets/icons/vectors/product-design-servicesPage.svg";
@@ -6,12 +6,9 @@ import CodeVector from "../assets/icons/vectors/code-vector-servicesPage.svg";
 import HexagonChartVector from "../assets/icons/vectors/hexagon-chart-servicesPage.svg";
 
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const ServicesPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const { t } = useTranslation();
 
   return (
@@ -115,9 +112,11 @@ export const ServicesPage = () => {
             <p className="text-[14px] md:text-[24px] text-[#808089] mb-12">
               <>{t("servicespage.services-contact.sub-text")}</>
             </p>
-            <button className="a-btn md:w-[50%] text-[16px] md:text-[24px]">
-              <>{t("servicespage.services-contact.btn-text")}</>
-            </button>
+            <Link to={"/contact/#contact-form"}>
+              <button className="a-btn md:w-[50%] text-[16px] md:text-[24px]">
+                <>{t("servicespage.services-contact.btn-text")}</>
+              </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import "./App.css";
 
@@ -23,6 +23,25 @@ import {
 
 function App() {
   const logger = useWinstonLogger();
+
+  const { hash } = useLocation();
+
+  React.useEffect(() => {
+    // if not a hash link, scroll to top
+    if (hash === "") {
+      window.scrollTo(0, 0);
+    }
+    // else scroll to id
+    else {
+      setTimeout(() => {
+        const id = hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }, 0);
+    }
+  }, [hash]);
 
   React.useEffect(() => {
     logger.debug("App Page");

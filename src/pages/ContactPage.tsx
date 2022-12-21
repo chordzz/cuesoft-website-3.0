@@ -79,7 +79,7 @@ export const ContactPage = () => {
         </div>
       </section>
 
-      <section className="my-40">
+      <section id="contact-form" className="my-40">
         <div className="my-container">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="w-[100%] lg:w-1/3">
