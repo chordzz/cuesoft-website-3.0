@@ -15,7 +15,7 @@ export const ContactPage = () => {
   }, []);
 
   return (
-    <div>
+    <div data-testid="contactpage">
       <section className="my-20">
         <div className="bg-[#440904] dark:bg-[#121010]">
           <div className="my-container py-12 px-8 flex flex-col md:flex-row md:justify-around gap-8 text-center">

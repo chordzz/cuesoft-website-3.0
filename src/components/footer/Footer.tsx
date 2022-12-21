@@ -58,22 +58,22 @@ export const Footer = () => {
                 <>{t("footer.company")}</>
               </li>
               <Link to="/about">
-                <li>
+                <li data-testid="aboutpage-nav-link">
                   <>{t("footer.about")}</>
                 </li>
               </Link>
               <Link to="/careers">
-                <li>
+                <li data-testid="careerspage-nav-link">
                   <>{t("footer.careers")}</>
                 </li>
               </Link>
               <Link to="/contact">
-                <li>
+                <li data-testid="contactpage-nav-link">
                   <>{t("footer.contact")}</>
                 </li>
               </Link>
               <Link to="/investors">
-                <li>
+                <li data-testid="investorspage-nav-link">
                   <>{t("footer.investors")}</>
                 </li>
               </Link>
@@ -159,7 +159,7 @@ export const Footer = () => {
                 <>{t("footer.faq")}</>
               </li>
               <Link to="/partners">
-                <li>
+                <li data-testid="partnerspage-nav-link">
                   <>{t("footer.partners")}</>
                 </li>
               </Link>
