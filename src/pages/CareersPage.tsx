@@ -16,6 +16,7 @@ import { ExtremePrevSvg } from "../components/career-role/ExtremePrevSvg";
 import { PrevSvg } from "../components/career-role/PrevSvg";
 
 import { useTranslation } from "react-i18next";
+import logger from "../libs/logger";
 
 export const CareersPage = () => {
   const [allRoles, setAllRoles] = useState(roles);
@@ -25,6 +26,16 @@ export const CareersPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [noPerPage] = useState(2);
   const [toggleReadmore, setToggleReadmore] = useState(false);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [resume, setResume] = useState<File | null>(null);
+
+  const [formStatus, setFormStatus] = useState("");
+  const [formError, setFormError] = useState("");
+  const [formLoading, setFormLoading] = useState(false);
+  const myFormData = new FormData();
 
   const { t } = useTranslation();
 
@@ -112,6 +123,19 @@ export const CareersPage = () => {
   }, []);
 
   useEffect(() => {
+    const timerId = setTimeout(() => {
+      if (formError !== "" || formStatus !== "") {
+        setFormError("");
+        setFormStatus("");
+      }
+    }, 5000);
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [formLoading, formError, formStatus]);
+
+  useEffect(() => {
     setPages(Math.ceil(allRoles.length / noPerPage));
     calculateRender();
 
@@ -123,6 +147,79 @@ export const CareersPage = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage]);
+
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (formLoading) return;
+
+    if (!resume) {
+      setFormStatus("Error");
+      setFormError("Please pick a file to upload");
+      return;
+    } else {
+      setFormStatus("");
+      setFormError("");
+      setFormLoading(true);
+
+      const table_id = process.env.REACT_APP_AIRTABLE_TABLE_ID_CAREERS_INFO;
+      const base_id = process.env.REACT_APP_AIRTABLE_BASE_ID;
+      const api_key = process.env.REACT_APP_AIRTABLE_API_KEY;
+
+      const myHeaders_ = {
+        Authorization: `Bearer ${api_key}`,
+        "Content-Type": "application/json"
+      };
+
+      const data = {
+        fields: {
+          Name: name,
+          Email: email,
+          Phone: phone,
+          Resume: myFormData
+        }
+      };
+
+      fetch(`https://api.airtable.com/v0/${base_id}/${table_id}`, {
+        method: "POST",
+        headers: myHeaders_,
+        body: JSON.stringify(data)
+      })
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          logger.info(data);
+
+          if (data.error) {
+            setFormLoading(false);
+            logger.error(data.error);
+            setFormStatus("Error");
+            setFormError(data.error.message);
+          } else {
+            setFormLoading(false);
+            setFormError("");
+            setFormStatus("Success");
+            setName("");
+            setEmail("");
+            setPhone("");
+            setResume(null);
+          }
+        })
+        .catch((error) => {
+          logger.error(error);
+          setFormLoading(false);
+          setFormError(error.message);
+        });
+    }
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const fileArr = e.target?.files;
+    const fileListAsArr = Array.from(fileArr || []);
+    setResume(fileListAsArr[0]);
+    myFormData.append("Resume", fileListAsArr[0]);
+  };
 
   return (
     <div data-testid="careerspage">
@@ -302,7 +399,10 @@ export const CareersPage = () => {
               <h3 className="text-[32px] lg:text-[48px] mb-16 text-brightRed font-bold">
                 <>{t("careerspage.contact-form.header")}</>
               </h3>
-              <form className="flex flex-col gap-12">
+              <form
+                onSubmit={handleFormSubmit}
+                className="flex flex-col gap-12"
+              >
                 <div>
                   <label
                     htmlFor="name"
@@ -315,6 +415,10 @@ export const CareersPage = () => {
                     id="name"
                     className="bg-[#FBFCFD] border border-[#132295]/[.1] w-full p-3 rounded-md dark:bg-[#161616]"
                     placeholder="Enter your name"
+                    name="Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -326,10 +430,14 @@ export const CareersPage = () => {
                     <>{t("careerspage.contact-form.form-labels.email")}</>
                   </label>
                   <input
-                    type="text"
-                    id="name"
+                    type="email"
+                    id="email"
                     className="bg-[#FBFCFD] border border-[#132295]/[.1] w-full p-3 rounded-md dark:bg-[#161616]"
                     placeholder="Enter your email address"
+                    name="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -347,39 +455,91 @@ export const CareersPage = () => {
                     id="tel-number"
                     className="bg-[#FBFCFD] border border-[#132295]/[.1] w-full p-3 rounded-md dark:bg-[#161616]"
                     placeholder="Enter your phone number"
+                    name="Phone"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    required
                   />
                 </div>
 
                 <div>
                   <label
-                    htmlFor="file-input"
-                    className="text-[16px] font-bold text-[#1A1C21] dark:text-white"
+                    htmlFor="resume"
+                    className="text-[16px] font-bold text-[#1A1C21] dark:text-white cursor-pointer"
                   >
                     <>{t("careerspage.contact-form.form-labels.cv-upload")}</>
-                    <span className="w-full py-24 bg-[#FBFCFD] h-24 flex flex-col gap-4 justify-center items-center dark:bg-[#161616] border border-[#132295]/[.1] rounded-md">
-                      <img
-                        src={FileUploadVector}
-                        alt="upload"
-                        className="dark:fill-white"
-                      />
-                      <p className="text-textNormal font-medium text-center dark:text-white">
+                    <span className="w-full px-6 py-24 bg-[#FBFCFD] h-24 flex flex-col gap-4 justify-center items-center dark:bg-[#161616] border border-[#132295]/[.1] rounded-md">
+                      {resume ? (
+                        <p className="text-textNormal font-medium text-center dark:text-white">
+                          {resume.name}
+                        </p>
+                      ) : (
                         <>
-                          {t(
-                            "careerspage.contact-form.form-labels.cv-upload-span"
-                          )}
+                          <img
+                            src={FileUploadVector}
+                            alt="upload"
+                            className="dark:fill-white"
+                          />
+                          <p className="text-textNormal font-medium text-center dark:text-white">
+                            <>
+                              {t(
+                                "careerspage.contact-form.form-labels.cv-upload-span"
+                              )}
+                            </>
+                          </p>
                         </>
-                      </p>
+                      )}
                     </span>
+                    <input
+                      className="hidden"
+                      id="resume"
+                      type="file"
+                      accept="application/pdf"
+                      onChange={handleFileChange}
+                      name="resume"
+                    />
                   </label>
-                  <input
-                    className="hidden"
-                    id="file-input"
-                    type="file"
-                    accept="application/pdf"
-                    multiple
-                  />
                 </div>
-                <button className="a-btn">
+
+                {formStatus === "Error" && formError ? (
+                  <div className="border border-red-500 rounded-sm p-2">
+                    <span className="text-red-500 text-sm">{formError}</span>
+                  </div>
+                ) : formStatus === "Success" ? (
+                  <div className="border border-green-500 rounded-sm p-2">
+                    <span className="text-green-500 text-sm">
+                      Upload Successful
+                    </span>
+                  </div>
+                ) : null}
+
+                <button
+                  type="submit"
+                  disabled={formLoading}
+                  className="a-btn flex items-center justify-center"
+                >
+                  {formLoading ? (
+                    <svg
+                      className="w-5 h-5 mr-3 -ml-1 text-white animate-spin"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        stroke-width="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      ></path>
+                    </svg>
+                  ) : null}
                   <>{t("careerspage.contact-form.form-labels.btn-text")}</>
                 </button>
               </form>

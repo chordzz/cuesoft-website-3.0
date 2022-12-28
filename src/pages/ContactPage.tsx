@@ -15,12 +15,31 @@ export const ContactPage = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const [formStatus, setFormStatus] = useState("");
+  const [formError, setFormError] = useState("");
+  const [formLoading, setFormLoading] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      if (formError !== "" || formStatus !== "") {
+        setFormError("");
+        setFormStatus("");
+      }
+    }, 5000);
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [formLoading, formError, formStatus]);
+
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (formLoading) return;
 
     const table_id = process.env.REACT_APP_AIRTABLE_TABLE_ID_CONTACT_INFO;
     const base_id = process.env.REACT_APP_AIRTABLE_BASE_ID;
@@ -39,6 +58,8 @@ export const ContactPage = () => {
       }
     };
 
+    setFormLoading(true);
+
     fetch(`https://api.airtable.com/v0/${base_id}/${table_id}`, {
       method: "POST",
       headers: myHeaders_,
@@ -49,9 +70,25 @@ export const ContactPage = () => {
       })
       .then((data) => {
         logger.info(data);
+
+        if (data.error) {
+          setFormLoading(false);
+          logger.error(data.error);
+          setFormStatus("Error");
+          setFormError(data.error.message);
+        } else {
+          setFormLoading(false);
+          setFormError("");
+          setFormStatus("Success");
+          setName("");
+          setEmail("");
+          setMessage("");
+        }
       })
       .catch((error) => {
         logger.error(error);
+        setFormLoading(false);
+        setFormError(error.message);
       });
   };
 
@@ -75,7 +112,7 @@ export const ContactPage = () => {
                 <>{t("contactpage.hero-section.address.address-US")}</>
               </p>
               <p className="text-[12px] md:text-[14px] lg:text-[16px] text-[#F5F5FA] dark:text-white">
-                <>{t("contactpage.hero-section.address.NG")}</>
+                <>{t("contactpage.hero-section.address.address-NG")}</>
               </p>
             </div>
 
@@ -150,6 +187,7 @@ export const ContactPage = () => {
                     name="Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -168,6 +206,7 @@ export const ContactPage = () => {
                     name="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -185,9 +224,47 @@ export const ContactPage = () => {
                     name="Message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
+                    required
                   ></textarea>
                 </div>
-                <button type="submit" className="a-btn">
+
+                {formStatus === "Error" && formError ? (
+                  <div className="border border-red-500 rounded-sm p-2">
+                    <span className="text-red-500 text-sm">{formError}</span>
+                  </div>
+                ) : formStatus === "Success" ? (
+                  <div className="border border-green-500 rounded-sm p-2">
+                    <span className="text-green-500 text-sm">Message Sent</span>
+                  </div>
+                ) : null}
+
+                <button
+                  type="submit"
+                  className="a-btn flex items-center justify-center"
+                  disabled={formLoading}
+                >
+                  {formLoading ? (
+                    <svg
+                      className="w-5 h-5 mr-3 -ml-1 text-white animate-spin"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        stroke-width="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      ></path>
+                    </svg>
+                  ) : null}
                   <>{t("contactpage.contact-us-form.btn-text")}</>
                 </button>
               </form>
