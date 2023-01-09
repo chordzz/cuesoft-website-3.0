@@ -18,7 +18,8 @@ import {
   // NotFoundPage,
   ServicesPage,
   PartnersPage,
-  InvestorsPage
+  InvestorsPage,
+  NotFoundPage
 } from "./pages/index";
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
       <NavigationBar />
       <Routes>
         <>
+          <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
