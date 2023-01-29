@@ -1,7 +1,7 @@
 # Cuesoft Website
 
-[![CI](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/node.yml/badge.svg?branch=release/v3.0.0)](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/node.yml)
-[![Pages](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/pages.yml/badge.svg?branch=release/v3.0.0)](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/pages.yml)
+[![CI](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/node.yml/badge.svg?branch=main)](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/node.yml)
+[![Pages](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/CuesoftCloud/cuesoft-website/actions/workflows/pages.yml)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
