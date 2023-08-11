@@ -1,4 +1,6 @@
-FROM node:17.0.1-alpine as build-stage
+ARG NODE_VERSION=18.17.0
+
+FROM node:${NODE_VERSION}-alpine as build-stage
 
 RUN mkdir -p /app
 WORKDIR /app
