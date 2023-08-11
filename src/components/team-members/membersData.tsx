@@ -36,24 +36,9 @@ export const Data = [
     position: "Chief Revenue Officer"
   },
   {
-    imageUrl: Face1,
-    name: "Mitchell Chiadika",
-    position: "Tech Lead (Flutter Engineer)"
-  },
-  {
     imageUrl: Face6,
     name: "Ayodele Owoetoni",
     position: "Product Designer"
-  },
-  {
-    imageUrl: Face7,
-    name: "Toluwalase Adeniyi",
-    position: "Head of People"
-  },
-  {
-    imageUrl: Face8,
-    name: "Norbert Aburime",
-    position: "Marketing Manager"
   },
   {
     imageUrl: Face10,
@@ -61,18 +46,18 @@ export const Data = [
     position: "Accountant"
   },
   {
-    imageUrl: Face7,
-    name: "Oluwasegun Esho",
-    position: "Software Engineer"
-  },
-  {
     imageUrl: Face3,
     name: "Olaife Olawore",
-    position: "Frontend Engineer"
+    position: "Frontend/Devops Engineer"
   },
   {
-    imageUrl: Face10,
-    name: "Joel Inaku",
-    position: "Backend Engineer"
+    imageUrl: Face7,
+    name: "Abeeb Raheem",
+    position: "Backend Intern"
+  },
+  {
+    imageUrl: Face8,
+    name: "Emmanuel Owoetoni",
+    position: "Graphics Design Intern"
   }
 ];
