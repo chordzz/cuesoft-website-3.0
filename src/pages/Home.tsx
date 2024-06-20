@@ -766,7 +766,7 @@ export const Home = () => {
             <>{t("homepage.blog.title")}</>
           </h3>
 
-          {topStories.length > 0 ? (
+          {topStories && topStories.length > 0 ? (
             <div>
               <div className="hidden md:flex flex-col gap-12">
                 <div className="flex flex-wrap justify-between">
